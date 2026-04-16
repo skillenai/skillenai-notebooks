@@ -1,0 +1,61 @@
+role,skill,chi2,p_value,bonferroni_significant,bay_area_pct,rest_us_pct,non_us_pct,bay_area_residual,rest_us_residual,non_us_residual,interpretation
+Data Scientist,Python,1.91,0.3850034045250118,False,0.8263,0.7827,0.8057,0.4,-0.45,0.13,no significant deviation
+Data Scientist,SQL,17.34,0.00017192724458987076,True,0.7559,0.6098,0.6049,2.34,-0.51,-0.84,Bay Area overrepresented (+2.3)
+Data Scientist,machine learning,4.84,0.08876502723611782,False,0.4178,0.4745,0.5019,-1.33,-0.2,0.84,no significant deviation
+Data Scientist,R,8.8,0.012292630854580364,False,0.3474,0.2705,0.2458,2.22,0.08,-1.22,Bay Area overrepresented (+2.2)
+Data Scientist,data visualization,1.98,0.3720891381945435,False,0.2207,0.2328,0.1995,0.24,0.91,-0.82,no significant deviation
+Data Scientist,A/B testing,13.06,0.0014561816741972251,True,0.3005,0.1863,0.1956,2.95,-1.02,-0.77,Bay Area overrepresented (+3.0)
+Data Scientist,Data analysis,4.16,0.12479018905387416,False,0.2394,0.1885,0.1776,1.65,-0.08,-0.8,no significant deviation
+Data Scientist,causal inference,22.94,1.0434745980405437e-05,True,0.277,0.153,0.1416,4.02,-0.64,-1.62,Bay Area overrepresented (+4.0)
+Data Scientist,data pipelines,1.78,0.41100322553181223,False,0.1502,0.1685,0.1403,-0.01,0.98,-0.74,no significant deviation
+Data Scientist,pandas,10.09,0.006430979849277951,False,0.0798,0.153,0.1673,-2.64,0.17,1.25,Bay Area underrepresented (-2.6)
+Data Scientist,Statistical modeling,4.94,0.08465889686922957,False,0.1033,0.1685,0.1454,-1.65,1.23,-0.07,no significant deviation
+Data Scientist,data science,1.16,0.5585129862899083,False,0.169,0.1375,0.1454,0.86,-0.5,-0.07,no significant deviation
+Data Scientist,scikit-learn,4.99,0.08252318999475214,False,0.0892,0.1419,0.148,-1.9,0.26,0.8,no significant deviation
+Data Scientist,predictive modeling,11.15,0.0037887895377456196,False,0.1315,0.1796,0.112,-0.18,2.51,-1.82,Rest of US overrepresented (+2.5)
+Data Scientist,TensorFlow,6.96,0.030852268117362268,False,0.0892,0.1197,0.1532,-1.76,-0.79,1.52,no significant deviation
+Data Scientist,PyTorch,7.91,0.019131453772362982,False,0.0892,0.1086,0.1506,-1.6,-1.17,1.73,no significant deviation
+Data Scientist,experimentation,39.1,3.23748247319212e-09,True,0.2488,0.0843,0.1094,5.29,-2.3,-1.02,Bay Area overrepresented (+5.3); Rest of US underrepresented (-2.3)
+Data Scientist,data modeling,1.69,0.4298318706495151,False,0.1408,0.1264,0.1107,0.88,0.39,-0.75,no significant deviation
+Data Scientist,statistics,1.26,0.5323782667032526,False,0.1362,0.1064,0.1145,0.9,-0.55,-0.05,no significant deviation
+Data Scientist,Tableau,0.1,0.9500419492467519,False,0.1127,0.1153,0.1094,0.04,0.23,-0.19,no significant deviation
+ML Engineer,machine learning,4.19,0.12279846082485044,False,0.7727,0.7157,0.7199,0.94,-0.38,-0.33,no significant deviation
+ML Engineer,Python,17.91,0.00012921698816025596,True,0.4858,0.5261,0.6099,-1.78,-0.93,1.97,no significant deviation
+ML Engineer,PyTorch,2.46,0.29161280683702,False,0.429,0.3772,0.3901,1.03,-0.62,-0.19,no significant deviation
+ML Engineer,TensorFlow,1.73,0.4220069435285281,False,0.2443,0.2843,0.2657,-0.82,0.76,-0.07,no significant deviation
+ML Engineer,deep learning,5.92,0.05194209220966113,False,0.2415,0.1741,0.2055,1.59,-1.47,0.13,no significant deviation
+ML Engineer,model training,7.5,0.02357344290569572,False,0.1818,0.1161,0.1518,1.71,-1.83,0.35,no significant deviation
+ML Engineer,model evaluation,6.73,0.03456199102036818,False,0.1534,0.1064,0.1545,0.72,-1.99,1.14,no significant deviation
+ML Engineer,data pipelines,14.26,0.0008023555090548773,True,0.1875,0.1103,0.1126,3.12,-1.13,-1.19,Bay Area overrepresented (+3.1)
+ML Engineer,model deployment,1.04,0.5954501082016361,False,0.1136,0.1238,0.1348,-0.69,-0.19,0.63,no significant deviation
+ML Engineer,AWS,18.18,0.00011293037980124817,True,0.071,0.1141,0.1597,-2.91,-0.77,2.61,Bay Area underrepresented (-2.9); Non-US overrepresented (+2.6)
+ML Engineer,fine-tuning,13.86,0.0009761477724223996,True,0.1591,0.0793,0.1296,2.12,-2.67,0.76,Bay Area overrepresented (+2.1); Rest of US underrepresented (-2.7)
+ML Engineer,MLOps,33.74,4.722127660808577e-08,True,0.0455,0.0928,0.1584,-3.78,-1.38,3.7,Bay Area underrepresented (-3.8); Non-US overrepresented (+3.7)
+ML Engineer,SQL,12.77,0.00168705710411629,True,0.0653,0.1025,0.1361,-2.54,-0.53,2.16,Bay Area underrepresented (-2.5); Non-US overrepresented (+2.2)
+ML Engineer,computer vision,12.94,0.00154898465767173,True,0.1222,0.1393,0.0785,0.86,2.23,-2.42,Rest of US overrepresented (+2.2); Non-US underrepresented (-2.4)
+ML Engineer,scikit-learn,11.81,0.0027239236728168804,False,0.054,0.1025,0.1204,-2.75,0.15,1.74,Bay Area underrepresented (-2.8)
+ML Engineer,Kubernetes,21.07,2.664666687473842e-05,True,0.0682,0.0677,0.1361,-1.88,-2.31,3.18,Rest of US underrepresented (-2.3); Non-US overrepresented (+3.2)
+ML Engineer,C++,7.29,0.026116752855594737,False,0.125,0.1083,0.0772,1.66,0.8,-1.78,no significant deviation
+ML Engineer,LLMs,1.98,0.3709169484764985,False,0.1108,0.0832,0.0903,1.13,-0.7,-0.2,no significant deviation
+ML Engineer,feature engineering,8.17,0.01684551316076618,False,0.0568,0.0774,0.106,-1.89,-0.69,1.85,no significant deviation
+ML Engineer,Docker,16.67,0.0002399392333454323,True,0.0597,0.058,0.1152,-1.64,-2.11,2.85,Rest of US underrepresented (-2.1); Non-US overrepresented (+2.8)
+AI Engineer,Python,4.59,0.10056804747072813,False,0.5672,0.5523,0.6305,-0.46,-0.91,0.91,no significant deviation
+AI Engineer,machine learning,3.28,0.19364258383636068,False,0.2388,0.318,0.2655,-0.83,1.22,-0.44,no significant deviation
+AI Engineer,prompt engineering,3.75,0.1530914860292625,False,0.2313,0.2469,0.3009,-0.94,-0.8,1.09,no significant deviation
+AI Engineer,LLMs,10.35,0.005648744800246787,False,0.306,0.1632,0.2168,2.25,-1.75,0.05,Bay Area overrepresented (+2.2)
+AI Engineer,fine-tuning,3.8,0.14923838519436997,False,0.2239,0.1548,0.2102,0.72,-1.45,0.66,no significant deviation
+AI Engineer,PyTorch,3.93,0.1402037891215808,False,0.2388,0.1841,0.1637,1.55,0.08,-0.9,no significant deviation
+AI Engineer,RAG,8.26,0.01606535615588842,False,0.1418,0.1297,0.2102,-0.94,-1.7,1.75,no significant deviation
+AI Engineer,LangChain,15.36,0.0004619897444560853,True,0.097,0.1255,0.2168,-2.07,-1.7,2.36,Bay Area underrepresented (-2.1); Non-US overrepresented (+2.4)
+AI Engineer,AWS,1.95,0.3767212054140692,False,0.1418,0.1548,0.1858,-0.78,-0.56,0.83,no significant deviation
+AI Engineer,TypeScript,7.23,0.026891961470257904,False,0.2164,0.1172,0.1814,1.35,-1.93,0.67,no significant deviation
+AI Engineer,observability,3.56,0.16886545162874175,False,0.0896,0.159,0.135,-1.42,1.03,0.02,no significant deviation
+AI Engineer,vector databases,0.83,0.6612800803502616,False,0.1269,0.1088,0.1327,0.07,-0.7,0.48,no significant deviation
+AI Engineer,TensorFlow,2.77,0.25058905112984037,False,0.1567,0.1004,0.1128,1.37,-0.72,-0.22,no significant deviation
+AI Engineer,model evaluation,2.11,0.34856972353779453,False,0.1119,0.0837,0.1195,0.14,-1.14,0.75,no significant deviation
+AI Engineer,Generative AI,5.87,0.053200727512269966,False,0.0597,0.0837,0.1239,-1.53,-0.88,1.47,no significant deviation
+AI Engineer,GCP,1.33,0.5146039918571457,False,0.0896,0.0879,0.1128,-0.44,-0.68,0.73,no significant deviation
+AI Engineer,LangGraph,5.47,0.06488499343500805,False,0.0672,0.0795,0.1239,-1.26,-1.08,1.47,no significant deviation
+AI Engineer,embeddings,3.3,0.19234618582793084,False,0.0597,0.0962,0.1128,-1.46,-0.15,0.91,no significant deviation
+AI Engineer,Azure,4.11,0.12817716321703457,False,0.0746,0.0753,0.1173,-0.87,-1.13,1.29,no significant deviation
+AI Engineer,evaluation frameworks,0.8,0.6708252334780063,False,0.0896,0.1088,0.0885,-0.19,0.72,-0.42,no significant deviation

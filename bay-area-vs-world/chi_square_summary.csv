@@ -1,0 +1,13 @@
+role,comparison,chi2,dof,p_value,cramers_v,significant_05,n_skill_mentions
+Data Scientist,omnibus (3-way),116.04,38,7.882409792797038e-10,0.094,True,6562
+Data Scientist,Bay Area vs Rest of US,71.67,19,4.841791734748191e-08,0.1525,True,3082
+Data Scientist,Bay Area vs Non-US,84.35,19,3.268047930619756e-10,0.1365,True,4529
+Data Scientist,Rest of US vs Non-US,24.53,19,0.17668606181165478,0.0667,False,5513
+ML Engineer,omnibus (3-way),164.07,38,1.3281528115183371e-17,0.1145,True,6255
+ML Engineer,Bay Area vs Rest of US,61.0,19,2.6896813093807275e-06,0.139,True,3159
+ML Engineer,Bay Area vs Non-US,118.11,19,2.4993891342312293e-16,0.1636,True,4415
+ML Engineer,Rest of US vs Non-US,63.54,19,1.0535248272754754e-06,0.1135,True,4936
+AI Engineer,omnibus (3-way),58.66,38,0.01728724578258453,0.1007,True,2894
+AI Engineer,Bay Area vs Rest of US,27.35,19,0.09682689988651638,0.1513,False,1194
+AI Engineer,Bay Area vs Non-US,34.07,19,0.018029559574552975,0.126,True,2146
+AI Engineer,Rest of US vs Non-US,24.58,19,0.1746648890190318,0.1002,False,2448

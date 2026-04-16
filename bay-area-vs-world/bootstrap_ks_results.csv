@@ -1,0 +1,181 @@
+role,skill,region_1,region_2,n_1,n_2,observed_p1,observed_p2,observed_diff,ks_statistic,p_value,significant_05,significant_01
+Data Scientist,Python,bay_area,rest_us,213,451,0.8263,0.7827,0.0436,0.403,5.766493709529924e-73,True,True
+Data Scientist,Python,bay_area,non_us,213,777,0.8263,0.8057,0.0206,0.226,8.66144540069212e-23,True,True
+Data Scientist,Python,rest_us,non_us,451,777,0.7827,0.8057,-0.023,0.218,3.202737354157636e-21,True,True
+Data Scientist,SQL,bay_area,rest_us,213,451,0.7559,0.6098,0.1461,0.895,0.0,True,True
+Data Scientist,SQL,bay_area,non_us,213,777,0.7559,0.6049,0.151,0.906,0.0,True,True
+Data Scientist,SQL,rest_us,non_us,451,777,0.6098,0.6049,0.0049,0.104,3.9587400002181794e-05,True,True
+Data Scientist,machine learning,bay_area,rest_us,213,451,0.4178,0.4745,-0.0567,0.422,3.3580249316788982e-80,True,True
+Data Scientist,machine learning,bay_area,non_us,213,777,0.4178,0.5019,-0.0841,0.598,1.522399152854421e-166,True,True
+Data Scientist,machine learning,rest_us,non_us,451,777,0.4745,0.5019,-0.0274,0.201,4.4050768771360105e-18,True,True
+Data Scientist,R,bay_area,rest_us,213,451,0.3474,0.2705,0.0769,0.6,9.592471397687556e-168,True,True
+Data Scientist,R,bay_area,non_us,213,777,0.3474,0.2458,0.1016,0.739,7.052244167683521e-266,True,True
+Data Scientist,R,rest_us,non_us,451,777,0.2705,0.2458,0.0247,0.239,1.8396077338375514e-25,True,True
+Data Scientist,data visualization,bay_area,rest_us,213,451,0.2207,0.2328,-0.0122,0.121,8.513708327314542e-07,True,True
+Data Scientist,data visualization,bay_area,non_us,213,777,0.2207,0.1995,0.0212,0.202,2.928166742788413e-18,True,True
+Data Scientist,data visualization,rest_us,non_us,451,777,0.2328,0.1995,0.0333,0.32,1.150351290993759e-45,True,True
+Data Scientist,A/B testing,bay_area,rest_us,213,451,0.3005,0.1863,0.1142,0.829,0.0,True,True
+Data Scientist,A/B testing,bay_area,non_us,213,777,0.3005,0.1956,0.1048,0.765,6.118729944660977e-288,True,True
+Data Scientist,A/B testing,rest_us,non_us,451,777,0.1863,0.1956,-0.0094,0.081,0.0028179208242694134,True,True
+Data Scientist,Data analysis,bay_area,rest_us,213,451,0.2394,0.1885,0.051,0.446,6.940834932452105e-90,True,True
+Data Scientist,Data analysis,bay_area,non_us,213,777,0.2394,0.1776,0.0618,0.521,2.954780090542833e-124,True,True
+Data Scientist,Data analysis,rest_us,non_us,451,777,0.1885,0.1776,0.0109,0.123,5.214702601499457e-07,True,True
+Data Scientist,causal inference,bay_area,rest_us,213,451,0.277,0.153,0.124,0.885,0.0,True,True
+Data Scientist,causal inference,bay_area,non_us,213,777,0.277,0.1416,0.1354,0.922,0.0,True,True
+Data Scientist,causal inference,rest_us,non_us,451,777,0.153,0.1416,0.0114,0.143,2.478045227082155e-09,True,True
+Data Scientist,data pipelines,bay_area,rest_us,213,451,0.1502,0.1685,-0.0183,0.191,2.332572779609904e-16,True,True
+Data Scientist,data pipelines,bay_area,non_us,213,777,0.1502,0.1403,0.01,0.13,8.797089063129894e-08,True,True
+Data Scientist,data pipelines,rest_us,non_us,451,777,0.1685,0.1403,0.0282,0.318,4.312386962685144e-45,True,True
+Data Scientist,pandas,bay_area,rest_us,213,451,0.0798,0.153,-0.0732,0.769,1.8635951388433798e-291,True,True
+Data Scientist,pandas,bay_area,non_us,213,777,0.0798,0.1673,-0.0875,0.821,0.0,True,True
+Data Scientist,pandas,rest_us,non_us,451,777,0.153,0.1673,-0.0143,0.15,3.143161402242108e-10,True,True
+Data Scientist,Statistical modeling,bay_area,rest_us,213,451,0.1033,0.1685,-0.0652,0.669,1.2221860773260014e-212,True,True
+Data Scientist,Statistical modeling,bay_area,non_us,213,777,0.1033,0.1454,-0.0421,0.492,3.306287771791326e-110,True,True
+Data Scientist,Statistical modeling,rest_us,non_us,451,777,0.1685,0.1454,0.0231,0.235,1.2696120775805016e-24,True,True
+Data Scientist,data science,bay_area,rest_us,213,451,0.169,0.1375,0.0315,0.331,6.841548019463371e-49,True,True
+Data Scientist,data science,bay_area,non_us,213,777,0.169,0.1454,0.0236,0.256,3.423674733977015e-29,True,True
+Data Scientist,data science,rest_us,non_us,451,777,0.1375,0.1454,-0.008,0.083,0.0020287627507189713,True,True
+Data Scientist,scikit-learn,bay_area,rest_us,213,451,0.0892,0.1419,-0.0527,0.59,8.532807144290288e-162,True,True
+Data Scientist,scikit-learn,bay_area,non_us,213,777,0.0892,0.148,-0.0588,0.659,1.0722014669988582e-205,True,True
+Data Scientist,scikit-learn,rest_us,non_us,451,777,0.1419,0.148,-0.0061,0.09,0.0006029005665324465,True,True
+Data Scientist,predictive modeling,bay_area,rest_us,213,451,0.1315,0.1796,-0.0481,0.472,4.4129698613325653e-101,True,True
+Data Scientist,predictive modeling,bay_area,non_us,213,777,0.1315,0.112,0.0195,0.257,2.0264232315663477e-29,True,True
+Data Scientist,predictive modeling,rest_us,non_us,451,777,0.1796,0.112,0.0676,0.694,1.0803862970983087e-230,True,True
+Data Scientist,TensorFlow,bay_area,rest_us,213,451,0.0892,0.1197,-0.0305,0.367,2.807532301000516e-60,True,True
+Data Scientist,TensorFlow,bay_area,non_us,213,777,0.0892,0.1532,-0.064,0.642,3.044463318719866e-194,True,True
+Data Scientist,TensorFlow,rest_us,non_us,451,777,0.1197,0.1532,-0.0334,0.4,7.39394789512448e-72,True,True
+Data Scientist,PyTorch,bay_area,rest_us,213,451,0.0892,0.1086,-0.0194,0.247,3.4882693423303045e-27,True,True
+Data Scientist,PyTorch,bay_area,non_us,213,777,0.0892,0.1506,-0.0614,0.663,1.8690680016581806e-208,True,True
+Data Scientist,PyTorch,rest_us,non_us,451,777,0.1086,0.1506,-0.0419,0.474,5.655555502136394e-102,True,True
+Data Scientist,experimentation,bay_area,rest_us,213,451,0.2488,0.0843,0.1646,0.983,0.0,True,True
+Data Scientist,experimentation,bay_area,non_us,213,777,0.2488,0.1094,0.1394,0.941,0.0,True,True
+Data Scientist,experimentation,rest_us,non_us,451,777,0.0843,0.1094,-0.0251,0.348,4.146142039578868e-54,True,True
+Data Scientist,data modeling,bay_area,rest_us,213,451,0.1408,0.1264,0.0145,0.183,4.808958234324042e-15,True,True
+Data Scientist,data modeling,bay_area,non_us,213,777,0.1408,0.1107,0.0302,0.319,2.2297558063315152e-45,True,True
+Data Scientist,data modeling,rest_us,non_us,451,777,0.1264,0.1107,0.0157,0.156,4.944209857281109e-11,True,True
+Data Scientist,statistics,bay_area,rest_us,213,451,0.1362,0.1064,0.0297,0.359,1.2295379067920271e-57,True,True
+Data Scientist,statistics,bay_area,non_us,213,777,0.1362,0.1145,0.0216,0.241,6.914010091642317e-26,True,True
+Data Scientist,statistics,rest_us,non_us,451,777,0.1064,0.1145,-0.0081,0.131,6.766991587022994e-08,True,True
+Data Scientist,Tableau,bay_area,rest_us,213,451,0.1127,0.1153,-0.0026,0.046,0.24068202486600215,False,False
+Data Scientist,Tableau,bay_area,non_us,213,777,0.1127,0.1094,0.0033,0.074,0.008353146175741297,True,True
+Data Scientist,Tableau,rest_us,non_us,451,777,0.1153,0.1094,0.0059,0.09,0.0006029005665324465,True,True
+ML Engineer,machine learning,bay_area,rest_us,352,517,0.7727,0.7157,0.0571,0.509,2.529553479526401e-118,True,True
+ML Engineer,machine learning,bay_area,non_us,352,764,0.7727,0.7199,0.0528,0.481,3.9286795575290805e-105,True,True
+ML Engineer,machine learning,rest_us,non_us,517,764,0.7157,0.7199,-0.0042,0.048,0.19957365535779528,False,False
+ML Engineer,Python,bay_area,rest_us,352,517,0.4858,0.5261,-0.0403,0.313,1.1286198577396754e-43,True,True
+ML Engineer,Python,bay_area,non_us,352,764,0.4858,0.6099,-0.1242,0.783,4.9260933239281345e-304,True,True
+ML Engineer,Python,rest_us,non_us,517,764,0.5261,0.6099,-0.0838,0.587,4.8952441829758626e-160,True,True
+ML Engineer,PyTorch,bay_area,rest_us,352,517,0.429,0.3772,0.0518,0.421,8.247170039460093e-80,True,True
+ML Engineer,PyTorch,bay_area,non_us,352,764,0.429,0.3901,0.0389,0.337,1.0617870216507167e-50,True,True
+ML Engineer,PyTorch,rest_us,non_us,517,764,0.3772,0.3901,-0.0129,0.108,1.690722046468961e-05,True,True
+ML Engineer,TensorFlow,bay_area,rest_us,352,517,0.2443,0.2843,-0.04,0.35,9.663335150774673e-55,True,True
+ML Engineer,TensorFlow,bay_area,non_us,352,764,0.2443,0.2657,-0.0214,0.186,1.5702401851850447e-15,True,True
+ML Engineer,TensorFlow,rest_us,non_us,517,764,0.2843,0.2657,0.0186,0.175,8.685223195188911e-14,True,True
+ML Engineer,deep learning,bay_area,rest_us,352,517,0.2415,0.1741,0.0674,0.602,5.969109643048212e-169,True,True
+ML Engineer,deep learning,bay_area,non_us,352,764,0.2415,0.2055,0.036,0.346,1.7628312247911467e-53,True,True
+ML Engineer,deep learning,rest_us,non_us,517,764,0.1741,0.2055,-0.0314,0.339,2.601190983860239e-51,True,True
+ML Engineer,model training,bay_area,rest_us,352,517,0.1818,0.1161,0.0658,0.606,2.2259579332703023e-171,True,True
+ML Engineer,model training,bay_area,non_us,352,764,0.1818,0.1518,0.03,0.268,5.493946128318164e-32,True,True
+ML Engineer,model training,rest_us,non_us,517,764,0.1161,0.1518,-0.0358,0.406,4.4017018933952624e-74,True,True
+ML Engineer,model evaluation,bay_area,rest_us,352,517,0.1534,0.1064,0.047,0.548,3.0940781182944927e-138,True,True
+ML Engineer,model evaluation,bay_area,non_us,352,764,0.1534,0.1545,-0.001,0.02,0.9883339509983219,False,False
+ML Engineer,model evaluation,rest_us,non_us,517,764,0.1064,0.1545,-0.0481,0.544,4.147632068006112e-136,True,True
+ML Engineer,data pipelines,bay_area,rest_us,352,517,0.1875,0.1103,0.0772,0.73,1.5075361928992265e-258,True,True
+ML Engineer,data pipelines,bay_area,non_us,352,764,0.1875,0.1126,0.0749,0.717,3.1733429211806902e-248,True,True
+ML Engineer,data pipelines,rest_us,non_us,517,764,0.1103,0.1126,-0.0023,0.045,0.26347172719864703,False,False
+ML Engineer,model deployment,bay_area,rest_us,352,517,0.1136,0.1238,-0.0102,0.116,2.798513019401821e-06,True,True
+ML Engineer,model deployment,bay_area,non_us,352,764,0.1136,0.1348,-0.0212,0.227,5.463699054715322e-23,True,True
+ML Engineer,model deployment,rest_us,non_us,517,764,0.1238,0.1348,-0.011,0.135,2.321597219050034e-08,True,True
+ML Engineer,AWS,bay_area,rest_us,352,517,0.071,0.1141,-0.0431,0.529,2.6326626964252556e-128,True,True
+ML Engineer,AWS,bay_area,non_us,352,764,0.071,0.1597,-0.0887,0.836,0.0,True,True
+ML Engineer,AWS,rest_us,non_us,517,764,0.1141,0.1597,-0.0456,0.511,2.667350123988135e-119,True,True
+ML Engineer,fine-tuning,bay_area,rest_us,352,517,0.1591,0.0793,0.0798,0.764,4.576084047596027e-287,True,True
+ML Engineer,fine-tuning,bay_area,non_us,352,764,0.1591,0.1296,0.0295,0.314,5.900775055305609e-44,True,True
+ML Engineer,fine-tuning,rest_us,non_us,517,764,0.0793,0.1296,-0.0503,0.557,4.27987202778611e-143,True,True
+ML Engineer,MLOps,bay_area,rest_us,352,517,0.0455,0.0928,-0.0474,0.647,1.445156540140849e-197,True,True
+ML Engineer,MLOps,bay_area,non_us,352,764,0.0455,0.1584,-0.1129,0.951,0.0,True,True
+ML Engineer,MLOps,rest_us,non_us,517,764,0.0928,0.1584,-0.0655,0.687,1.5527931563016627e-225,True,True
+ML Engineer,SQL,bay_area,rest_us,352,517,0.0653,0.1025,-0.0372,0.513,2.782389899475868e-120,True,True
+ML Engineer,SQL,bay_area,non_us,352,764,0.0653,0.1361,-0.0708,0.794,3.183898771e-314,True,True
+ML Engineer,SQL,rest_us,non_us,517,764,0.1025,0.1361,-0.0336,0.427,3.623402135617007e-82,True,True
+ML Engineer,computer vision,bay_area,rest_us,352,517,0.1222,0.1393,-0.0171,0.183,4.808958234324042e-15,True,True
+ML Engineer,computer vision,bay_area,non_us,352,764,0.1222,0.0785,0.0436,0.568,3.5808201117274716e-149,True,True
+ML Engineer,computer vision,rest_us,non_us,517,764,0.1393,0.0785,0.0607,0.69,9.787778496005188e-228,True,True
+ML Engineer,scikit-learn,bay_area,rest_us,352,517,0.054,0.1025,-0.0485,0.63,2.0434057605242295e-186,True,True
+ML Engineer,scikit-learn,bay_area,non_us,352,764,0.054,0.1204,-0.0664,0.77,2.432149587982038e-292,True,True
+ML Engineer,scikit-learn,rest_us,non_us,517,764,0.1025,0.1204,-0.0179,0.217,4.9820358842452125e-21,True,True
+ML Engineer,Kubernetes,bay_area,rest_us,352,517,0.0682,0.0677,0.0005,0.019,0.9937026761524456,False,False
+ML Engineer,Kubernetes,bay_area,non_us,352,764,0.0682,0.1361,-0.0679,0.725,1.531798402842041e-254,True,True
+ML Engineer,Kubernetes,rest_us,non_us,517,764,0.0677,0.1361,-0.0684,0.73,1.5075361928992265e-258,True,True
+ML Engineer,C++,bay_area,rest_us,352,517,0.125,0.1083,0.0167,0.216,7.7335939682735e-21,True,True
+ML Engineer,C++,bay_area,non_us,352,764,0.125,0.0772,0.0478,0.588,1.2731334052701707e-160,True,True
+ML Engineer,C++,rest_us,non_us,517,764,0.1083,0.0772,0.0311,0.431,9.256398497811612e-84,True,True
+ML Engineer,LLMs,bay_area,rest_us,352,517,0.1108,0.0832,0.0276,0.354,5.1075882678968885e-56,True,True
+ML Engineer,LLMs,bay_area,non_us,352,764,0.1108,0.0903,0.0205,0.277,3.594137052202643e-34,True,True
+ML Engineer,LLMs,rest_us,non_us,517,764,0.0832,0.0903,-0.0071,0.117,2.214758736930358e-06,True,True
+ML Engineer,feature engineering,bay_area,rest_us,352,517,0.0568,0.0774,-0.0206,0.305,1.866671893947957e-41,True,True
+ML Engineer,feature engineering,bay_area,non_us,352,764,0.0568,0.106,-0.0492,0.617,3.5958244973296406e-178,True,True
+ML Engineer,feature engineering,rest_us,non_us,517,764,0.0774,0.106,-0.0287,0.392,5.998653083597018e-69,True,True
+ML Engineer,Docker,bay_area,rest_us,352,517,0.0597,0.058,0.0016,0.059,0.06153429181321559,False,False
+ML Engineer,Docker,bay_area,non_us,352,764,0.0597,0.1152,-0.0555,0.709,5.0535238814943216e-242,True,True
+ML Engineer,Docker,rest_us,non_us,517,764,0.058,0.1152,-0.0572,0.704,3.3346453604534994e-238,True,True
+AI Engineer,Python,bay_area,rest_us,134,239,0.5672,0.5523,0.0149,0.149,4.2475154084352807e-10,True,True
+AI Engineer,Python,bay_area,non_us,134,452,0.5672,0.6305,-0.0634,0.468,2.6052708465525705e-99,True,True
+AI Engineer,Python,rest_us,non_us,239,452,0.5523,0.6305,-0.0782,0.562,7.726636221692759e-146,True,True
+AI Engineer,machine learning,bay_area,rest_us,134,239,0.2388,0.318,-0.0792,0.639,2.883581140542334e-192,True,True
+AI Engineer,machine learning,bay_area,non_us,134,452,0.2388,0.2655,-0.0267,0.248,2.104700973377179e-27,True,True
+AI Engineer,machine learning,rest_us,non_us,239,452,0.318,0.2655,0.0525,0.466,1.9712449013844212e-98,True,True
+AI Engineer,prompt engineering,bay_area,rest_us,134,239,0.2313,0.2469,-0.0155,0.169,6.977595468924532e-13,True,True
+AI Engineer,prompt engineering,bay_area,non_us,134,452,0.2313,0.3009,-0.0695,0.596,2.386293253862983e-165,True,True
+AI Engineer,prompt engineering,rest_us,non_us,239,452,0.2469,0.3009,-0.054,0.506,7.2395025979917e-117,True,True
+AI Engineer,LLMs,bay_area,rest_us,134,239,0.306,0.1632,0.1428,0.924,0.0,True,True
+AI Engineer,LLMs,bay_area,non_us,134,452,0.306,0.2168,0.0892,0.716,1.918531618192692e-247,True,True
+AI Engineer,LLMs,rest_us,non_us,239,452,0.1632,0.2168,-0.0536,0.511,2.667350123988135e-119,True,True
+AI Engineer,fine-tuning,bay_area,rest_us,134,239,0.2239,0.1548,0.0691,0.638,1.3055772070024545e-191,True,True
+AI Engineer,fine-tuning,bay_area,non_us,134,452,0.2239,0.2102,0.0137,0.109,1.3598954602798138e-05,True,True
+AI Engineer,fine-tuning,rest_us,non_us,239,452,0.1548,0.2102,-0.0554,0.559,3.4501915758212364e-144,True,True
+AI Engineer,PyTorch,bay_area,rest_us,134,239,0.2388,0.1841,0.0547,0.498,4.931010574419196e-113,True,True
+AI Engineer,PyTorch,bay_area,non_us,134,452,0.2388,0.1637,0.0751,0.678,5.0600035336220945e-219,True,True
+AI Engineer,PyTorch,rest_us,non_us,239,452,0.1841,0.1637,0.0204,0.226,8.66144540069212e-23,True,True
+AI Engineer,RAG,bay_area,rest_us,134,239,0.1418,0.1297,0.0121,0.161,1.0005498414087888e-11,True,True
+AI Engineer,RAG,bay_area,non_us,134,452,0.1418,0.2102,-0.0684,0.646,6.723652038451915e-197,True,True
+AI Engineer,RAG,rest_us,non_us,239,452,0.1297,0.2102,-0.0805,0.748,2.3100114408284264e-273,True,True
+AI Engineer,LangChain,bay_area,rest_us,134,239,0.097,0.1255,-0.0285,0.33,1.3591194647620518e-48,True,True
+AI Engineer,LangChain,bay_area,non_us,134,452,0.097,0.2168,-0.1198,0.907,0.0,True,True
+AI Engineer,LangChain,rest_us,non_us,239,452,0.1255,0.2168,-0.0913,0.799,6.0023e-319,True,True
+AI Engineer,AWS,bay_area,rest_us,134,239,0.1418,0.1548,-0.013,0.172,2.4846719977672545e-13,True,True
+AI Engineer,AWS,bay_area,non_us,134,452,0.1418,0.1858,-0.044,0.465,5.401579486784227e-98,True,True
+AI Engineer,AWS,rest_us,non_us,239,452,0.1548,0.1858,-0.031,0.319,2.2297558063315152e-45,True,True
+AI Engineer,TypeScript,bay_area,rest_us,134,239,0.2164,0.1172,0.0993,0.818,0.0,True,True
+AI Engineer,TypeScript,bay_area,non_us,134,452,0.2164,0.1814,0.035,0.332,3.4361829016674145e-49,True,True
+AI Engineer,TypeScript,rest_us,non_us,239,452,0.1172,0.1814,-0.0643,0.646,6.723652038451915e-197,True,True
+AI Engineer,observability,bay_area,rest_us,134,239,0.0896,0.159,-0.0694,0.699,1.9930354823592274e-234,True,True
+AI Engineer,observability,bay_area,non_us,134,452,0.0896,0.135,-0.0454,0.508,7.758325610986461e-118,True,True
+AI Engineer,observability,rest_us,non_us,239,452,0.159,0.135,0.024,0.257,2.0264232315663477e-29,True,True
+AI Engineer,vector databases,bay_area,rest_us,134,239,0.1269,0.1088,0.0181,0.256,3.423674733977015e-29,True,True
+AI Engineer,vector databases,bay_area,non_us,134,452,0.1269,0.1327,-0.0059,0.078,0.004543821879051605,True,True
+AI Engineer,vector databases,rest_us,non_us,239,452,0.1088,0.1327,-0.024,0.334,8.609790616330956e-50,True,True
+AI Engineer,TensorFlow,bay_area,rest_us,134,239,0.1567,0.1004,0.0563,0.622,2.5872247709377997e-181,True,True
+AI Engineer,TensorFlow,bay_area,non_us,134,452,0.1567,0.1128,0.0439,0.483,4.805674702886574e-106,True,True
+AI Engineer,TensorFlow,rest_us,non_us,239,452,0.1004,0.1128,-0.0124,0.168,9.803857095159588e-13,True,True
+AI Engineer,model evaluation,bay_area,rest_us,134,239,0.1119,0.0837,0.0283,0.367,2.807532301000516e-60,True,True
+AI Engineer,model evaluation,bay_area,non_us,134,452,0.1119,0.1195,-0.0075,0.097,0.00016232041211307663,True,True
+AI Engineer,model evaluation,rest_us,non_us,239,452,0.0837,0.1195,-0.0358,0.425,2.2339852302897496e-81,True,True
+AI Engineer,Generative AI,bay_area,rest_us,134,239,0.0597,0.0837,-0.024,0.358,2.6027134195177023e-57,True,True
+AI Engineer,Generative AI,bay_area,non_us,134,452,0.0597,0.1239,-0.0642,0.739,7.052244167683521e-266,True,True
+AI Engineer,Generative AI,rest_us,non_us,239,452,0.0837,0.1239,-0.0402,0.474,5.655555502136394e-102,True,True
+AI Engineer,GCP,bay_area,rest_us,134,239,0.0896,0.0879,0.0017,0.03,0.7593695685682871,False,False
+AI Engineer,GCP,bay_area,non_us,134,452,0.0896,0.1128,-0.0233,0.331,6.841548019463371e-49,True,True
+AI Engineer,GCP,rest_us,non_us,239,452,0.0879,0.1128,-0.025,0.337,1.0617870216507167e-50,True,True
+AI Engineer,LangGraph,bay_area,rest_us,134,239,0.0672,0.0795,-0.0123,0.229,2.1603957516211753e-23,True,True
+AI Engineer,LangGraph,bay_area,non_us,134,452,0.0672,0.1239,-0.0567,0.667,3.077566159393644e-211,True,True
+AI Engineer,LangGraph,rest_us,non_us,239,452,0.0795,0.1239,-0.0444,0.505,2.2025638207223236e-116,True,True
+AI Engineer,embeddings,bay_area,rest_us,134,239,0.0597,0.0962,-0.0365,0.509,2.529553479526401e-118,True,True
+AI Engineer,embeddings,bay_area,non_us,134,452,0.0597,0.1128,-0.0531,0.677,2.6286953341851004e-218,True,True
+AI Engineer,embeddings,rest_us,non_us,239,452,0.0962,0.1128,-0.0166,0.237,4.853305934225328e-25,True,True
+AI Engineer,Azure,bay_area,rest_us,134,239,0.0746,0.0753,-0.0007,0.034,0.6101664688189142,False,False
+AI Engineer,Azure,bay_area,non_us,134,452,0.0746,0.1173,-0.0426,0.549,9.028555903609494e-139,True,True
+AI Engineer,Azure,rest_us,non_us,239,452,0.0753,0.1173,-0.0419,0.54,5.313103337559263e-134,True,True
+AI Engineer,evaluation frameworks,bay_area,rest_us,134,239,0.0896,0.1088,-0.0192,0.264,4.856677974383621e-31,True,True
+AI Engineer,evaluation frameworks,bay_area,non_us,134,452,0.0896,0.0885,0.0011,0.029,0.7946637387576738,False,False
+AI Engineer,evaluation frameworks,rest_us,non_us,239,452,0.1088,0.0885,0.0203,0.259,7.053692183224609e-30,True,True
