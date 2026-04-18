@@ -1,7 +1,7 @@
 # Geographic Job Profile Comparison: Bay Area vs Rest-of-US vs Rest-of-World
 
 **Date:** 2026-04-14 (updated)
-**Source:** SkillenAI Job Index (77,735 jobs after dedup and spam exclusion)
+**Source:** Skillenai Job Index (77,735 jobs after dedup and spam exclusion)
 **API:** `api.skillenai.com/v1`
 
 > **Methodology:** "Bay Area" = 80km radius around San Francisco (37.77, -122.42), capturing SF, San Jose, Mountain View, Palo Alto, Sunnyvale, Menlo Park, and surrounding cities. One spam employer (Speechify, 2,487 carpet-bombed listings across 10 roles) excluded from all analyses. Duplicate jobs from URL casing differences removed via content hash dedup.

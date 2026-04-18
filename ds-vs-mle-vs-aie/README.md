@@ -1,7 +1,7 @@
 # Data Scientist vs ML Engineer vs AI Engineer: Skills Comparison
 
 **Date:** 2026-04-08
-**Source:** SkillenAI `/v1/analytics/skills-by-role` endpoint (entity-resolved, REQUIRES edges)
+**Source:** Skillenai `/v1/analytics/skills-by-role` endpoint (entity-resolved, REQUIRES edges)
 
 ---
 
