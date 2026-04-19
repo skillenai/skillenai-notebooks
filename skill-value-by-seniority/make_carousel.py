@@ -6,6 +6,7 @@ LinkedIn auto-renders uploaded PDFs as swipeable carousels. Optimal aspect is
 Output: linkedin-carousel.pdf
 """
 import matplotlib
+import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 from matplotlib.patches import Rectangle, FancyBboxPatch
@@ -52,29 +53,46 @@ def footer(ax, slide_num, total):
 def slide_cover():
     fig, ax = new_slide()
     # Top green band
-    ax.add_patch(Rectangle((0, 75), 100, 25, color=GREEN, lw=0))
-    ax.text(50, 90, "THE SENIOR-TO-STAFF JUMP", ha="center", va="center",
-            fontsize=22, color="white", weight="bold", family="sans-serif")
-    ax.text(50, 82, "What Actually Pays More in ML Jobs", ha="center", va="center",
-            fontsize=15, color="white", alpha=0.92, style="italic")
+    ax.add_patch(Rectangle((0, 80), 100, 20, color=GREEN, lw=0))
+    ax.text(50, 91, "THE SHAPE OF A SKILL", ha="center", va="center",
+            fontsize=24, color="white", weight="bold", family="sans-serif")
+    ax.text(50, 84, "How ML Skill Demand Bends Across Seniority", ha="center", va="center",
+            fontsize=13, color="white", alpha=0.92, style="italic")
 
-    # The hook
-    ax.text(50, 60, "+$59K", ha="center", va="center",
-            fontsize=75, color=GREEN, weight="bold")
-    ax.text(50, 48, "Median pay jump for an ML Engineer", ha="center", va="center",
-            fontsize=16, color=INK)
-    ax.text(50, 43, "moving from Senior to Staff+", ha="center", va="center",
-            fontsize=16, color=INK)
-    ax.text(50, 35, "Largest single step in the data.", ha="center", va="center",
+    # Three shape icons with labels
+    shape_specs = [
+        ("Climbing", GREEN, [0.15, 0.40, 0.65, 0.95]),
+        ("Mid-peaking", YELLOW, [0.30, 0.95, 0.80, 0.35]),
+        ("Dropping", RED, [0.95, 0.65, 0.35, 0.15]),
+    ]
+    for i, (name, color, pattern) in enumerate(shape_specs):
+        base_x = 12 + i * 28
+        base_y = 55
+        span_x, span_y = 20, 14
+        ax.plot([base_x, base_x + span_x], [base_y, base_y], color=GREY, lw=0.8)
+        ys = [base_y + v * span_y for v in pattern]
+        xs = [base_x + (k / 3) * span_x for k in range(4)]
+        ax.plot(xs, ys, color=color, lw=3.2, marker="o", markersize=6)
+        ax.text(base_x + span_x / 2, base_y - 4, name, ha="center", va="top",
+                fontsize=12, color=color, weight="bold")
+
+    # Body copy
+    ax.text(50, 36, "Every skill on your resume has a shape —", ha="center", va="center",
+            fontsize=14, color=INK)
+    ax.text(50, 32, "peaking at Entry, Mid, Senior, or Staff+ postings.", ha="center", va="center",
+            fontsize=14, color=INK)
+    ax.text(50, 27, "The shape tells you when to invest, when to coast,", ha="center", va="center",
+            fontsize=13, color=GREY, style="italic")
+    ax.text(50, 23.5, "and when to let go.", ha="center", va="center",
             fontsize=13, color=GREY, style="italic")
 
-    # Dataset line
-    ax.text(50, 22, "We analyzed 3,277 job postings", ha="center", va="center",
-            fontsize=13, color=INK)
-    ax.text(50, 18, "across DS, MLE, and AI Engineer roles.", ha="center", va="center",
-            fontsize=13, color=INK)
+    # Dataset + question teaser
+    ax.text(50, 15, "We analyzed 3,277 job postings across DS, MLE, and AI Engineer —", ha="center", va="center",
+            fontsize=11, color=INK)
+    ax.text(50, 11.5, "and asked which skills actually pay more at fixed seniority.", ha="center", va="center",
+            fontsize=11, color=INK)
 
-    ax.text(50, 10, "Swipe →", ha="center", va="center",
+    ax.text(50, 5.8, "Swipe →", ha="center", va="center",
             fontsize=13, color=GREEN, weight="bold")
     footer(ax, 1, 10)
     return fig
@@ -82,44 +100,26 @@ def slide_cover():
 
 def slide_salary_ladder():
     fig, ax = new_slide()
-    ax.text(50, 94, "Promotion beats any single skill.", ha="center", va="top",
+    ax.text(50, 94, "First, the obvious part.", ha="center", va="top",
             fontsize=20, color=INK, weight="bold")
-    ax.text(50, 88, "Median salary, US postings", ha="center", va="top",
+    ax.text(50, 88, "Seniority drives pay. Let's get that out of the way.", ha="center", va="top",
             fontsize=11, color=GREY, style="italic")
 
-    # Build a simple grouped bar chart inside the axes
-    sub_ax = fig.add_axes([0.12, 0.15, 0.78, 0.60])
-    roles = ["Data\nScientist", "ML\nEngineer", "AI\nEngineer"]
-    levels = ["Entry", "Mid", "Senior", "Staff+"]
-    data = np.array([
-        [166, 166, 184, 208],
-        [174, 193, 211, 270],
-        [175, 190, 200, 270],
-    ])
-    x = np.arange(len(roles))
-    w = 0.2
-    colors = ["#C8E6C9", "#81C784", "#4CAF50", "#2E7D32"]
-    for i, (lev, c) in enumerate(zip(levels, colors)):
-        bars = sub_ax.bar(x + (i - 1.5) * w, data[:, i], w, label=lev, color=c, edgecolor="white", linewidth=1.2)
-        for j, b in enumerate(bars):
-            v = data[j, i]
-            sub_ax.text(b.get_x() + b.get_width() / 2, v + 5, f"${v}K",
-                        ha="center", va="bottom", fontsize=9, color=INK, weight="bold" if lev == "Staff+" else "normal")
-    sub_ax.set_xticks(x)
-    sub_ax.set_xticklabels(roles, fontsize=11)
-    sub_ax.set_ylabel("Median salary (USD, thousands)", fontsize=11)
-    sub_ax.set_ylim(0, 330)
-    sub_ax.legend(loc="upper left", fontsize=10, frameon=False, ncol=4, bbox_to_anchor=(0, 1.12))
-    for s in ["top", "right"]:
-        sub_ax.spines[s].set_visible(False)
-    sub_ax.tick_params(axis="y", labelsize=9)
-    sub_ax.set_facecolor(BG)
+    # Embed the boxplot image from the notebooks repo
+    img = mpimg.imread("salary_by_level.png")
+    img_ax = fig.add_axes([0.04, 0.22, 0.92, 0.62])
+    img_ax.imshow(img)
+    img_ax.axis("off")
 
-    # Key callout
-    ax.add_patch(FancyBboxPatch((5, 5), 90, 8, boxstyle="round,pad=0.5",
-                                 linewidth=0, facecolor=GREEN, alpha=0.12))
-    ax.text(50, 9, "MLE Senior → Staff: +$59K (28% jump)", ha="center", va="center",
-            fontsize=13, color=GREEN, weight="bold")
+    # Setup-to-the-real-question callout
+    ax.add_patch(FancyBboxPatch((5, 5), 90, 13, boxstyle="round,pad=0.5",
+                                 linewidth=0, facecolor=NAVY, alpha=0.08))
+    ax.text(50, 13.5, "The interesting question:", ha="center", va="center",
+            fontsize=12, color=NAVY, weight="bold")
+    ax.text(50, 9, "Which skills separate these levels — and which ones pay more", ha="center", va="center",
+            fontsize=11, color=INK)
+    ax.text(50, 6, "independent of seniority?", ha="center", va="center",
+            fontsize=11, color=INK, style="italic")
 
     footer(ax, 2, 10)
     return fig
@@ -303,8 +303,8 @@ def slide_playbook():
          "Go deep: JAX, distributed systems, RL, transformers. MLOps is not the Staff differentiator."),
         ("AI Engineer (any level)", GREEN,
          "Path is evaluation, agents, LLM observability. Prompt engineering is an entry badge, not a staff one."),
-        ("All ML careers", NAVY,
-         "Push for promotion first, then the skill. $18K for Senior + $59K for Staff beats any single skill premium."),
+        ("Reading the shapes", NAVY,
+         "Climbing skills belong on your long-term list. Mid-peaking skills get you through the middle, then fade. Dropping skills should be quietly retired."),
     ]
     for i, (label, color, body) in enumerate(plays):
         y_top = 82 - i * 17
