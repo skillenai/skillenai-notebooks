@@ -78,31 +78,74 @@ def plot_salary_by_level():
 # ----------------------------------------------------------------------------
 # Plot 2: skill progression heatmap per role
 # ----------------------------------------------------------------------------
-def plot_skill_progression(role, top_n=20):
+def plot_skill_progression(role, top_n=24):
     df = pd.read_csv(f"phase_a_{role.lower()}_skills_by_seniority.csv")
-    # Pick top-N skills by a "level-up spread" criterion: max |resid - mean| across levels
     resid_cols = ["resid_entry", "resid_mid", "resid_senior", "resid_staff"]
-    df["spread"] = df[resid_cols].max(axis=1) - df[resid_cols].min(axis=1)
-    # Also require decent omnibus significance or a meaningful shift
-    picked = df.sort_values("spread", ascending=False).head(top_n).copy()
-    # Sort by monotonic trend: staff residual - entry residual
-    picked["trend"] = picked["resid_staff"] - picked["resid_entry"]
-    picked = picked.sort_values("trend", ascending=False)
+    pct_cols = ["entry_pct", "mid_pct", "senior_pct", "staff_pct"]
 
-    mat = picked[["entry_pct", "mid_pct", "senior_pct", "staff_pct"]].values
+    df["spread"] = df[resid_cols].max(axis=1) - df[resid_cols].min(axis=1)
+    picked = df.sort_values("spread", ascending=False).head(top_n).copy()
+
+    # Classify each picked skill as climbing / dropping / mid-peaking
+    def classify(row):
+        peak_idx = int(np.argmax([row[c] for c in pct_cols]))
+        peak = row[pct_cols[peak_idx]]
+        entry, mid, senior, staff = row[pct_cols[0]], row[pct_cols[1]], row[pct_cols[2]], row[pct_cols[3]]
+        if peak_idx == 3 and staff > entry + 1:
+            return ("climbing", 0)  # peak at staff
+        if peak_idx == 0 and entry > staff + 1:
+            return ("dropping", 2)  # peak at entry
+        if peak_idx in (1, 2) and entry < peak - 1 and staff < peak - 1:
+            return ("mid-peaking", 1)  # peak at mid or senior
+        # monotonic increasing (peak at staff) or decreasing captured above; remainder = ambiguous
+        return ("other", 3)
+
+    picked[["shape", "order"]] = picked.apply(lambda r: pd.Series(classify(r)), axis=1)
+    # Sort: climbing first, then mid-peaking, then dropping, then other. Within each, by peak level then spread.
+    picked["peak_idx"] = picked[pct_cols].values.argmax(axis=1)
+    picked = picked.sort_values(["order", "peak_idx", "spread"], ascending=[True, True, False]).reset_index(drop=True)
+
+    mat = picked[pct_cols].values
     labels = picked["skill"].tolist()
 
-    fig, ax = plt.subplots(figsize=(9, max(4, 0.3 * len(labels) + 1)))
+    # Row-normalize: each row scales to [0, 1] for color; keep raw pct as annotation.
+    row_max = mat.max(axis=1, keepdims=True)
+    row_min = mat.min(axis=1, keepdims=True)
+    span = np.where(row_max > row_min, row_max - row_min, 1)
+    mat_norm = (mat - row_min) / span
+
+    SHAPE_COLORS = {"climbing": "#2E7D32", "mid-peaking": "#F9A825", "dropping": "#C62828", "other": "#BDBDBD"}
+    # Prefix each label with a shape glyph
+    SHAPE_GLYPH = {"climbing": "^", "mid-peaking": "~", "dropping": "v", "other": "-"}
+    prefixed_labels = [f"{SHAPE_GLYPH[s]}  {lbl}" for s, lbl in zip(picked["shape"], labels)]
+
+    fig, ax = plt.subplots(figsize=(10.5, max(5, 0.34 * len(labels) + 1.6)))
     sns.heatmap(
-        mat, annot=True, fmt=".0f", cmap="RdYlGn",
+        mat_norm, annot=mat, fmt=".0f", cmap="RdYlGn",
         xticklabels=[LEVEL_LABELS[l] for l in LEVEL_ORDER],
-        yticklabels=labels,
-        cbar_kws={"label": "% of jobs requiring skill"},
-        linewidths=0.4, linecolor="white", ax=ax, vmin=0,
+        yticklabels=prefixed_labels,
+        cbar=False,
+        linewidths=0.4, linecolor="white", ax=ax, vmin=0, vmax=1,
     )
-    ax.set_title(f"{ROLE_LABELS[role]}: skill demand by seniority (top {len(labels)} by change)", fontsize=11)
+
+    # Color the glyph in each y-tick label by shape
+    for tick, shape in zip(ax.get_yticklabels(), picked["shape"]):
+        # Replace the label with a RichText-free two-color workaround: use the shape color for the entire tick.
+        tick.set_color(SHAPE_COLORS[shape])
+
+    from matplotlib.patches import Patch
+    handles = [
+        Patch(color=SHAPE_COLORS["climbing"], label="^  Climbing (peak at Staff+)"),
+        Patch(color=SHAPE_COLORS["mid-peaking"], label="~  Mid-peaking (peak at Mid/Senior)"),
+        Patch(color=SHAPE_COLORS["dropping"], label="v  Dropping (peak at Entry)"),
+    ]
+    ax.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.5, -0.04),
+              frameon=False, fontsize=9, ncol=3)
+
+    ax.set_title(f"{ROLE_LABELS[role]}: skill demand by seniority (color normalized per row; value = % of jobs)", fontsize=10.5)
     ax.set_xlabel("")
     ax.set_ylabel("")
+    ax.tick_params(axis="y", labelsize=9.5)
     plt.tight_layout()
     plt.savefig(f"skill_progression_{role.lower()}.png", bbox_inches="tight")
     plt.close()

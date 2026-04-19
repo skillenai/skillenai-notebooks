@@ -13,11 +13,12 @@
 1. **Getting promoted moves the needle far more than any single skill.** A Staff+ ML Engineer earns a **median $59K more** than a Senior ML Engineer. The biggest "skill" on your resume is your level.
 2. **Most "hot AI skills" pay less than you think — or nothing — once you control for seniority.** Generative AI, prompt engineering, and RAG show premiums in naive rankings, but those premiums come from the seniority of the roles that list them. The regression collapses them toward zero (or negative).
 3. **A few skills actually pay more after controls**: **JAX** (+$27K), **Kubernetes** (+$22K), **ETL** (+$23K), **Causal inference** (+$15K), **Computer vision** (+$14K). These are infrastructure-adjacent and stats-adjacent skills, not frontier-model skills.
-4. **Skills that separate Senior from Staff** are different for each role:
+4. **Skills come in three shapes across seniority**: **climbing** (peak at Staff+; keep investing), **mid-peaking** (peak at Mid/Senior, then fade; these are "prove-you-know-it" items that fall off the Staff resume), and **dropping** (Entry-level signatures). The mid-peaking category is where most of the "required stack" lives — PyTorch, TensorFlow, RAG, LLMs, Python itself.
+5. **The skills that genuinely climb to Staff are different for each role:**
    - **DS** → *causal inference, experimentation, A/B testing*
-   - **MLE** → *distributed systems, JAX, Transformers, reinforcement learning*
+   - **MLE** → *distributed systems, JAX, reinforcement learning, distributed training*
    - **AIE** → *evaluation frameworks, agentic workflows, observability*
-5. **Entry-level signature skills** (drop sharply with level) hint at the job-before-this-one: Data Scientists come in via *Matplotlib* and *data pipelines*; AI Engineers come in via *React*, *TypeScript*, and *APIs*.
+6. **Entry-level signature skills** (drop sharply with level) hint at the job-before-this-one: Data Scientists come in via *Matplotlib* and *data pipelines*; AI Engineers come in via *React*, *TypeScript*, and *APIs*.
 
 ---
 
@@ -59,87 +60,133 @@ The headline question: **what gets you over the Senior→Staff threshold?** That
 
 For each role, we computed the share of jobs at each seniority level that require each skill, then ran a 2×4 chi-square (has-skill × level) with Bonferroni-corrected pairwise tests. Skills were required to appear in ≥40 jobs within the role.
 
+Each skill gets classified into one of three shapes based on which level it peaks at:
+- **^ Climbing** — peak at Staff+. Keep investing as you level up.
+- **~ Mid-peaking** — peak at Mid or Senior; drops at Staff+. Treat as "middle-level signature" skills — they carry your resume through Mid/Senior and then fade as you specialize upward.
+- **v Dropping** — peak at Entry. Early-career signature skills that fall off the resume fast.
+
+Mid-peaking is the most interesting class. It captures the skills that *every* Senior-ish engineer is expected to know, but which Staff+ engineers no longer list because their resume has room for only 5-10 differentiators.
+
 ### Data Scientist
 
 ![DS skill progression](skill_progression_ds.png)
 
-**Climbing skills (higher at Staff than at Entry):**
+**^ Climbing (keep investing):**
 
 | Skill | Entry | Mid | Senior | Staff+ | Omnibus p |
 |---|---:|---:|---:|---:|---:|
-| Causal inference | 9% | 14% | 18% | 28% | **1.0e-04** |
-| A/B testing | 9% | 16% | 23% | 26% | **2.5e-04** |
-| Experimentation | 3% | 10% | 12% | 19% | **4.9e-04** |
-| Model evaluation | 2% | 6% | 5% | 10% | n.s. |
-| Databricks | 1% | 6% | 7% | 9% | n.s. |
+| Causal inference | 9% | 14% | 18% | **28%** | **1.0e-04** |
+| A/B testing | 9% | 16% | 23% | **26%** | **2.5e-04** |
+| Experimentation | 3% | 10% | 12% | **19%** | **4.9e-04** |
+| Model evaluation | 2% | 6% | 5% | **10%** | n.s. |
+| Databricks | 1% | 6% | 7% | **9%** | n.s. |
 
-**Dropping skills (drop sharply with level):**
+**~ Mid-peaking (get through Mid/Senior, then fade):**
 
 | Skill | Entry | Mid | Senior | Staff+ | Omnibus p |
 |---|---:|---:|---:|---:|---:|
-| Matplotlib | 9% | 4% | 2% | 1% | **3.6e-04** |
-| Data pipelines | 22% | 19% | 13% | 11% | **7.0e-03** |
-| SQL | 59% | 64% | 60% | **46%** | **1.4e-03** |
-| Python | 64% | 78% | 74% | 64% | n.s. |
-| Hypothesis testing | 2% | 11% | 4% | 4% | **1.9e-05** |
+| Python | 64% | **78%** | 74% | 64% | 2.1e-03 |
+| SQL | 59% | **64%** | 60% | 46% | **1.4e-03** |
+| NLP | 7% | **17%** | 10% | 3% | **4.4e-05** |
+| Statistical analysis | 3% | **15%** | 11% | 8% | **2.3e-03** |
+| AWS | 4% | **13%** | 10% | 7% | 2.6e-02 |
+| Hypothesis testing | 2% | **11%** | 4% | 4% | **7.7e-05** |
+| MLOps | 0% | 4% | **9%** | 2% | **1.1e-05** |
+| PyTorch | 8% | 11% | **14%** | 6% | n.s. |
+| TensorFlow | 6% | 11% | **13%** | 6% | n.s. |
+| Deep learning | 2% | 10% | **12%** | 7% | 8.7e-03 |
 
-The DS story is the classic one: the senior DS is defined by **experimentation and causal reasoning**, not plumbing. SQL stays roughly flat through Senior and then drops at Staff — likely because Staff DS delegate the actual queries. `hypothesis testing` spikes at Mid and then falls, suggesting it's treated as an entry/mid keyword that falls off the resume as level grows.
+**v Dropping (early-career signatures):**
+
+| Skill | Entry | Mid | Senior | Staff+ | Omnibus p |
+|---|---:|---:|---:|---:|---:|
+| Data pipelines | **22%** | 19% | 13% | 11% | **7.0e-03** |
+| Matplotlib | **9%** | 4% | 2% | 1% | **3.6e-04** |
+| Data engineering | **8%** | 2% | 4% | 6% | n.s. |
+
+The DS story has three chapters. **Staff+ DS is defined by experimentation and causal reasoning** — those are the only skills that climb monotonically through to Staff. **Mid-level DS looks like a code keyword match**: Python peaks at 78%, SQL at 64%, and specific tools (NLP, statistical analysis, hypothesis testing, MLOps) cluster as mid-peaking. These are the "prove you can do the job" items that stop carrying weight once you're Staff. **Entry-level DS is marked by plumbing**: data pipelines, Matplotlib, data engineering — the tools of the first year.
 
 ### ML Engineer
 
 ![MLE skill progression](skill_progression_mle.png)
 
-**Climbing:**
+**^ Climbing (keep investing):**
 
 | Skill | Entry | Mid | Senior | Staff+ | Omnibus p |
 |---|---:|---:|---:|---:|---:|
-| JAX | 7% | 8% | 5% | 12% | **4.5e-04** |
-| Distributed systems | 2% | 4% | 5% | 9% | n.s.* |
-| Reinforcement learning | 5% | 6% | 8% | 12% | n.s.* |
-| Transformers | 0% | 6% | 7% | 9% | n.s.* |
-| Recommendation systems | 2% | 4% | 5% | 7% | n.s.* |
+| JAX | 7% | 8% | 5% | **12%** | **4.5e-03*** |
+| Distributed systems | 2% | 4% | 5% | **9%** | 1.2e-02 |
+| Reinforcement learning | 5% | 6% | 8% | **12%** | n.s. |
+| Distributed training | 5% | 6% | 5% | **10%** | n.s. |
 
-*Fails strict Bonferroni but the trend is monotonic and the effect sizes are substantial.
+*Omnibus on DS was 4.5e-04; for MLE the omnibus fails Bonferroni but the Senior→Staff jump is significant (p=5e-04).
 
-**Dropping:**
+**~ Mid-peaking (get through Mid/Senior, then fade):**
 
 | Skill | Entry | Mid | Senior | Staff+ | Omnibus p |
 |---|---:|---:|---:|---:|---:|
-| Python | 59% | 68% | 60% | **48%** | **1.6e-05** |
-| scikit-learn | 11% | 14% | 10% | 6% | n.s. |
-| Docker | 12% | 8% | 11% | 5% | n.s. |
-| Prompt engineering | 5% | 4% | 8% | 3% | n.s. |
+| Python | 59% | **68%** | 60% | 48% | **1.6e-05** |
+| PyTorch | 32% | **52%** | 42% | 36% | **7.8e-04** |
+| TensorFlow | 18% | **33%** | 29% | 21% | **1.1e-03** |
+| RAG | 7% | **14%** | 9% | 6% | n.s. |
+| scikit-learn | 11% | **14%** | 10% | 6% | n.s. |
+| Foundation models | 0% | **7%** | 2% | 6% | **1.0e-03** |
+| Model serving | 0% | 5% | **6%** | 2% | n.s. |
+| NLP | 12% | 12% | **15%** | 9% | n.s. |
+| Observability | 2% | 2% | **7%** | 5% | n.s. |
+| Model monitoring | 4% | 5% | **9%** | 5% | n.s. |
+
+**v Dropping (early-career signatures):**
+
+| Skill | Entry | Mid | Senior | Staff+ | Omnibus p |
+|---|---:|---:|---:|---:|---:|
+| Docker | **12%** | 8% | 11% | 5% | 2.3e-02 |
 
 Three things land in the MLE heatmap:
 
-1. **JAX is the Staff+ signal.** It doubles from Senior (5%) to Staff+ (12%). This is the frontier-model research tell — staff engineers working on novel architectures.
-2. **Python actually drops at Staff** (60%→48%). Python isn't a differentiator — it's table stakes that disappears from resumes when level-specific skills are more important to list.
-3. **MLOps is flat** across levels (~10–14%). It's not the Senior→Staff skill the internet would have you believe. It's a constant baseline.
+1. **JAX and distributed systems are the Staff+ signals.** Both roughly double between Senior and Staff. Frontier-research depth — novel architectures, training at scale.
+2. **Python, PyTorch, and TensorFlow are all mid-peaking, not climbing.** Mid MLE postings peak at 68% Python, 52% PyTorch, 33% TensorFlow — these are "prove you know the stack" items. By Staff, the expected toolkit is assumed and postings talk about research direction instead.
+3. **MLOps-adjacent skills cluster at Senior.** Model serving, model monitoring, observability all peak at Senior (6–9%) and then drop at Staff. Staff MLE postings describe what you'll architect, not what you'll operate.
+4. **Docker is the only real "dropping" skill** — peaks at 12% Entry and fades to 5% Staff. Docker-forward postings are junior ops roles.
 
 ### AI Engineer
 
 ![AIE skill progression](skill_progression_aie.png)
 
-**Climbing:**
+**^ Climbing (keep investing):**
 
 | Skill | Entry | Mid | Senior | Staff+ | Omnibus p |
 |---|---:|---:|---:|---:|---:|
-| Evaluation frameworks | 2% | 4% | 9% | 15% | n.s.* |
-| Agentic workflows | 7% | 12% | 6% | 15% | n.s.* |
-| Observability | 11% | 18% | 16% | 21% | n.s. |
-| Generative AI | 4% | 5% | 9% | 10% | n.s. |
+| Evaluation frameworks | 2% | 4% | 9% | **15%** | n.s. |
+| Agentic workflows | 7% | 12% | 6% | **15%** | n.s. |
+| Observability | 11% | 18% | 16% | **21%** | n.s. |
+| Generative AI | 4% | 5% | 9% | **10%** | n.s. |
 
-**Entry-level signature skills (drop sharply):**
+**~ Mid-peaking (Mid AIE sweet spot):**
 
-| Skill | Entry | Mid | Senior | Staff+ |
-|---|---:|---:|---:|---:|
-| APIs | 27% | 16% | 5% | 3% |
-| React | 29% | 15% | 9% | 0% |
-| TypeScript | 24% | 18% | 17% | 3% |
-| Distributed systems (entry flavor) | 20% | 15% | 7% | 10% |
-| Prompt engineering | 29% | 29% | 23% | 16% |
+| Skill | Entry | Mid | Senior | Staff+ | Omnibus p |
+|---|---:|---:|---:|---:|---:|
+| LLMs | 22% | **35%** | 32% | 16% | 2.5e-02 |
+| RAG | 20% | **35%** | 29% | 16% | 3.9e-02 |
+| AWS | 11% | **21%** | 21% | 6% | 1.9e-02 |
+| LangChain | 9% | 18% | **21%** | 6% | 1.3e-02 |
+| GCP | 7% | **16%** | 11% | 1% | 3.6e-02 |
+| Azure | 7% | **15%** | 11% | 3% | 7.7e-02 |
+| Fine-tuning | 16% | 18% | 16% | 7% | n.s. |
+| Vector databases | 4% | 13% | **16%** | 13% | n.s. |
 
-The **"AI Engineer" title is a full-stack onramp**: entry AIE postings look like frontend/backend job descriptions with LLM sprinkle — heavy on React, TypeScript, APIs. By Staff+, those keywords disappear and the job is about evaluation frameworks, agent design, and production LLM observability. Prompt engineering is an entry-level badge, not a staff-level one.
+**v Dropping (the full-stack onramp):**
+
+| Skill | Entry | Mid | Senior | Staff+ | Omnibus p |
+|---|---:|---:|---:|---:|---:|
+| APIs | **27%** | 16% | 5% | 3% | **4.4e-07** |
+| React | **29%** | 15% | 9% | 0% | **1.0e-05** |
+| TypeScript | **24%** | 18% | 17% | 3% | 9.7e-03 |
+| Distributed systems | **20%** | 15% | 7% | 10% | 1.7e-02 |
+| Prompt engineering | **29%** | 29% | 23% | 16% | n.s. |
+| SQL | **20%** | 14% | 9% | 7% | 8.3e-02 |
+
+The **"AI Engineer" title is a full-stack onramp**: entry AIE postings look like frontend/backend job descriptions with LLM sprinkle — heavy on React, TypeScript, APIs. **Mid AIE is the LLM-app-builder persona** — LLMs, RAG, LangChain, cloud providers all peak at Mid. **Staff+ AIE moves up a level of abstraction** to evaluation, agentic systems, and production LLM observability. Prompt engineering is an entry-level badge that never climbs.
 
 ---
 
