@@ -1,0 +1,10 @@
+role,transition,N_a,N_b,delta_median,rank_biserial_r,p
+DS,entry->mid,18,58,426,-0.137,3.86e-01
+DS,mid->senior,58,127,17324,0.292,1.45e-03
+DS,senior->staff,127,25,24000,0.5,8.00e-05
+MLE,entry->mid,12,57,19250,0.409,2.70e-02
+MLE,mid->senior,57,114,18169,0.195,3.80e-02
+MLE,senior->staff,114,48,58831,0.537,7.05e-08
+AIE,entry->mid,5,16,,,
+AIE,mid->senior,16,30,10000,0.277,1.27e-01
+AIE,senior->staff,30,5,,,

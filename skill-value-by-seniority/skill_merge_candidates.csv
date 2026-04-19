@@ -1,0 +1,241 @@
+canonical,norm,members,total,method
+machine learning,machine learning,machine learning(1696) / machine learning (ML)(11) / Machine learning (implied by AI models)(1) / machine-learning(1),1709,normalize
+LLMs,,LLMs(328) <- deploying Large Language Models (LLMs)(1),590,acronym
+LLMs,,LLMs(328) <- Large language models (LLMs)(146),589,acronym
+deep learning,deep learning,deep learning(447) / Deep Learning (DL)(3),450,normalize
+AWS,,AWS(400) <- Amazon Web Services (AWS)(7),409,acronym
+NLP,,NLP(178) <- natural language processing (NLP)(102),379,acronym
+A/B testing,a b testing,A/B testing(373) / A/B-Testing(3) / A-B testing(1),377,normalize
+scikit-learn,scikit learn,scikit-learn(332) / scikit-learn (Sklearn)(4) / Scikit learn(2),338,normalize
+RAG,,RAG(169) <- Retrieval-Augmented Generation (RAG)(110),333,acronym
+fine-tuning,fine tuning,fine-tuning(288) / fine tuning(13),301,normalize
+Large language models (LLMs),large language models,Large language models (LLMs)(146) / large language models(106) / Large Language Models (LLM)(9),261,normalize
+Generative AI,generative ai,Generative AI(220) / Generative AI (GenAI)(4),224,normalize
+CI/CD,ci cd,CI/CD(222) / CI CD(1),223,normalize
+Kubernetes,kubernetes,Kubernetes(217) / Kubernetes (K8s)(2),219,normalize
+natural language processing (NLP),natural language processing,natural language processing (NLP)(102) / Natural language processing(99),201,normalize
+GCP,,GCP(172) <- Google Cloud Platform (GCP)(18),200,acronym
+statistics,statistics,statistics(182) / statistics (descriptive)(2),184,normalize
+RAG,rag,RAG(169) / RAG (Retrieval-Augmented Generation)(11) / RAG (Retrieval Augmented Generation)(2),182,normalize
+Reinforcement learning,reinforcement learning,Reinforcement learning(160) / reinforcement learning (RL)(8) / reinforcement-learning(3),171,normalize
+Retrieval-Augmented Generation (RAG),retrieval augmented generation,Retrieval-Augmented Generation (RAG)(110) / Retrieval-augmented generation(24) / retrieval augmented generation (RAG)(13) / Retrieval Augmented Generation(3) / Retrieval Augmented Generation (RAG)(1),151,normalize
+evaluation,evaluation,"evaluation(108) / evaluation (evals)(4) / evaluation (e.g., benchmark overfitting detection)(3)",115,normalize
+recommendation systems,recommendation systems,recommendation systems(113) / recommendation systems (RecSys)(1),114,normalize
+Artificial Intelligence,artificial intelligence,Artificial Intelligence(104) / Artificial Intelligence (AI)(4) / artificial-intelligence(1),109,normalize
+Data Mining,data mining,Data Mining(90) / data mining(1),91,normalize
+ETL,,"ETL(85) <- extract, transform, and load (ETL)(1)",87,acronym
+ETL,etl,"ETL(85) / ETL (Extracting, Transforming, and Loading)(1)",86,normalize
+model serving,model serving,model serving(81) / model-serving(5),86,normalize
+exploratory data analysis,exploratory data analysis,exploratory data analysis(67) / Exploratory data analysis (EDA)(16),83,normalize
+Version control,version control,Version control(66) / version control (Git)(2),68,normalize
+time-series forecasting,time series forecasting,time-series forecasting(30) / time series forecasting(23),53,normalize
+metrics,metrics,metrics(50) / metrics (north star metric)(1),51,normalize
+tool use,tool use,tool use(45) / tool-use(6),51,normalize
+MCP,,MCP(29) <- Model Context Protocol (MCP)(16),47,acronym
+data labeling,data labeling,data labeling(42) / data-labeling(1),43,normalize
+information retrieval,information retrieval,information retrieval(42) / information retrieval (IR)(1),43,normalize
+infrastructure as code,infrastructure as code,infrastructure as code(20) / infrastructure-as-code(14) / Infrastructure-as-Code (IaC)(5) / Infrastructure as Code (IaC)(4),43,normalize
+time series analysis,time series analysis,time series analysis(27) / time-series analysis(13),40,normalize
+vision-language models,vision language models,vision-language models(17) / Vision-Language Models (VLMs)(12) / vision language models (VLMs)(3) / vision language models(2) / vision-language models (LVLMs)(1) / vision-language models (VLM)(1),36,normalize
+guardrails,guardrails,guardrails(30) / Guardrails(5),35,normalize
+time series,time series,time series(25) / time-series(9),34,normalize
+Node.js,nodejs,Node.js(31) / NodeJS(3),34,normalize
+OCR,,OCR(32) <- optical character recognition (OCR)(2),34,acronym
+Human-in-the-loop,human in the loop,Human-in-the-loop(27) / human-in-the-loop (HITL)(6),33,normalize
+LoRA,lora,LoRA(30) / LoRA (low rank adaptation)(1),31,normalize
+MCP,mcp,MCP(29) / MCP (Model Context Protocol)(1),30,normalize
+full-stack development,full stack development,full-stack development(27) / full stack development(2),29,normalize
+Google Cloud Platform (GCP),google cloud platform,Google Cloud Platform (GCP)(18) / Google Cloud Platform(10),28,normalize
+ML ops,ml ops,ML ops(20) / ML-Ops(7),27,normalize
+context engineering,context engineering,context engineering(24) / context-engineering(2),26,normalize
+tool calling,tool calling,tool calling(15) / tool-calling(10),25,normalize
+open-source,open source,open-source(18) / Open Source(7),25,normalize
+RLHF,,RLHF(20) <- Reinforcement learning from human feedback (RLHF)(5),25,acronym
+TTS,,TTS(7) <- Text-to-speech (TTS)(10),25,acronym
+Statistical Techniques,statistical techniques,Statistical Techniques(22) / statistical techniques(1),23,normalize
+speech-to-text,speech to text,speech-to-text(14) / Speech-to-Text (STT)(7) / Speech to Text(1) / Speech-to-text (ASR)(1),23,normalize
+VLMs,,VLMs(21) <- Visual-Language Models (VLMs)(2),23,acronym
+agent frameworks,agent frameworks,agent frameworks(21) / agent-frameworks(1),22,normalize
+memory,memory,memory(21) / memory (agent memory)(1),22,normalize
+multi-step reasoning,multi step reasoning,multi-step reasoning(21) / Multi-step reasoning(1),22,normalize
+supervised fine-tuning,supervised fine tuning,supervised fine-tuning(15) / supervised fine-tuning (SFT)(6),21,normalize
+DPO,,DPO(14) <- Direct Preference Optimization (DPO)(5),21,acronym
+recommendations,recommendations,recommendations(19) / Recommendations(1),20,normalize
+Root cause analysis,root cause analysis,Root cause analysis(14) / root-cause analysis(6),20,normalize
+speech recognition,speech recognition,speech recognition(19) / Speech recognition (ASR)(1),20,normalize
+imitation learning,imitation learning,imitation learning(18) / Imitation Learning (IL)(2),20,normalize
+ASR,,ASR(9) <- Automatic Speech Recognition (ASR)(10),20,acronym
+LLM fine-tuning,llm fine tuning,LLM fine-tuning(18) / LLM fine tuning(1),19,normalize
+self-supervised learning,self supervised learning,self-supervised learning(18) / self-supervised learning (SSL)(1),19,normalize
+CNNs,,CNNs(11) <- Convolutional Neural Networks (CNNs)(5),19,acronym
+Data-driven decision making,data driven decision making,Data-driven decision making(14) / data-driven decision-making(4),18,normalize
+Active learning,active learning,Active learning(16) / active learning(1),17,normalize
+Model Context Protocol (MCP),model context protocol,Model Context Protocol (MCP)(16) / Model Context Protocol(1),17,normalize
+Continuous integration,continuous integration,Continuous integration(16) / Continuous Integration (CI)(1),17,normalize
+Next.js,nextjs,Next.js(16) / NextJS(1),17,normalize
+Text-to-speech (TTS),text to speech,Text-to-speech (TTS)(10) / Text-to-speech(6) / Text to Speech(1),17,normalize
+feature pipelines,feature pipelines,feature pipelines(15) / Feature pipelines(1),16,normalize
+continuous monitoring,continuous monitoring,continuous monitoring(15) / continuous monitoring (CM)(1),16,normalize
+DPO,dpo,DPO(14) / DPO (Direct Preference Optimization)(2),16,normalize
+difference-in-differences,difference in differences,difference-in-differences(14) / difference in differences(1),15,normalize
+Object-oriented programming,object oriented programming,Object-oriented programming(13) / object-oriented programming (OOP)(2),15,normalize
+time series modeling,time series modeling,time series modeling(9) / time-series modeling(6),15,normalize
+real-time systems,real time systems,real-time systems(12) / Real Time Systems(2),14,normalize
+multi-armed bandits,multi armed bandits,multi-armed bandits(8) / multi-armed bandits (MAB)(6),14,normalize
+LLM-as-a-Judge,llm as a judge,LLM-as-a-Judge(13) / LLM-as-a-judge(1),14,normalize
+PEFT,peft,PEFT(13) / PEFT (Parameter Efficient Fine-Tuning)(1),14,normalize
+marketing mix modeling,marketing mix modeling,marketing mix modeling(6) / Marketing mix modeling (MMM)(5) / marketing-mix modeling(2),13,normalize
+Collaborative filtering,collaborative filtering,Collaborative filtering(12) / collaborative filtering (CF)(1),13,normalize
+bias mitigation,bias mitigation,bias mitigation(12) / Bias mitigation(1),13,normalize
+PPO,,PPO(9) <- Proximal Policy Optimization (PPO)(4),13,acronym
+deep learning frameworks,deep learning frameworks,deep learning frameworks(11) / Deep learning frameworks(1),12,normalize
+programming,programming,programming(11) / Programming (Python)(1),12,normalize
+named entity recognition,named entity recognition,named entity recognition(8) / Named entity recognition (NER)(4),12,normalize
+behavioral modeling,behavioral modeling,behavioral modeling(11) / Behavioral modeling(1),12,normalize
+Weights & Biases,weights biases,Weights & Biases(9) / Weights & Biases (WandB)(2) / Weights Biases(1),12,normalize
+Graph neural networks,graph neural networks,Graph neural networks(10) / Graph Neural Networks (GNN)(1) / graph neural networks (GNNs)(1),12,normalize
+GRPO,grpo,GRPO(9) / GRPO (Generalized Reward Policy Optimization)(3),12,normalize
+FSDP,,FSDP(11) <- Fully Sharded Data Parallel (FSDP)(1),12,acronym
+time-series data,time series data,time-series data(6) / time series data(5),11,normalize
+high-performance computing,high performance computing,high-performance computing(10) / High performance computing(1),11,normalize
+parameter-efficient fine-tuning,parameter efficient fine tuning,parameter-efficient fine-tuning(6) / Parameter-Efficient Fine-Tuning (PEFT)(5),11,normalize
+Automatic Speech Recognition (ASR),automatic speech recognition,Automatic Speech Recognition (ASR)(10) / Automatic speech recognition(1),11,normalize
+ROC-AUC,roc auc,ROC-AUC(7) / ROC AUC(3),10,normalize
+low-latency inference,low latency inference,low-latency inference(8) / Low latency inference(2),10,normalize
+red-teaming,red teaming,red-teaming(9) / Red Teaming(1),10,normalize
+IAM,,IAM(8) <- Identity and Access Management (IAM)(1),10,acronym
+cross-validation,cross validation,cross-validation(8) / cross validation(1),9,normalize
+automated reporting,automated reporting,automated reporting(8) / Automated reporting(1),9,normalize
+Query optimization,query optimization,Query optimization(7) / query optimization(2),9,normalize
+Safety guardrails,safety guardrails,Safety guardrails(6) / Safety/guardrails(1) / safety guardrails(1) / safety/guardrails(1),9,normalize
+Amazon Web Services (AWS),amazon web services,Amazon Web Services (AWS)(7) / Amazon Web Services(2),9,normalize
+Production-quality code,production quality code,Production-quality code(8) / production quality code(1),9,normalize
+continuous deployment,continuous deployment,continuous deployment(8) / Continuous Deployment (CD)(1),9,normalize
+batch inference,batch inference,batch inference(8) / Batch inference(1),9,normalize
+WER,wer,WER(6) / WER (Word Error Rate)(3),9,normalize
+KPIs,,KPIs(5) <- Key performance indicators (KPIs)(4),9,acronym
+MoE,,MoE(2) <- Mixture of Experts (MoE)(4),9,acronym
+Convolutional Neural Networks (CNNs),convolutional neural networks,Convolutional Neural Networks (CNNs)(5) / Convolutional Neural Networks(3),8,normalize
+deep neural networks,deep neural networks,deep neural networks(7) / deep neural networks (DNN)(1),8,normalize
+natural language understanding,natural language understanding,natural language understanding(6) / Natural Language Understanding (NLU)(2),8,normalize
+Automated evaluation,automated evaluation,Automated evaluation(7) / automated evaluation(1),8,normalize
+TTS,tts,TTS(7) / TTS (text-to-speech)(1),8,normalize
+mixed-precision,mixed precision,mixed-precision(5) / mixed precision(3),8,normalize
+DVC,,DVC(7) <- Data Version Control (DVC)(1),8,acronym
+DQN,,DQN(7) <- Deep Q-Networks (DQN)(1),8,acronym
+gradient boosted trees,gradient boosted trees,gradient boosted trees(4) / gradient-boosted trees(3),7,normalize
+Multi-touch attribution,multi touch attribution,Multi-touch attribution(5) / multi-touch attribution (MTA)(2),7,normalize
+Recurrent Neural Networks,recurrent neural networks,Recurrent Neural Networks(5) / Recurrent Neural Networks (RNNs)(2),7,normalize
+continuous training,continuous training,continuous training(5) / Continuous Training (CT)(2),7,normalize
+OpenTelemetry,opentelemetry,OpenTelemetry(6) / OpenTelemetry (OTEL)(1),7,normalize
+Mixture of Experts (MoE),mixture of experts,Mixture of Experts (MoE)(4) / mixture-of-experts (MoE)(2) / Mixture of Experts (MoEs)(1),7,normalize
+RLAIF,rlaif,RLAIF(4) / RLAIF (reinforcement learning from AI feedback)(3),7,normalize
+MMM,mmm,MMM(4) / MMM (marketing mix modeling)(2),6,normalize
+data quality validation,data quality validation,data quality validation(5) / data-quality validation(1),6,normalize
+data structures and algorithms,data structures and algorithms,data structures and algorithms(5) / Data Structures and Algorithms (DSA)(1),6,normalize
+quality control,quality control,quality control(5) / quality-control(1),6,normalize
+large-scale model training,large scale model training,large-scale model training(4) / large scale model training(2),6,normalize
+confidence scoring,confidence scoring,confidence scoring(4) / Confidence scoring(2),6,normalize
+data versioning,data versioning,data versioning(5) / Data versioning (DVC)(1),6,normalize
+BEV (bird’s-eye view),bev,BEV (bird’s-eye view)(5) / BEV (Bird's-Eye View)(1),6,normalize
+prompt versioning,prompt versioning,prompt versioning(5) / prompt/versioning(1),6,normalize
+evaluations,evaluations,evaluations(5) / evaluations (evals)(1),6,normalize
+QAT,,QAT(2) <- Quantization-aware Training (QAT)(2),6,acronym
+SLAM,,SLAM(5) <- simultaneous localization and mapping (SLAM)(1),6,acronym
+VAEs,,VAEs(5) <- variational autoencoders (VAEs)(1),6,acronym
+OOP,,OOP(5) <- Python (OOP)(1),6,acronym
+Anti-money laundering,anti money laundering,Anti-money laundering(3) / Anti-money laundering (AML)(2),5,normalize
+proof-of-concept,proof of concept,proof-of-concept(4) / proof of concept(1),5,normalize
+Software development life-cycle,software development life cycle,Software development life-cycle(3) / software development life cycle(2),5,normalize
+Machine learning lifecycle,machine learning lifecycle,Machine learning lifecycle(4) / machine learning lifecycle (MLLC)(1),5,normalize
+variance reduction,variance reduction,variance reduction(4) / variance reduction (CUPED)(1),5,normalize
+data loading,data loading,data loading(4) / data loading (ETL)(1),5,normalize
+software development lifecycle,software development lifecycle,software development lifecycle(3) / Software development lifecycle (SDLC)(2),5,normalize
+fault-tolerant systems,fault tolerant systems,fault-tolerant systems(4) / Fault tolerant systems(1),5,normalize
+low-latency,low latency,low-latency(3) / low latency(2),5,normalize
+Google ADK,google adk,Google ADK(4) / Google ADK (Agent Development Kit)(1),5,normalize
+Speech-to-speech,speech to speech,Speech-to-speech(3) / speech-to-speech (STS)(2),5,normalize
+multi-object tracking,multi object tracking,multi-object tracking(4) / Multi-Object Tracking (MOT)(1),5,normalize
+ROAS,,ROAS(3) <- return on ad spend (ROAS)(2),5,acronym
+SLMs,,SLMs(3) <- Small Language Models (SLMs)(1),5,acronym
+VLA,,VLA(1) <- vision-language-action (VLA)(4),5,acronym
+ViT,,ViT(2) <- Visual Transformers (ViT)(1),5,acronym
+Parameter tuning,parameter tuning,Parameter tuning(2) / parameter tuning(2),4,normalize
+State-space models,state space models,State-space models(3) / State Space Models(1),4,normalize
+Quantization-aware Training (QAT),quantization aware training,Quantization-aware Training (QAT)(2) / quantization-aware training(2),4,normalize
+data schemas,data schemas,data schemas(3) / Data schemas(1),4,normalize
+Markov Decision Process,markov decision process,Markov Decision Process(2) / Markov decision process (MDP)(2),4,normalize
+linear programming,linear programming,linear programming(3) / linear programming (LP)(1),4,normalize
+open-source LLMs,open source llms,open-source LLMs(3) / Open-source LLMs(1),4,normalize
+graph modeling,graph modeling,graph modeling(3) / Graph modeling(1),4,normalize
+cost efficiency,cost efficiency,cost efficiency(2) / cost-efficiency(2),4,normalize
+hardware-in-the-loop (HIL),hardware in the loop,hardware-in-the-loop (HIL)(3) / hardware-in-the-loop(1),4,normalize
+ML architecture,ml architecture,ML architecture(3) / ML Architecture(1),4,normalize
+Learning-to-rank,learning to rank,Learning-to-rank(3) / Learning to Rank (LTR)(1),4,normalize
+KV-cache optimization,kv cache optimization,KV-cache optimization(3) / KV cache optimization(1),4,normalize
+Large-scale data pipelines,large scale data pipelines,Large-scale data pipelines(3) / large scale data pipelines(1),4,normalize
+time series databases,time series databases,time series databases(3) / time-series databases(1),4,normalize
+Large Language Model,large language model,Large Language Model(2) / Large Language Model (LLM)(2),4,normalize
+state management,state management,state management(3) / state-management(1),4,normalize
+KV-cache,kv cache,KV-cache(2) / kv cache(2),4,normalize
+.NET Core,net core,.NET Core(3) / NET Core(1),4,normalize
+LMMS,,LMMS(1) <- Large Multimodal Models (LMMs)(2),4,acronym
+CLV,,CLV(1) <- Customer Lifetime Value (CLV)(2),4,acronym
+EHR,,EHR(1) <- electronic health records (EHR)(2),4,acronym
+ViT,,ViT(2) <- Vision Transformer (ViT)(2),4,acronym
+AKS,,AKS(2) <- Azure Kubernetes Service (AKS)(2),4,acronym
+Node,,Node(3) <- JavaScript (Node)(1),4,acronym
+Large Multimodal Models (LMMs),large multimodal models,Large Multimodal Models (LMMs)(2) / large multimodal models(1),3,normalize
+Customer Lifetime Value (CLV),customer lifetime value,Customer Lifetime Value (CLV)(2) / Customer Lifetime Value (LTV)(1),3,normalize
+chain-of-thought,chain of thought,chain-of-thought(2) / chain of thought(1),3,normalize
+Test and evaluation,test and evaluation,Test and evaluation(2) / test and evaluation (T&E)(1),3,normalize
+Open-source software (FOSS),open source software,Open-source software (FOSS)(2) / open-source software(1),3,normalize
+search engine optimization,search engine optimization,search engine optimization(2) / search engine optimization (SEO)(1),3,normalize
+Marketing Mix Models,marketing mix models,Marketing Mix Models(2) / Marketing Mix Models (MMM)(1),3,normalize
+Pacing algorithms,pacing algorithms,Pacing algorithms(2) / pacing algorithms(1),3,normalize
+electronic health records (EHR),electronic health records,electronic health records (EHR)(2) / electronic health records(1),3,normalize
+Real-time bidding (RTB),real time bidding,Real-time bidding (RTB)(2) / Real-time bidding(1),3,normalize
+language generation,language generation,language generation(2) / language generation (NLG)(1),3,normalize
+LLM-ops,llm ops,LLM-ops(2) / LLM Ops(1),3,normalize
+End-to-end autonomous driving,end to end autonomous driving,End-to-end autonomous driving(2) / end-to-end autonomous driving(1),3,normalize
+SaMD,,SaMD(2) <- software as a medical device (SaMD)(1),3,acronym
+ML,,ML(2) <- software packages (ML)(1),3,acronym
+GKE,,GKE(2) <- Google Kubernetes Engine (GKE)(1),3,acronym
+Gradient Boosting Machines,gradient boosting machines,Gradient Boosting Machines(1) / gradient boosting machines (GBM)(1),2,normalize
+Problem solving,problem solving,Problem solving(1) / problem-solving(1),2,normalize
+Llama Index,llama index,Llama Index(1) / Llama-index(1),2,normalize
+next generation sequencing (NGS),next generation sequencing,next generation sequencing (NGS)(1) / next-generation sequencing(1),2,normalize
+Data Science & Analytics,data science analytics,Data Science & Analytics(1) / Data Science Analytics(1),2,normalize
+machine learning workflows,machine learning workflows,machine learning workflows(1) / machine-learning workflows(1),2,normalize
+Distribution shift,distribution shift,Distribution shift(1) / distribution shift(1),2,normalize
+Machine Learning Operations,machine learning operations,Machine Learning Operations(1) / Machine Learning Operations (MLOps)(1),2,normalize
+Next best action,next best action,Next best action(1) / next-best-action(1),2,normalize
+Structured output (JSON mode),structured output,Structured output (JSON mode)(1) / structured output(1),2,normalize
+real-time decision making,real time decision making,real-time decision making(1) / real-time decision-making(1),2,normalize
+fast.ai,fastai,fast.ai(1) / fastai(1),2,normalize
+ad hoc analysis,ad hoc analysis,ad hoc analysis(1) / ad-hoc analysis(1),2,normalize
+Cloud-based platforms,cloud based platforms,Cloud-based platforms(1) / cloud-based platforms(1),2,normalize
+agent building,agent building,agent building(1) / agent-building(1),2,normalize
+CTR,ctr,CTR(1) / CTR (Click-Through Rate)(1),2,normalize
+open source licensing,open source licensing,open source licensing(1) / open-source licensing(1),2,normalize
+open source tools,open source tools,open source tools(1) / open-source tools(1),2,normalize
+Knowledge representation,knowledge representation,Knowledge representation(1) / knowledge representation(1),2,normalize
+Small Language Models (SLMs),small language models,Small Language Models (SLMs)(1) / small language models(1),2,normalize
+Identity and Access Management (IAM),identity and access management,Identity and Access Management (IAM)(1) / identity and access management(1),2,normalize
+Database query languages (QL),database query languages,Database query languages (QL)(1) / database query languages(1),2,normalize
+Performance assessment,performance assessment,Performance assessment(1) / performance assessment(1),2,normalize
+Offensive Security,offensive security,Offensive Security(1) / Offensive Security (OffSec)(1),2,normalize
+privacy by design,privacy by design,privacy by design(1) / privacy-by-design(1),2,normalize
+high performance code,high performance code,high performance code(1) / high-performance code(1),2,normalize
+High availability systems,high availability systems,High availability systems(1) / high-availability systems(1),2,normalize
+foundation model training,foundation model training,foundation model training(1) / foundation-model training(1),2,normalize
+Mixed precision training,mixed precision training,Mixed precision training(1) / Mixed-precision training(1),2,normalize
+Agent Development Kit,agent development kit,Agent Development Kit(1) / Agent Development Kit (ADK)(1),2,normalize
+Full Stack Engineering,full stack engineering,Full Stack Engineering(1) / full-stack engineering(1),2,normalize
+AML,,AML(1) <- Amazon Machine Learning (AML)(1),2,acronym
+SaaS,,SaaS(1) <- Software as a Service (SaaS)(1),2,acronym
+GCS,,GCS(1) <- Google Cloud Storage (GCS)(1),2,acronym
+VAD,,VAD(1) <- voice activity detection (VAD)(1),2,acronym
+SSO,,SSO(1) <- Single Sign-On (SSO)(1),2,acronym
+DSP,,DSP(1) <- digital signal processing (DSP)(1),2,acronym
+DETR,,DETR(1) <- Detection Transformers (DETR)(1),2,acronym
