@@ -4,7 +4,7 @@
 **Source:** Skillenai Job Index (3,277 jobs across Data Scientist, ML Engineer, AI Engineer)
 **API:** `api.skillenai.com/v1`
 
-> **Methodology:** Postings were pulled for three role buckets (Data Scientist, ML Engineer ∪ Machine Learning Engineer, AI Engineer ∪ Artificial Intelligence Engineer) across four IC seniority buckets (Entry ∪ Junior, Mid, Senior, Staff ∪ Principal). Management-track levels (Manager / Director / VP / C-level / Lead) were excluded. One spam employer (Speechify) excluded. Salary analyses are US-only, USD-only, using midpoint of `salaryMin` and `salaryMax`. Skill surface forms were collapsed using a merge map (267 normalizations for case, punctuation, acronym-expansion pairs like `RAG` ↔ `Retrieval-Augmented Generation (RAG)`). See `build_skill_merges.py` and SKI-165 for the underlying entity-resolution issue.
+> **Methodology:** Postings were pulled for three role buckets (Data Scientist, ML Engineer ∪ Machine Learning Engineer, AI Engineer ∪ Artificial Intelligence Engineer) across four IC seniority buckets (Entry ∪ Junior, Mid, Senior, Staff ∪ Principal). Management-track levels (Manager / Director / VP / C-level / Lead) were excluded. One spam employer (Speechify) excluded. Salary analyses are US-only, USD-only, using midpoint of `salaryMin` and `salaryMax`. Skill surface forms were collapsed using a merge map (267 normalizations for case, punctuation, acronym-expansion pairs like `RAG` ↔ `Retrieval-Augmented Generation (RAG)`). See `build_skill_merges.py` for the implementation.
 
 ---
 
@@ -297,8 +297,8 @@ Invest in: **evaluation frameworks**, **agentic workflows**, **observability for
 ## 6. Caveats
 
 - **Posted-salary selection bias.** Jobs that disclose salary skew toward salary-transparent US states and companies. Results generalize to that market, not the global MLE/DS/AIE job pool. Coverage is 10–22% per role-level cell.
-- **Big Tech under-represented.** Google, Apple, Microsoft, Netflix, NVIDIA mostly don't appear in our index because we don't scrape their proprietary ATS platforms (see SKI-139). This particularly affects Staff+ compensation estimates, since top compensation in our data is already $270K median and these employers pay higher.
-- **Skill entity resolution has gaps.** We manually merged 267 case/punctuation/acronym variants (see SKI-165). Some skills that look semantically close remain separate — for example, `dashboards` and `data visualization` end up with different signs in the DS regression. They may genuinely be different concepts (dashboards = deliverable, data visualization = general skill), or the resolver could stand to merge them. We chose not to force the merge.
+- **Big Tech under-represented.** Google, Apple, Microsoft, Netflix, NVIDIA mostly don't appear in our index because we don't scrape their proprietary ATS platforms. This particularly affects Staff+ compensation estimates, since top compensation in our data is already $270K median and these employers pay higher.
+- **Skill entity resolution has gaps.** We manually merged 267 case/punctuation/acronym variants. Some skills that look semantically close remain separate — for example, `dashboards` and `data visualization` end up with different signs in the DS regression. They may genuinely be different concepts (dashboards = deliverable, data visualization = general skill), or the resolver could stand to merge them. We chose not to force the merge.
 - **R² values (0.22–0.35 per-role, 0.39 pooled) are modest but typical for salary regressions.** Firm-level variance (the company you work for) is the largest source of salary variation we don't capture. Skill coefficients should be read as "on average across firms, holding role and seniority fixed."
 - **Entry-level cells are thin.** DS Entry n=18, MLE Entry n=12, AIE Entry n=5 for the salary cells. Entry-level claims should be taken with wider error bars than what the medians suggest.
 - **Staff+ sample for AIE is N=5.** The $270K Staff AIE median is consistent with MLE Staff but shouldn't be presented as well-estimated.
@@ -322,4 +322,3 @@ Invest in: **evaluation frameworks**, **agentic workflows**, **observability for
 | `phase_a_*.py`, `phase_b_*.py`, `phase_c1_*.py`, `phase_c2_*.py` | Analysis pipeline |
 | `plots.py` | All figures in this report |
 
-Related ticket: [SKI-165](https://linear.app/skillenai/issue/SKI-165/skill-entity-resolution-emits-duplicate-canonical-entities) — skill entity resolution duplicate-canonical issue discovered during this analysis.
