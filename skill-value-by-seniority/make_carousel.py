@@ -320,20 +320,31 @@ def slide_playbook():
 
 def slide_cta():
     fig, ax = new_slide()
-    ax.add_patch(Rectangle((0, 65), 100, 35, color=GREEN, lw=0))
-    ax.text(50, 84, "Want the full analysis?", ha="center", va="center",
+    ax.add_patch(Rectangle((0, 72), 100, 28, color=GREEN, lw=0))
+    ax.text(50, 88, "Want the full analysis?", ha="center", va="center",
             fontsize=22, color="white", weight="bold")
-    ax.text(50, 75, "Tables, methodology, regression CIs, and code.", ha="center", va="center",
+    ax.text(50, 80, "Tables, methodology, regression CIs, and code.", ha="center", va="center",
             fontsize=13, color="white", alpha=0.92)
 
-    ax.text(50, 55, "github.com/chiefastro/skillenai-notebooks", ha="center", va="center",
-            fontsize=13, color=INK, family="monospace")
-    ax.text(50, 50, "→ skill-value-by-seniority/", ha="center", va="center",
-            fontsize=12, color=GREY, family="monospace")
+    # Blog post
+    blog_url = "skillenai.com/2026/04/19/the-senior-to-staff-jump-what-actually-pays-more-in-ml-jobs"
+    full_blog = "https://" + blog_url
+    ax.text(50, 60, "Full blog post", ha="center", va="center",
+            fontsize=13, color=INK, weight="bold")
+    ax.text(50, 55, blog_url, ha="center", va="center",
+            fontsize=9.5, color=GREEN, family="monospace",
+            url=full_blog)
 
-    ax.text(50, 37, "Full blog post at skillenai.com", ha="center", va="center",
-            fontsize=13, color=INK)
+    # GitHub link
+    gh_short = "github.com/chiefastro/skillenai-notebooks/tree/master/skill-value-by-seniority"
+    gh_full = "https://" + gh_short
+    ax.text(50, 43, "Code + data", ha="center", va="center",
+            fontsize=13, color=INK, weight="bold")
+    ax.text(50, 38, gh_short, ha="center", va="center",
+            fontsize=9.5, color=GREEN, family="monospace",
+            url=gh_full)
 
+    # Methodology
     ax.text(50, 22, "Methodology:", ha="center", va="center",
             fontsize=11, color=GREY, weight="bold")
     ax.text(50, 17,
