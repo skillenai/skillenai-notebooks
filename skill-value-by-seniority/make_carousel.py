@@ -336,7 +336,7 @@ def slide_cta():
             url=full_blog)
 
     # GitHub link
-    gh_short = "github.com/chiefastro/skillenai-notebooks/tree/master/skill-value-by-seniority"
+    gh_short = "github.com/skillenai/skillenai-notebooks/tree/master/skill-value-by-seniority"
     gh_full = "https://" + gh_short
     ax.text(50, 43, "Code + data", ha="center", va="center",
             fontsize=13, color=INK, weight="bold")
