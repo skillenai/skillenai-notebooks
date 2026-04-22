@@ -125,6 +125,83 @@ Comparing how each company is co-mentioned with its own flagship product in news
 
 xAI's brand-to-product linkage is 9.3× weaker than Anthropic's Claude Code linkage and 12.5× weaker than Claude's. In media terms, xAI is recognized as a company; Grok is recognized only adjacent to Musk. Anthropic's brand is mediated through product adoption; xAI's brand is mediated through its founder.
 
+## Finding 7 — Graph-native view: Cursor is an edge away from Anthropic and 13× further from xAI
+
+Using Cypher over the entity graph we measured "bridge document density" — the number of distinct documents that link two entities via `MENTIONS`. This cleans up double-counting issues in the SQL view.
+
+| Pair | Type | Bridge documents |
+|---|---|---:|
+| Claude Code ↔ Anthropic | first-party | **3,308** |
+| Cursor ↔ Anthropic | third-party | **730** |
+| Cursor ↔ OpenAI | third-party | 726 |
+| Grok ↔ xAI | first-party | 424 |
+| Grok ↔ Anthropic | third-party | 321 |
+| Claude Code ↔ xAI | third-party | 116 |
+| **Cursor ↔ xAI** (pre-deal) | third-party | **55** |
+
+![Bridge density](07_bridge_density.png)
+
+Anthropic's first-party product linkage (Claude Code ↔ Anthropic) is **28× denser** than xAI's first-party linkage (Grok ↔ xAI). Cursor was 13× more entangled with Anthropic than with xAI before the deal. The acquisition is, graphically, welding a new edge where almost none existed.
+
+## Finding 8 — Jobs never co-require Cursor and Grok
+
+The crispest single number comes from a two-hop Cypher query: how many job postings require Cursor and one other named AI coding tool?
+
+| Product co-required with Cursor | Jobs |
+|---|---:|
+| Claude Code | **561** |
+| Claude | 326 |
+| GitHub Copilot | 270 |
+| ChatGPT | 129 |
+| Gemini | 105 |
+| Windsurf | 92 |
+| **Grok** | **8** |
+
+![Cursor co-required products](06_cursor_coreq_jobs.png)
+
+8 jobs. Across our entire six-week enriched-jobs corpus, eight job postings require both Cursor and Grok. 70× fewer than Cursor + Claude Code. If the new stack is "Cursor + xAI models," the market has not yet encoded that expectation into a single hiring spec.
+
+A related triangle query — which other products appear in documents that mention **both** Cursor and Claude Code — returned a top-20 AI-coding cluster of Codex, GitHub Copilot, Claude, Windsurf, ChatGPT, Gemini, Gemini CLI, VS Code, MCP, Lovable, Devin, OpenCode, Replit. **Grok does not appear in the top 20.** The conversation that surrounds Cursor today is not a conversation about Grok.
+
+## Finding 9 — Internal hiring stacks tell the same story as external adoption
+
+Asking each company's own job postings what products they hire for is the sharpest way to see whether the companies have comparable product organizations.
+
+**Anthropic's internal hiring stack (top products):**
+
+| Product | Anthropic job postings requiring it |
+|---|---:|
+| Claude | 446 |
+| Claude Code | 128 |
+| Claude API | 63 |
+| Claude.ai | 50 |
+| Claude Enterprise | 28 |
+| MCP | 22 |
+| Claude Developer Platform | 21 |
+| Claude for Work | 21 |
+| Claude for Enterprise | 18 |
+
+Nine distinct Claude-family product SKUs, each with measurable hiring volume. This is a mature multi-SKU product organization.
+
+**xAI's internal hiring stack (top products):**
+
+| Product | xAI job postings requiring it |
+|---|---:|
+| Grok | 52 |
+| Kubernetes | 14 |
+| Terraform | 10 |
+| ArgoCD | 6 |
+| Grafana | 5 |
+| Ansible | 5 |
+| Pulumi | 5 |
+| Prometheus | 3 |
+
+This is a compute/SRE organization. Outside of Grok itself, xAI is hiring to operate a large GPU fleet — not to ship coding or enterprise products. No "Grok for Enterprise," no "Grok API," no "Grok Developer Platform" appear with meaningful volume. Which is precisely why, per the press reporting, two of Cursor's top engineering leads had already joined xAI in March 2026 reporting directly to Musk: xAI had to import an applied-AI product organization.
+
+![Internal hiring stacks](08_internal_hiring_stacks.png)
+
+We also checked directly: **zero xAI job postings currently mention Cursor, and zero Anthropic job postings mention Cursor**. Each company is still operating its own internal tooling (xAI uses Grok internally, Anthropic uses Claude and Claude Code internally). The deal creates a new dependency that hasn't yet propagated into either side's hiring specs.
+
 ## Stress-testing the user hypothesis
 
 | Claim | Verdict | Evidence |
@@ -162,9 +239,26 @@ This is a pre-IPO insurance policy as much as it is a coding-AI bet.
 
 ## Reproduction
 
-All queries in this report were parameterized SQL against `POST /v1/query/sql`. The end-to-end fetch scripts plus charting code are in this folder:
+This report used both SQL (`POST /v1/query/sql`) and Cypher (`POST /v1/query/graph`) against the Skillenai API. Charting scripts are in this folder:
 
-- `make_charts.py` — renders the five PNGs from `mentions_by_source.csv` and inline-hardcoded co-mention tables
+- `make_charts.py` — SQL-derived PNGs (01–05) from `mentions_by_source.csv` and inline co-mention tables
+- `make_graph_charts.py` — Cypher-derived PNGs (06–08): co-required products, bridge-document density, internal hiring stacks
 - `mentions_by_source.csv` — jobs/blog/news counts per product
 
-A full fetch pipeline with entity resolution and per-query throttling was used against the production API; the same queries can be re-run on newer data.
+Key Cypher patterns (all use only MATCH/RETURN, stay within the engine's 3-hop max and 2-pattern limit):
+
+```cypher
+-- Jobs co-requiring two products
+MATCH (a:product {id: $idA})<-[:MENTIONS]-(j:job)-[:MENTIONS]->(b:product {id: $idB})
+RETURN count(j)
+
+-- Bridge documents between a product and a company
+MATCH (p:product {id: $pid})<-[:MENTIONS]-(d:document)-[:MENTIONS]->(c:company {id: $cid})
+RETURN count(DISTINCT d)
+
+-- Internal hiring stack for a company
+MATCH (j:job)-[:POSTED_BY]->(c:company {id: $cid}), (j)-[:MENTIONS]->(p:product)
+RETURN p.name, count(j) ORDER BY count(j) DESC
+```
+
+A full fetch pipeline with entity resolution and per-query throttling was used against the production API; the same queries can be re-run on newer data as the pipeline accumulates a longer time series.
