@@ -1,21 +1,21 @@
-# OpenAI Is Hiring a Phone Team. The Job Postings Show It.
+# OpenAI Isn't Building a Phone Like Apple. They're Building an AI OS Like Google.
 
 **Date:** 2026-04-27
 **Source:** Skillenai job index (`prod-enriched-jobs`), 746 OpenAI postings ingested Mar–Apr 2026
 **Analyst:** Skillenai
 
-A press rumor that OpenAI is building a phone says nothing about *what* they are building or *how*. Job postings do. We pulled every active OpenAI posting from our index and looked for the kind of roles you can only justify if you're shipping consumer hardware. They are all there, and they are sitting on a team OpenAI labels — explicitly — "Consumer Devices."
+A press rumor that OpenAI is building a phone says nothing about *what* they are building or *how*. Job postings do. We pulled every active OpenAI posting from our index and looked for the kind of roles you can only justify if you're shipping consumer hardware. The roles are mostly there — but read carefully, the staffing pattern looks much less like Apple designing a phone end-to-end and much more like **Google in 2007 building Android while looking for a manufacturing partner.** The team is software- and research-heavy, the hardware roles are procurement- and integration-flavored rather than design-flavored, and the centerpiece research is on generative UI, not industrial design.
 
 ## Top-line findings
 
-1. **19 open roles** are titled "...Consumer Devices" — a single, recognizably-staffed team building hardware in San Francisco.
-2. The team description, lifted verbatim from a posting, says they "build end-to-end **hardware and software systems** that bring AI into the physical world... at the intersection of **custom silicon, embedded systems, operating systems, and cloud services**."
-3. There is a dedicated **Operating Systems Engineer** role on the Consumer Devices team. It describes kernel work, secure boot, sandboxing, **battery and thermal-aware tuning** — the textbook definition of building an OS for a battery-powered device.
-4. **Zero postings** mention "AOSP," "Android Open Source," or "Android framework." The 10 Android Engineers OpenAI is hiring are *all* on ChatGPT app teams (Mobile Infra, Monetization, Applied Foundations, Social Products) — none on Consumer Devices. If they're going to use Android, no engineer has been hired to do it yet.
-5. There is also a **Camera ISP Software Engineer** ("ISP" = image signal processor — a camera silicon role), an **Embedded SWE for "Consumer Devices,"** a **Software Engineer for "Sensing"** on the explicitly-named "Neosensing" team, and an **SMS Prototype Handling Specialist** under a "Secure Manufacturing & Stealth" team that exists specifically to keep prototypes confidential until launch.
-6. **Two Research Engineer/Scientist roles for "Generative UI"** sit inside an applied research group called "Future of Computing Research" *within* Consumer Devices. The job description says you'll "train and evaluate SoTA models along axes that are important to our vision for **future devices**" and "help define how software works for decades to come." This is a quietly load-bearing signal about *how* the device will work — see the section below.
+1. **19 open roles** are titled "…Consumer Devices" — a single, recognizably-staffed team in San Francisco. **17 of the 19 are software, research, or backend roles.** Only two are hardware-coded (Camera ISP Engineer + Embedded SWE), and even those are software-on-hardware, not hardware-design.
+2. The team description, lifted verbatim from a posting, says they "build end-to-end **hardware and software systems** that bring AI into the physical world… at the intersection of **custom silicon, embedded systems, operating systems, and cloud services**." Read this as a *vision statement* the team is staffing toward — not the current org shape.
+3. The hardware roles outside the Consumer Devices team are **almost entirely procurement, integration, and finance** — not design. There's a Hardware/Software CoDesign Engineer for "3P" (third-party silicon), a Hardware Procurement Operations Lead, an ML Research Engineer for hardware codesign, a COGS & Supply Chain finance lead, and a prototype-secrecy specialist. There are **no industrial designers, no mechanical engineers, no RF/antenna engineers, no acoustic/audio DSP engineers** in the postings.
+4. There is a dedicated **Operating Systems Engineer** role describing kernel work, secure boot, sandboxing, **battery and thermal-aware tuning** — the textbook definition of building an OS for a battery-powered device. **Zero postings** mention AOSP or Android Open Source.
+5. The most product-defining roles on the team are **two Research Engineer/Scientist roles for "Generative UI"** in an applied research group called "Future of Computing Research" *within* Consumer Devices. They train models that *generate the interface itself*, dynamically, for "future devices."
+6. The 10 Android/iOS engineers OpenAI is hiring are *all* on ChatGPT app teams (Mobile Infra, Monetization, Applied Foundations, Social Products) — none on Consumer Devices.
 
-This is not a vapor team. It is a shipping organization.
+The shape of the team — heavy on AI research and low-level systems software, light on every category of physical-product engineering — points to a specific go-to-market: **OpenAI is building a new AI-native OS and looking for a pilot manufacturing partner**, the way Google built Android while HTC and Samsung built the hardware. They are not (yet) trying to be Apple.
 
 ## Where OpenAI's "mobile" engineers actually sit
 
@@ -92,7 +92,28 @@ There are seven more hardware-flavored roles that don't carry the "Consumer Devi
 | Strategic Finance, COGS & Supply Chain Finance | A finance role specifically for **cost of goods sold** — i.e., a physical product |
 | **SMS Prototype Handling Specialist** | Sits inside an OpenAI **"Secure Manufacturing & Stealth"** team whose stated job is "ensuring our innovations remain confidential until launch" |
 
-You don't hire a COGS finance leader, a procurement lead, and a prototype-secrecy specialist for vapor.
+You don't hire a COGS finance leader, a procurement lead, and a prototype-secrecy specialist for vapor. But notice what these roles *aren't*: they are not engineers laying out a circuit board, designing an enclosure, tuning antennas, or sourcing speaker drivers. They are people who will **negotiate with a third party who already does that.** "3P" in the codesign role title is the giveaway. This is an organization staffed to *integrate* with a manufacturer, not *replace* one.
+
+## The bigger story: this is Google in 2007, not Apple in 2007
+
+The instinct on reading "OpenAI is building a phone" is to picture an Apple-style operation: thousands of engineers across industrial design, mechanical, RF, acoustics, manufacturing — every discipline owned in-house, every component custom. The job postings don't show that. What they show is much closer to what **Google looked like in 2007 when they were building Android**: a software- and AI-research-heavy team building a new operating system, a procurement and integration crew talking to third-party silicon and hardware partners, and a deliberate absence of in-house industrial design.
+
+The evidence:
+
+| Discipline | Apple-style ("we design it all") | OpenAI's actual postings |
+|---|---|---|
+| Industrial design | Hundreds of designers | 1 mention in 746 postings |
+| Mechanical engineering | Massive in-house team | 8 mentions, mostly data-center adjacent |
+| RF / antenna | Whole org with anechoic chambers | 1 mention each |
+| Acoustic / audio DSP | Big in-house DSP team | 0 acoustic, 8 audio (most generic) |
+| Custom OS work | Yes (iOS, watchOS, etc.) | **Yes — kernel, secure boot, embedded** |
+| Generative-AI research baked into the OS | No (that's a third-party SDK) | **Yes — two researchers training UI-generating models** |
+| Hardware procurement / 3P codesign | Lean — they make their own | **Heavy — most hardware roles are procurement/integration** |
+| COGS & supply-chain finance | Internal manufacturing finance | One strategic-finance lead — partner-driven |
+
+Reading this row-by-row, the story isn't "OpenAI is racing Apple to ship an in-house phone." It is "**OpenAI is building an AI-native operating system, plus the research that defines how the OS feels, plus the supply-chain-and-procurement function it needs to ship on a partner's hardware.**" The first device may even be jointly branded with a contract manufacturer the way the original T-Mobile G1 was Google + HTC, or the way Meta's Ray-Bans are Meta + EssilorLuxottica.
+
+This is also the most plausible reading of why the Generative UI research seat is on the Consumer Devices team in the first place: if the *interface* is the moat — the thing OpenAI uniquely brings — then the hardware around it can be a partner's job. The OS hosts the model; the model renders the UI; the manufacturer makes a nice-looking object that runs it. That's a very different bet from Apple's, and a very different bet from "fork Android and slap ChatGPT on it." It's much closer to Google's 2007 strategy than to anyone's 2026 strategy, which makes it newsworthy.
 
 ## Will the device run Android? Probably not.
 
@@ -121,19 +142,17 @@ We searched every OpenAI posting for phone-radio and OS-fork keywords:
 
 The signature is unmistakable: lots of **kernel**, **embedded**, **Linux**, **secure boot**, **thermal**, **battery**. Zero **AOSP**, zero **Android Open Source**, near-zero **antenna** and **RF**.
 
-That points to a **custom Linux-based OS**, not a forked Android, and an early-stage device whose **cellular radio stack is not yet being staffed in San Francisco** — meaning it's either deferred, outsourced to an ODM partner, or the first device isn't a phone-with-its-own-modem at all (it could land as a Wi-Fi/companion device first). Either way, the Jony-Ive-uses-Android scenario is **not** what the hiring shows.
+That points to a **custom Linux-based OS**, not a forked Android — consistent with the AI-OS-on-partner-hardware reading above. The cellular radio stack is **not being staffed in San Francisco**, which is exactly what you'd expect if a contract manufacturer is going to bring the modem and OpenAI is going to bring the OS and the model. The Jony-Ive-resigned-to-Android scenario is **not** what the hiring shows. But neither is the Apple-clone scenario. What's emerging is its own thing: an AI-native OS designed to be *licensed onto* hardware, not to *be* the hardware.
 
-## What we'd expect to see next if this is real
+## What we'd expect to see next under each scenario
 
-A real consumer-electronics shipping plan would, within the next two quarters, need to staff some categories that are conspicuously light or absent today:
-- **Acoustic / audio DSP engineers** (0 postings)
-- **RF / antenna engineers** (1 each, weak)
-- **Mechanical engineers** (8 postings, mostly data-center adjacent)
-- **Industrial designers** (1 mention)
-- **Regulatory / FCC / wireless certification**
-- **Retail / packaging / unboxing**
+The next 60–90 days of OpenAI hiring will distinguish two scenarios cleanly:
 
-Watching those categories light up in our index is the next dipstick. We'll re-run this analysis in 60 days.
+**If OpenAI is going Apple's route** (in-house hardware), expect rapid growth in: industrial design, mechanical engineering, RF / antenna engineers, acoustic / audio DSP, regulatory / FCC certification, retail / packaging. All of these are essentially zero in the current postings.
+
+**If OpenAI is going Google-2007's route** (AI OS + ODM partner), expect rapid growth in: more OS / kernel / driver engineers, more model researchers on the "Future of Computing" group, partner-engineering / SDK roles for third-party app developers, business-development roles for OEM licensing, and certification engineers focused on integrating with partner-owned modems and antennas.
+
+Today's postings look much more like the second list than the first. We'll re-run this analysis in 60 days.
 
 ## Methodology
 
