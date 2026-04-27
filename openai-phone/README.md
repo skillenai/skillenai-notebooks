@@ -12,7 +12,7 @@ A press rumor that OpenAI is building a phone says nothing about *what* they are
 2. The team description, lifted verbatim from a posting, says they "build end-to-end **hardware and software systems** that bring AI into the physical world... at the intersection of **custom silicon, embedded systems, operating systems, and cloud services**."
 3. There is a dedicated **Operating Systems Engineer** role on the Consumer Devices team. It describes kernel work, secure boot, sandboxing, **battery and thermal-aware tuning** — the textbook definition of building an OS for a battery-powered device.
 4. **Zero postings** mention "AOSP," "Android Open Source," or "Android framework." The 10 Android Engineers OpenAI is hiring are *all* on ChatGPT app teams (Mobile Infra, Monetization, Applied Foundations, Social Products) — none on Consumer Devices. If they're going to use Android, no engineer has been hired to do it yet.
-5. There is also a **Camera ISP Software Engineer** ("ISP" = image signal processor — a camera silicon role), an **Embedded SWE for "Consumer Devices,"** a **Software Engineer for "Sensing"** (the Neosensing team), and an **SMS Prototype Handling Specialist** under a "Secure Manufacturing & Stealth" team that exists specifically to keep prototypes confidential until launch.
+5. There is also a **Camera ISP Software Engineer** ("ISP" = image signal processor — a camera silicon role), an **Embedded SWE for "Consumer Devices,"** a **Software Engineer for "Sensing"** on the explicitly-named "Neosensing" team, and an **SMS Prototype Handling Specialist** under a "Secure Manufacturing & Stealth" team that exists specifically to keep prototypes confidential until launch.
 
 This is not a vapor team. It is a shipping organization.
 
@@ -46,7 +46,7 @@ All 19 are San Francisco, hybrid 4-days-in-office:
 | Software Engineer – Sensing, Consumer Devices | "Neosensing" team — new sensor modalities |
 | Software Engineer – Human Alignment, Consumer Devices (×2) | On-device safety/UX |
 | Research Engineer/Scientist – Human Alignment, Consumer Devices (×2) | Same, research-track |
-| Research Engineer/Scientist – Generative UI, Consumer Devices (×2) | Models that *generate* the UI |
+| Research Engineer/Scientist – Generative UI, Consumer Devices (×2) | Title carries the suffix; the work itself (LLM-generated UI) likely lands in ChatGPT too |
 | Software Engineer, Engineering Acceleration \| Consumer Devices (×2) | Internal tooling |
 | Software Engineer, Quality & Developer Tools, Consumer Devices | Testing |
 | Software Engineer, Infrastructure, Consumer Devices | Cloud back-end |
@@ -56,7 +56,7 @@ All 19 are San Francisco, hybrid 4-days-in-office:
 
 ![Consumer Devices team composition](team-composition.png)
 
-Note the two **Generative UI** researchers. The job description says the team's mission is to "**train and evaluate SoTA models** along axes that are important to our vision for **future devices**" and "help define how software works for decades to come." That is not work you do for a chatbot redesign — that is on-device model R&D.
+The hardest signals are the bottom rows: Camera ISP, Sensing, Embedded, and the OS engineer. You do not hire those roles for a chatbot. (The Generative UI research roles carry the "Consumer Devices" suffix, but LLM-generated UI is the kind of capability that can land in any product surface — read those as ambiguous, not load-bearing.)
 
 ## The hardware perimeter outside Consumer Devices
 
