@@ -55,7 +55,7 @@ ax.set_yticks(y)
 ax.set_yticklabels(labels)
 ax.invert_yaxis()
 ax.set_xlabel("Open Consumer Devices postings (n=19)")
-ax.set_title("OpenAI's 'Consumer Devices' team composition\nIndustrial design + custom silicon + embedded systems + on-device research",
+ax.set_title("OpenAI's 'Consumer Devices' team is staffed for an AI-native OS, not a phone\n17 of 19 roles are software, AI research, or backend  •  Zero industrial designers, zero mechanical, zero RF/antenna, zero acoustic",
              loc="left", fontsize=12, fontweight="bold")
 for i, c in enumerate(counts):
     ax.text(c + 0.08, i, str(c), va="center", fontsize=11)
