@@ -13,6 +13,7 @@ A press rumor that OpenAI is building a phone says nothing about *what* they are
 3. There is a dedicated **Operating Systems Engineer** role on the Consumer Devices team. It describes kernel work, secure boot, sandboxing, **battery and thermal-aware tuning** — the textbook definition of building an OS for a battery-powered device.
 4. **Zero postings** mention "AOSP," "Android Open Source," or "Android framework." The 10 Android Engineers OpenAI is hiring are *all* on ChatGPT app teams (Mobile Infra, Monetization, Applied Foundations, Social Products) — none on Consumer Devices. If they're going to use Android, no engineer has been hired to do it yet.
 5. There is also a **Camera ISP Software Engineer** ("ISP" = image signal processor — a camera silicon role), an **Embedded SWE for "Consumer Devices,"** a **Software Engineer for "Sensing"** on the explicitly-named "Neosensing" team, and an **SMS Prototype Handling Specialist** under a "Secure Manufacturing & Stealth" team that exists specifically to keep prototypes confidential until launch.
+6. **Two Research Engineer/Scientist roles for "Generative UI"** sit inside an applied research group called "Future of Computing Research" *within* Consumer Devices. The job description says you'll "train and evaluate SoTA models along axes that are important to our vision for **future devices**" and "help define how software works for decades to come." This is a quietly load-bearing signal about *how* the device will work — see the section below.
 
 This is not a vapor team. It is a shipping organization.
 
@@ -46,7 +47,7 @@ All 19 are San Francisco, hybrid 4-days-in-office:
 | Software Engineer – Sensing, Consumer Devices | "Neosensing" team — new sensor modalities |
 | Software Engineer – Human Alignment, Consumer Devices (×2) | On-device safety/UX |
 | Research Engineer/Scientist – Human Alignment, Consumer Devices (×2) | Same, research-track |
-| Research Engineer/Scientist – Generative UI, Consumer Devices (×2) | Title carries the suffix; the work itself (LLM-generated UI) likely lands in ChatGPT too |
+| Research Engineer/Scientist – Generative UI, Consumer Devices (×2) | Train models to generate UI dynamically — for "future devices" |
 | Software Engineer, Engineering Acceleration \| Consumer Devices (×2) | Internal tooling |
 | Software Engineer, Quality & Developer Tools, Consumer Devices | Testing |
 | Software Engineer, Infrastructure, Consumer Devices | Cloud back-end |
@@ -56,7 +57,26 @@ All 19 are San Francisco, hybrid 4-days-in-office:
 
 ![Consumer Devices team composition](team-composition.png)
 
-The hardest signals are the bottom rows: Camera ISP, Sensing, Embedded, and the OS engineer. You do not hire those roles for a chatbot. (The Generative UI research roles carry the "Consumer Devices" suffix, but LLM-generated UI is the kind of capability that can land in any product surface — read those as ambiguous, not load-bearing.)
+The hardest signals are Camera ISP, Sensing, Embedded, and the OS engineer. You do not hire those roles for a chatbot.
+
+## The most interesting roles on the team are the Generative UI researchers
+
+It would be easy to dismiss the two "Research Engineer/Scientist – Generative UI" roles as ChatGPT work that happens to carry a Consumer Devices label. The job description says otherwise. The team is called **"Future of Computing Research"** and is described as "an Applied Research team **within the Consumer Devices group**." The role's listed responsibilities:
+
+> *"Train and evaluate SoTA models along axes that are important to our vision for **future devices**.* Run through the necessary walls to take nascent research capabilities and turn them into capabilities we can build on top of. *Help define how software works for decades to come.*"
+
+And the qualifications:
+
+> *"Have a research background in utilizing and training language models to **generate UI**, and developing recipes to evaluate the quality / applicability of UI generated."*
+
+That is a very specific bet about how the device will work. Today's phones, watches, and earbuds ship a **fixed interface** that engineers laid out by hand and that runs on every customer's device identically. OpenAI is hiring researchers to train models that **generate the UI itself, dynamically.** The implication is that the device is not built around a fixed grid of apps — it's built around a model that *renders the right interface for the moment*, on the fly, the same way ChatGPT today renders the right paragraph for the moment.
+
+If this is the bet, it explains other features of the roster too:
+- The **Sensing** engineer ("Neosensing" team — "we explore new modalities, interaction patterns, and system behaviors") makes sense if input isn't constrained to a touchscreen with apps.
+- The **Human Alignment** engineers and researchers (4 of them on the team) make sense if the UI is generated rather than designed: a fixed UI is "aligned" by the designer up front; a generated UI is aligned at inference time, and that's a research problem.
+- The **OS engineer's** mandate to "**provide stable, well-documented platform interfaces for application frameworks**" reads differently if the "applications" are model-generated views rather than third-party apps from a store.
+
+This is the part of the rumor the press has missed. The story isn't just "OpenAI is building a phone." It's "OpenAI is building a device whose interface is *generated by a model*, not designed by a human." That is a much bigger product claim than a hardware refresh — it is the first serious attempt to ship a consumer device whose UI layer is the model itself.
 
 ## The hardware perimeter outside Consumer Devices
 
