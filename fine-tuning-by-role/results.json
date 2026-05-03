@@ -1,0 +1,247 @@
+{
+  "weekly": {
+    "Data Scientist": [
+      {
+        "week": "2026-03-09",
+        "total": 44,
+        "with_ft": 3
+      },
+      {
+        "week": "2026-03-16",
+        "total": 21,
+        "with_ft": 0
+      },
+      {
+        "week": "2026-03-23",
+        "total": 99,
+        "with_ft": 6
+      },
+      {
+        "week": "2026-03-30",
+        "total": 956,
+        "with_ft": 57
+      },
+      {
+        "week": "2026-04-06",
+        "total": 443,
+        "with_ft": 11
+      },
+      {
+        "week": "2026-04-13",
+        "total": 514,
+        "with_ft": 23
+      },
+      {
+        "week": "2026-04-20",
+        "total": 488,
+        "with_ft": 28
+      },
+      {
+        "week": "2026-04-27",
+        "total": 230,
+        "with_ft": 9
+      }
+    ],
+    "ML Engineer": [
+      {
+        "week": "2026-03-09",
+        "total": 67,
+        "with_ft": 17
+      },
+      {
+        "week": "2026-03-16",
+        "total": 35,
+        "with_ft": 9
+      },
+      {
+        "week": "2026-03-23",
+        "total": 93,
+        "with_ft": 24
+      },
+      {
+        "week": "2026-03-30",
+        "total": 904,
+        "with_ft": 176
+      },
+      {
+        "week": "2026-04-06",
+        "total": 519,
+        "with_ft": 72
+      },
+      {
+        "week": "2026-04-13",
+        "total": 494,
+        "with_ft": 71
+      },
+      {
+        "week": "2026-04-20",
+        "total": 444,
+        "with_ft": 86
+      },
+      {
+        "week": "2026-04-27",
+        "total": 337,
+        "with_ft": 71
+      }
+    ],
+    "AI Engineer": [
+      {
+        "week": "2026-03-09",
+        "total": 17,
+        "with_ft": 8
+      },
+      {
+        "week": "2026-03-16",
+        "total": 3,
+        "with_ft": 1
+      },
+      {
+        "week": "2026-03-23",
+        "total": 59,
+        "with_ft": 13
+      },
+      {
+        "week": "2026-03-30",
+        "total": 452,
+        "with_ft": 144
+      },
+      {
+        "week": "2026-04-06",
+        "total": 126,
+        "with_ft": 25
+      },
+      {
+        "week": "2026-04-13",
+        "total": 149,
+        "with_ft": 36
+      },
+      {
+        "week": "2026-04-20",
+        "total": 157,
+        "with_ft": 43
+      },
+      {
+        "week": "2026-04-27",
+        "total": 151,
+        "with_ft": 22
+      }
+    ]
+  },
+  "totals": {
+    "Data Scientist": {
+      "total": 2795,
+      "with_ft": 137
+    },
+    "ML Engineer": {
+      "total": 2893,
+      "with_ft": 526
+    },
+    "AI Engineer": {
+      "total": 1114,
+      "with_ft": 292
+    }
+  },
+  "adjacency": {
+    "Data Scientist": {
+      "total": 2795,
+      "skills": {
+        "LoRA": 14,
+        "PEFT": 14,
+        "RLHF": 16,
+        "Distillation": 2,
+        "Post-training": 5,
+        "SFT": 9,
+        "RAG": 159,
+        "Prompt Engineering": 101,
+        "LangChain": 101,
+        "Vector Database": 55,
+        "API integration": 8,
+        "ft": 137
+      }
+    },
+    "ML Engineer": {
+      "total": 2893,
+      "skills": {
+        "LoRA": 49,
+        "PEFT": 23,
+        "RLHF": 56,
+        "Distillation": 117,
+        "Post-training": 73,
+        "SFT": 51,
+        "RAG": 328,
+        "Prompt Engineering": 161,
+        "LangChain": 128,
+        "Vector Database": 123,
+        "API integration": 8,
+        "ft": 526
+      }
+    },
+    "AI Engineer": {
+      "total": 1114,
+      "skills": {
+        "LoRA": 21,
+        "PEFT": 11,
+        "RLHF": 22,
+        "Distillation": 19,
+        "Post-training": 17,
+        "SFT": 10,
+        "RAG": 431,
+        "Prompt Engineering": 250,
+        "LangChain": 234,
+        "Vector Database": 211,
+        "API integration": 36,
+        "ft": 292
+      }
+    }
+  },
+  "adjacency_ft": {
+    "Data Scientist": {
+      "ft_total": 137,
+      "skills": {
+        "LoRA": 13,
+        "PEFT": 13,
+        "RLHF": 14,
+        "Distillation": 2,
+        "Post-training": 3,
+        "SFT": 9,
+        "RAG": 51,
+        "Prompt Engineering": 44,
+        "LangChain": 29,
+        "Vector Database": 24,
+        "API integration": 3
+      }
+    },
+    "ML Engineer": {
+      "ft_total": 526,
+      "skills": {
+        "LoRA": 47,
+        "PEFT": 22,
+        "RLHF": 44,
+        "Distillation": 64,
+        "Post-training": 36,
+        "SFT": 42,
+        "RAG": 147,
+        "Prompt Engineering": 88,
+        "LangChain": 47,
+        "Vector Database": 54,
+        "API integration": 0
+      }
+    },
+    "AI Engineer": {
+      "ft_total": 292,
+      "skills": {
+        "LoRA": 20,
+        "PEFT": 10,
+        "RLHF": 21,
+        "Distillation": 15,
+        "Post-training": 13,
+        "SFT": 8,
+        "RAG": 178,
+        "Prompt Engineering": 121,
+        "LangChain": 99,
+        "Vector Database": 86,
+        "API integration": 9
+      }
+    }
+  }
+}
