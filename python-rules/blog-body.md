@@ -17,6 +17,8 @@ Across 137,974 tech postings in our index (Speechify excluded as a known carpet-
 | 7 | Java | 9.3% | 12,858 |
 | 8 | React | 9.2% | 12,682 |
 
+![Top-15 skill prevalence in tech job postings — Python at 29%, 2x the next skill](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/05/04/e955cb79-d6bf-4b65-9c50-5facd727e73f/lpza4lM4JpU-01-prevalence.png)
+
 ## Python is the only skill that's everywhere
 
 Prevalence alone doesn't capture importance. A skill could be in 30% of postings because half of one big role demands it. We tested all 18 of the most common tech roles separately and counted how many of them require each skill at a meaningful rate.
@@ -33,6 +35,8 @@ Prevalence alone doesn't capture importance. A skill could be in 30% of postings
 Python clears that bar 14 times. Nothing else clears it more than 5. Python is universal across the technical IC track in a way that no other skill is.
 
 ## The role pattern is bimodal
+
+![Python prevalence by role — from 1% (Product Designer) to 64% (Data Scientist)](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/05/04/e955cb79-d6bf-4b65-9c50-5facd727e73f/wBTKrm1fLZc-02-by-role.png)
 
 The roles where Python is most heavily required:
 
@@ -54,6 +58,8 @@ This is the cleanest pattern in our data: **if your role touches code or data, y
 
 ## Python is the closest thing tech has to a global standard
 
+![Python prevalence by country — strikingly flat at 25-37% across every major market](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/05/04/e955cb79-d6bf-4b65-9c50-5facd727e73f/QyiSn0HZKeY-03-by-country.png)
+
 This is where Python's lead becomes uniquely impressive. Across the top 25 countries by job count, Python's prevalence sits in a tight band of roughly 25–37%. The standard deviation is about 5 percentage points.
 
 | Country | n postings | Python % |
@@ -73,6 +79,8 @@ This is where Python's lead becomes uniquely impressive. Across the top 25 count
 Compare this to other top skills. React skews toward frontend-heavy markets. AWS skews toward US tech. Java skews toward India enterprise. Python is the rare skill that's *just the same percentage everywhere* — and it's actually higher in China, Israel, and Brazil than in the US.
 
 ## Python is also flat across seniority levels
+
+![Python prevalence by seniority — flat at 32-38% across every IC level from intern to staff](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/05/04/e955cb79-d6bf-4b65-9c50-5facd727e73f/J1NoKx_b4kg-04-by-seniority.png)
 
 The other dimension where most skills fan out is seniority. Skills typically curve up (more senior → more likely to be required) or curve down (more senior → less likely, because seniors lead teams instead of writing code).
 
@@ -94,6 +102,8 @@ The drop in management roles isn't because Python becomes less relevant — it's
 
 ## Python is a floor, not a salary premium
 
+![Python salary lift by role — premium for data roles, flat or negative for ML/AI roles](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/05/04/e955cb79-d6bf-4b65-9c50-5facd727e73f/Dh9h6btJFJE-06-salary.png)
+
 Here's where the narrative gets nuanced. We compared median `salaryMin` (USD only) for Python jobs vs non-Python jobs in the same role. The pattern is mixed, and that mix tells you something:
 
 | Role | Python median | Non-Python median | Lift |
@@ -113,6 +123,8 @@ For data roles, Python jobs pay 6–13% more — Python is genuinely value-addit
 The takeaway: Python doesn't earn you a raise. Knowing what to stack on top of it does.
 
 ## What pairs with Python: SQL, AWS, Kubernetes
+
+![Top co-occurring skills in Python jobs — SQL is the dominant complement at 32%](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/05/04/e955cb79-d6bf-4b65-9c50-5facd727e73f/Z3e3kZ3qcBU-05-cooccurrence.png)
 
 Of the 40,055 jobs that require Python, here's what they also require:
 
