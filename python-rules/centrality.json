@@ -1,0 +1,1195 @@
+{
+  "resolved": {
+    "Python": [
+      [
+        "skill",
+        "175c2b707caa6eb1",
+        "Python"
+      ],
+      [
+        "product",
+        "03bc71cfa47b7c21",
+        "Python"
+      ]
+    ],
+    "AWS": [
+      [
+        "skill",
+        "70c530d0ff2e16d0",
+        "AWS"
+      ],
+      [
+        "product",
+        "0d8660063620a02a",
+        "AWS"
+      ]
+    ],
+    "SQL": [
+      [
+        "skill",
+        "3a5be1059dd0b8c0",
+        "SQL"
+      ],
+      [
+        "product",
+        "ce216b750b9b3212",
+        "SQL"
+      ]
+    ],
+    "Kubernetes": [
+      [
+        "skill",
+        "44056b937ba00032",
+        "Kubernetes"
+      ],
+      [
+        "product",
+        "961033af371d8b75",
+        "Kubernetes"
+      ]
+    ],
+    "CI/CD": [
+      [
+        "skill",
+        "0e329fec8bcc5b04",
+        "CI/CD"
+      ],
+      [
+        "product",
+        "db95e320ae22d3a5",
+        "CI/CD"
+      ]
+    ],
+    "TypeScript": [
+      [
+        "skill",
+        "e2fe5966d65bc7ef",
+        "TypeScript"
+      ],
+      [
+        "product",
+        "e21dcb130eb765af",
+        "TypeScript"
+      ]
+    ],
+    "React": [
+      [
+        "skill",
+        "ce662c8fe3dc7f90",
+        "React"
+      ],
+      [
+        "product",
+        "4a0de473f10194a2",
+        "React"
+      ]
+    ],
+    "Java": [
+      [
+        "skill",
+        "dfe2344b4fd0c2e3",
+        "Java"
+      ],
+      [
+        "product",
+        "2e1890e8c8c0898a",
+        "Java"
+      ]
+    ],
+    "machine learning": [
+      [
+        "skill",
+        "8a3faf319060f266",
+        "machine learning"
+      ],
+      [
+        "product",
+        "913246ff560966a5",
+        "machine learning"
+      ]
+    ],
+    "Docker": [
+      [
+        "skill",
+        "31279e1096ed037b",
+        "Docker"
+      ],
+      [
+        "product",
+        "0564f2790f5e2be1",
+        "Docker"
+      ]
+    ],
+    "JavaScript": [
+      [
+        "skill",
+        "cb1694661c7fad2f",
+        "JavaScript"
+      ],
+      [
+        "product",
+        "2d22217b8e95b433",
+        "JavaScript"
+      ]
+    ],
+    "Distributed systems": [
+      [
+        "skill",
+        "c5c448604a1a111b",
+        "Distributed systems"
+      ]
+    ],
+    "Terraform": [
+      [
+        "skill",
+        "aa2a7c4209111c70",
+        "Terraform"
+      ],
+      [
+        "product",
+        "f7334225ad6a6ccf",
+        "Terraform"
+      ]
+    ],
+    "Azure": [
+      [
+        "skill",
+        "511550b1f075f862",
+        "Azure"
+      ],
+      [
+        "product",
+        "c90f83649e45cadc",
+        "Azure"
+      ]
+    ],
+    "observability": [
+      [
+        "skill",
+        "ddb3a196c3451ac8",
+        "observability"
+      ],
+      [
+        "product",
+        "d30260df654c893b",
+        "Observability"
+      ]
+    ],
+    "C++": [
+      [
+        "skill",
+        "a0343355cba7f506",
+        "C++"
+      ],
+      [
+        "product",
+        "22cbcf672961bef5",
+        "C++"
+      ]
+    ],
+    "GCP": [
+      [
+        "skill",
+        "8646be1046ff517a",
+        "GCP"
+      ],
+      [
+        "product",
+        "8bc4dfb9d483d8fb",
+        "GCP"
+      ]
+    ],
+    "Go": [
+      [
+        "skill",
+        "7cc407a156ba0f94",
+        "Go"
+      ],
+      [
+        "product",
+        "387f301075756a0a",
+        "Go"
+      ]
+    ],
+    "Data analysis": [
+      [
+        "skill",
+        "a2eeb9fbf17e2782",
+        "Data analysis"
+      ],
+      [
+        "product",
+        "d76b2664d6290ba9",
+        "data analysis"
+      ]
+    ],
+    "testing": [
+      [
+        "skill",
+        "0c401f59ee3cf068",
+        "testing"
+      ],
+      [
+        "product",
+        "90c47e20a9286c27",
+        "Testing"
+      ]
+    ],
+    "data pipelines": [
+      [
+        "skill",
+        "65265be22fd43c1a",
+        "data pipelines"
+      ],
+      [
+        "product",
+        "fcd104ab0d9d475d",
+        "Data Pipelines"
+      ]
+    ],
+    "monitoring": [
+      [
+        "skill",
+        "714d7fb1203e2243",
+        "monitoring"
+      ],
+      [
+        "product",
+        "0f8c5edc4d1066ff",
+        "Monitoring"
+      ]
+    ],
+    "Git": [
+      [
+        "skill",
+        "576ccb2e4345478a",
+        "Git"
+      ],
+      [
+        "product",
+        "963c728903208069",
+        "Git"
+      ]
+    ],
+    "PostgreSQL": [
+      [
+        "skill",
+        "29553eb075be66b8",
+        "PostgreSQL"
+      ],
+      [
+        "product",
+        "e7879a052dedba42",
+        "PostgreSQL"
+      ]
+    ],
+    "Linux": [
+      [
+        "skill",
+        "38d61170dcded7c3",
+        "Linux"
+      ],
+      [
+        "product",
+        "7f5529c3d7bf62bb",
+        "Linux"
+      ]
+    ],
+    "data modeling": [
+      [
+        "skill",
+        "39234d0b187e9ada",
+        "data modeling"
+      ],
+      [
+        "product",
+        "636fce81cf611a26",
+        "Data Modeling"
+      ]
+    ],
+    "automation": [
+      [
+        "skill",
+        "14af8560954a732e",
+        "automation"
+      ],
+      [
+        "product",
+        "cc8ab1ec29796b99",
+        "automation"
+      ]
+    ],
+    "Tableau": [
+      [
+        "skill",
+        "c061a3862bbad0d9",
+        "Tableau"
+      ],
+      [
+        "product",
+        "0392c47a1981a45d",
+        "Tableau"
+      ]
+    ],
+    "Snowflake": [
+      [
+        "skill",
+        "fb963c80e29a5477",
+        "Snowflake"
+      ],
+      [
+        "product",
+        "0eb256292285f980",
+        "Snowflake"
+      ]
+    ],
+    "Node.js": [
+      [
+        "skill",
+        "69d0e04100891288",
+        "Node.js"
+      ],
+      [
+        "product",
+        "54c55a7e6b867f91",
+        "Node.js"
+      ]
+    ],
+    "Databricks": [
+      [
+        "skill",
+        "e8b0d094f07f5855",
+        "Databricks"
+      ],
+      [
+        "product",
+        "554095cd7c4a310d",
+        "Databricks"
+      ]
+    ],
+    "DevOps": [
+      [
+        "skill",
+        "43c6d0ab3474689b",
+        "DevOps"
+      ],
+      [
+        "product",
+        "a6920fcd4b4bce25",
+        "DevOps"
+      ]
+    ],
+    "debugging": [
+      [
+        "skill",
+        "bf7d3ae9ecefe69e",
+        "debugging"
+      ],
+      [
+        "product",
+        "005eeacca15064ab",
+        "Debugging"
+      ]
+    ],
+    "APIs": [
+      [
+        "skill",
+        "c0aed2725d22e952",
+        "APIs"
+      ],
+      [
+        "product",
+        "214b863f519d2c2c",
+        "APIs"
+      ]
+    ],
+    "Kafka": [
+      [
+        "skill",
+        "fd8879017b49226d",
+        "Kafka"
+      ],
+      [
+        "product",
+        "624104c6a82beae5",
+        "Kafka"
+      ]
+    ],
+    "microservices": [
+      [
+        "skill",
+        "7cd80b93ba6d542f",
+        "microservices"
+      ],
+      [
+        "product",
+        "50b7a860bc18fc05",
+        "microservices"
+      ]
+    ],
+    "PyTorch": [
+      [
+        "skill",
+        "f0109bbf0cbac010",
+        "PyTorch"
+      ],
+      [
+        "product",
+        "1e5c481476b15392",
+        "PyTorch"
+      ]
+    ],
+    "code reviews": [
+      [
+        "skill",
+        "bad3ddec4d42f20e",
+        "code reviews"
+      ],
+      [
+        "product",
+        "3bcd25c6ca718f2e",
+        "code reviews"
+      ]
+    ],
+    "LLMs": [
+      [
+        "skill",
+        "55f13820cd30e802",
+        "LLMs"
+      ],
+      [
+        "product",
+        "0f02973c050638c0",
+        "LLMs"
+      ]
+    ],
+    "Agile": [
+      [
+        "skill",
+        "40a42fc05a3d0f45",
+        "Agile"
+      ],
+      [
+        "product",
+        "fd5f965ee7dc848f",
+        "Agile"
+      ]
+    ]
+  },
+  "totals": [
+    {
+      "name": "machine learning",
+      "degree": 24528,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "8a3faf319060f266",
+          "canonical": "machine learning",
+          "degree": 24367
+        },
+        {
+          "type": "product",
+          "id": "913246ff560966a5",
+          "canonical": "machine learning",
+          "degree": 161
+        }
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "degree": 24454,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "44056b937ba00032",
+          "canonical": "Kubernetes",
+          "degree": 16925
+        },
+        {
+          "type": "product",
+          "id": "961033af371d8b75",
+          "canonical": "Kubernetes",
+          "degree": 7529
+        }
+      ]
+    },
+    {
+      "name": "Python",
+      "degree": 18425,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "175c2b707caa6eb1",
+          "canonical": "Python",
+          "degree": 17983
+        },
+        {
+          "type": "product",
+          "id": "03bc71cfa47b7c21",
+          "canonical": "Python",
+          "degree": 442
+        }
+      ]
+    },
+    {
+      "name": "Docker",
+      "degree": 13682,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "31279e1096ed037b",
+          "canonical": "Docker",
+          "degree": 8698
+        },
+        {
+          "type": "product",
+          "id": "0564f2790f5e2be1",
+          "canonical": "Docker",
+          "degree": 4984
+        }
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "degree": 12079,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "cb1694661c7fad2f",
+          "canonical": "JavaScript",
+          "degree": 11952
+        },
+        {
+          "type": "product",
+          "id": "2d22217b8e95b433",
+          "canonical": "JavaScript",
+          "degree": 127
+        }
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "degree": 10162,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "0e329fec8bcc5b04",
+          "canonical": "CI/CD",
+          "degree": 9767
+        },
+        {
+          "type": "product",
+          "id": "db95e320ae22d3a5",
+          "canonical": "CI/CD",
+          "degree": 395
+        }
+      ]
+    },
+    {
+      "name": "automation",
+      "degree": 9226,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "14af8560954a732e",
+          "canonical": "automation",
+          "degree": 9103
+        },
+        {
+          "type": "product",
+          "id": "cc8ab1ec29796b99",
+          "canonical": "automation",
+          "degree": 123
+        }
+      ]
+    },
+    {
+      "name": "observability",
+      "degree": 9115,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "ddb3a196c3451ac8",
+          "canonical": "observability",
+          "degree": 8923
+        },
+        {
+          "type": "product",
+          "id": "d30260df654c893b",
+          "canonical": "Observability",
+          "degree": 192
+        }
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "degree": 8667,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "e2fe5966d65bc7ef",
+          "canonical": "TypeScript",
+          "degree": 7897
+        },
+        {
+          "type": "product",
+          "id": "e21dcb130eb765af",
+          "canonical": "TypeScript",
+          "degree": 770
+        }
+      ]
+    },
+    {
+      "name": "Node.js",
+      "degree": 8606,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "69d0e04100891288",
+          "canonical": "Node.js",
+          "degree": 7426
+        },
+        {
+          "type": "product",
+          "id": "54c55a7e6b867f91",
+          "canonical": "Node.js",
+          "degree": 1180
+        }
+      ]
+    },
+    {
+      "name": "DevOps",
+      "degree": 7965,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "43c6d0ab3474689b",
+          "canonical": "DevOps",
+          "degree": 7904
+        },
+        {
+          "type": "product",
+          "id": "a6920fcd4b4bce25",
+          "canonical": "DevOps",
+          "degree": 61
+        }
+      ]
+    },
+    {
+      "name": "Terraform",
+      "degree": 7639,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "aa2a7c4209111c70",
+          "canonical": "Terraform",
+          "degree": 3838
+        },
+        {
+          "type": "product",
+          "id": "f7334225ad6a6ccf",
+          "canonical": "Terraform",
+          "degree": 3801
+        }
+      ]
+    },
+    {
+      "name": "React",
+      "degree": 7540,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "ce662c8fe3dc7f90",
+          "canonical": "React",
+          "degree": 5786
+        },
+        {
+          "type": "product",
+          "id": "4a0de473f10194a2",
+          "canonical": "React",
+          "degree": 1754
+        }
+      ]
+    },
+    {
+      "name": "Data analysis",
+      "degree": 7439,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "a2eeb9fbf17e2782",
+          "canonical": "Data analysis",
+          "degree": 7425
+        },
+        {
+          "type": "product",
+          "id": "d76b2664d6290ba9",
+          "canonical": "data analysis",
+          "degree": 14
+        }
+      ]
+    },
+    {
+      "name": "AWS",
+      "degree": 7310,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "70c530d0ff2e16d0",
+          "canonical": "AWS",
+          "degree": 4008
+        },
+        {
+          "type": "product",
+          "id": "0d8660063620a02a",
+          "canonical": "AWS",
+          "degree": 3302
+        }
+      ]
+    },
+    {
+      "name": "Git",
+      "degree": 6745,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "576ccb2e4345478a",
+          "canonical": "Git",
+          "degree": 5932
+        },
+        {
+          "type": "product",
+          "id": "963c728903208069",
+          "canonical": "Git",
+          "degree": 813
+        }
+      ]
+    },
+    {
+      "name": "SQL",
+      "degree": 6316,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "3a5be1059dd0b8c0",
+          "canonical": "SQL",
+          "degree": 6158
+        },
+        {
+          "type": "product",
+          "id": "ce216b750b9b3212",
+          "canonical": "SQL",
+          "degree": 158
+        }
+      ]
+    },
+    {
+      "name": "LLMs",
+      "degree": 5952,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "55f13820cd30e802",
+          "canonical": "LLMs",
+          "degree": 4445
+        },
+        {
+          "type": "product",
+          "id": "0f02973c050638c0",
+          "canonical": "LLMs",
+          "degree": 1507
+        }
+      ]
+    },
+    {
+      "name": "monitoring",
+      "degree": 5917,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "714d7fb1203e2243",
+          "canonical": "monitoring",
+          "degree": 5850
+        },
+        {
+          "type": "product",
+          "id": "0f8c5edc4d1066ff",
+          "canonical": "Monitoring",
+          "degree": 67
+        }
+      ]
+    },
+    {
+      "name": "Linux",
+      "degree": 5164,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "38d61170dcded7c3",
+          "canonical": "Linux",
+          "degree": 4506
+        },
+        {
+          "type": "product",
+          "id": "7f5529c3d7bf62bb",
+          "canonical": "Linux",
+          "degree": 658
+        }
+      ]
+    },
+    {
+      "name": "testing",
+      "degree": 5157,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "0c401f59ee3cf068",
+          "canonical": "testing",
+          "degree": 5147
+        },
+        {
+          "type": "product",
+          "id": "90c47e20a9286c27",
+          "canonical": "Testing",
+          "degree": 10
+        }
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "degree": 5087,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "29553eb075be66b8",
+          "canonical": "PostgreSQL",
+          "degree": 3101
+        },
+        {
+          "type": "product",
+          "id": "e7879a052dedba42",
+          "canonical": "PostgreSQL",
+          "degree": 1986
+        }
+      ]
+    },
+    {
+      "name": "debugging",
+      "degree": 4864,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "bf7d3ae9ecefe69e",
+          "canonical": "debugging",
+          "degree": 4859
+        },
+        {
+          "type": "product",
+          "id": "005eeacca15064ab",
+          "canonical": "Debugging",
+          "degree": 5
+        }
+      ]
+    },
+    {
+      "name": "Go",
+      "degree": 4788,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "7cc407a156ba0f94",
+          "canonical": "Go",
+          "degree": 4441
+        },
+        {
+          "type": "product",
+          "id": "387f301075756a0a",
+          "canonical": "Go",
+          "degree": 347
+        }
+      ]
+    },
+    {
+      "name": "Azure",
+      "degree": 4673,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "511550b1f075f862",
+          "canonical": "Azure",
+          "degree": 2205
+        },
+        {
+          "type": "product",
+          "id": "c90f83649e45cadc",
+          "canonical": "Azure",
+          "degree": 2468
+        }
+      ]
+    },
+    {
+      "name": "Java",
+      "degree": 4329,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "dfe2344b4fd0c2e3",
+          "canonical": "Java",
+          "degree": 4215
+        },
+        {
+          "type": "product",
+          "id": "2e1890e8c8c0898a",
+          "canonical": "Java",
+          "degree": 114
+        }
+      ]
+    },
+    {
+      "name": "microservices",
+      "degree": 4327,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "7cd80b93ba6d542f",
+          "canonical": "microservices",
+          "degree": 4160
+        },
+        {
+          "type": "product",
+          "id": "50b7a860bc18fc05",
+          "canonical": "microservices",
+          "degree": 167
+        }
+      ]
+    },
+    {
+      "name": "Snowflake",
+      "degree": 3880,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "fb963c80e29a5477",
+          "canonical": "Snowflake",
+          "degree": 753
+        },
+        {
+          "type": "product",
+          "id": "0eb256292285f980",
+          "canonical": "Snowflake",
+          "degree": 3127
+        }
+      ]
+    },
+    {
+      "name": "Kafka",
+      "degree": 3457,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "fd8879017b49226d",
+          "canonical": "Kafka",
+          "degree": 1509
+        },
+        {
+          "type": "product",
+          "id": "624104c6a82beae5",
+          "canonical": "Kafka",
+          "degree": 1948
+        }
+      ]
+    },
+    {
+      "name": "PyTorch",
+      "degree": 3112,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "f0109bbf0cbac010",
+          "canonical": "PyTorch",
+          "degree": 2068
+        },
+        {
+          "type": "product",
+          "id": "1e5c481476b15392",
+          "canonical": "PyTorch",
+          "degree": 1044
+        }
+      ]
+    },
+    {
+      "name": "Tableau",
+      "degree": 2843,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "c061a3862bbad0d9",
+          "canonical": "Tableau",
+          "degree": 376
+        },
+        {
+          "type": "product",
+          "id": "0392c47a1981a45d",
+          "canonical": "Tableau",
+          "degree": 2467
+        }
+      ]
+    },
+    {
+      "name": "Databricks",
+      "degree": 2755,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "e8b0d094f07f5855",
+          "canonical": "Databricks",
+          "degree": 489
+        },
+        {
+          "type": "product",
+          "id": "554095cd7c4a310d",
+          "canonical": "Databricks",
+          "degree": 2266
+        }
+      ]
+    },
+    {
+      "name": "APIs",
+      "degree": 2736,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "c0aed2725d22e952",
+          "canonical": "APIs",
+          "degree": 2296
+        },
+        {
+          "type": "product",
+          "id": "214b863f519d2c2c",
+          "canonical": "APIs",
+          "degree": 440
+        }
+      ]
+    },
+    {
+      "name": "data modeling",
+      "degree": 2650,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "39234d0b187e9ada",
+          "canonical": "data modeling",
+          "degree": 2648
+        },
+        {
+          "type": "product",
+          "id": "636fce81cf611a26",
+          "canonical": "Data Modeling",
+          "degree": 2
+        }
+      ]
+    },
+    {
+      "name": "Distributed systems",
+      "degree": 2441,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "c5c448604a1a111b",
+          "canonical": "Distributed systems",
+          "degree": 2441
+        }
+      ]
+    },
+    {
+      "name": "data pipelines",
+      "degree": 2275,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "65265be22fd43c1a",
+          "canonical": "data pipelines",
+          "degree": 2231
+        },
+        {
+          "type": "product",
+          "id": "fcd104ab0d9d475d",
+          "canonical": "Data Pipelines",
+          "degree": 44
+        }
+      ]
+    },
+    {
+      "name": "GCP",
+      "degree": 1929,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "8646be1046ff517a",
+          "canonical": "GCP",
+          "degree": 769
+        },
+        {
+          "type": "product",
+          "id": "8bc4dfb9d483d8fb",
+          "canonical": "GCP",
+          "degree": 1160
+        }
+      ]
+    },
+    {
+      "name": "C++",
+      "degree": 1864,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "a0343355cba7f506",
+          "canonical": "C++",
+          "degree": 1838
+        },
+        {
+          "type": "product",
+          "id": "22cbcf672961bef5",
+          "canonical": "C++",
+          "degree": 26
+        }
+      ]
+    },
+    {
+      "name": "Agile",
+      "degree": 1663,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "40a42fc05a3d0f45",
+          "canonical": "Agile",
+          "degree": 1642
+        },
+        {
+          "type": "product",
+          "id": "fd5f965ee7dc848f",
+          "canonical": "Agile",
+          "degree": 21
+        }
+      ]
+    },
+    {
+      "name": "code reviews",
+      "degree": 761,
+      "breakdown": [
+        {
+          "type": "skill",
+          "id": "bad3ddec4d42f20e",
+          "canonical": "code reviews",
+          "degree": 747
+        },
+        {
+          "type": "product",
+          "id": "3bcd25c6ca718f2e",
+          "canonical": "code reviews",
+          "degree": 14
+        }
+      ]
+    }
+  ]
+}

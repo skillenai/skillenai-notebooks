@@ -1,6 +1,6 @@
 # Blog draft (not yet published)
 
-**Suggested title:** Python Rules Tech: How One Skill Quietly Became the Global Lingua Franca
+**Suggested title:** Python Rules the Job Market — But the Tech Conversation Is About Something Else
 
 **Suggested category:** insights-and-analytics
 **Suggested tags:** Python, SQL, AWS, data engineering, machine learning, AI Engineer, tech jobs, labor market
@@ -11,7 +11,24 @@
 ## Body (HTML — paste into the blog editor)
 
 ```html
-<p>We set out to identify the most important skill in tech today and ended up needing to define what "important" means. By every reasonable definition — raw demand, cross-role universality, knowledge-graph centrality, geographic reach, and pairing with other skills — the answer is the same: <strong>Python</strong>. But the more interesting story is <em>why</em> Python wins so consistently. It is the only top skill in our index that is requested at roughly the same rate from San Francisco to Bangalore, from intern to staff engineer.</p>
+<p>We set out to identify the most important skill in tech today and ended up needing to define what "important" means. By every measure of <strong>employer demand</strong>, the answer is the same: <strong>Python</strong>. It's in 29% of all tech postings, 2x the next-most-prevalent skill, requested at the same rate from San Francisco to Bangalore, from intern to staff engineer.</p>
+
+<p>But here's the twist. When we widened the lens from job postings to the whole tech corpus — jobs plus blogs, news articles, and scholarly papers — Python dropped to <strong>third place</strong>. The most-discussed entity in tech is <em>machine learning</em>. Second is <em>Kubernetes</em>. Python is how the work gets done; ML and Kubernetes are what people <em>write</em> about. Both views matter. Both are below.</p>
+
+<h2>Two corpora, two answers</h2>
+
+<table>
+<thead><tr><th>Rank</th><th>By job-posting prevalence</th><th>%</th><th>By graph centrality (jobs + blogs + news + scholarly)</th><th>Mentions</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>Python</strong></td><td>29.0%</td><td>machine learning</td><td>24,528</td></tr>
+<tr><td>2</td><td>SQL</td><td>14.6%</td><td>Kubernetes</td><td>24,454</td></tr>
+<tr><td>3</td><td>AWS</td><td>14.3%</td><td>Python</td><td>18,425</td></tr>
+<tr><td>4</td><td>CI/CD</td><td>11.1%</td><td>Docker</td><td>13,682</td></tr>
+<tr><td>5</td><td>Kubernetes</td><td>10.8%</td><td>JavaScript</td><td>12,079</td></tr>
+</tbody>
+</table>
+
+<p>This is the cleanest way to read it: <strong>Python is the dominant tool of tech work; ML is the dominant topic of tech discourse.</strong> The rest of this post focuses on the job-market side, where Python wins.</p>
 
 <h2>The leaderboard isn't close</h2>
 
