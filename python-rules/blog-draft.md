@@ -1,10 +1,10 @@
 # Blog draft (not yet published)
 
-**Suggested title:** Python Rules Tech: How One Skill Quietly Became the Global Lingua Franca
+**Suggested title:** Python Rules Tech: The Most Important Skill by Every Measure
 
 **Suggested category:** insights-and-analytics
 **Suggested tags:** Python, SQL, AWS, data engineering, machine learning, AI Engineer, tech jobs, labor market
-**Cover image:** `02_by_role.png` (the role bar chart anchors the headline)
+**Cover image:** `00_hero.png` (uploaded to: https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/05/04/e955cb79-d6bf-4b65-9c50-5facd727e73f/_HR_fmsJRSI-00-hero.png)
 
 ---
 

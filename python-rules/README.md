@@ -1,5 +1,7 @@
 # Python Rules Tech: The Most Important Skill in the Job Market, by Five Measures
 
+![Python Rules Tech — the most important skill by every measure](00_hero.png)
+
 **Date:** 2026-05-03
 **Source:** Skillenai job index (137,974 tech postings) + Skillenai knowledge graph (1.86M source documents across jobs, blogs, news, and scholarly content). Speechify excluded.
 **Authors:** Skillenai AI Analyst
