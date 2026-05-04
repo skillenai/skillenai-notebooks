@@ -1,0 +1,768 @@
+{
+  "total_jobs": 137974,
+  "python_jobs": 40055,
+  "by_role": [
+    {
+      "role": "Software Engineer",
+      "n": 21451,
+      "python": 6999,
+      "pct": 32.62784951750501
+    },
+    {
+      "role": "Product Manager",
+      "n": 5482,
+      "python": 113,
+      "pct": 2.0612914994527545
+    },
+    {
+      "role": "Data Scientist",
+      "n": 2820,
+      "python": 1803,
+      "pct": 63.93617021276596
+    },
+    {
+      "role": "Data Engineer",
+      "n": 2600,
+      "python": 1545,
+      "pct": 59.42307692307692
+    },
+    {
+      "role": "Engineering Manager",
+      "n": 2582,
+      "python": 467,
+      "pct": 18.086754453911695
+    },
+    {
+      "role": "Backend Engineer",
+      "n": 2207,
+      "python": 739,
+      "pct": 33.48436792025374
+    },
+    {
+      "role": "Product Designer",
+      "n": 1961,
+      "python": 19,
+      "pct": 0.9688934217236104
+    },
+    {
+      "role": "Machine Learning Engineer",
+      "n": 1669,
+      "python": 1013,
+      "pct": 60.69502696225285
+    },
+    {
+      "role": "Staff Software Engineer",
+      "n": 1591,
+      "python": 589,
+      "pct": 37.02074167190446
+    },
+    {
+      "role": "DevOps Engineer",
+      "n": 1566,
+      "python": 583,
+      "pct": 37.22860791826309
+    },
+    {
+      "role": "Data Analyst",
+      "n": 1376,
+      "python": 604,
+      "pct": 43.895348837209305
+    },
+    {
+      "role": "ML Engineer",
+      "n": 1269,
+      "python": 416,
+      "pct": 32.781717888100864
+    },
+    {
+      "role": "Site Reliability Engineer",
+      "n": 1238,
+      "python": 466,
+      "pct": 37.64135702746365
+    },
+    {
+      "role": "Systems Engineer",
+      "n": 1185,
+      "python": 185,
+      "pct": 15.611814345991561
+    },
+    {
+      "role": "AI Engineer",
+      "n": 1119,
+      "python": 590,
+      "pct": 52.72564789991063
+    },
+    {
+      "role": "Full Stack Engineer",
+      "n": 1051,
+      "python": 370,
+      "pct": 35.20456707897241
+    },
+    {
+      "role": "Program Manager",
+      "n": 1050,
+      "python": 11,
+      "pct": 1.0476190476190477
+    },
+    {
+      "role": "Technical Program Manager",
+      "n": 1021,
+      "python": 30,
+      "pct": 2.9382957884427032
+    },
+    {
+      "role": "Business Analyst",
+      "n": 958,
+      "python": 104,
+      "pct": 10.855949895615867
+    },
+    {
+      "role": "Solutions Architect",
+      "n": 958,
+      "python": 359,
+      "pct": 37.47390396659708
+    },
+    {
+      "role": "Frontend Engineer",
+      "n": 871,
+      "python": 80,
+      "pct": 9.184845005740527
+    },
+    {
+      "role": "Platform Engineer",
+      "n": 825,
+      "python": 277,
+      "pct": 33.57575757575758
+    },
+    {
+      "role": "Security Engineer",
+      "n": 817,
+      "python": 236,
+      "pct": 28.886168910648713
+    },
+    {
+      "role": "Research Scientist",
+      "n": 556,
+      "python": 188,
+      "pct": 33.81294964028777
+    },
+    {
+      "role": "Solution Architect",
+      "n": 532,
+      "python": 32,
+      "pct": 6.015037593984962
+    },
+    {
+      "role": "Principal Software Engineer",
+      "n": 526,
+      "python": 165,
+      "pct": 31.368821292775664
+    },
+    {
+      "role": "Infrastructure Engineer",
+      "n": 516,
+      "python": 175,
+      "pct": 33.91472868217054
+    },
+    {
+      "role": "Software Engineering Manager",
+      "n": 512,
+      "python": 110,
+      "pct": 21.484375
+    },
+    {
+      "role": "QA Engineer",
+      "n": 509,
+      "python": 131,
+      "pct": 25.73673870333988
+    },
+    {
+      "role": "Forward Deployed Engineer",
+      "n": 500,
+      "python": 318,
+      "pct": 63.6
+    }
+  ],
+  "by_seniority": [
+    {
+      "level": "senior",
+      "n": 48428,
+      "python": 15152,
+      "pct": 31.28768481044024
+    },
+    {
+      "level": "mid",
+      "n": 10871,
+      "python": 3940,
+      "pct": 36.24321589550179
+    },
+    {
+      "level": "staff",
+      "n": 9554,
+      "python": 3192,
+      "pct": 33.41009001465355
+    },
+    {
+      "level": "manager",
+      "n": 8727,
+      "python": 1553,
+      "pct": 17.79534777128452
+    },
+    {
+      "level": "lead",
+      "n": 7498,
+      "python": 2004,
+      "pct": 26.727127233929046
+    },
+    {
+      "level": "entry",
+      "n": 7260,
+      "python": 2750,
+      "pct": 37.878787878787875
+    },
+    {
+      "level": "principal",
+      "n": 5202,
+      "python": 1170,
+      "pct": 22.491349480968857
+    },
+    {
+      "level": "intern",
+      "n": 4568,
+      "python": 1613,
+      "pct": 35.3108581436077
+    },
+    {
+      "level": "director",
+      "n": 2563,
+      "python": 352,
+      "pct": 13.733905579399142
+    },
+    {
+      "level": "vp",
+      "n": 718,
+      "python": 116,
+      "pct": 16.15598885793872
+    },
+    {
+      "level": "c-level",
+      "n": 374,
+      "python": 25,
+      "pct": 6.684491978609626
+    },
+    {
+      "level": "junior",
+      "n": 14,
+      "python": 0,
+      "pct": 0.0
+    },
+    {
+      "level": "architect",
+      "n": 8,
+      "python": 0,
+      "pct": 0.0
+    },
+    {
+      "level": "specialist",
+      "n": 4,
+      "python": 0,
+      "pct": 0.0
+    },
+    {
+      "level": "associate",
+      "n": 1,
+      "python": 0,
+      "pct": 0.0
+    }
+  ],
+  "by_country": [
+    {
+      "country": "US",
+      "n": 61041,
+      "python": 18017,
+      "pct": 29.516226798381417
+    },
+    {
+      "country": "IN",
+      "n": 10351,
+      "python": 3261,
+      "pct": 31.5042024925128
+    },
+    {
+      "country": "GB",
+      "n": 7934,
+      "python": 2249,
+      "pct": 28.34635744895387
+    },
+    {
+      "country": "CA",
+      "n": 4053,
+      "python": 1146,
+      "pct": 28.275351591413767
+    },
+    {
+      "country": "DE",
+      "n": 2567,
+      "python": 797,
+      "pct": 31.047915855083755
+    },
+    {
+      "country": "FR",
+      "n": 1739,
+      "python": 568,
+      "pct": 32.66244968372628
+    },
+    {
+      "country": "SG",
+      "n": 1561,
+      "python": 465,
+      "pct": 29.788597053171046
+    },
+    {
+      "country": "BR",
+      "n": 1517,
+      "python": 506,
+      "pct": 33.355306526038234
+    },
+    {
+      "country": "PL",
+      "n": 1341,
+      "python": 421,
+      "pct": 31.3944817300522
+    },
+    {
+      "country": "ES",
+      "n": 1316,
+      "python": 378,
+      "pct": 28.72340425531915
+    },
+    {
+      "country": "AU",
+      "n": 1267,
+      "python": 313,
+      "pct": 24.704025256511443
+    },
+    {
+      "country": "IL",
+      "n": 1180,
+      "python": 426,
+      "pct": 36.101694915254235
+    },
+    {
+      "country": "MX",
+      "n": 1109,
+      "python": 339,
+      "pct": 30.568079350766457
+    },
+    {
+      "country": "CN",
+      "n": 967,
+      "python": 362,
+      "pct": 37.435367114788
+    },
+    {
+      "country": "NL",
+      "n": 911,
+      "python": 313,
+      "pct": 34.357848518111965
+    },
+    {
+      "country": "CO",
+      "n": 891,
+      "python": 277,
+      "pct": 31.088664421997755
+    },
+    {
+      "country": "JP",
+      "n": 758,
+      "python": 232,
+      "pct": 30.606860158311346
+    },
+    {
+      "country": "UA",
+      "n": 660,
+      "python": 113,
+      "pct": 17.12121212121212
+    },
+    {
+      "country": "PT",
+      "n": 626,
+      "python": 165,
+      "pct": 26.357827476038338
+    },
+    {
+      "country": "MY",
+      "n": 563,
+      "python": 114,
+      "pct": 20.24866785079929
+    },
+    {
+      "country": "ZA",
+      "n": 562,
+      "python": 83,
+      "pct": 14.768683274021353
+    },
+    {
+      "country": "PH",
+      "n": 541,
+      "python": 101,
+      "pct": 18.66913123844732
+    },
+    {
+      "country": "IE",
+      "n": 539,
+      "python": 181,
+      "pct": 33.580705009276436
+    },
+    {
+      "country": "SE",
+      "n": 532,
+      "python": 107,
+      "pct": 20.112781954887218
+    },
+    {
+      "country": "TW",
+      "n": 519,
+      "python": 165,
+      "pct": 31.791907514450866
+    }
+  ],
+  "time_series": [
+    {
+      "week": "2026-03-09T00:00:00.000Z",
+      "n": 3223,
+      "python": 1078,
+      "pct": 33.44709897610922
+    },
+    {
+      "week": "2026-03-16T00:00:00.000Z",
+      "n": 1683,
+      "python": 458,
+      "pct": 27.213309566250743
+    },
+    {
+      "week": "2026-03-23T00:00:00.000Z",
+      "n": 6189,
+      "python": 1762,
+      "pct": 28.469865891097108
+    },
+    {
+      "week": "2026-03-30T00:00:00.000Z",
+      "n": 58326,
+      "python": 17155,
+      "pct": 29.412268970956347
+    },
+    {
+      "week": "2026-04-06T00:00:00.000Z",
+      "n": 16319,
+      "python": 3424,
+      "pct": 20.981677798884736
+    },
+    {
+      "week": "2026-04-13T00:00:00.000Z",
+      "n": 19614,
+      "python": 6355,
+      "pct": 32.40032629754257
+    },
+    {
+      "week": "2026-04-20T00:00:00.000Z",
+      "n": 17192,
+      "python": 5691,
+      "pct": 33.10260586319218
+    },
+    {
+      "week": "2026-04-27T00:00:00.000Z",
+      "n": 15424,
+      "python": 4131,
+      "pct": 26.782935684647303
+    },
+    {
+      "week": "2026-05-04T00:00:00.000Z",
+      "n": 3,
+      "python": 1,
+      "pct": 33.333333333333336
+    }
+  ],
+  "cooccurrence": [
+    {
+      "entity": "SQL",
+      "jobs": 12688,
+      "pct_of_python": 31.676444888278617
+    },
+    {
+      "entity": "AWS",
+      "jobs": 9747,
+      "pct_of_python": 24.334040694045687
+    },
+    {
+      "entity": "Kubernetes",
+      "jobs": 6983,
+      "pct_of_python": 17.433528897765573
+    },
+    {
+      "entity": "Java",
+      "jobs": 6842,
+      "pct_of_python": 17.081512919735363
+    },
+    {
+      "entity": "CI/CD",
+      "jobs": 6773,
+      "pct_of_python": 16.90924978155037
+    },
+    {
+      "entity": "Docker",
+      "jobs": 5751,
+      "pct_of_python": 14.357758082636375
+    },
+    {
+      "entity": "machine learning",
+      "jobs": 5980,
+      "pct_of_python": 14.929471976032955
+    },
+    {
+      "entity": "C++",
+      "jobs": 5413,
+      "pct_of_python": 13.513918362251903
+    },
+    {
+      "entity": "TypeScript",
+      "jobs": 5387,
+      "pct_of_python": 13.449007614530021
+    },
+    {
+      "entity": "Go",
+      "jobs": 5009,
+      "pct_of_python": 12.505305205342653
+    },
+    {
+      "entity": "React",
+      "jobs": 4705,
+      "pct_of_python": 11.746348770440644
+    },
+    {
+      "entity": "Terraform",
+      "jobs": 4373,
+      "pct_of_python": 10.917488453376608
+    },
+    {
+      "entity": "JavaScript",
+      "jobs": 4459,
+      "pct_of_python": 11.132193234302834
+    },
+    {
+      "entity": "GCP",
+      "jobs": 3962,
+      "pct_of_python": 9.89139932592685
+    },
+    {
+      "entity": "Azure",
+      "jobs": 3848,
+      "pct_of_python": 9.606790662838597
+    },
+    {
+      "entity": "Distributed systems",
+      "jobs": 3949,
+      "pct_of_python": 9.858943952065909
+    },
+    {
+      "entity": "data pipelines",
+      "jobs": 3948,
+      "pct_of_python": 9.856447384845836
+    },
+    {
+      "entity": "Linux",
+      "jobs": 3677,
+      "pct_of_python": 9.179877668206217
+    },
+    {
+      "entity": "PyTorch",
+      "jobs": 3489,
+      "pct_of_python": 8.710523030832606
+    },
+    {
+      "entity": "data modeling",
+      "jobs": 3343,
+      "pct_of_python": 8.346024216702034
+    },
+    {
+      "entity": "Snowflake",
+      "jobs": 2502,
+      "pct_of_python": 6.246411184621146
+    },
+    {
+      "entity": "Git",
+      "jobs": 3287,
+      "pct_of_python": 8.20621645237798
+    },
+    {
+      "entity": "Tableau",
+      "jobs": 2467,
+      "pct_of_python": 6.159031331918612
+    },
+    {
+      "entity": "monitoring",
+      "jobs": 2974,
+      "pct_of_python": 7.424790912495319
+    },
+    {
+      "entity": "observability",
+      "jobs": 2921,
+      "pct_of_python": 7.292472849831482
+    },
+    {
+      "entity": "Databricks",
+      "jobs": 2194,
+      "pct_of_python": 5.477468480838847
+    },
+    {
+      "entity": "PostgreSQL",
+      "jobs": 2743,
+      "pct_of_python": 6.848083884658594
+    },
+    {
+      "entity": "Data analysis",
+      "jobs": 2803,
+      "pct_of_python": 6.9978779178629384
+    },
+    {
+      "entity": "R",
+      "jobs": 2657,
+      "pct_of_python": 6.633379103732368
+    },
+    {
+      "entity": "ETL",
+      "jobs": 2619,
+      "pct_of_python": 6.538509549369617
+    },
+    {
+      "entity": "testing",
+      "jobs": 2598,
+      "pct_of_python": 6.4860816377480965
+    },
+    {
+      "entity": "data visualization",
+      "jobs": 2445,
+      "pct_of_python": 6.1041068530770195
+    },
+    {
+      "entity": "TensorFlow",
+      "jobs": 2344,
+      "pct_of_python": 5.851953563849706
+    },
+    {
+      "entity": "Kafka",
+      "jobs": 2120,
+      "pct_of_python": 5.292722506553489
+    },
+    {
+      "entity": "debugging",
+      "jobs": 2213,
+      "pct_of_python": 5.524903258020222
+    },
+    {
+      "entity": "automation",
+      "jobs": 2199,
+      "pct_of_python": 5.489951316939209
+    },
+    {
+      "entity": "Bash",
+      "jobs": 2188,
+      "pct_of_python": 5.462489077518412
+    },
+    {
+      "entity": "Node.js",
+      "jobs": 2108,
+      "pct_of_python": 5.26276369991262
+    },
+    {
+      "entity": "Airflow",
+      "jobs": 1826,
+      "pct_of_python": 4.558731743852203
+    },
+    {
+      "entity": "LLMs",
+      "jobs": 2045,
+      "pct_of_python": 5.105479965048059
+    },
+    {
+      "entity": "Rust",
+      "jobs": 2046,
+      "pct_of_python": 5.107976532268132
+    },
+    {
+      "entity": "Looker",
+      "jobs": 1538,
+      "pct_of_python": 3.839720384471352
+    },
+    {
+      "entity": "APIs",
+      "jobs": 1983,
+      "pct_of_python": 4.95069279740357
+    },
+    {
+      "entity": "Apache Spark",
+      "jobs": 1491,
+      "pct_of_python": 3.722381725127949
+    },
+    {
+      "entity": "Spark",
+      "jobs": 1859,
+      "pct_of_python": 4.6411184621145924
+    },
+    {
+      "entity": "DevOps",
+      "jobs": 1880,
+      "pct_of_python": 4.693546373736113
+    },
+    {
+      "entity": "Power BI",
+      "jobs": 1313,
+      "pct_of_python": 3.277992759955062
+    },
+    {
+      "entity": "BigQuery",
+      "jobs": 1400,
+      "pct_of_python": 3.4951941081013604
+    },
+    {
+      "entity": "FastAPI",
+      "jobs": 1634,
+      "pct_of_python": 4.079390837598302
+    },
+    {
+      "entity": "DBT",
+      "jobs": 1766,
+      "pct_of_python": 4.4089377106478596
+    },
+    {
+      "entity": "Jenkins",
+      "jobs": 1557,
+      "pct_of_python": 3.8871551616527276
+    },
+    {
+      "entity": "C",
+      "jobs": 1718,
+      "pct_of_python": 4.289102484084384
+    },
+    {
+      "entity": "pandas",
+      "jobs": 1667,
+      "pct_of_python": 4.1617775558606915
+    },
+    {
+      "entity": "MySQL",
+      "jobs": 1584,
+      "pct_of_python": 3.9545624765946825
+    },
+    {
+      "entity": "Grafana",
+      "jobs": 1368,
+      "pct_of_python": 3.4153039570590438
+    },
+    {
+      "entity": "deep learning",
+      "jobs": 1655,
+      "pct_of_python": 4.131818749219823
+    }
+  ]
+}
