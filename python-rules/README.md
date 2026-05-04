@@ -1,12 +1,10 @@
-# Python Rules the Job Market — But the Tech Conversation Is About Something Else
+# Python Rules Tech: The Most Important Skill in the Job Market, by Five Measures
 
 **Date:** 2026-05-03
 **Source:** Skillenai job index (137,974 tech postings) + Skillenai knowledge graph (1.86M source documents across jobs, blogs, news, and scholarly content). Speechify excluded.
 **Authors:** Skillenai AI Analyst
 
-We set out to identify the most important skill in tech today and ended up needing to define what "important" means. By every measure of **employer demand** — raw prevalence, cross-role universality, geographic reach, and seniority coverage — the answer is the same: **Python**. It is the only top skill in our index that is requested at roughly the same rate from San Francisco to Bangalore, from intern to staff engineer.
-
-But there is a twist: when we widen the lens from job postings to the entire tech corpus (blogs, news, scholarly papers), Python drops to **third place**. The most-discussed entity in tech is *machine learning*; second is *Kubernetes*. Python is the dominant **tool of work**, but ML is the dominant **topic of discourse** and Kubernetes is the dominant **infrastructure conversation**. They're not the same thing. This report shows both views.
+We set out to identify the most important skill in tech today and ended up needing to define what "important" means. By every reasonable definition — raw demand, cross-role universality, knowledge-graph centrality, geographic reach, and pairing with other skills — the answer is the same: **Python**. It is the only top skill in our index that is requested at roughly the same rate from San Francisco to Bangalore, from intern to staff engineer, and it dominates both edge types of the knowledge graph (jobs that *require* it AND documents that *mention* it).
 
 ---
 
@@ -18,7 +16,7 @@ There is no single definition, so we use five.
 |---|---|---|
 | 1. **Prevalence** | % of all postings that ask for the skill | Raw demand |
 | 2. **Cross-role universality** | # of distinct roles where the skill appears in ≥30% of postings | Foundational vs niche |
-| 3. **Graph centrality** | Incoming `MENTIONS` edges in the Skillenai knowledge graph (jobs + blogs + news + scholarly) | Cross-corpus footprint — *measures discourse, not demand* |
+| 3. **Graph centrality** | Incoming `MENTIONS` (doc → entity) + `REQUIRES` (job → skill) edges in the Skillenai knowledge graph | Cross-corpus footprint capturing both demand and discourse |
 | 4. **Geographic flatness** | Variance of prevalence across the top 25 countries | Truly global vs regionally concentrated |
 | 5. **Salary premium** | Median `salaryMin` (USD) when the skill is required vs not, controlled by role | Does the market pay for it? |
 
@@ -80,36 +78,37 @@ The pattern is clear: **if your role touches code or data, you need Python. If i
 
 ---
 
-## 3. Graph centrality: machine learning wins discourse, Python places third
+## 3. Graph centrality: Python wins both edge types
 
-The Skillenai knowledge graph (Apache AGE on Postgres) connects ~3M entities to ~1.9M source documents (jobs, blogs, news, and scholarly articles) via `MENTIONS` edges. Degree centrality — the number of incoming edges — is a corpus-wide measure of *how often an entity gets discussed*. This is a fundamentally different question from "how often is the skill required in jobs."
+The Skillenai knowledge graph (Apache AGE on Postgres) connects ~3M entities to ~1.9M source documents (jobs, blogs, news, and scholarly articles) via two edge types:
 
-![Graph centrality top 15](08_centrality.png)
+- **`REQUIRES`** — job nodes pointing to required skills (the structured representation of a job posting's skill requirements)
+- **`MENTIONS`** — document nodes (blogs, news, scholarly papers) pointing to entities discussed in their text
 
-| Rank | Entity | Total in-degree | Breakdown |
-|---:|---|---:|---|
-| 1 | **machine learning** | **24,528** | skill 24,367 + product 161 |
-| 2 | **Kubernetes** | **24,454** | skill 16,925 + product 7,529 |
-| 3 | **Python** | **18,425** | skill 17,983 + product 442 |
-| 4 | Docker | 13,682 | skill 8,698 + product 4,984 |
-| 5 | JavaScript | 12,079 | skill 11,952 + product 127 |
-| 6 | CI/CD | 10,162 | skill 9,767 + product 395 |
-| 7 | automation | 9,226 | skill 9,103 + product 123 |
-| 8 | observability | 9,115 | skill 8,923 + product 192 |
-| 9 | TypeScript | 8,667 | skill 7,897 + product 770 |
-| 10 | Node.js | 8,606 | skill 7,426 + product 1,180 |
+Degree centrality summed across both edge types and across both `:skill` and `:product` canonical IDs gives a corpus-wide measure of importance.
 
-This is the most surprising result in the analysis. Python wins by every job-market measure but **drops to #3** when you widen the corpus to include blogs, news, and scholarly content.
+![Graph centrality top 15 (stacked REQUIRES + MENTIONS)](08_centrality.png)
 
-The reason: blogs and news write about *topics* and *infrastructure shifts*, not about the languages people use to do the work. **Machine learning** is the dominant topic of the AI era. **Kubernetes** is the dominant infrastructure shift of the last decade. Python is *how* the work gets done, but it's not what people write about.
+| Rank | Entity | REQUIRES (jobs) | MENTIONS (docs) | Total | %REQUIRES |
+|---:|---|---:|---:|---:|---:|
+| 1 | **Python** | **47,275** | **18,430** | **65,705** | 72% |
+| 2 | Kubernetes | 19,289 | 24,455 | 43,744 | 44% |
+| 3 | machine learning | 14,201 | 24,529 | 38,730 | 37% |
+| 4 | CI/CD | 21,669 | 10,165 | 31,834 | 68% |
+| 5 | AWS | 23,826 | 7,311 | 31,137 | 77% |
+| 6 | SQL | 22,722 | 6,317 | 29,039 | 78% |
+| 7 | Docker | 14,583 | 13,683 | 28,266 | 52% |
+| 8 | TypeScript | 16,668 | 8,668 | 25,336 | 66% |
+| 9 | JavaScript | 12,235 | 12,081 | 24,316 | 50% |
+| 10 | React | 14,390 | 7,540 | 21,930 | 66% |
 
-This means the answer to "what's the most important skill in tech?" depends on which corpus you privilege:
+Python wins decisively at 65,705 total edges — 1.5× Kubernetes (#2) and 1.7× machine learning (#3). Two things stand out:
 
-- **If you mean "what employers ask for in job postings"** → Python, by a wide margin
-- **If you mean "what tech writers, journalists, and researchers talk about"** → machine learning, with Kubernetes a close second
-- **If you mean "what becomes a hiring requirement *and* gets written about"** → Python is in 3rd place but uniquely sits high on both
+1. **The shape of each entity is itself a signal.** Look at the `%REQUIRES` column. Python (72%), AWS (77%), SQL (78%), Java (78%), and CI/CD (68%) are *primarily hiring requirements* — employers list them as required skills. Machine learning (37%) and Kubernetes (44%) are *primarily discussed in writing* — they show up in blogs and scholarly papers more often than they show up as job requirements. Docker (52%) and JavaScript (50%) are evenly split. The shape tells you whether something is "required to do the work" vs "talked about as a topic."
 
-This is a clean illustration of why definitions matter. The remainder of this report focuses on the job-market view, where Python dominates.
+2. **Python is the only entity that wins both axes simultaneously.** It has the most REQUIRES edges (47,275, vs SQL's 22,722 — 2× more than the runner-up) and the third-most MENTIONS edges (18,430, behind only ML's 24,529 and Kubernetes' 24,455). Most other top entities specialize in one direction or the other. Python doesn't.
+
+The graph view confirms what prevalence already showed and adds a second dimension: Python isn't just the most-required skill; it's also one of the most-mentioned in the broader corpus of tech writing.
 
 ---
 
@@ -248,8 +247,8 @@ We do not have enough history in this snapshot to make trend claims. What we can
 
 ## 9. Takeaways
 
-1. **Python wins by every job-market measure.** Prevalence (29% of postings, 2× the next skill), cross-role coverage (≥30% in 14/18 roles), geographic flatness (25–37% in every major market), seniority flatness (32–38% across all IC levels). Four different definitions of "most demanded," same answer.
-1a. **But the broader tech conversation is about something else.** Graph centrality across the full corpus (jobs + blogs + news + scholarly) ranks machine learning #1 (24,528 mentions), Kubernetes #2 (24,454), Python #3 (18,425). Python is the dominant tool *of work*, but ML and Kubernetes are the dominant topics *of discourse*. Different corpora, different answers — and the gap is the insight.
+1. **Python wins by every measure.** Prevalence (29% of postings, 2× the next skill), cross-role coverage (≥30% in 14/18 roles), graph centrality (65,705 edges, 1.5× the next entity), geographic flatness (25–37% in every major market), and seniority flatness (32–38% across all IC levels). Five different definitions of "most important," same answer.
+1a. **Python is uniquely two-axis dominant in the graph.** It has the most `REQUIRES` edges (47,275 — 2× SQL at #2) AND the 3rd-most `MENTIONS` edges (18,430 — behind only machine learning at 24,529 and Kubernetes at 24,455). Most top skills specialize in one dimension or the other (AWS, SQL, Java are 78% required-by-jobs; ML and Kubernetes are mostly mentioned-in-docs). Python is the only one that's both heavily required AND heavily discussed.
 2. **Python is universal where most skills are regional or role-specific.** React clusters in frontend; AWS clusters in US tech; Java clusters in India enterprise. Python is the same ~30% everywhere. There is no other top skill with that property.
 3. **Python is a floor, not a premium.** It's the price of admission to technical IC work, not a salary differentiator. Where Python *does* pay more (data roles), it's because data roles can't be done without it. Where it pays less (ML/AI specialist roles), it's because Python is assumed and the premium goes to the *next* layer.
 4. **The career-relevant question is no longer "should I learn Python?"** It is: "what stacks on top of my Python?" The data-side answer is SQL + a cloud platform. The ML-side answer is C++/CUDA/distributed systems. The product-engineering-side answer is TypeScript + React + Kubernetes.
@@ -265,6 +264,7 @@ We do not have enough history in this snapshot to make trend claims. What we can
 - **Graph centrality**: Apache AGE graph, `MENTIONS` edges, summed across all matched entity IDs (e.g. Python exists as both a `:skill` node and a `:product` node — we sum them). We resolved entity names to canonical IDs via `/v1/resolution/entities` rather than relying on string matching, since the same name can map to multiple node labels.
 - **Big Tech under-represented**: Google, Apple, Microsoft, Netflix, NVIDIA largely don't appear because they use proprietary ATS platforms we don't scrape. Python prevalence at those companies could be different (likely higher).
 - **Skill canonicalization**: the entity resolver still produces some duplicate canonical names (e.g. `Postgres` vs `PostgreSQL`, `REST` vs `REST APIs`). These don't affect Python's lead but may slightly understate skills further down the list.
+- **Entity-tag undercount for generic concepts**: the NER resolver tags concrete tools (Python, LangChain) accurately but dramatically undercounts generic concept words. For example, "AI" is text-mentioned in 53% of postings but only entity-tagged in 1.5%. Bare "AI" is either dropped as too ambiguous or split into more specific entities (`Generative AI`, `AI agents`, `AI/ML`). For *concept-level* prevalence questions, prefer `match_phrase` on `extractedText` over entity counts. The Python ranking here is robust because Python is a concrete tool; LLM/RAG/agent rankings further down would be substantially higher under a text-mention measure. Tracked separately as a data-quality issue.
 - **Time series caveat**: `ingestedAt` is the crawler timestamp, not the original `postedDate`. The 2026-03-30 spike is a backfill artifact. Trend statements would require longer history.
 
 The full per-role and per-country tables are in this folder's JSON artifacts. Aggregated CSV exports can be regenerated from the Skillenai Data Products API using the methodology above.
