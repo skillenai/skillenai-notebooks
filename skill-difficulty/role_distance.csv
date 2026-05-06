@@ -1,0 +1,12 @@
+target_role,n_overlap,n_target_only,n_ds_only,jaccard,unweighted_gap,effort_gap,avg_difficulty_of_missing,missing_skills_top10
+Applied AI Engineer,7,23,23,0.1321,23,43.452,1.889,evaluation frameworks|fine-tuning|vector databases|agentic workflows|evaluation|agent architectures|observability|azure|gcp|deployment
+Research Engineer,7,23,23,0.1321,23,51.461,2.237,distributed training|jax|profiling|reinforcement learning|data curation|deepspeed|cuda|post-training|fine-tuning|evaluation
+AI Engineer,8,22,22,0.1538,22,40.851,1.857,langgraph|fine-tuning|vector databases|evaluation|distributed systems|observability|azure|gcp|kubernetes|rag
+Research Scientist,8,22,22,0.1538,22,52.259,2.375,diffusion models|generative modeling|distributed training|jax|evaluation frameworks|reinforcement learning|foundation models|post-training|simulation|fine-tuning
+MLE/Platform-Infrastructure-Inference,9,21,21,0.1765,21,42.271,2.013,cuda|containerization|evaluation|scalability|distributed systems|observability|computer vision|mlflow|model training|go
+Applied ML Engineer,10,20,20,0.2,20,41.1,2.055,distillation|transformer|evaluation frameworks|inference|fine-tuning|evaluation|semantic search|model optimization|computer vision|model training
+Applied/Research Wing,11,19,19,0.2245,19,42.279,2.225,diffusion models|distributed training|jax|evaluation frameworks|reinforcement learning|post-training|fine-tuning|evaluation|optimization|computer vision
+MLE/Applied-Research-Training-Foundation,11,19,19,0.2245,19,42.729,2.249,xgboost|distributed training|jax|transformer|reinforcement learning|foundation models|fine-tuning|evaluation|computer vision|mlflow
+ML Engineer,13,17,17,0.2766,17,33.96,1.998,jax|fine-tuning|evaluation|observability|computer vision|model training|gcp|kubernetes|monitoring|c++
+Applied Scientist (no Amazon),15,15,15,0.3333,15,36.752,2.45,diffusion models|distributed training|jax|transformer|pre-training|reinforcement learning|post-training|fine-tuning|evaluation|optimization
+Applied Scientist,15,15,15,0.3333,15,28.17,1.878,reinforcement learning|evaluation|optimization|computer vision|c++|numerical optimization|generative ai|algorithms and data structures|nlp|high-performance computing
