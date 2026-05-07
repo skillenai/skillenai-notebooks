@@ -48,6 +48,14 @@ A skill at the top of the composite has at least one (usually multiple) of these
 
 ---
 
+## What hard looks like vs. what easy looks like
+
+![Hero figure: small-multiples radar charts of the 4 difficulty signals for the 5 hardest and 5 easiest skills in the universe. Top row (red, hard) shows large filled shapes — diffusion models, representation learning, and reward modeling fill out the academic-depth axis; JAX and distributed training fill out the salary-premium axis. Bottom row (blue, easy) shows tiny shapes — data labeling, React, prompt engineering, LLM APIs, and JavaScript barely register on any axis except the negative salary spike on prompt engineering and data labeling.](00_hero_radar.png)
+
+The shape of "hard" varies. Diffusion models, representation learning, and reward modeling fill out the **academic-depth** axis (top of each radar) — these are the research-peak skills. JAX and distributed training fill out the **salary-premium** axis (right of each radar) and pinch in on academic depth — these are the engineering-peak skills.
+
+The shape of "easy" is uniformly small. Data labeling and prompt engineering have negative salary coefficients, so the radar fill barely extends in that direction at all. React, LLM APIs, and JavaScript register on basically no signal.
+
 ## The skill difficulty landscape
 
 ![Skill difficulty landscape: 2D scatter of all measured skills on seniority gradient (x) and academic-depth ratio (y), with color encoding salary premium and size encoding prerequisite depth](03_skill_difficulty_landscape.png)
