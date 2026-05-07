@@ -1,0 +1,223 @@
+canonical_skill,n_docs_used,n_docs_total,mean_idf_p50,mean_idf_avg
+python,30,25070,4.0934,4.0619
+machine learning,30,27213,4.131,4.2759
+pytorch,30,2787,4.4746,4.5143
+sql,30,11336,3.7958,3.8673
+llms,30,18477,3.9348,3.9293
+tensorflow,30,2729,4.1475,4.1779
+deep learning,30,6509,3.9662,4.2428
+evaluation,30,17768,4.2026,4.2495
+data pipelines,29,4598,3.879,3.8938
+aws,30,21748,4.3918,4.4203
+fine-tuning,30,6515,4.0233,4.0594
+a/b testing,30,2530,4.0483,4.1108
+scikit-learn,29,1078,4.382,4.3837
+model deployment,27,1197,3.9971,4.0151
+reinforcement learning,30,3773,4.1934,4.2217
+ci/cd,30,13709,4.2116,4.2521
+mlops,29,2396,4.0944,4.1561
+generative ai,30,15617,3.8938,3.9004
+kubernetes,29,17105,4.2939,4.4347
+data visualization,30,1635,4.1849,4.0837
+rag,30,7149,4.1087,4.2629
+nlp,30,5222,4.0862,4.1367
+r,30,15257,4.342,4.4274
+data analysis,29,5526,4.019,4.031
+model training,28,4670,4.18,4.1124
+computer vision,30,3586,4.0838,4.0414
+c++,30,21902,4.4149,4.5657
+experimentation,30,8090,4.0584,4.0285
+gcp,30,3956,4.4971,4.5258
+jax,30,333,4.6302,4.7038
+docker,30,11490,4.2442,4.2637
+prompt engineering,29,4020,3.7956,3.8093
+azure,30,13696,4.059,4.4867
+pandas,30,2053,4.2965,4.303
+monitoring,30,37558,4.1393,4.1454
+observability,30,16388,4.2148,4.169
+feature engineering,30,1148,4.2614,4.3066
+spark,30,4814,4.0833,4.147
+data science,30,9143,3.7021,3.7037
+distributed systems,27,3637,3.8829,3.9389
+java,30,7289,4.0458,4.0644
+causal inference,30,323,4.3837,4.4816
+distributed training,27,474,4.2085,4.306
+statistics,30,7289,4.3349,4.3347
+statistical modeling,28,188,4.2882,4.3137
+airflow,30,1468,4.346,4.3473
+testing,30,45901,3.9242,3.9072
+predictive modeling,29,587,4.3205,4.2917
+evaluation frameworks,27,497,4.0729,4.1835
+tableau,30,1066,4.0904,4.2527
+statistical analysis,26,604,4.2798,4.2812
+transformer,30,4887,4.5582,4.573
+numpy,30,2439,4.3678,4.3741
+data modeling,30,964,3.9243,3.8897
+langchain,30,2293,4.1444,4.2369
+typescript,30,8349,4.1764,4.141
+model monitoring,30,436,4.2823,4.2336
+mlflow,30,669,4.4802,4.4538
+vector databases,29,1445,4.0964,4.112
+deployment,30,40325,4.1375,4.2536
+forecasting,30,5417,4.4296,4.4396
+dashboards,30,15701,3.987,4.0307
+optimization,30,24760,4.3949,4.348
+git,30,11888,4.2735,4.2397
+databricks,30,2368,4.3272,4.3311
+experimental design,29,226,4.2461,4.3619
+apis,30,28952,4.0881,4.0627
+dbt,30,1374,4.1937,4.2509
+model serving,30,928,4.2762,4.3761
+snowflake,30,2707,4.2507,4.3259
+post-training,29,953,4.3854,4.341
+looker,29,719,4.1647,4.1112
+software engineering,30,6540,4.2851,4.3832
+data quality,30,5919,3.8988,3.8859
+hypothesis testing,27,247,4.1268,4.2248
+training,30,42316,4.2771,4.1834
+embeddings,30,5380,4.5391,4.658
+classification,30,9301,4.552,4.4718
+regression,30,6226,4.2864,4.2454
+data cleaning,30,739,3.7607,3.8549
+etl,30,2781,4.04,4.1724
+recommendation systems,25,862,4.1039,4.1923
+react,30,12087,4.2209,4.1758
+diffusion models,30,578,4.4392,4.4279
+agentic workflows,29,2262,4.087,4.0265
+benchmarking,29,4291,4.4452,4.4467
+rlhf,29,881,4.2742,4.3577
+ai agents,30,17295,4.1156,4.1066
+langgraph,30,861,4.3851,4.4896
+experiment design,30,234,4.2278,4.1798
+guardrails,30,10071,4.2804,4.2764
+ai,30,113119,4.0482,4.0167
+debugging,29,12781,4.1355,4.2409
+code reviews,30,2837,3.9378,3.8927
+go,30,61253,4.2519,4.3016
+multi-agent systems,30,1279,4.143,4.1353
+containerization,28,1435,4.1058,4.0892
+foundation models,29,2073,4.402,4.5154
+data curation,30,283,4.3839,4.3213
+cuda,29,1710,4.6689,4.6579
+vector database,30,1754,4.0738,4.0724
+high-performance computing,30,1169,4.7602,4.7161
+robotics,30,4691,4.5304,4.4915
+data processing,29,5324,3.9931,3.9675
+openai,30,18814,4.136,4.2814
+orchestration,30,15082,4.2017,4.2215
+code review,30,5028,3.9384,3.9076
+fastapi,30,1316,4.3867,4.3853
+data mining,30,586,4.0397,4.082
+parallel and distributed computing,30,30,4.7275,4.6096
+numerical optimization,21,21,4.8048,4.7091
+performance optimization,25,2208,4.1322,4.1516
+parsing,30,5569,4.2548,4.3798
+algorithms and data structures,30,85,4.0036,4.0423
+algorithms,30,16370,4.1999,4.1676
+profiling,29,2700,4.2479,4.2883
+unix/linux,30,133,4.3509,4.4854
+simulation,30,5813,4.2789,4.3056
+linear algebra,30,519,4.4322,4.378
+deepspeed,24,148,4.6583,4.5418
+triton,30,380,4.6553,4.6168
+generative modeling,25,144,4.796,4.7692
+alignment,30,14198,4.1379,4.2031
+fsdp,30,68,4.6689,4.6121
+logging,30,14518,4.3539,4.3117
+mxnet,29,73,4.1907,4.2337
+agent architectures,30,496,4.1921,4.272
+transformer architectures,29,280,4.1571,4.2418
+hadoop,30,967,4.0259,4.1344
+neural deep learning,2,2,4.7049,4.6344
+rust,30,4723,4.251,4.3366
+scipy,29,435,4.4107,4.4973
+prompting,29,6308,4.0354,4.0435
+slurm,29,194,4.5677,4.5841
+reasoning,30,16508,4.3214,4.2478
+large-scale training,30,208,4.4109,4.4389
+llm apis,30,387,4.2019,4.1356
+tool use,28,2437,4.1508,4.175
+imitation learning,28,125,4.4774,4.4345
+context engineering,30,854,3.7856,3.8082
+synthetic data generation,27,403,4.2084,4.1508
+probability,30,5071,4.2442,4.3795
+multimodal models,22,635,4.2143,4.2881
+process intelligence,29,60,4.1598,4.1818
+javascript,30,14669,3.9874,4.0942
+llamaindex,30,636,4.3161,4.3824
+world models,29,536,4.0945,4.2626
+genai,30,4492,4.1984,4.1569
+model development,27,1525,4.1417,4.1532
+model validation,30,494,4.3588,4.412
+vision-language models,29,375,4.4242,4.5381
+xgboost,30,502,4.5715,4.5966
+terraform,30,4642,4.3913,4.444
+model optimization,28,394,4.3925,4.3937
+zenml,19,20,4.2827,4.4107
+metaflow,30,36,4.1863,4.164
+quantization,29,2181,4.728,4.6615
+semantic search,25,1874,3.9173,3.9358
+ec2,30,2509,4.562,4.6161
+latency optimization,30,138,4.3775,4.3648
+pre-training,30,1147,4.9129,4.7417
+reproducibility,30,3388,4.3373,4.2874
+training/inference pipelines,1,1,4.0781,4.0781
+model registries,30,255,4.5589,4.479
+scalability,30,14140,4.1356,4.1216
+anomaly detection,30,4802,4.357,4.3673
+multi-modality,30,77,4.4318,4.4634
+nccl,29,125,4.8191,4.794
+econometrics,27,126,4.3671,4.4537
+pyspark,28,322,4.4429,4.3536
+sft,30,385,4.4148,4.4458
+cloudformation,30,1445,4.2755,4.4561
+reward modeling,29,68,4.384,4.3096
+dpo,30,311,4.6675,4.6384
+ocr,30,1751,4.46,4.7415
+agentic use cases,30,103,4.1198,4.1699
+weights biases,27,212,4.2812,4.3618
+langsmith,30,449,4.1906,4.3123
+microservices,30,7308,4.0342,4.0249
+observability dashboards,29,280,4.3966,4.3275
+continuous loops,11,11,4.0335,4.0961
+retrieval,30,10649,4.427,4.4228
+data labeling,29,384,3.9068,3.9471
+distillation,30,1263,4.3716,4.3245
+observational causal inference,3,3,4.7555,4.5247
+synthetic data pipelines,24,24,4.177,4.2151
+learning rate schedulers,10,10,4.4611,4.4456
+eks,30,1378,4.6355,4.7713
+cognito,30,358,4.3735,4.4688
+representation learning,26,355,4.4708,4.4397
+metrics,30,34163,4.2838,4.2603
+document intelligence,29,232,4.2758,4.3991
+layout detection,26,26,4.3755,4.3213
+structured extraction,30,152,4.2967,4.3486
+chunking,30,1442,4.4245,4.362
+transformer-based ocsr,1,1,4.8067,4.8067
+layout models,8,8,4.6476,4.6407
+distributed computing,30,699,3.9441,3.9297
+model versioning,30,485,4.2946,4.2592
+batch inference,28,261,4.3595,4.379
+inference,30,15556,4.3207,4.2497
+applied machine learning,26,139,4.1138,4.225
+alerting,26,5823,4.2357,4.3029
+data ingestion,29,1695,4.1556,4.1411
+token usage tracking,18,18,4.2633,4.2147
+latency monitoring,30,89,4.4633,4.3753
+reasoning paths,30,135,4.3275,4.2936
+llm inference,30,998,4.3601,4.3415
+ai engineering,30,1432,3.8981,3.8568
+infrastructure-as-code,22,3648,4.1632,4.0595
+ml pipelines,26,584,4.1136,4.2147
+gpu orchestration,30,52,4.3862,4.3888
+open-source contributions,19,413,4.131,4.0889
+time-series data,28,605,4.3468,4.252
+information retrieval,26,959,4.2837,4.2846
+networking,27,10111,4.2949,4.3505
+rollouts,30,3931,4.6214,4.5532
+vllm,30,1134,4.6624,4.6947
+pulumi,29,580,4.4161,4.4028
+grafana,30,2829,4.6409,4.6518
+model drift detection,30,55,4.3713,4.3406
+ml infrastructure,28,209,4.2762,4.2482

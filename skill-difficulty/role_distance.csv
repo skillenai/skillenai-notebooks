@@ -1,0 +1,12 @@
+target_role,n_overlap,n_target_only,n_ds_only,jaccard,unweighted_gap,effort_gap,avg_difficulty_of_missing,missing_skills_top10
+Applied AI Engineer,7,23,23,0.1321,23,28.483,1.238,agent architectures|evaluation frameworks|observability|gcp|agentic workflows|guardrails|vector databases|kubernetes|ci/cd|evaluation
+Research Engineer,7,23,23,0.1321,23,39.491,1.717,jax|high-performance computing|profiling|distributed training|deepspeed|software engineering|cuda|data curation|performance optimization|post-training
+AI Engineer,8,22,22,0.1538,22,25.688,1.168,observability|distributed systems|gcp|langgraph|vector databases|kubernetes|ci/cd|mlops|evaluation|docker
+Research Scientist,8,22,22,0.1538,22,36.517,1.66,generative modeling|jax|distributed training|evaluation frameworks|software engineering|robotics|diffusion models|foundation models|post-training|reinforcement learning
+MLE/Platform-Infrastructure-Inference,9,21,21,0.1765,21,30.66,1.46,mlflow|cuda|containerization|terraform|c++|observability|distributed systems|go|model registries|kubernetes
+Applied ML Engineer,10,20,20,0.2,20,24.502,1.225,evaluation frameworks|distillation|inference|kubernetes|model serving|retrieval|model monitoring|transformer|computer vision|model training
+Applied/Research Wing,11,19,19,0.2245,19,28.446,1.497,jax|distributed training|evaluation frameworks|software engineering|diffusion models|post-training|reinforcement learning|c++|optimization|kubernetes
+MLE/Applied-Research-Training-Foundation,11,19,19,0.2245,19,28.893,1.521,jax|distributed training|mlflow|xgboost|foundation models|reinforcement learning|c++|ec2|metaflow|zenml
+ML Engineer,13,17,17,0.2766,17,23.646,1.391,jax|c++|observability|gcp|kubernetes|java|model monitoring|ci/cd|mlops|computer vision
+Applied Scientist (no Amazon),15,15,15,0.3333,15,23.317,1.554,jax|distributed training|pre-training|diffusion models|post-training|reinforcement learning|optimization|experimental design|transformer|computer vision
+Applied Scientist,15,15,15,0.3333,15,20.503,1.367,high-performance computing|numerical optimization|reinforcement learning|c++|optimization|parallel and distributed computing|unix/linux|java|computer vision|evaluation
