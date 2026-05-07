@@ -1,125 +1,145 @@
 canonical_skill,n_jobs_with_skill_in_sample,coef,coef_pct
-causal inference,80,0.1834,20.13
-evaluation frameworks,89,0.16262,17.66
-jax,113,0.15982,17.33
-distributed training,56,0.13401,14.34
-agentic workflows,68,0.1303,13.92
-data curation,64,0.1295,13.83
-profiling,57,0.10104,10.63
-cuda,69,0.09367,9.82
-forecasting,179,0.09266,9.71
-distributed computing,67,0.09104,9.53
-inference,53,0.08728,9.12
-vector databases,83,0.08506,8.88
-mlflow,81,0.0844,8.81
-rlhf,55,0.08364,8.72
-feature engineering,79,0.08152,8.49
-software engineering,269,0.07943,8.27
-reinforcement learning,182,0.07696,8.0
-experiment design,56,0.07588,7.88
-open-source contributions,53,0.0749,7.78
-ai,323,0.06626,6.85
-orchestration,101,0.06341,6.55
-robotics,137,0.0597,6.15
-data science,235,0.05915,6.09
-rag,157,0.05644,5.81
-llms,716,0.05639,5.8
-fine-tuning,171,0.05626,5.79
-rust,452,0.05575,5.73
-model deployment,113,0.05307,5.45
-pytorch,417,0.05307,5.45
-gcp,694,0.05198,5.34
-observability,646,0.05102,5.23
-distributed systems,945,0.04873,4.99
-machine learning,1029,0.04797,4.91
-dbt,247,0.04795,4.91
-simulation,110,0.04722,4.83
-data pipelines,588,0.04564,4.67
-computer vision,252,0.04438,4.54
-statistical modeling,110,0.04346,4.44
-ai agents,117,0.04311,4.41
-model training,128,0.04115,4.2
-kubernetes,1182,0.04024,4.11
-dashboards,187,0.03912,3.99
-data processing,177,0.03856,3.93
-typescript,1154,0.03822,3.9
-anomaly detection,145,0.03808,3.88
-c++,944,0.03764,3.84
-statistics,136,0.03737,3.81
-python,3666,0.03712,3.78
-pulumi,65,0.03673,3.74
-networking,238,0.03578,3.64
-experimentation,321,0.03335,3.39
-numpy,98,0.03317,3.37
-metrics,192,0.03132,3.18
-eks,55,0.03007,3.05
-transformer,53,0.02981,3.03
-optimization,114,0.02926,2.97
-langchain,76,0.02906,2.95
-scalability,274,0.02777,2.82
-snowflake,294,0.02079,2.1
-mlops,120,0.02074,2.1
-data visualization,404,0.01996,2.02
-hadoop,52,0.01987,2.01
-statistical analysis,124,0.01978,2.0
-spark,231,0.0197,1.99
-ec2,60,0.01782,1.8
-performance optimization,365,0.01736,1.75
-alerting,164,0.01674,1.69
-benchmarking,71,0.01618,1.63
-debugging,491,0.01383,1.39
-grafana,149,0.01367,1.38
-generative ai,232,0.01338,1.35
-airflow,196,0.01333,1.34
-pandas,144,0.01283,1.29
-ci/cd,1100,0.01272,1.28
-monitoring,498,0.01171,1.18
-data quality,255,0.00915,0.92
-go,933,0.00911,0.92
-data ingestion,164,0.00906,0.91
-evaluation,249,0.00513,0.51
-etl,358,0.00358,0.36
-foundation models,66,0.00189,0.19
-recommendation systems,57,8e-05,0.01
-classification,55,-0.00055,-0.05
-react,1055,-0.00116,-0.12
-nlp,161,-0.00238,-0.24
-algorithms,199,-0.00327,-0.33
-terraform,631,-0.00335,-0.33
-java,828,-0.00466,-0.46
-a/b testing,372,-0.00555,-0.55
-data modeling,551,-0.00752,-0.75
-model serving,55,-0.00767,-0.76
-deployment,207,-0.00926,-0.92
-infrastructure-as-code,164,-0.00943,-0.94
-testing,525,-0.01024,-1.02
-containerization,240,-0.01516,-1.5
-azure,554,-0.01756,-1.74
-deep learning,220,-0.01972,-1.95
-looker,397,-0.02109,-2.09
-logging,161,-0.02179,-2.16
-aws,1477,-0.02202,-2.18
-databricks,136,-0.02299,-2.27
-training,69,-0.03017,-2.97
-code review,136,-0.03448,-3.39
-javascript,749,-0.03529,-3.47
-code reviews,328,-0.03768,-3.7
-data analysis,748,-0.03847,-3.77
-embeddings,60,-0.04537,-4.44
-predictive modeling,92,-0.04598,-4.49
-tensorflow,242,-0.04682,-4.57
-docker,837,-0.05035,-4.91
-cloudformation,74,-0.05066,-4.94
-r,236,-0.05095,-4.97
-scikit-learn,104,-0.05137,-5.01
-data mining,54,-0.05186,-5.05
-fastapi,97,-0.05226,-5.09
-apis,627,-0.05473,-5.33
-model monitoring,55,-0.0598,-5.8
-experimental design,53,-0.06421,-6.22
-git,422,-0.06659,-6.44
-sql,1717,-0.06735,-6.51
-microservices,216,-0.07425,-7.16
-tableau,471,-0.1534,-14.22
-prompt engineering,536,-0.23638,-21.05
-data labeling,65,-0.48942,-38.7
+genai,39,0.24313,27.52
+llm apis,30,0.20959,23.32
+causal inference,79,0.2015,22.32
+pytorch,764,0.16961,18.48
+data curation,239,0.16599,18.06
+distributed training,55,0.16449,17.88
+software engineering,1145,0.16344,17.76
+evaluation frameworks,87,0.16329,17.74
+jax,108,0.1619,17.57
+dbt,952,0.14824,15.98
+distributed computing,66,0.14613,15.74
+agentic workflows,244,0.14028,15.06
+vector databases,259,0.13292,14.22
+observability,1699,0.13138,14.04
+reinforcement learning,178,0.1283,13.69
+data visualization,1637,0.12523,13.34
+guardrails,31,0.11606,12.31
+go,2160,0.10039,10.56
+machine learning,2601,0.09378,9.83
+reasoning,191,0.09167,9.6
+pandas,318,0.08483,8.85
+hypothesis testing,210,0.08128,8.47
+latency optimization,47,0.07833,8.15
+fine-tuning,344,0.07816,8.13
+profiling,409,0.0778,8.09
+nlp,512,0.07742,8.05
+pulumi,64,0.07727,8.03
+mlflow,77,0.0748,7.77
+experiment design,55,0.07396,7.68
+data quality,1135,0.06862,7.1
+open-source contributions,581,0.06848,7.09
+data science,582,0.06721,6.95
+multi-agent systems,204,0.06673,6.9
+robotics,310,0.06605,6.83
+prompting,222,0.06521,6.74
+experimentation,1376,0.06364,6.57
+inference,51,0.06355,6.56
+model deployment,464,0.06266,6.47
+rag,332,0.0613,6.32
+forecasting,523,0.05841,6.02
+rlhf,52,0.0584,6.01
+optimization,113,0.05433,5.58
+ai,849,0.05401,5.55
+networking,587,0.05125,5.26
+statistical modeling,109,0.04881,5.0
+java,2932,0.04846,4.97
+dashboards,361,0.0469,4.8
+react,2633,0.04685,4.8
+cuda,421,0.04602,4.71
+aws,4086,0.04213,4.3
+statistics,136,0.04099,4.18
+distributed systems,3226,0.03853,3.93
+alerting,164,0.03796,3.87
+snowflake,1174,0.03655,3.72
+c++,3028,0.03407,3.47
+scipy,39,0.0339,3.45
+etl,2115,0.0303,3.08
+data pipelines,1640,0.02874,2.92
+computer vision,956,0.02694,2.73
+classification,55,0.02686,2.72
+diffusion models,35,0.02579,2.61
+generative ai,404,0.02531,2.56
+orchestration,275,0.02519,2.55
+eks,55,0.02471,2.5
+feature engineering,254,0.02429,2.46
+debugging,1545,0.01985,2.0
+evaluation,597,0.01973,1.99
+terraform,800,0.01918,1.94
+model training,126,0.01651,1.67
+mlops,293,0.01492,1.5
+hadoop,227,0.01426,1.44
+monitoring,670,0.01283,1.29
+statistical analysis,123,0.01236,1.24
+code review,312,0.0075,0.75
+xgboost,31,0.00676,0.68
+langchain,76,0.00665,0.67
+apis,2386,0.00647,0.65
+r,232,0.00592,0.59
+containerization,237,0.00467,0.47
+model monitoring,230,0.00459,0.46
+foundation models,64,0.00344,0.34
+rust,1330,0.00309,0.31
+benchmarking,69,0.00252,0.25
+performance optimization,1062,0.00185,0.19
+kubernetes,2207,-0.00133,-0.13
+training,69,-0.0014,-0.14
+data processing,529,-0.00195,-0.19
+git,770,-0.00344,-0.34
+ec2,60,-0.00352,-0.35
+deep learning,218,-0.00555,-0.55
+metrics,367,-0.00745,-0.74
+transformer,53,-0.0075,-0.75
+llms,1766,-0.01032,-1.03
+testing,1049,-0.01347,-1.34
+recommendation systems,56,-0.01532,-1.52
+infrastructure-as-code,338,-0.01575,-1.56
+airflow,548,-0.01588,-1.58
+predictive modeling,92,-0.01911,-1.89
+numpy,96,-0.02,-1.98
+grafana,325,-0.02217,-2.19
+experimental design,53,-0.02296,-2.27
+python,11736,-0.02422,-2.39
+spark,581,-0.02458,-2.43
+retrieval,223,-0.02616,-2.58
+docker,1862,-0.02744,-2.71
+azure,702,-0.02829,-2.79
+embeddings,236,-0.0291,-2.87
+typescript,3243,-0.02968,-2.92
+databricks,136,-0.03133,-3.08
+gcp,1015,-0.03276,-3.22
+ci/cd,2850,-0.03288,-3.23
+model validation,40,-0.03427,-3.37
+a/b testing,900,-0.03712,-3.64
+model serving,54,-0.04088,-4.01
+anomaly detection,849,-0.04552,-4.45
+regression,38,-0.04941,-4.82
+cloudformation,250,-0.05393,-5.25
+data modeling,2484,-0.05597,-5.44
+data ingestion,515,-0.06082,-5.9
+vllm,195,-0.0616,-5.97
+data mining,54,-0.06682,-6.46
+algorithms,537,-0.06901,-6.67
+logging,337,-0.06906,-6.67
+pyspark,46,-0.07042,-6.8
+scalability,972,-0.08014,-7.7
+data cleaning,44,-0.08026,-7.71
+ai agents,468,-0.08261,-7.93
+sql,5403,-0.08569,-8.21
+code reviews,1032,-0.08739,-8.37
+fastapi,272,-0.08897,-8.51
+scikit-learn,102,-0.09329,-8.91
+linear algebra,46,-0.09371,-8.95
+data analysis,2859,-0.09983,-9.5
+deployment,557,-0.1064,-10.09
+openai,218,-0.1212,-11.41
+tableau,1352,-0.12607,-11.84
+tensorflow,237,-0.13025,-12.21
+looker,1099,-0.13083,-12.26
+javascript,2681,-0.13529,-12.65
+simulation,282,-0.1543,-14.3
+microservices,918,-0.20239,-18.32
+prompt engineering,1239,-0.24356,-21.62
+model optimization,198,-0.26324,-23.14
+data labeling,240,-0.39639,-32.73
