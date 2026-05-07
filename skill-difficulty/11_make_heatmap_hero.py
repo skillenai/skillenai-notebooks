@@ -19,29 +19,33 @@ import numpy as np
 
 HERE = Path(__file__).parent
 
+# Cohort ordered strictly by composite z descending. Skills with too many
+# missing signals (e.g. agent architectures was missing both gradient and
+# salary) are excluded — only "salary missing" is allowed since that's
+# expected for the research peak.
 HARDEST = [
-    "generative modeling",
-    "JAX",                # ★ headline — only skill with all 5 positive
-    "reward modeling",
-    "FSDP",
-    "distributed training",
-    "triton",
-    "causal inference",
+    "generative modeling",   # +1.42
+    "JAX",                   # +1.35  ★ all 5 signals positive
+    "triton",                # +1.00
+    "reward modeling",       # +0.97
+    "FSDP",                  # +0.95
+    "causal inference",      # +0.79
+    "distributed training",  # +0.69
 ]
 
 INTERESTING = [
-    "agent architectures",
-    "agentic workflows",
-    "fine-tuning",
-    "RAG",
+    "CUDA",                  # +0.52
+    "agentic workflows",     # +0.13
+    "fine-tuning",           # -0.36
+    "RAG",                   # -0.36
 ]
 
 EASIEST = [
-    "javascript",
-    "sql",
-    "react",
-    "prompt engineering",
-    "data labeling",
+    "react",                 # -0.53
+    "sql",                   # -0.77
+    "javascript",            # -1.01
+    "prompt engineering",    # -1.17
+    "data labeling",         # -1.43
 ]
 
 SIGNALS = [
