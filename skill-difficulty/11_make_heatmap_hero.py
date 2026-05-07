@@ -153,9 +153,7 @@ def main():
             if not txt:
                 continue
             z = z_matrix[i, j]
-            color = "white" if (not missing_mask[i, j] and abs(z) > 1.4) else "#222"
-            if missing_mask[i, j]:
-                color = "#888"
+            color = "#888" if missing_mask[i, j] else "#222"
             weight = "bold" if SIGNALS[j][1] == "composite_z" else "normal"
             ax.text(j, i, txt, ha="center", va="center", fontsize=10,
                     color=color, fontweight=weight)

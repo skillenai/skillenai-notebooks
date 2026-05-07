@@ -4,7 +4,7 @@ We scored 222 AI/ML/DS skills on five independent difficulty signals — how sen
 
 **Out of 222 skills, exactly one scores positive on all five signals: JAX** — Google's numerical-computing library that powers Gemini, Gemma, and parts of Claude.
 
-![Hero figure — heatmap of 16 AI/ML/DS skills scored on five difficulty signals plus a composite z. Top section (HARDEST): generative modeling, JAX (★), triton, reward modeling, FSDP, causal inference, distributed training. Middle: CUDA, agentic workflows, fine-tuning, RAG. Bottom (EASIEST): react, sql, javascript, prompt engineering, data labeling. JAX's row is the only one with every cell shaded red and zero hatched-gray cells — every signal points the same direction.](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/05/07/e955cb79-d6bf-4b65-9c50-5facd727e73f/OEEUllCP2cM-00-hero-heatmap.png)
+![Hero figure — heatmap of 16 AI/ML/DS skills scored on five difficulty signals plus a composite z. Top section (HARDEST): generative modeling, JAX (★), triton, reward modeling, FSDP, causal inference, distributed training. Middle: CUDA, agentic workflows, fine-tuning, RAG. Bottom (EASIEST): react, sql, javascript, prompt engineering, data labeling. JAX's row is the only one with every cell shaded red and zero hatched-gray cells — every signal points the same direction.](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/05/07/e955cb79-d6bf-4b65-9c50-5facd727e73f/JbWrteqVjFk-00-hero-heatmap.png)
 
 Every other top-ranked skill has at least one cell missing or pointing the wrong way. Generative modeling and reward modeling sit higher than JAX on individual signals, but both have hatched-gray salary cells (too few USD-salaried postings to estimate). Causal inference pays more (+22.3%), but its employer concentration is below average. Distributed training pays nearly as much (+17.9%), but blogs about it are easier to find than blogs about JAX. **Only JAX combines top-decile seniority, top-quintile salary, scarcest-of-the-tested-skills supply, top-decile employer concentration, and second-highest vocabulary jargon.**
 
@@ -64,7 +64,7 @@ This is a sharp contrast with **agentic workflows** (+15.5% salary) and **agent 
 
 If we anchor at Data Scientist and walk to each adjacent role on the AI/ML taxonomy, the standard Jaccard skill-set overlap gives us a "paper distance." But Jaccard treats every missing skill as equally costly to acquire. When we replace it with the sum of difficulty z-scores over the missing skills, the rank order shifts.
 
-![Rank inversion: each role's rank from Data Scientist by Jaccard distance (left) vs. effort gap (right). Green lines = role moves up the difficulty rank when measured by effort. Red lines = role moves down.](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/05/07/e955cb79-d6bf-4b65-9c50-5facd727e73f/NifDj63GquA-04-distance-rank-swap.png)
+![Rank inversion: each role's rank from Data Scientist by Jaccard distance (left) vs. effort gap (right). Green lines = role moves up the difficulty rank when measured by effort. Red lines = role moves down.](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/05/07/e955cb79-d6bf-4b65-9c50-5facd727e73f/l-MT3pA5du4-04-distance-rank-swap.png)
 
 Five roles move *up* in the ranking when measured by effort instead of paper distance:
 
@@ -82,7 +82,7 @@ Three roles move *down*:
 
 Every research-track and MLE-track role gets harder; every AI Engineer-track role gets easier. The shape of the difficulty universe is completely separable: the AIE family lives in the bottom half of the universe; the research / MLE family lives in the top half.
 
-![Difficulty breakdown for each Data Scientist → target-role transition. For each role, the 15 hardest missing skills, decomposed into the five difficulty signals stacked: blue = seniority gradient, red = salary premium, orange = supply/demand, green = employer concentration, brown = vocabulary jargon.](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/05/07/e955cb79-d6bf-4b65-9c50-5facd727e73f/AwyC5TUtMmw-02-difficulty-breakdown.png)
+![Difficulty breakdown for each Data Scientist → target-role transition. For each role, the 15 hardest missing skills, decomposed into the five difficulty signals stacked: blue = seniority gradient, red = salary premium, orange = supply/demand, green = employer concentration, brown = vocabulary jargon.](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/05/07/e955cb79-d6bf-4b65-9c50-5facd727e73f/leuFgxJLiKM-02-difficulty-breakdown.png)
 
 The shape of each transition's bar chart is its own diagnostic. AI Engineer has many short bars (many easy missing skills); Applied AI Engineer has a tall green bar on agent architectures (Anthropic-concentrated specialist signal); MLE-Platform mixes blue + green (operational seniority + specialist concentration); Applied Scientist has tall brown + green bars (research-jargon + research-concentration). They reach similar total effort gaps in different ways.
 
