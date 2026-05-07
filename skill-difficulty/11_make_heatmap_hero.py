@@ -20,20 +20,20 @@ import numpy as np
 HERE = Path(__file__).parent
 
 HARDEST = [
-    "diffusion models",
-    "representation learning",
+    "generative modeling",
+    "JAX",                # ★ headline — only skill with all 5 positive
     "reward modeling",
-    "distributed training",
-    "JAX",            # ★ headline
     "FSDP",
-    "CUDA",
+    "distributed training",
+    "triton",
+    "causal inference",
 ]
 
 INTERESTING = [
+    "agent architectures",
     "agentic workflows",
     "fine-tuning",
     "RAG",
-    "causal inference",
 ]
 
 EASIEST = [
@@ -45,11 +45,12 @@ EASIEST = [
 ]
 
 SIGNALS = [
-    ("Seniority\ngradient",  "gradient_z",         "gradient",        "{:.2f}"),
-    ("Salary\npremium",      "salary_coef_z",      "salary_coef",     "salary_pct"),
-    ("Academic\ndepth",      "scholarly_ratio_z",  "scholarly_ratio", "{:.2f}"),
-    ("Prereq\ndepth",        "depth_z",            "depth",           "{}"),
-    ("Composite\nz",         "composite_z",        "composite_z",     "{:+.2f}"),
+    ("Seniority\ngradient",  "gradient_z",  "gradient",     "{:.2f}"),
+    ("Salary\npremium",      "salary_z",    "salary_coef",  "salary_pct"),
+    ("Demand /\nsupply",     "sd_z",        "sd_log10",     "sd_ratio"),
+    ("Employer\nconcentration","hhi_z",     "hhi",          "{:.3f}"),
+    ("Vocabulary\njargon",   "idf_z",       "mean_idf",     "{:.2f}"),
+    ("Composite\nz",         "composite_z", "composite_z",  "{:+.2f}"),
 ]
 
 
@@ -69,14 +70,26 @@ def format_value(skill_row, raw_col, fmt):
         if raw in ("0", "0.0"):
             return "n/a"
         return f"{(math.exp(float(raw))-1)*100:+.1f}%"
+    if fmt == "sd_ratio":
+        # sd_log10 stored; display as ratio (10^x). High = blog-saturated, low = demand-heavy.
+        try:
+            return f"{10 ** float(raw):.2f}"
+        except (ValueError, TypeError):
+            return ""
     try:
         return fmt.format(float(raw))
     except (ValueError, TypeError):
         return str(raw)
 
 
-def is_missing_salary(skill_row):
-    return skill_row.get("salary_coef") in (None, "", "0", "0.0")
+def is_missing(skill_row, z_col, raw_col):
+    """Cell is hatched-gray if the raw value is missing (and the z is therefore 0)."""
+    raw = skill_row.get(raw_col)
+    if raw in (None, ""):
+        return True
+    if z_col == "salary_z" and raw in ("0", "0.0"):
+        return True
+    return False
 
 
 def main():
@@ -104,7 +117,7 @@ def main():
             except (ValueError, KeyError):
                 pass
             text_matrix[i][j] = format_value(row, raw_col, fmt)
-            if z_col == "salary_coef_z" and is_missing_salary(row):
+            if z_col != "composite_z" and is_missing(row, z_col, raw_col):
                 missing_mask[i, j] = True
                 text_matrix[i][j] = "n/a"
                 z_matrix[i, j] = 0  # neutral cell color
@@ -117,7 +130,7 @@ def main():
     vmax = min(vmax, 3.0)  # cap so the data labeling outlier doesn't squash everything
     norm = TwoSlopeNorm(vmin=-vmax, vcenter=0, vmax=vmax)
 
-    fig, ax = plt.subplots(figsize=(13, 11))
+    fig, ax = plt.subplots(figsize=(15, 11))
 
     # Plot heatmap
     img = ax.imshow(z_matrix, cmap=cmap, norm=norm, aspect="auto")
@@ -201,16 +214,17 @@ def main():
     for spine in ["top", "right", "bottom", "left"]:
         ax.spines[spine].set_visible(False)
 
-    fig.suptitle("How 16 AI/ML/DS skills score on 4 difficulty signals",
+    fig.suptitle("How 16 AI/ML/DS skills score on 5 difficulty signals",
                  fontsize=15, fontweight="bold", y=0.96)
     fig.text(0.5, 0.93,
              "Color = z-score against the universe of 222 measured skills  ·  "
              "cell label = raw signal value  ·  hatched gray = no data",
              ha="center", fontsize=10, color="#555")
     fig.text(0.5, 0.025,
-             "★  JAX is the only skill with all four signals positive AND a top-3 salary coefficient.  "
-             "Most research-peak skills (top three rows) sit in the salary regression's blind spot.  "
-             "Prompt engineering carries a salary penalty, not a premium.",
+             "★  JAX scores top-decile on every signal except vocabulary (where it ranks #2).  "
+             "Demand/supply is blog-mentions per job-mention — low = demand-heavy.  "
+             "Employer concentration is the Herfindahl index — high = specialist.  "
+             "Prompt engineering carries a salary penalty AND the lowest jargon density.",
              ha="center", fontsize=9.5, color="#444", style="italic", wrap=True)
 
     plt.tight_layout(rect=[0, 0.05, 1, 0.92])
