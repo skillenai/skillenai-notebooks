@@ -2,6 +2,8 @@
 
 **There is no Venn-diagram intersection for "Product Engineer" to live in.**
 
+![How Three Roles Diverge: skill demand across 35,067 job postings](00_hero.png)
+
 A common framing — popularized recently by levels.fyi — claims Product Engineer (PE)
 sits at the **intersection** of Product Manager (PM) and Software Engineer (SWE):
 "think like a PM, ship code like an engineer." The geometry implies a meaningful
@@ -259,6 +261,7 @@ vocabulary.
 
 ## Files in this folder
 
+- `00_hero.png` — Banded chart, four sections (Engineering Foundation / Product Engineer Stack / Software Engineer Enterprise / Product Manager Core)
 - `01_heatmap.png` — Top-30 union prevalence across all three roles
 - `02_overlap.png` — Pairwise Jaccard + PE composition donut
 - `03_asymmetric.png` — Skills present in one role but missing from PE
