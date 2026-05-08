@@ -1,0 +1,90 @@
+{
+  "totals": {
+    "Product Manager": 7411,
+    "Software Engineer": 26990,
+    "Product Engineer": 666
+  },
+  "pe_in_swe_only": [
+    "AWS",
+    "CI/CD",
+    "Distributed systems",
+    "Docker",
+    "GCP",
+    "Go",
+    "GraphQL",
+    "JavaScript",
+    "Kubernetes",
+    "Node.js",
+    "Postgres",
+    "Python",
+    "React",
+    "Terraform",
+    "TypeScript",
+    "code reviews",
+    "debugging",
+    "observability",
+    "performance optimization",
+    "testing"
+  ],
+  "pe_in_pm_only": [
+    "Machine learning",
+    "prototyping"
+  ],
+  "pe_in_both": [
+    "APIs",
+    "SQL"
+  ],
+  "pe_in_neither": [
+    "API design",
+    "Cursor",
+    "FastAPI",
+    "LLM",
+    "Next.js",
+    "React Native",
+    "Redis",
+    "Ruby",
+    "backend development",
+    "data pipelines",
+    "frontend development",
+    "full-stack development",
+    "scalability",
+    "software engineering"
+  ],
+  "intersection_missed_by_pe": [],
+  "swe_only_not_in_pe": [
+    "Java",
+    "C++",
+    "Azure",
+    "Microservices",
+    "REST APIs",
+    "Git",
+    "monitoring",
+    "Kafka",
+    "C#",
+    "unit testing",
+    "Linux",
+    "Rust",
+    "MySQL"
+  ],
+  "pm_only_not_in_pe": [
+    "Product management",
+    "Product roadmap",
+    "Data analysis",
+    "Product strategy",
+    "experimentation",
+    "A/B testing",
+    "Stakeholder management",
+    "User research",
+    "Cross-functional collaboration",
+    "analytics",
+    "Agile",
+    "Data-driven decisions",
+    "Market research",
+    "user stories"
+  ],
+  "jaccard": {
+    "Product Manager vs Software Engineer": 0.0392156862745098,
+    "Product Manager vs Product Engineer": 0.07692307692307693,
+    "Software Engineer vs Product Engineer": 0.43137254901960786
+  }
+}

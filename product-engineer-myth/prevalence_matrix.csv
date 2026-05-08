@@ -1,0 +1,401 @@
+skill,PM_pct,SWE_pct,PE_pct
+.NET,0.00,2.52,1.35
+.NET Core,0.00,1.07,0.00
+A/B testing,9.61,0.95,2.85
+AI,4.10,1.04,1.95
+AI agents,1.90,1.17,3.60
+AI tools,2.58,0.00,1.65
+AI-powered developer tools,0.00,0.00,1.95
+AI/ML,2.78,0.00,0.00
+API,1.24,0.00,0.00
+API design,2.78,4.55,9.01
+API development,0.00,2.23,1.50
+API integration,1.46,1.20,3.00
+API integrations,0.93,0.00,0.00
+APIs,5.96,5.87,8.26
+AWS,1.11,21.98,17.87
+AWS Lambda,0.00,1.76,1.05
+Activation,0.96,0.00,0.00
+Agentic workflows,0.90,0.00,2.10
+Agile,7.31,4.18,2.40
+Airflow,0.00,1.17,0.00
+Amazon S3,0.00,0.94,0.00
+Amplitude,1.12,0.00,0.00
+Android,0.00,1.26,0.00
+Angular,0.00,4.21,3.00
+Ansible,0.00,1.07,0.00
+Apache Spark,0.00,1.16,0.00
+Automated testing,0.00,3.44,1.80
+Azure,0.80,7.91,4.50
+B2B SaaS,3.02,0.00,0.00
+Backend services,0.00,1.89,3.90
+Backlog prioritization,1.39,0.00,0.00
+Bash,0.00,0.98,0.00
+BigQuery,0.00,1.00,2.25
+Business case development,1.46,0.00,0.00
+C,0.00,3.97,0.00
+C#,0.00,6.09,2.10
+C++,0.00,11.98,0.00
+C/C++,0.00,1.30,0.00
+CI/CD,0.00,15.46,8.26
+CI/CD pipelines,0.00,1.28,0.00
+CRM,1.24,0.00,0.00
+CSS,0.00,3.93,3.15
+Cassandra,0.00,0.92,0.00
+Claude,0.00,0.00,2.25
+Claude Code,1.03,1.16,4.95
+Clickhouse,0.00,0.96,1.65
+Code quality,0.00,1.69,3.90
+Code review,0.00,2.80,3.30
+Competitive analysis,3.52,0.00,0.00
+Concurrency,0.00,1.36,0.00
+Confluence,1.19,0.00,0.00
+Continuous integration,0.00,2.43,0.00
+Conversion rate optimization,1.11,0.00,0.00
+Copilot,0.00,0.00,1.35
+Cross-functional collaboration,7.45,0.00,0.00
+Cross-functional leadership,2.58,0.00,0.00
+Cursor,1.03,1.66,6.46
+Customer discovery,4.03,0.00,0.00
+Customer feedback analysis,1.30,0.00,0.00
+Customer interviews,1.50,0.00,0.00
+Customer research,2.31,0.00,0.00
+Data analysis,18.88,1.61,3.45
+Data engineering,0.00,0.00,1.20
+Data infrastructure,0.88,0.00,0.00
+Data ingestion,0.76,0.00,1.50
+Data-driven decisions,6.53,0.00,0.00
+Datadog,0.00,2.04,1.20
+Design patterns,0.00,2.10,0.00
+DevOps,0.00,4.15,1.35
+Discovery,1.32,0.00,0.00
+Distributed systems,1.65,17.16,14.11
+Django,0.00,2.95,2.25
+Docker,0.00,13.37,5.26
+DynamoDB,0.00,1.91,0.00
+ECS,0.00,0.99,0.00
+ETL,0.00,1.53,0.00
+Elasticsearch,0.00,2.90,0.00
+Elixir,0.00,0.00,1.20
+Enterprise software,1.13,0.00,0.00
+Excel,0.81,0.00,0.00
+FastAPI,0.00,2.45,6.01
+Feature flags,0.00,0.00,1.50
+Feature prioritization,1.59,0.00,0.00
+Figma,1.38,0.00,2.40
+Fintech,1.01,0.00,0.00
+Flask,0.00,1.42,1.35
+Frontend Architecture,0.00,0.00,1.20
+Funnel optimization,0.89,0.00,0.00
+GCP,0.00,8.21,7.06
+Generative AI,2.54,1.39,2.85
+Git,0.00,6.88,1.50
+GitHub,0.00,2.62,2.10
+GitHub Actions,0.00,2.77,3.15
+GitHub Copilot,0.00,1.10,1.20
+GitLab,0.00,1.21,0.00
+Go,0.00,12.40,9.16
+Go-to-market,1.32,0.00,0.00
+Go-to-market planning,0.84,0.00,0.00
+Go-to-market strategy,3.14,0.00,0.00
+Golang,0.00,4.08,3.15
+Google Cloud,0.00,1.23,2.25
+Grafana,0.00,2.26,1.95
+GraphQL,0.00,5.45,6.01
+HTML,0.00,3.28,1.20
+HTML5,0.00,0.91,0.00
+HTTP,0.00,1.13,0.00
+Helm,0.00,0.99,0.00
+High availability,0.00,0.95,0.00
+Infrastructure,0.00,0.00,1.95
+Integration,1.03,0.00,0.00
+Integrations,2.08,0.00,1.80
+Interaction Design,0.00,0.00,1.20
+JIRA,2.79,1.32,0.00
+JSON,0.00,0.98,0.00
+Java,0.00,20.84,4.35
+JavaScript,0.00,13.85,15.62
+Jenkins,0.00,2.64,0.00
+Jest,0.00,1.01,0.00
+KPI definition,1.36,0.00,0.00
+KPI tracking,1.15,0.00,0.00
+KPIs,2.01,0.00,0.00
+KYC,0.89,0.00,0.00
+Kafka,0.00,6.42,3.15
+Key performance indicators (KPIs),0.77,0.00,0.00
+Kotlin,0.00,4.12,3.30
+Kubernetes,0.82,17.85,9.61
+LLM,4.13,3.33,14.26
+LLM APIs,0.00,0.00,1.35
+LLM orchestration,0.00,0.00,1.50
+LangChain,0.00,1.05,1.35
+Linear,0.00,0.00,2.25
+Linux,0.00,5.79,0.00
+MVP development,1.27,0.00,1.65
+Machine learning,7.07,4.65,7.66
+Market research,6.06,0.00,0.00
+Market trend analysis,0.77,0.00,0.00
+Metrics definition,1.97,0.00,0.00
+Microservices,0.00,7.88,2.70
+Mixpanel,0.84,0.00,0.00
+Model selection,0.00,0.00,1.50
+MongoDB,0.00,3.69,3.45
+MySQL,0.00,5.43,3.90
+NestJS,0.00,0.00,1.35
+Next.js,0.00,2.69,18.77
+NoSQL,0.00,4.41,1.35
+Node,0.00,0.00,3.00
+Node.js,0.00,10.32,16.37
+Notion,0.00,0.00,1.20
+OKRs,1.98,0.00,0.00
+Object-oriented programming,0.00,2.32,0.00
+Onboarding,1.89,0.00,0.00
+OpenAI,0.00,0.00,1.35
+OpenTelemetry,0.00,0.00,1.50
+Oracle,0.00,1.01,0.00
+PHP,0.00,1.46,1.65
+PRDs,2.37,0.00,0.00
+Packaging,0.90,0.00,0.00
+Performance tuning,0.00,1.32,0.00
+Postgres,0.00,14.12,28.23
+Pricing,2.35,0.00,0.00
+Pricing strategy,0.93,0.00,0.00
+Prioritization,3.85,0.00,0.00
+Product Discovery,3.59,0.00,0.00
+Product Engineering,0.00,0.00,1.50
+Product development,1.00,0.00,0.00
+Product execution,0.96,0.00,0.00
+Product management,38.62,0.00,0.00
+Product metrics,1.28,0.00,0.00
+Product roadmap,22.21,0.00,0.00
+Product roadmap development,0.78,0.00,0.00
+Product strategy,15.99,0.00,0.00
+Product vision,1.89,0.00,0.00
+Product-led growth,0.81,0.00,0.00
+Prometheus,0.00,1.98,1.20
+PyTorch,0.00,1.42,0.00
+Python,2.15,33.18,38.44
+QA,0.78,0.00,0.00
+Qualitative research,0.85,0.00,0.00
+Quantitative analysis,1.27,0.00,0.00
+RAG,0.78,0.00,2.40
+REST,0.00,3.45,2.40
+REST APIs,0.00,7.01,3.75
+RabbitMQ,0.00,1.74,1.50
+Rails,0.00,0.00,1.95
+React,0.00,21.83,55.11
+React Native,0.00,1.84,5.41
+Redis,0.00,4.51,7.66
+Redux,0.00,1.66,0.00
+Relational databases,0.00,4.21,3.75
+Release planning,0.84,0.00,0.00
+Risk Management,2.78,0.00,0.00
+Roadmap prioritization,0.94,0.00,0.00
+Roadmapping,4.82,0.00,0.00
+Ruby,0.00,2.48,6.31
+Ruby on Rails,0.00,2.14,3.75
+Rust,0.00,5.75,3.15
+S3,0.00,1.24,0.00
+SDKs,1.05,0.00,0.00
+SQL,7.96,11.42,5.26
+SQL Server,0.00,1.44,0.00
+SaaS,3.66,0.00,3.30
+Sales enablement,0.81,0.00,0.00
+Salesforce,0.85,0.00,0.00
+Scala,0.00,3.44,0.00
+Scrum,2.44,1.75,0.00
+Sentry,0.00,0.00,1.65
+Slack,0.00,0.00,2.25
+Snowflake,0.00,1.47,1.65
+Software Testing,0.00,1.00,0.00
+Spark,0.00,1.76,0.00
+Spring,0.00,1.49,0.00
+Spring Boot,0.00,3.31,0.00
+Sprint planning,2.37,0.00,0.00
+Stakeholder management,8.87,0.00,0.00
+Statistical analysis,0.00,0.00,1.80
+Success metrics,3.68,0.00,0.00
+Supervised Learning,0.00,0.00,1.95
+Swift,0.00,1.30,1.65
+System architecture,1.57,1.69,1.20
+System design,1.90,4.51,4.65
+TDD,0.00,0.92,0.00
+Tableau,1.09,0.00,0.00
+Tailwind,0.00,0.00,4.95
+Tailwind CSS,0.00,0.00,1.65
+TailwindCSS,0.00,0.00,1.35
+Technical architecture,0.00,0.00,1.35
+Technical product management,1.15,0.00,0.00
+Temporal,0.00,0.94,2.25
+TensorFlow,0.00,1.00,0.00
+Terraform,0.00,6.88,6.61
+TypeScript,0.00,21.80,57.51
+UX,2.01,0.00,1.65
+UX Design,1.34,0.00,1.35
+Unsupervised Clustering,0.00,0.00,1.95
+User experience (UX),2.19,0.00,0.00
+User interviews,1.38,0.00,0.00
+User research,7.77,0.00,0.00
+Vercel,0.00,0.00,2.70
+Version control,0.00,1.50,0.00
+Vue,0.00,1.51,0.00
+Vue.js,0.00,1.42,2.10
+acceptance criteria,3.43,0.00,0.00
+accessibility,0.00,1.05,2.55
+agentic AI,0.85,0.00,0.00
+agile development,1.13,0.00,0.00
+alerting,0.00,1.87,0.00
+algorithms,0.00,3.99,1.20
+analytics,7.37,0.98,0.00
+architecture,0.00,1.34,3.15
+authentication,1.52,2.30,1.65
+authorization,0.78,1.30,0.00
+automation,4.28,3.19,2.25
+back-end development,0.00,0.00,1.80
+backend development,0.00,3.54,6.01
+backend systems,0.00,1.21,1.80
+backlog management,3.21,0.00,0.00
+billing,0.82,0.00,0.00
+caching,0.00,1.58,0.00
+cloud infrastructure,0.00,2.03,1.50
+cloud platforms,0.00,0.93,0.00
+code reviews,0.00,7.79,6.31
+cohort analysis,0.77,0.00,0.00
+compliance,4.37,0.00,0.00
+computer vision,0.00,1.07,0.00
+container orchestration,0.00,1.13,0.00
+containerization,0.00,2.56,1.20
+continuous delivery,0.00,1.29,0.00
+continuous deployment,0.00,1.04,1.95
+conversion optimization,1.17,0.00,0.00
+customer feedback,1.15,0.00,0.00
+customer insights,0.88,0.00,0.00
+dashboards,1.65,0.00,0.00
+data governance,1.61,0.00,0.00
+data integration,1.12,0.00,0.00
+data modeling,2.00,2.95,3.45
+data models,2.10,0.00,1.50
+data pipelines,2.89,4.50,6.91
+data processing,0.00,1.82,0.00
+data quality,1.54,0.00,0.00
+data science,3.17,0.00,0.00
+data structures,0.00,4.41,1.50
+data visualization,1.28,1.12,1.80
+data-driven decision-making,1.65,0.00,0.00
+data-informed decision making,1.36,0.00,0.00
+databases,0.00,1.72,2.25
+debugging,0.00,7.28,5.86
+deliverability,0.00,0.00,1.20
+deployment,0.00,2.64,2.70
+design systems,0.00,0.00,3.45
+developer experience,1.08,0.00,0.00
+documentation,2.37,2.18,3.45
+embeddings,0.00,0.00,1.20
+end-to-end testing,0.00,1.03,0.00
+enterprise SaaS,0.93,0.00,0.00
+evaluation,0.00,0.00,1.65
+evaluation frameworks,1.01,0.00,0.00
+event-driven architecture,0.00,1.79,1.35
+event-driven architectures,0.00,1.22,0.00
+experiment design,1.71,0.00,0.00
+experimentation,10.88,0.97,2.10
+expo,0.00,0.00,1.50
+fine-tuning,0.84,0.00,1.35
+forecasting,1.00,0.00,0.00
+fraud detection,0.92,0.00,0.00
+fraud prevention,1.17,0.00,0.00
+front-end development,0.00,0.00,2.85
+frontend development,0.00,1.37,6.76
+full stack development,0.00,0.94,0.00
+full-stack development,0.00,2.29,9.31
+full-stack engineering,0.00,0.00,1.95
+funnel analysis,1.17,0.00,0.00
+gRPC,0.00,2.30,1.65
+governance,0.94,0.00,0.00
+hypothesis testing,0.88,0.00,0.00
+implementation,0.00,0.00,1.80
+incident response,0.00,1.81,1.95
+infrastructure as code,0.00,2.32,0.00
+infrastructure-as-code,0.00,1.33,0.00
+instrumentation,1.24,0.00,1.80
+integration testing,0.00,3.27,1.20
+latency optimization,0.92,0.00,1.50
+logging,0.00,2.03,0.00
+market analysis,1.78,0.00,0.00
+mentoring,0.00,1.40,1.65
+metrics,1.96,2.21,2.25
+metrics analysis,0.80,0.00,0.00
+microservices architecture,0.00,1.96,0.00
+model evaluation,1.21,0.00,0.00
+monetization,1.01,0.00,0.00
+monitoring,1.16,6.70,4.35
+networking,0.00,2.17,0.00
+object-oriented design,0.00,1.04,0.00
+observability,2.42,9.84,10.81
+open-source,0.00,0.00,2.10
+operational excellence,0.00,0.00,2.85
+orchestration,0.00,0.92,0.00
+payments,1.96,0.00,0.00
+performance,0.00,0.00,2.85
+performance engineering,0.00,1.77,2.40
+performance optimization,1.13,5.42,6.01
+personalization,1.90,0.00,0.00
+positioning,0.86,0.00,0.00
+privacy,0.88,0.00,0.00
+product analytics,1.78,0.00,0.00
+product backlog management,1.30,0.00,0.00
+product delivery,0.82,0.00,0.00
+product design,1.04,0.00,0.00
+product documentation,0.86,0.00,0.00
+product lifecycle management,4.34,0.00,0.00
+product requirements,4.05,0.00,0.00
+product roadmapping,1.17,0.00,0.00
+product roadmaps,1.47,0.00,0.00
+product specifications,1.69,0.00,0.00
+production deployment,0.00,0.00,1.35
+profiling,0.00,1.20,0.00
+project management,2.74,0.00,0.00
+prompt engineering,1.35,1.68,4.80
+prompting,0.00,0.00,2.10
+prototyping,5.05,0.00,6.76
+rapid prototyping,0.80,0.00,0.00
+recommendation systems,0.80,0.00,0.00
+refactoring,0.00,1.01,0.00
+regulatory compliance,2.90,0.00,0.00
+reliability,0.90,2.00,4.50
+reliability engineering,1.51,2.32,4.95
+reporting,1.75,0.00,0.00
+requirements definition,2.31,0.00,0.00
+requirements gathering,2.62,0.00,0.00
+research,0.93,0.00,0.00
+retention,1.05,0.00,0.00
+roadmap development,1.44,0.00,0.00
+robustness,0.00,0.00,1.80
+rule matching,0.00,0.00,1.20
+scalability,2.73,4.13,6.91
+scalable systems,0.00,1.75,0.00
+security,2.42,3.95,4.05
+segmentation,0.85,0.00,0.00
+software architecture,0.00,2.74,1.35
+software design,0.00,1.37,0.00
+software development,1.05,1.92,3.75
+software engineering,1.23,4.30,6.01
+state management,0.00,0.99,2.55
+systems design,0.00,0.00,1.20
+systems thinking,1.40,0.00,0.00
+technical fluency,0.99,0.00,0.00
+test automation,0.00,1.31,0.00
+testing,1.65,9.88,10.36
+third-party integrations,0.99,0.00,0.00
+transformer neural networks,0.00,0.00,1.95
+troubleshooting,0.00,1.54,0.00
+unit testing,0.00,6.09,2.70
+usability testing,1.05,0.00,0.00
+user stories,5.83,0.00,0.00
+vector databases,0.00,1.07,1.35
+web application development,0.00,0.00,3.30
+web applications,0.00,0.00,2.85
+web development,0.00,0.00,1.80
+workflow automation,1.94,0.00,1.95
+workflow design,1.15,0.00,0.00
+workflow orchestration,0.00,0.00,1.20
