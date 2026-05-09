@@ -1,0 +1,970 @@
+{
+  "top_volume_30": [
+    {
+      "author": "Peggy Smedley",
+      "n_posts": 1555,
+      "avg_authority": 2.007425437632864,
+      "sum_authority": 3121.546555519104,
+      "avg_relevance": 0.5137611114316516,
+      "domains": [
+        "peggysmedleyshow.com",
+        "connectedworld.com"
+      ]
+    },
+    {
+      "author": "Dakota Stewart",
+      "n_posts": 724,
+      "avg_authority": 0.9385413527488708,
+      "sum_authority": 679.5039393901825,
+      "avg_relevance": 0.4636517961545544,
+      "domains": [
+        "the-oracleai.com"
+      ]
+    },
+    {
+      "author": "Matthew Diakonov",
+      "n_posts": 700,
+      "avg_authority": 2.420170307159424,
+      "sum_authority": 1694.1192150115967,
+      "avg_relevance": 0.49312797620614596,
+      "domains": [
+        "fazm.ai"
+      ]
+    },
+    {
+      "author": "Sam Charrington",
+      "n_posts": 647,
+      "avg_authority": 0.9591508507728577,
+      "sum_authority": 620.5706004500389,
+      "avg_relevance": 0.4789165372181528,
+      "domains": [
+        "twimlai.com"
+      ]
+    },
+    {
+      "author": "Tobias Macey",
+      "n_posts": 587,
+      "avg_authority": 1.561030387878418,
+      "sum_authority": 916.3248376846313,
+      "avg_relevance": 0.5033570690496207,
+      "domains": [
+        "dataengineeringpodcast.com",
+        "aiengineeringpodcast.com"
+      ]
+    },
+    {
+      "author": "Jonathan Hall",
+      "n_posts": 425,
+      "avg_authority": 1.0704989433288574,
+      "sum_authority": 454.9620509147644,
+      "avg_relevance": 0.5265109214967895,
+      "domains": [
+        "jhall.io",
+        "boldlygo.tech"
+      ]
+    },
+    {
+      "author": "Jeffrey Palermo",
+      "n_posts": 393,
+      "avg_authority": 4.08105993270874,
+      "sum_authority": 1603.856553554535,
+      "avg_relevance": 0.5069017797026015,
+      "domains": [
+        "azuredevops.show",
+        "jeffreypalermo.com",
+        "clearmeasure.com"
+      ]
+    },
+    {
+      "author": "Alex Merced",
+      "n_posts": 329,
+      "avg_authority": 0.995115447370477,
+      "sum_authority": 327.39298218488693,
+      "avg_relevance": 0.5312542677289103,
+      "domains": [
+        "datalakehousehub.com",
+        "amdatalakehouse.substack.com",
+        "blog.iceberglakehouse.com"
+      ]
+    },
+    {
+      "author": "Andrew Woods",
+      "n_posts": 329,
+      "avg_authority": 0.5186745524406433,
+      "sum_authority": 170.64392775297165,
+      "avg_relevance": 0.47765124223617295,
+      "domains": [
+        "supplychainstrategy.media",
+        "cpostrategy.media"
+      ]
+    },
+    {
+      "author": "Charles M Wood",
+      "n_posts": 278,
+      "avg_authority": 0.4473707973957062,
+      "sum_authority": 124.36908167600632,
+      "avg_relevance": 0.4884165465402946,
+      "domains": [
+        "javascriptjabber.com"
+      ]
+    },
+    {
+      "author": "Josh",
+      "n_posts": 275,
+      "avg_authority": 1.2758005857467651,
+      "sum_authority": 350.8451610803604,
+      "avg_relevance": 0.5180981622680145,
+      "domains": [
+        "aisdr.com",
+        "joshuatan.com",
+        "joshuawinn.com"
+      ]
+    },
+    {
+      "author": "Shefali Aggarwal",
+      "n_posts": 263,
+      "avg_authority": 0.557594895362854,
+      "sum_authority": 146.6474574804306,
+      "avg_relevance": 0.5406859314260374,
+      "domains": [
+        "qubole.com"
+      ]
+    },
+    {
+      "author": "Jean-Georges Perrin",
+      "n_posts": 251,
+      "avg_authority": 1.779061198234558,
+      "sum_authority": 446.5443607568741,
+      "avg_relevance": 0.43209998806317645,
+      "domains": [
+        "jgp.ai",
+        "datameshlearning.com",
+        "dataintelligenceplatform.substack.com"
+      ]
+    },
+    {
+      "author": "Edwin Lisowski",
+      "n_posts": 245,
+      "avg_authority": 0.9751078486442566,
+      "sum_authority": 238.90142291784286,
+      "avg_relevance": 0.5594746921743665,
+      "domains": [
+        "addepto.com"
+      ]
+    },
+    {
+      "author": "Adam",
+      "n_posts": 240,
+      "avg_authority": 1.4371573060750962,
+      "sum_authority": 344.91775345802307,
+      "avg_relevance": 0.4606777289028251,
+      "domains": [
+        "shostack.org",
+        "adamloving.com",
+        "adam.shostack.org"
+      ]
+    },
+    {
+      "author": "Julien GOURMELEN",
+      "n_posts": 235,
+      "avg_authority": 1.412817120552063,
+      "sum_authority": 332.0120233297348,
+      "avg_relevance": 0.5411842545296284,
+      "domains": [
+        "wizops.fr"
+      ]
+    },
+    {
+      "author": "aiforgoodstg2",
+      "n_posts": 222,
+      "avg_authority": 0.5407171845436096,
+      "sum_authority": 120.03921496868134,
+      "avg_relevance": 0.5008380096152897,
+      "domains": [
+        "aiforgood.itu.int"
+      ]
+    },
+    {
+      "author": "Waylon Walker",
+      "n_posts": 211,
+      "avg_authority": 1.2002811431884766,
+      "sum_authority": 253.25932121276855,
+      "avg_relevance": 0.46884926775606667,
+      "domains": [
+        "waylonwalker.com"
+      ]
+    },
+    {
+      "author": "Nexus",
+      "n_posts": 210,
+      "avg_authority": 2.253363847732544,
+      "sum_authority": 473.20640802383423,
+      "avg_relevance": 0.48150143654722916,
+      "domains": [
+        "nexusconnect.io"
+      ]
+    },
+    {
+      "author": "Artur Haponik",
+      "n_posts": 193,
+      "avg_authority": 0.7682015299797058,
+      "sum_authority": 148.26289528608322,
+      "avg_relevance": 0.5646671885624528,
+      "domains": [
+        "addepto.com"
+      ]
+    },
+    {
+      "author": "Sean Galea-Pace",
+      "n_posts": 181,
+      "avg_authority": 0.2197224646806717,
+      "sum_authority": 39.769766107201576,
+      "avg_relevance": 0.48195000092188517,
+      "domains": [
+        "cpostrategy.media",
+        "supplychainstrategy.media"
+      ]
+    },
+    {
+      "author": "Paul Swail",
+      "n_posts": 180,
+      "avg_authority": 0.8925856947898865,
+      "sum_authority": 160.66542506217957,
+      "avg_relevance": 0.5087508369424489,
+      "domains": [
+        "serverlessfirst.com"
+      ]
+    },
+    {
+      "author": "Adam Pavlacka",
+      "n_posts": 160,
+      "avg_authority": 0.5081404447555542,
+      "sum_authority": 81.30247116088867,
+      "avg_relevance": 0.43733937442302706,
+      "domains": [
+        "kb.databricks.com"
+      ]
+    },
+    {
+      "author": "Ross Dawson",
+      "n_posts": 154,
+      "avg_authority": 1.2171117144745667,
+      "sum_authority": 187.43520402908325,
+      "avg_relevance": 0.4777222996627962,
+      "domains": [
+        "humansplus.ai",
+        "rossdawson.com",
+        "amplifyingcognition.com"
+      ]
+    },
+    {
+      "author": "Level Access",
+      "n_posts": 153,
+      "avg_authority": 0.502388060092926,
+      "sum_authority": 76.86537319421768,
+      "avg_relevance": 0.432431537600664,
+      "domains": [
+        "levelaccess.com",
+        "accessibility.dev"
+      ]
+    },
+    {
+      "author": "Aimee Gonzalez",
+      "n_posts": 150,
+      "avg_authority": 0.5017279982566833,
+      "sum_authority": 75.2591997385025,
+      "avg_relevance": 0.43557066679000855,
+      "domains": [
+        "kb.databricks.com"
+      ]
+    },
+    {
+      "author": "Ian Gormely",
+      "n_posts": 139,
+      "avg_authority": 1.0519118309020996,
+      "sum_authority": 146.21574449539185,
+      "avg_relevance": 0.5063927001761694,
+      "domains": [
+        "vectorinstitute.ai"
+      ]
+    },
+    {
+      "author": "Michael Wolf",
+      "n_posts": 129,
+      "avg_authority": 0.41470247507095337,
+      "sum_authority": 53.496619284152985,
+      "avg_relevance": 0.4883536002635956,
+      "domains": [
+        "thespoon.tech"
+      ]
+    },
+    {
+      "author": "Avi Gesser",
+      "n_posts": 126,
+      "avg_authority": 0.8675737977027893,
+      "sum_authority": 109.31429851055145,
+      "avg_relevance": 0.49345000112249005,
+      "domains": [
+        "debevoisedatablog.com"
+      ]
+    },
+    {
+      "author": "Hui Zhang",
+      "n_posts": 126,
+      "avg_authority": 0.6923628449440002,
+      "sum_authority": 87.23771846294403,
+      "avg_relevance": 0.4525200004577637,
+      "domains": [
+        "cs.lbl.gov",
+        "robohub.org"
+      ]
+    }
+  ],
+  "top_authority_30": [
+    {
+      "author": "John Gruber",
+      "n_posts": 43,
+      "avg_authority": 6.4213983180911045,
+      "sum_authority": 276.1201276779175,
+      "avg_relevance": 0.45123076897401077,
+      "domains": [
+        "rss-aggregator.philippd.workers.dev",
+        "daringfireball.net"
+      ]
+    },
+    {
+      "author": "Gergely Orosz",
+      "n_posts": 24,
+      "avg_authority": 4.752439657847087,
+      "sum_authority": 114.05855178833008,
+      "avg_relevance": 0.45818888809945846,
+      "domains": [
+        "blog.pragmaticengineer.com",
+        "newsletter.pragmaticengineer.com"
+      ]
+    },
+    {
+      "author": "Karo (Product with Attitude)",
+      "n_posts": 29,
+      "avg_authority": 4.536667494938292,
+      "sum_authority": 131.56335735321045,
+      "avg_relevance": 0.4827000009162085,
+      "domains": [
+        "karozieminski.substack.com"
+      ]
+    },
+    {
+      "author": "Lenny Rachitsky",
+      "n_posts": 23,
+      "avg_authority": 4.423341315725575,
+      "sum_authority": 101.73685026168823,
+      "avg_relevance": 0.5025565209596053,
+      "domains": [
+        "www.lennynewsletter.com"
+      ]
+    },
+    {
+      "author": "Daria Cupareanu",
+      "n_posts": 32,
+      "avg_authority": 4.295072257518768,
+      "sum_authority": 137.4423122406006,
+      "avg_relevance": 0.4665000010281801,
+      "domains": [
+        "aiblewmymind.substack.com"
+      ]
+    },
+    {
+      "author": "Jeffrey Palermo",
+      "n_posts": 393,
+      "avg_authority": 4.08105993270874,
+      "sum_authority": 1603.856553554535,
+      "avg_relevance": 0.5069017797026015,
+      "domains": [
+        "azuredevops.show",
+        "jeffreypalermo.com",
+        "clearmeasure.com"
+      ]
+    },
+    {
+      "author": "Mia Kiraki \ud83c\udfad",
+      "n_posts": 23,
+      "avg_authority": 4.06096190991609,
+      "sum_authority": 93.40212392807007,
+      "avg_relevance": 0.45884782594183215,
+      "domains": [
+        "robotsatemyhomework.substack.com"
+      ]
+    },
+    {
+      "author": "Ksenia Se",
+      "n_posts": 28,
+      "avg_authority": 4.013536129678998,
+      "sum_authority": 112.37901163101196,
+      "avg_relevance": 0.5513928564531463,
+      "domains": [
+        "turingpost.substack.com"
+      ]
+    },
+    {
+      "author": "Drew Breunig",
+      "n_posts": 22,
+      "avg_authority": 3.8977606296539307,
+      "sum_authority": 85.75073385238647,
+      "avg_relevance": 0.5130772685462778,
+      "domains": [
+        "dbreunig.com",
+        "onlamp.com"
+      ]
+    },
+    {
+      "author": "Victor Tangermann",
+      "n_posts": 77,
+      "avg_authority": 3.8967858103962687,
+      "sum_authority": 300.0525074005127,
+      "avg_relevance": 0.4620619075638907,
+      "domains": [
+        "futurism.com"
+      ]
+    },
+    {
+      "author": "Simon Willison",
+      "n_posts": 44,
+      "avg_authority": 3.8619812076741997,
+      "sum_authority": 169.9271731376648,
+      "avg_relevance": 0.46491190507298424,
+      "domains": [
+        "rss-aggregator.philippd.workers.dev",
+        "simonw.substack.com",
+        "niche-museums.com"
+      ]
+    },
+    {
+      "author": "Jos\u00e9 Valim",
+      "n_posts": 39,
+      "avg_authority": 3.7665634155273438,
+      "sum_authority": 146.8959732055664,
+      "avg_relevance": 0.4687692331962096,
+      "domains": [
+        "dashbit.co",
+        "tidewave.ai",
+        "blog.plataformatec.com.br"
+      ]
+    },
+    {
+      "author": "Frank Landymore",
+      "n_posts": 59,
+      "avg_authority": 3.6897962052943343,
+      "sum_authority": 217.69797611236572,
+      "avg_relevance": 0.4687035711748259,
+      "domains": [
+        "futurism.com"
+      ]
+    },
+    {
+      "author": "James Stanier",
+      "n_posts": 24,
+      "avg_authority": 3.685271739959717,
+      "sum_authority": 88.4465217590332,
+      "avg_relevance": 0.4659208357334137,
+      "domains": [
+        "theengineeringmanager.substack.com",
+        "theengineeringmanager.com"
+      ]
+    },
+    {
+      "author": "Tim Neutkens",
+      "n_posts": 33,
+      "avg_authority": 3.643127679824829,
+      "sum_authority": 120.22321343421936,
+      "avg_relevance": 0.495951513449351,
+      "domains": [
+        "rc.nextjs.org"
+      ]
+    },
+    {
+      "author": "Noah Smith",
+      "n_posts": 20,
+      "avg_authority": 3.5375787138938906,
+      "sum_authority": 70.75157427787781,
+      "avg_relevance": 0.4548000012125288,
+      "domains": [
+        "noahpinion.substack.com"
+      ]
+    },
+    {
+      "author": "Neil Perkin",
+      "n_posts": 18,
+      "avg_authority": 3.460622787475586,
+      "sum_authority": 62.29121017456055,
+      "avg_relevance": 0.4966777778334088,
+      "domains": [
+        "onlydeadfish.substack.com"
+      ]
+    },
+    {
+      "author": "James Wang",
+      "n_posts": 18,
+      "avg_authority": 3.4489762783050537,
+      "sum_authority": 62.08157300949097,
+      "avg_relevance": 0.5066529372159172,
+      "domains": [
+        "weightythoughts.com"
+      ]
+    },
+    {
+      "author": "Karen Spinner",
+      "n_posts": 25,
+      "avg_authority": 3.3590850162506105,
+      "sum_authority": 83.97712540626526,
+      "avg_relevance": 0.44008399844169616,
+      "domains": [
+        "wonderingaboutai.substack.com",
+        "cashandcache.substack.com"
+      ]
+    },
+    {
+      "author": "Jenny Ouyang",
+      "n_posts": 39,
+      "avg_authority": 3.2968432353093076,
+      "sum_authority": 128.576886177063,
+      "avg_relevance": 0.46055127947758406,
+      "domains": [
+        "buildtolaunch.substack.com",
+        "buildtolaunch.ai"
+      ]
+    },
+    {
+      "author": "Dheeraj Sharma",
+      "n_posts": 32,
+      "avg_authority": 3.2848223745822906,
+      "sum_authority": 105.1143159866333,
+      "avg_relevance": 0.4722156245261431,
+      "domains": [
+        "genaiunplugged.substack.com",
+        "genai-unplugged.substack.com",
+        "cozora.substack.com"
+      ]
+    },
+    {
+      "author": "Eric Newcomer",
+      "n_posts": 20,
+      "avg_authority": 3.2698409795761108,
+      "sum_authority": 65.39681959152222,
+      "avg_relevance": 0.518400001525879,
+      "domains": [
+        "intellyx.com",
+        "newcomer.co",
+        "thenewstack.io"
+      ]
+    },
+    {
+      "author": "Heather Baker",
+      "n_posts": 21,
+      "avg_authority": 3.2465817701248896,
+      "sum_authority": 68.17821717262268,
+      "avg_relevance": 0.5302571455637614,
+      "domains": [
+        "thehumansintheloop.ai"
+      ]
+    },
+    {
+      "author": "Devansh",
+      "n_posts": 29,
+      "avg_authority": 3.2131984316069504,
+      "sum_authority": 93.18275451660156,
+      "avg_relevance": 0.48856667346424526,
+      "domains": [
+        "artificialintelligencemadesimple.com",
+        "artificialintelligencemadesimple.substack.com"
+      ]
+    },
+    {
+      "author": "Kendra Ramirez",
+      "n_posts": 23,
+      "avg_authority": 3.196947087412295,
+      "sum_authority": 73.52978301048279,
+      "avg_relevance": 0.5668347814808721,
+      "domains": [
+        "kendratech.substack.com"
+      ]
+    },
+    {
+      "author": "Alexey Grigorev",
+      "n_posts": 27,
+      "avg_authority": 3.1549374615704573,
+      "sum_authority": 85.18331146240234,
+      "avg_relevance": 0.5159629627510354,
+      "domains": [
+        "alexeyondata.substack.com"
+      ]
+    },
+    {
+      "author": "David Krueger",
+      "n_posts": 20,
+      "avg_authority": 3.1495007634162904,
+      "sum_authority": 62.990015268325806,
+      "avg_relevance": 0.4783700004220009,
+      "domains": [
+        "therealartificialintelligence.substack.com"
+      ]
+    },
+    {
+      "author": "Ileana",
+      "n_posts": 20,
+      "avg_authority": 3.1345000863075256,
+      "sum_authority": 62.69000172615051,
+      "avg_relevance": 0.5323900014162064,
+      "domains": [
+        "ileanamarcut.substack.com"
+      ]
+    },
+    {
+      "author": "Ruben Dominguez",
+      "n_posts": 35,
+      "avg_authority": 3.1043460369110107,
+      "sum_authority": 108.65211129188538,
+      "avg_relevance": 0.49100909359527356,
+      "domains": [
+        "the-ai-corner.com",
+        "theaicorner1.substack.com"
+      ]
+    },
+    {
+      "author": "Alex Kantrowitz",
+      "n_posts": 16,
+      "avg_authority": 3.0894893407821655,
+      "sum_authority": 49.43182945251465,
+      "avg_relevance": 0.5639250054955482,
+      "domains": [
+        "bigtechnology.substack.com"
+      ]
+    }
+  ],
+  "top_sum_30": [
+    {
+      "author": "Peggy Smedley",
+      "n_posts": 1555,
+      "avg_authority": 2.007425437632864,
+      "sum_authority": 3121.546555519104,
+      "avg_relevance": 0.5137611114316516,
+      "domains": [
+        "peggysmedleyshow.com",
+        "connectedworld.com"
+      ]
+    },
+    {
+      "author": "Matthew Diakonov",
+      "n_posts": 700,
+      "avg_authority": 2.420170307159424,
+      "sum_authority": 1694.1192150115967,
+      "avg_relevance": 0.49312797620614596,
+      "domains": [
+        "fazm.ai"
+      ]
+    },
+    {
+      "author": "Jeffrey Palermo",
+      "n_posts": 393,
+      "avg_authority": 4.08105993270874,
+      "sum_authority": 1603.856553554535,
+      "avg_relevance": 0.5069017797026015,
+      "domains": [
+        "azuredevops.show",
+        "jeffreypalermo.com",
+        "clearmeasure.com"
+      ]
+    },
+    {
+      "author": "Tobias Macey",
+      "n_posts": 587,
+      "avg_authority": 1.561030387878418,
+      "sum_authority": 916.3248376846313,
+      "avg_relevance": 0.5033570690496207,
+      "domains": [
+        "dataengineeringpodcast.com",
+        "aiengineeringpodcast.com"
+      ]
+    },
+    {
+      "author": "Dakota Stewart",
+      "n_posts": 724,
+      "avg_authority": 0.9385413527488708,
+      "sum_authority": 679.5039393901825,
+      "avg_relevance": 0.4636517961545544,
+      "domains": [
+        "the-oracleai.com"
+      ]
+    },
+    {
+      "author": "Sam Charrington",
+      "n_posts": 647,
+      "avg_authority": 0.9591508507728577,
+      "sum_authority": 620.5706004500389,
+      "avg_relevance": 0.4789165372181528,
+      "domains": [
+        "twimlai.com"
+      ]
+    },
+    {
+      "author": "Nexus",
+      "n_posts": 210,
+      "avg_authority": 2.253363847732544,
+      "sum_authority": 473.20640802383423,
+      "avg_relevance": 0.48150143654722916,
+      "domains": [
+        "nexusconnect.io"
+      ]
+    },
+    {
+      "author": "Jonathan Hall",
+      "n_posts": 425,
+      "avg_authority": 1.0704989433288574,
+      "sum_authority": 454.9620509147644,
+      "avg_relevance": 0.5265109214967895,
+      "domains": [
+        "jhall.io",
+        "boldlygo.tech"
+      ]
+    },
+    {
+      "author": "Jean-Georges Perrin",
+      "n_posts": 251,
+      "avg_authority": 1.779061198234558,
+      "sum_authority": 446.5443607568741,
+      "avg_relevance": 0.43209998806317645,
+      "domains": [
+        "jgp.ai",
+        "datameshlearning.com",
+        "dataintelligenceplatform.substack.com"
+      ]
+    },
+    {
+      "author": "Josh",
+      "n_posts": 275,
+      "avg_authority": 1.2758005857467651,
+      "sum_authority": 350.8451610803604,
+      "avg_relevance": 0.5180981622680145,
+      "domains": [
+        "aisdr.com",
+        "joshuatan.com",
+        "joshuawinn.com"
+      ]
+    },
+    {
+      "author": "Adam",
+      "n_posts": 240,
+      "avg_authority": 1.4371573060750962,
+      "sum_authority": 344.91775345802307,
+      "avg_relevance": 0.4606777289028251,
+      "domains": [
+        "shostack.org",
+        "adamloving.com",
+        "adam.shostack.org"
+      ]
+    },
+    {
+      "author": "Julien GOURMELEN",
+      "n_posts": 235,
+      "avg_authority": 1.412817120552063,
+      "sum_authority": 332.0120233297348,
+      "avg_relevance": 0.5411842545296284,
+      "domains": [
+        "wizops.fr"
+      ]
+    },
+    {
+      "author": "Alex Merced",
+      "n_posts": 329,
+      "avg_authority": 0.995115447370477,
+      "sum_authority": 327.39298218488693,
+      "avg_relevance": 0.5312542677289103,
+      "domains": [
+        "datalakehousehub.com",
+        "amdatalakehouse.substack.com",
+        "blog.iceberglakehouse.com"
+      ]
+    },
+    {
+      "author": "Victor Tangermann",
+      "n_posts": 77,
+      "avg_authority": 3.8967858103962687,
+      "sum_authority": 300.0525074005127,
+      "avg_relevance": 0.4620619075638907,
+      "domains": [
+        "futurism.com"
+      ]
+    },
+    {
+      "author": "John Gruber",
+      "n_posts": 43,
+      "avg_authority": 6.4213983180911045,
+      "sum_authority": 276.1201276779175,
+      "avg_relevance": 0.45123076897401077,
+      "domains": [
+        "rss-aggregator.philippd.workers.dev",
+        "daringfireball.net"
+      ]
+    },
+    {
+      "author": "Waylon Walker",
+      "n_posts": 211,
+      "avg_authority": 1.2002811431884766,
+      "sum_authority": 253.25932121276855,
+      "avg_relevance": 0.46884926775606667,
+      "domains": [
+        "waylonwalker.com"
+      ]
+    },
+    {
+      "author": "Edwin Lisowski",
+      "n_posts": 245,
+      "avg_authority": 0.9751078486442566,
+      "sum_authority": 238.90142291784286,
+      "avg_relevance": 0.5594746921743665,
+      "domains": [
+        "addepto.com"
+      ]
+    },
+    {
+      "author": "Avi Chawla",
+      "n_posts": 78,
+      "avg_authority": 2.958771745363871,
+      "sum_authority": 230.78419613838196,
+      "avg_relevance": 0.5242782067029904,
+      "domains": [
+        "blog.dailydoseofds.com",
+        "dailydoseofds.com"
+      ]
+    },
+    {
+      "author": "Frank Landymore",
+      "n_posts": 59,
+      "avg_authority": 3.6897962052943343,
+      "sum_authority": 217.69797611236572,
+      "avg_relevance": 0.4687035711748259,
+      "domains": [
+        "futurism.com"
+      ]
+    },
+    {
+      "author": "Fred",
+      "n_posts": 116,
+      "avg_authority": 1.8407578468322754,
+      "sum_authority": 213.52791023254395,
+      "avg_relevance": 0.4429956903231555,
+      "domains": [
+        "vibecodingwithfred.com",
+        "appguardians.com"
+      ]
+    },
+    {
+      "author": "Ross Dawson",
+      "n_posts": 154,
+      "avg_authority": 1.2171117144745667,
+      "sum_authority": 187.43520402908325,
+      "avg_relevance": 0.4777222996627962,
+      "domains": [
+        "humansplus.ai",
+        "rossdawson.com",
+        "amplifyingcognition.com"
+      ]
+    },
+    {
+      "author": "Andrew Woods",
+      "n_posts": 329,
+      "avg_authority": 0.5186745524406433,
+      "sum_authority": 170.64392775297165,
+      "avg_relevance": 0.47765124223617295,
+      "domains": [
+        "supplychainstrategy.media",
+        "cpostrategy.media"
+      ]
+    },
+    {
+      "author": "Simon Willison",
+      "n_posts": 44,
+      "avg_authority": 3.8619812076741997,
+      "sum_authority": 169.9271731376648,
+      "avg_relevance": 0.46491190507298424,
+      "domains": [
+        "rss-aggregator.philippd.workers.dev",
+        "simonw.substack.com",
+        "niche-museums.com"
+      ]
+    },
+    {
+      "author": "Engr Mejba Ahmed",
+      "n_posts": 87,
+      "avg_authority": 1.9405924081802368,
+      "sum_authority": 168.8315395116806,
+      "avg_relevance": 0.44004534808702245,
+      "domains": [
+        "mejba.me"
+      ]
+    },
+    {
+      "author": "Luciano Mammino",
+      "n_posts": 60,
+      "avg_authority": 2.7377970218658447,
+      "sum_authority": 164.26782131195068,
+      "avg_relevance": 0.4573375018579619,
+      "domains": [
+        "loige.co",
+        "awscq.substack.com"
+      ]
+    },
+    {
+      "author": "Joe Wilkins",
+      "n_posts": 59,
+      "avg_authority": 2.757785813283112,
+      "sum_authority": 162.7093629837036,
+      "avg_relevance": 0.4671964262213026,
+      "domains": [
+        "futurism.com"
+      ]
+    },
+    {
+      "author": "Paul Swail",
+      "n_posts": 180,
+      "avg_authority": 0.8925856947898865,
+      "sum_authority": 160.66542506217957,
+      "avg_relevance": 0.5087508369424489,
+      "domains": [
+        "serverlessfirst.com"
+      ]
+    },
+    {
+      "author": "Artur Haponik",
+      "n_posts": 193,
+      "avg_authority": 0.7682015299797058,
+      "sum_authority": 148.26289528608322,
+      "avg_relevance": 0.5646671885624528,
+      "domains": [
+        "addepto.com"
+      ]
+    },
+    {
+      "author": "Jos\u00e9 Valim",
+      "n_posts": 39,
+      "avg_authority": 3.7665634155273438,
+      "sum_authority": 146.8959732055664,
+      "avg_relevance": 0.4687692331962096,
+      "domains": [
+        "dashbit.co",
+        "tidewave.ai",
+        "blog.plataformatec.com.br"
+      ]
+    },
+    {
+      "author": "Shefali Aggarwal",
+      "n_posts": 263,
+      "avg_authority": 0.557594895362854,
+      "sum_authority": 146.6474574804306,
+      "avg_relevance": 0.5406859314260374,
+      "domains": [
+        "qubole.com"
+      ]
+    }
+  ],
+  "n_authors_total": 945
+}
