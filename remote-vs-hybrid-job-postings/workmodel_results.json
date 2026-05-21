@@ -1,0 +1,1082 @@
+{
+  "by_country": {
+    "doc_count_error_upper_bound": 580,
+    "sum_other_doc_count": 25017,
+    "buckets": [
+      {
+        "key": "US",
+        "doc_count": 72366,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 70,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 36543
+            },
+            {
+              "key": "remote",
+              "doc_count": 25849
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 9878
+            },
+            {
+              "key": "in-person",
+              "doc_count": 26
+            }
+          ]
+        }
+      },
+      {
+        "key": "IN",
+        "doc_count": 12515,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 5,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 7160
+            },
+            {
+              "key": "remote",
+              "doc_count": 3894
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 1450
+            },
+            {
+              "key": "",
+              "doc_count": 6
+            }
+          ]
+        }
+      },
+      {
+        "key": "GB",
+        "doc_count": 9122,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 2,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 4500
+            },
+            {
+              "key": "remote",
+              "doc_count": 2550
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 2068
+            },
+            {
+              "key": "distributed",
+              "doc_count": 2
+            }
+          ]
+        }
+      },
+      {
+        "key": "CA",
+        "doc_count": 5399,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 1,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 2288
+            },
+            {
+              "key": "remote",
+              "doc_count": 2202
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 907
+            },
+            {
+              "key": "",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "DE",
+        "doc_count": 3068,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 2,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 1239
+            },
+            {
+              "key": "remote",
+              "doc_count": 1123
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 703
+            },
+            {
+              "key": "",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "BR",
+        "doc_count": 2058,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 998
+            },
+            {
+              "key": "remote",
+              "doc_count": 847
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 213
+            }
+          ]
+        }
+      },
+      {
+        "key": "FR",
+        "doc_count": 2055,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 1026
+            },
+            {
+              "key": "remote",
+              "doc_count": 640
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 388
+            },
+            {
+              "key": "in-person",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "SG",
+        "doc_count": 1780,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 1197
+            },
+            {
+              "key": "remote",
+              "doc_count": 452
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 130
+            },
+            {
+              "key": "virtual",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "PL",
+        "doc_count": 1733,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 770
+            },
+            {
+              "key": "remote",
+              "doc_count": 706
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 256
+            },
+            {
+              "key": "distributed",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "ES",
+        "doc_count": 1669,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 654
+            },
+            {
+              "key": "remote",
+              "doc_count": 559
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 456
+            }
+          ]
+        }
+      },
+      {
+        "key": "AU",
+        "doc_count": 1529,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 2,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 824
+            },
+            {
+              "key": "remote",
+              "doc_count": 415
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 287
+            },
+            {
+              "key": "",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "IL",
+        "doc_count": 1446,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 746
+            },
+            {
+              "key": "remote",
+              "doc_count": 429
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 271
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "by_role": {
+    "doc_count_error_upper_bound": 502,
+    "sum_other_doc_count": 91618,
+    "buckets": [
+      {
+        "key": "Software Engineer",
+        "doc_count": 26173,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 15,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 11637
+            },
+            {
+              "key": "remote",
+              "doc_count": 11427
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 3066
+            },
+            {
+              "key": "in-person",
+              "doc_count": 12
+            }
+          ]
+        }
+      },
+      {
+        "key": "Product Manager",
+        "doc_count": 7393,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 3,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 3884
+            },
+            {
+              "key": "remote",
+              "doc_count": 2482
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 1018
+            },
+            {
+              "key": "remote-first",
+              "doc_count": 2
+            }
+          ]
+        }
+      },
+      {
+        "key": "Data Scientist",
+        "doc_count": 3406,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 1915
+            },
+            {
+              "key": "remote",
+              "doc_count": 984
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 506
+            },
+            {
+              "key": "remote-first",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "Data Engineer",
+        "doc_count": 3372,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 1635
+            },
+            {
+              "key": "remote",
+              "doc_count": 1369
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 367
+            }
+          ]
+        }
+      },
+      {
+        "key": "Engineering Manager",
+        "doc_count": 3138,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 1,
+          "buckets": [
+            {
+              "key": "remote",
+              "doc_count": 1650
+            },
+            {
+              "key": "onsite",
+              "doc_count": 1013
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 470
+            },
+            {
+              "key": "distributed",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "Backend Engineer",
+        "doc_count": 2501,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "remote",
+              "doc_count": 1595
+            },
+            {
+              "key": "onsite",
+              "doc_count": 644
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 259
+            },
+            {
+              "key": "distributed",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "Product Designer",
+        "doc_count": 2487,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 1,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 1121
+            },
+            {
+              "key": "remote",
+              "doc_count": 1007
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 357
+            },
+            {
+              "key": "hybrid-remote",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "DevOps Engineer",
+        "doc_count": 2008,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 975
+            },
+            {
+              "key": "remote",
+              "doc_count": 762
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 270
+            }
+          ]
+        }
+      },
+      {
+        "key": "Machine Learning Engineer",
+        "doc_count": 1951,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 2,
+          "buckets": [
+            {
+              "key": "remote",
+              "doc_count": 992
+            },
+            {
+              "key": "onsite",
+              "doc_count": 640
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 310
+            },
+            {
+              "key": "flexible",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "Staff Software Engineer",
+        "doc_count": 1800,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 4,
+          "buckets": [
+            {
+              "key": "remote",
+              "doc_count": 1143
+            },
+            {
+              "key": "onsite",
+              "doc_count": 360
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 287
+            },
+            {
+              "key": "in-person",
+              "doc_count": 2
+            }
+          ]
+        }
+      },
+      {
+        "key": "Data Analyst",
+        "doc_count": 1780,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 1066
+            },
+            {
+              "key": "remote",
+              "doc_count": 512
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 202
+            }
+          ]
+        }
+      },
+      {
+        "key": "ML Engineer",
+        "doc_count": 1674,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 1135
+            },
+            {
+              "key": "remote",
+              "doc_count": 437
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 101
+            },
+            {
+              "key": "in-person",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "Site Reliability Engineer",
+        "doc_count": 1518,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "remote",
+              "doc_count": 792
+            },
+            {
+              "key": "onsite",
+              "doc_count": 511
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 214
+            }
+          ]
+        }
+      },
+      {
+        "key": "Systems Engineer",
+        "doc_count": 1490,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 925
+            },
+            {
+              "key": "remote",
+              "doc_count": 431
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 133
+            }
+          ]
+        }
+      },
+      {
+        "key": "Business Analyst",
+        "doc_count": 1385,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 956
+            },
+            {
+              "key": "remote",
+              "doc_count": 272
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 156
+            },
+            {
+              "key": "remote-first",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "Program Manager",
+        "doc_count": 1372,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 771
+            },
+            {
+              "key": "remote",
+              "doc_count": 431
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 167
+            },
+            {
+              "key": "distributed-friendly",
+              "doc_count": 3
+            }
+          ]
+        }
+      },
+      {
+        "key": "AI Engineer",
+        "doc_count": 1368,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 639
+            },
+            {
+              "key": "remote",
+              "doc_count": 563
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 165
+            },
+            {
+              "key": "remote-first",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "Technical Program Manager",
+        "doc_count": 1243,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 1,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 635
+            },
+            {
+              "key": "remote",
+              "doc_count": 419
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 186
+            },
+            {
+              "key": "hybrid-remote",
+              "doc_count": 1
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "by_sen": {
+    "doc_count_error_upper_bound": 0,
+    "sum_other_doc_count": 16,
+    "buckets": [
+      {
+        "key": "senior",
+        "doc_count": 57483,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 59,
+          "buckets": [
+            {
+              "key": "remote",
+              "doc_count": 25586
+            },
+            {
+              "key": "onsite",
+              "doc_count": 23454
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 8299
+            },
+            {
+              "key": "",
+              "doc_count": 20
+            }
+          ]
+        }
+      },
+      {
+        "key": "mid",
+        "doc_count": 13204,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 3,
+          "buckets": [
+            {
+              "key": "remote",
+              "doc_count": 5982
+            },
+            {
+              "key": "onsite",
+              "doc_count": 5491
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 1721
+            },
+            {
+              "key": "",
+              "doc_count": 2
+            }
+          ]
+        }
+      },
+      {
+        "key": "staff",
+        "doc_count": 11369,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 11,
+          "buckets": [
+            {
+              "key": "remote",
+              "doc_count": 5897
+            },
+            {
+              "key": "onsite",
+              "doc_count": 3860
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 1577
+            },
+            {
+              "key": "remote-first",
+              "doc_count": 7
+            }
+          ]
+        }
+      },
+      {
+        "key": "manager",
+        "doc_count": 10774,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 5,
+          "buckets": [
+            {
+              "key": "remote",
+              "doc_count": 4554
+            },
+            {
+              "key": "onsite",
+              "doc_count": 4531
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 1668
+            },
+            {
+              "key": "",
+              "doc_count": 3
+            }
+          ]
+        }
+      },
+      {
+        "key": "lead",
+        "doc_count": 9327,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 10,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 4573
+            },
+            {
+              "key": "remote",
+              "doc_count": 3462
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 1268
+            },
+            {
+              "key": "",
+              "doc_count": 5
+            }
+          ]
+        }
+      },
+      {
+        "key": "entry",
+        "doc_count": 8880,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 4,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 5057
+            },
+            {
+              "key": "remote",
+              "doc_count": 2891
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 918
+            },
+            {
+              "key": "remote-first",
+              "doc_count": 2
+            }
+          ]
+        }
+      },
+      {
+        "key": "principal",
+        "doc_count": 6438,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 2,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 2873
+            },
+            {
+              "key": "remote",
+              "doc_count": 2762
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 789
+            },
+            {
+              "key": "",
+              "doc_count": 6
+            }
+          ]
+        }
+      },
+      {
+        "key": "intern",
+        "doc_count": 5275,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 3,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 3671
+            },
+            {
+              "key": "remote",
+              "doc_count": 1058
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 537
+            },
+            {
+              "key": "",
+              "doc_count": 2
+            }
+          ]
+        }
+      },
+      {
+        "key": "director",
+        "doc_count": 3284,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 1,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 1545
+            },
+            {
+              "key": "remote",
+              "doc_count": 1292
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 436
+            },
+            {
+              "key": "flexible",
+              "doc_count": 1
+            }
+          ]
+        }
+      },
+      {
+        "key": "vp",
+        "doc_count": 918,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 459
+            },
+            {
+              "key": "remote",
+              "doc_count": 348
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 111
+            }
+          ]
+        }
+      },
+      {
+        "key": "c-level",
+        "doc_count": 480,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 283
+            },
+            {
+              "key": "remote",
+              "doc_count": 150
+            },
+            {
+              "key": "hybrid",
+              "doc_count": 46
+            }
+          ]
+        }
+      },
+      {
+        "key": "junior",
+        "doc_count": 14,
+        "wm": {
+          "doc_count_error_upper_bound": 0,
+          "sum_other_doc_count": 0,
+          "buckets": [
+            {
+              "key": "onsite",
+              "doc_count": 14
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "wm": {
+    "doc_count_error_upper_bound": 1,
+    "sum_other_doc_count": 129,
+    "buckets": [
+      {
+        "key": "onsite",
+        "doc_count": 78593
+      },
+      {
+        "key": "remote",
+        "doc_count": 65668
+      },
+      {
+        "key": "hybrid",
+        "doc_count": 21709
+      },
+      {
+        "key": "",
+        "doc_count": 69
+      }
+    ]
+  }
+}
