@@ -1,0 +1,61 @@
+role,seniority,n,pct_any_remote
+Software Engineer,senior,6188,58.67808661926309
+Software Engineer,entry,1348,47.403560830860535
+Software Engineer,mid,1169,52.35243798118049
+Software Engineer,staff,1010,63.366336633663366
+Software Engineer,intern,684,21.49122807017544
+Software Engineer,principal,267,31.46067415730337
+Product Manager,senior,1400,57.214285714285715
+Product Manager,mid,279,58.78136200716846
+Product Manager,staff,214,58.87850467289719
+Product Manager,principal,191,55.49738219895288
+Product Manager,entry,96,32.291666666666664
+Product Manager,intern,58,20.689655172413794
+Data Scientist,senior,619,47.81906300484653
+Data Scientist,mid,230,47.391304347826086
+Data Scientist,intern,173,13.294797687861271
+Data Scientist,staff,114,55.26315789473684
+Data Scientist,entry,85,42.35294117647059
+Data Scientist,principal,34,20.58823529411765
+Data Engineer,senior,613,64.11092985318108
+Data Engineer,mid,128,54.6875
+Data Engineer,entry,62,50.0
+Data Engineer,staff,59,71.1864406779661
+Data Engineer,intern,37,10.81081081081081
+Data Engineer,principal,17,29.41176470588235
+Machine Learning Engineer,senior,427,68.61826697892272
+Machine Learning Engineer,mid,156,66.66666666666667
+Machine Learning Engineer,staff,149,67.78523489932886
+Machine Learning Engineer,intern,81,29.62962962962963
+Machine Learning Engineer,entry,35,57.142857142857146
+Machine Learning Engineer,principal,21,71.42857142857143
+Backend Engineer,senior,382,72.25130890052355
+Backend Engineer,mid,80,62.5
+Backend Engineer,staff,79,67.0886075949367
+Backend Engineer,entry,39,61.53846153846154
+Backend Engineer,principal,6,50.0
+Backend Engineer,intern,5,0.0
+AI Engineer,senior,226,58.4070796460177
+AI Engineer,staff,67,67.16417910447761
+AI Engineer,intern,52,11.538461538461538
+AI Engineer,mid,47,46.808510638297875
+AI Engineer,entry,40,35.0
+AI Engineer,principal,15,40.0
+Security Engineer,senior,323,60.9907120743034
+Security Engineer,staff,65,53.84615384615385
+Security Engineer,entry,21,52.38095238095238
+Security Engineer,mid,21,52.38095238095238
+Security Engineer,principal,10,50.0
+Security Engineer,intern,5,60.0
+DevOps Engineer,senior,252,58.333333333333336
+DevOps Engineer,mid,66,48.484848484848484
+DevOps Engineer,staff,33,54.54545454545455
+DevOps Engineer,entry,28,46.42857142857143
+DevOps Engineer,intern,14,35.714285714285715
+DevOps Engineer,principal,9,55.55555555555556
+Frontend Engineer,senior,168,48.80952380952381
+Frontend Engineer,mid,31,51.61290322580645
+Frontend Engineer,staff,31,64.51612903225806
+Frontend Engineer,entry,29,27.586206896551722
+Frontend Engineer,intern,8,0.0
+Frontend Engineer,principal,4,0.0
