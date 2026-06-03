@@ -1,0 +1,23 @@
+role,n_total,n_ai,pct_ai,tier
+Machine Learning Engineer,872,836,95.87155963302752,heavy
+Research Engineer,294,223,75.85034013605443,heavy
+AI Engineer,449,324,72.16035634743875,heavy
+Research Scientist,409,295,72.12713936430318,heavy
+ML Engineer,547,326,59.59780621572212,heavy
+Data Scientist,1268,665,52.44479495268139,heavy
+Forward Deployed Engineer,199,90,45.22613065326633,medium
+Data Engineer,922,213,23.10195227765727,medium
+Full Stack Engineer,444,87,19.594594594594593,light
+Software Engineer,10738,2091,19.472899981374557,medium
+Backend Engineer,594,115,19.36026936026936,light
+Platform Engineer,298,48,16.107382550335572,light
+Infrastructure Engineer,257,40,15.56420233463035,light
+Analytics Engineer,156,24,15.384615384615385,medium
+Site Reliability Engineer,455,69,15.164835164835164,light
+Technical Program Manager,594,89,14.983164983164983,light
+Product Manager,2259,337,14.918105356352369,light
+Frontend Engineer,277,38,13.71841155234657,light
+Data Analyst,508,68,13.385826771653543,medium
+Security Engineer,451,58,12.86031042128603,light
+DevOps Engineer,404,45,11.138613861386139,light
+Product Designer,1046,88,8.413001912045889,light
