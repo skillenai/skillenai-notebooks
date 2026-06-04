@@ -1,0 +1,258 @@
+{
+  "Software Engineer": {
+    "Apr": {
+      "total": 4974,
+      "ic": 3600,
+      "early": 480,
+      "senior": 2183,
+      "staff_plus": 521
+    },
+    "May": {
+      "total": 4322,
+      "ic": 3081,
+      "early": 476,
+      "senior": 1788,
+      "staff_plus": 416
+    }
+  },
+  "Backend Engineer": {
+    "Apr": {
+      "total": 178,
+      "ic": 141,
+      "early": 11,
+      "senior": 96,
+      "staff_plus": 13
+    },
+    "May": {
+      "total": 174,
+      "ic": 150,
+      "early": 6,
+      "senior": 100,
+      "staff_plus": 20
+    }
+  },
+  "Frontend Engineer": {
+    "Apr": {
+      "total": 100,
+      "ic": 80,
+      "early": 9,
+      "senior": 54,
+      "staff_plus": 9
+    },
+    "May": {
+      "total": 73,
+      "ic": 56,
+      "early": 6,
+      "senior": 32,
+      "staff_plus": 10
+    }
+  },
+  "Full Stack Engineer": {
+    "Apr": {
+      "total": 174,
+      "ic": 123,
+      "early": 7,
+      "senior": 75,
+      "staff_plus": 14
+    },
+    "May": {
+      "total": 139,
+      "ic": 114,
+      "early": 19,
+      "senior": 54,
+      "staff_plus": 19
+    }
+  },
+  "DevOps Engineer": {
+    "Apr": {
+      "total": 260,
+      "ic": 141,
+      "early": 9,
+      "senior": 86,
+      "staff_plus": 18
+    },
+    "May": {
+      "total": 252,
+      "ic": 121,
+      "early": 11,
+      "senior": 69,
+      "staff_plus": 16
+    }
+  },
+  "Site Reliability Engineer": {
+    "Apr": {
+      "total": 267,
+      "ic": 191,
+      "early": 14,
+      "senior": 133,
+      "staff_plus": 36
+    },
+    "May": {
+      "total": 141,
+      "ic": 102,
+      "early": 5,
+      "senior": 70,
+      "staff_plus": 24
+    }
+  },
+  "Platform Engineer": {
+    "Apr": {
+      "total": 140,
+      "ic": 97,
+      "early": 4,
+      "senior": 45,
+      "staff_plus": 36
+    },
+    "May": {
+      "total": 106,
+      "ic": 76,
+      "early": 1,
+      "senior": 43,
+      "staff_plus": 25
+    }
+  },
+  "Infrastructure Engineer": {
+    "Apr": {
+      "total": 116,
+      "ic": 87,
+      "early": 11,
+      "senior": 47,
+      "staff_plus": 21
+    },
+    "May": {
+      "total": 80,
+      "ic": 65,
+      "early": 7,
+      "senior": 36,
+      "staff_plus": 13
+    }
+  },
+  "Data Engineer": {
+    "Apr": {
+      "total": 463,
+      "ic": 278,
+      "early": 13,
+      "senior": 175,
+      "staff_plus": 39
+    },
+    "May": {
+      "total": 478,
+      "ic": 310,
+      "early": 26,
+      "senior": 221,
+      "staff_plus": 26
+    }
+  },
+  "Data Scientist": {
+    "Apr": {
+      "total": 689,
+      "ic": 397,
+      "early": 32,
+      "senior": 245,
+      "staff_plus": 49
+    },
+    "May": {
+      "total": 588,
+      "ic": 381,
+      "early": 29,
+      "senior": 195,
+      "staff_plus": 54
+    }
+  },
+  "Data Analyst": {
+    "Apr": {
+      "total": 299,
+      "ic": 130,
+      "early": 35,
+      "senior": 64,
+      "staff_plus": 6
+    },
+    "May": {
+      "total": 338,
+      "ic": 200,
+      "early": 37,
+      "senior": 119,
+      "staff_plus": 8
+    }
+  },
+  "Machine Learning Engineer": {
+    "Apr": {
+      "total": 390,
+      "ic": 282,
+      "early": 10,
+      "senior": 151,
+      "staff_plus": 64
+    },
+    "May": {
+      "total": 271,
+      "ic": 207,
+      "early": 14,
+      "senior": 111,
+      "staff_plus": 41
+    }
+  },
+  "ML Engineer": {
+    "Apr": {
+      "total": 446,
+      "ic": 184,
+      "early": 8,
+      "senior": 77,
+      "staff_plus": 71
+    },
+    "May": {
+      "total": 328,
+      "ic": 182,
+      "early": 11,
+      "senior": 79,
+      "staff_plus": 74
+    }
+  },
+  "AI Engineer": {
+    "Apr": {
+      "total": 205,
+      "ic": 99,
+      "early": 11,
+      "senior": 61,
+      "staff_plus": 22
+    },
+    "May": {
+      "total": 218,
+      "ic": 150,
+      "early": 14,
+      "senior": 87,
+      "staff_plus": 33
+    }
+  },
+  "Research Scientist": {
+    "Apr": {
+      "total": 161,
+      "ic": 125,
+      "early": 11,
+      "senior": 91,
+      "staff_plus": 22
+    },
+    "May": {
+      "total": 136,
+      "ic": 114,
+      "early": 20,
+      "senior": 64,
+      "staff_plus": 27
+    }
+  },
+  "Research Engineer": {
+    "Apr": {
+      "total": 147,
+      "ic": 121,
+      "early": 11,
+      "senior": 74,
+      "staff_plus": 30
+    },
+    "May": {
+      "total": 69,
+      "ic": 58,
+      "early": 14,
+      "senior": 23,
+      "staff_plus": 16
+    }
+  }
+}
