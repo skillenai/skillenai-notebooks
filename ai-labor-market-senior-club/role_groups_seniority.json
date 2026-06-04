@@ -1,0 +1,162 @@
+{
+  "AI/ML core": {
+    "Apr": {
+      "total": 1487,
+      "ic": 897,
+      "entry": 57,
+      "junior": 0,
+      "mid": 121,
+      "senior": 498,
+      "staff": 155,
+      "principal": 66
+    },
+    "May": {
+      "total": 1155,
+      "ic": 820,
+      "entry": 81,
+      "junior": 0,
+      "mid": 103,
+      "senior": 420,
+      "staff": 153,
+      "principal": 63
+    },
+    "Spring": {
+      "total": 3668,
+      "ic": 2518,
+      "entry": 182,
+      "junior": 0,
+      "mid": 345,
+      "senior": 1414,
+      "staff": 428,
+      "principal": 149
+    }
+  },
+  "SW Eng core": {
+    "Apr": {
+      "total": 5426,
+      "ic": 3944,
+      "entry": 507,
+      "junior": 0,
+      "mid": 472,
+      "senior": 2408,
+      "staff": 409,
+      "principal": 148
+    },
+    "May": {
+      "total": 4708,
+      "ic": 3401,
+      "entry": 507,
+      "junior": 0,
+      "mid": 455,
+      "senior": 1974,
+      "staff": 354,
+      "principal": 111
+    },
+    "Spring": {
+      "total": 10000,
+      "ic": 11223,
+      "entry": 1449,
+      "junior": 0,
+      "mid": 1354,
+      "senior": 6982,
+      "staff": 1155,
+      "principal": 283
+    }
+  },
+  "Infra/DevOps": {
+    "Apr": {
+      "total": 783,
+      "ic": 516,
+      "entry": 38,
+      "junior": 0,
+      "mid": 56,
+      "senior": 311,
+      "staff": 94,
+      "principal": 17
+    },
+    "May": {
+      "total": 579,
+      "ic": 364,
+      "entry": 24,
+      "junior": 0,
+      "mid": 44,
+      "senior": 218,
+      "staff": 68,
+      "principal": 10
+    },
+    "Spring": {
+      "total": 1994,
+      "ic": 1370,
+      "entry": 83,
+      "junior": 0,
+      "mid": 135,
+      "senior": 888,
+      "staff": 222,
+      "principal": 42
+    }
+  },
+  "Data Eng/Sci": {
+    "Apr": {
+      "total": 1451,
+      "ic": 805,
+      "entry": 80,
+      "junior": 0,
+      "mid": 147,
+      "senior": 484,
+      "staff": 69,
+      "principal": 25
+    },
+    "May": {
+      "total": 1404,
+      "ic": 891,
+      "entry": 92,
+      "junior": 0,
+      "mid": 176,
+      "senior": 535,
+      "staff": 61,
+      "principal": 27
+    },
+    "Spring": {
+      "total": 3712,
+      "ic": 2372,
+      "entry": 249,
+      "junior": 0,
+      "mid": 432,
+      "senior": 1456,
+      "staff": 180,
+      "principal": 55
+    }
+  },
+  "Mgmt": {
+    "Apr": {
+      "total": 2882,
+      "ic": 1228,
+      "entry": 42,
+      "junior": 0,
+      "mid": 85,
+      "senior": 843,
+      "staff": 154,
+      "principal": 104
+    },
+    "May": {
+      "total": 2795,
+      "ic": 1169,
+      "entry": 57,
+      "junior": 0,
+      "mid": 88,
+      "senior": 768,
+      "staff": 157,
+      "principal": 99
+    },
+    "Spring": {
+      "total": 7639,
+      "ic": 3384,
+      "entry": 124,
+      "junior": 0,
+      "mid": 342,
+      "senior": 2275,
+      "staff": 413,
+      "principal": 230
+    }
+  }
+}
