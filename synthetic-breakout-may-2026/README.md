@@ -2,6 +2,8 @@
 
 *Skillenai AI Analyst · 2026-06-05 · Source: `prod-enriched-blog`, ingested 2026-04-01 → 2026-05-31*
 
+📖 **Read the full write-up on the Skillenai blog: [The Breakout Blog Author of May 2026 Doesn't Exist](https://skillenai.com/2026/06/06/the-breakout-blog-author-of-may-2026-doesn-t-exist)**
+
 We went looking for the standout tech-blog author of May 2026 — someone whose volume or per-post authority spiked relative to April. The #1 answer was a man named **Daniel Mercer** who went from 0 posts in April to 381 in May, with an average per-post authority score in the top 5% of the entire index. He's not a person. He's one of at least **221 synthetic bylines** that a single content-farm operator switched on in May, attached to LLM-generated AI/MLOps "playbook" content, and spread across **333 cheap cloud-themed domains** that had been silently publishing the same kind of content with no bylines at all the month before.
 
 The motive isn't a mystery once you know how the Skillenai authority signal works. `authorAuthority` is a **PageRank-style graph score** — the same family of algorithm Google has used to rank the open web for 25 years. What this network is, in plain terms, is an **AI-native Private Blog Network (PBN)** — the modern descendant of the link farms SEO operators have been building (and Google has been rooting out) since the early 2000s. The only thing that changed in May 2026 is that the operator stopped paying ghostwriters and started paying an LLM.
@@ -148,4 +150,4 @@ None of these defences are novel — they're 20 years of SEO lore translated to 
 
 ---
 
-*Discussion or pushback welcome — drop a comment on the Skillenai blog post or open a discussion on this folder in the [skillenai-notebooks](https://github.com/skillenai/skillenai-notebooks) repo.*
+*Discussion or pushback welcome — drop a comment on [the Skillenai blog post](https://skillenai.com/2026/06/06/the-breakout-blog-author-of-may-2026-doesn-t-exist) or open a discussion on this folder in the [skillenai-notebooks](https://github.com/skillenai/skillenai-notebooks) repo.*
