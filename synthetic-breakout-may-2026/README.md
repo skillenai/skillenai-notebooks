@@ -4,12 +4,15 @@
 
 We went looking for the standout tech-blog author of May 2026 — someone whose volume or per-post authority spiked relative to April. The #1 answer was a man named **Daniel Mercer** who went from 0 posts in April to 381 in May, with an average per-post authority score in the top 5% of the entire index. He's not a person. He's one of at least **221 synthetic bylines** that a single content-farm operator switched on in May, attached to LLM-generated AI/MLOps "playbook" content, and spread across **333 cheap cloud-themed domains** that had been silently publishing the same kind of content with no bylines at all the month before.
 
-This report walks through the evidence, then surfaces the real human authors whose May activity actually moved the signal underneath the noise.
+The motive isn't a mystery once you know how the Skillenai authority signal works. `authorAuthority` is a **PageRank-style graph score** — the same family of algorithm Google has used to rank the open web for 25 years. What this network is, in plain terms, is an **AI-native Private Blog Network (PBN)** — the modern descendant of the link farms SEO operators have been building (and Google has been rooting out) since the early 2000s. The only thing that changed in May 2026 is that the operator stopped paying ghostwriters and started paying an LLM.
+
+This report walks through the evidence, explains why the attack works against a PageRank-derived score, and surfaces the real human authors whose May activity actually moved the signal underneath the noise.
 
 ## TL;DR
 
 - A coordinated network of **221 fake author bylines** materialized in May 2026 across **333+ low-authority cloud-themed domains** (`deployed.cloud`, `midways.cloud`, `toggle.top`, `typescript.website`, …).
-- The same infrastructure was already publishing in April — **8,583 posts on those 333 domains** — but **99.6 % of April posts had no author byline**. The May "breakout" is an attribution-layer being grafted onto an existing content farm, not new content output.
+- This is the **AI-native version of a Private Blog Network (PBN)** — the same PageRank-gaming attack SEO operators have been running against Google since the early 2000s. The Skillenai `authorAuthority` signal is PageRank-derived; the operator's goal is to inflate it so their content (and whoever they cross-link to) ranks higher.
+- The same infrastructure was already publishing in April — **8,583 posts on those 333 domains** — but **99.6 % of April posts had no author byline**. The May "breakout" is an attribution-layer grafted onto an existing PBN, not new content output. Author-level authority became a ranking surface, so the operator filled it.
 - Top synthetic byline **Daniel Mercer** posted 381 times in 20 days across **208 distinct domains** (≈ 1.8 posts per domain) with avg `authorAuthority` of **3.72** — in the 95–99th percentile of all May blog posts.
 - **141 domains host 2 or more** of these personae. `deployed.cloud` alone is shared by **8 different "authors."**
 - Stripping the network out, the real human breakouts in May are a small but legitimate handful: **Rod Trent** (Microsoft security, +65 % volume + authority doubled), **Ruben Hassid** (AI commentator, authority 2.03 → 3.37 on lower volume), **Alex Merced** (Dremio/Iceberg evangelist, authority 0.99 → 1.54), **Marin Ivezic** (post-quantum cryptography, 6× volume), **Frank Landymore & Joe Wilkins** (Futurism AI desk).
@@ -64,13 +67,23 @@ A persona network is only a network if the same domains host multiple personae. 
 
 The single domain `deployed.cloud` is shared by **8 different "authors."** `midways.cloud` and `toggle.top` are each shared by 6. Real bloggers don't publish under three byline aliases on a friend's domain in the same month.
 
-## Why these bylines top the authority charts
+## Why anyone would do this — and why it works
 
-The `authorAuthority` signal in the Skillenai blog index rewards two things at once: how topically relevant an author's posts are to AI/labor-market embeddings, and how many posts they have. LLM-generated AI/MLOps/cloud playbook content satisfies both criteria by construction — it's about exactly the topics the signal is trained on, and the operator can produce it cheaply at volume.
+`authorAuthority` in the Skillenai blog index is a **PageRank-style score** on the graph of authors, domains, and cross-references between them. Every blog index that ranks "who is influential" — Skillenai's, Google's, Ahrefs', Moz's, Semrush's — leans on some PageRank variant for the same reason Google did in 1998: links and citations between independent sources are the cheapest available proxy for "this is worth reading." The signal is durable, the math is well understood, and the alternatives are all worse.
 
-The result: the median real author scores 0.40 on `authorAuthority`. Daniel Mercer averages 3.72. That number puts him in the same band as Futurism.com staff writers — except his posts live on `myscript.cloud` and `pyramides.cloud`.
+Which means the attack against it is also durable, also well understood, and at least 20 years old. SEO operators call it a **Private Blog Network (PBN)**: a cluster of cheaply registered domains, each with low-quality but topically-relevant content, all interlinking with each other and with whatever the operator wants to rank. To PageRank, a clique of 200 mutually-citing domains looks indistinguishable from 200 independent voices endorsing each other — that's the whole point of the algorithm, and it's also the whole exploit. Google's entire anti-spam history — Panda, Penguin, the helpful-content updates, the link-spam updates of 2022 and 2024 — is a continuous arms race against PBN-shaped attacks. SEO services still sell PBN packages openly. The cost is well understood. The math is well understood. The only thing that changed in May 2026 is that the operator no longer has to pay humans to write the filler content.
+
+What we caught here is the **AI-native generation of the classical PBN**:
+
+1. **Classical farm**: dozens of low-paid ghostwriters producing barely-readable, topically-relevant posts. **2026 farm**: one operator and an LLM API key. Content cost has collapsed by ~3 orders of magnitude.
+2. **Classical PBN**: easy to spot by content quality — posts read like spun garbage, so search engines could fingerprint them. **2026 PBN**: reads like a slightly underbaked AI playbook. It clears any "is this written by a human" content filter and almost any topical-coherence filter.
+3. **Classical PBN**: published anonymously, because the backlink juice came from domain-to-domain links and the bylines didn't matter. **2026 PBN**: added bylines once the operator realized that author-level authority is now its own ranking surface — that's what we caught happening on May 12.
+
+The result: median real author scores 0.40 on `authorAuthority`. Daniel Mercer averages 3.72. That number puts him in the same band as Futurism.com staff writers — except his posts live on `myscript.cloud` and `pyramides.cloud`, and he is sitting at the centre of a 333-domain clique that mutually cites itself into a top-5 % PageRank.
 
 ![Where the synthetic personae sit on the authorAuthority distribution](04_authority_percentile.png)
+
+This is not a defect peculiar to the Skillenai signal. Any PageRank-derived authority score on any open corpus is in the same arms race Google has been fighting for two decades. The April → May transition is the first round being fought on our corpus.
 
 ## When the persona was born
 
@@ -101,11 +114,19 @@ The cleanest pick for "real breakout" by both axes is **Rod Trent** — a real h
 
 The persona network is small in absolute share — ~2.6 % of all May authored blog posts — but it dominates the top of any author-volume ranking and sits in the top 5 % on per-post authority. Left unfiltered, it will:
 
-1. **Distort author-influence leaderboards** for any topic the network targets (AI, MLOps, cloud, infrastructure, prompt engineering, agents).
+1. **Distort author-influence leaderboards** for any topic the network targets (AI, MLOps, cloud, infrastructure, prompt engineering, agents). A PageRank-style score is most vulnerable exactly where the network is densest, which is exactly the topics we care about.
 2. **Inflate entity prevalence** for the specific brand names and concepts the LLM templates name-check most often.
 3. **Anchor topic-trend lines** to the operator's publishing cadence rather than to the real ecosystem.
+4. **Train downstream models on synthetic provenance.** If anyone uses our blog corpus to fine-tune retrieval rankers, eval datasets, or "trending in tech" classifiers, the persona network will quietly become part of the ground truth.
 
-For any future "who's writing about X" question, the persona network needs to be filtered out before any aggregation that ranks by author count or by per-post authority. The starting denylist is the 333 domains identified here; the structural detector is "shared-domain bylines across non-trivial overlap," which generalizes beyond this specific operator.
+This is the same arms race Google has been running since they first launched the toolbar PageRank that gave PBNs an attack target to optimize against. The defensive playbook is well established:
+
+- **Domain-level denylist** — start with the 333 domains identified here and apply as a `must_not` on any author-ranking or topic-trend query.
+- **Structural detection** — flag any "author" that publishes on N ≥ 3 domains where ≥ 2 other authors also publish on N ≥ 3 of the same domains. This generalises beyond the specific operator we caught.
+- **Domain-authority floor** — penalise per-post `authorAuthority` when `domainAuthority` is below ~1e-4. Real high-authority authors usually appear on at least one moderately-authoritative domain; the synthetic network sits entirely below that floor.
+- **Citation diversity** — the medium-term fix is the same one Google's link-spam updates rely on: weight cross-domain citations less when the citing domain is part of a tight clique. A PBN's whole edge is forming a clique that looks like 200 independent endorsements; clique-detection breaks that.
+
+None of these defences are novel — they're 20 years of SEO lore translated to an AI corpus. But we now know which side of the arms race we're on.
 
 ## Methodology
 
