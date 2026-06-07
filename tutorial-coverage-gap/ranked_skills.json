@@ -1,0 +1,594 @@
+[
+  {
+    "label": "Looker",
+    "jobs": 5215,
+    "blog": 1053,
+    "jobs_per_10k": 253.28444109861823,
+    "blog_per_10k": 25.782282944028207,
+    "job_blog_ratio": 9.823972595773757
+  },
+  {
+    "label": "Tableau",
+    "jobs": 7904,
+    "blog": 1686,
+    "jobs_per_10k": 383.8849899220476,
+    "blog_per_10k": 41.28103422946967,
+    "job_blog_ratio": 9.299306499641915
+  },
+  {
+    "label": "Kotlin",
+    "jobs": 5481,
+    "blog": 1432,
+    "jobs_per_10k": 266.2036474902256,
+    "blog_per_10k": 35.06194603594339,
+    "job_blog_ratio": 7.592380845527789
+  },
+  {
+    "label": "GCP",
+    "jobs": 22111,
+    "blog": 6067,
+    "jobs_per_10k": 1073.8968891910927,
+    "blog_per_10k": 148.5480632682043,
+    "job_blog_ratio": 7.229289063514523
+  },
+  {
+    "label": "Scala",
+    "jobs": 3846,
+    "blog": 1214,
+    "jobs_per_10k": 186.79423978241337,
+    "blog_per_10k": 29.724303413153127,
+    "job_blog_ratio": 6.284225981213614
+  },
+  {
+    "label": "Airflow",
+    "jobs": 5207,
+    "blog": 1797,
+    "jobs_per_10k": 252.89589353796836,
+    "blog_per_10k": 43.99882473923902,
+    "job_blog_ratio": 5.747787470160103
+  },
+  {
+    "label": "Redux",
+    "jobs": 2309,
+    "blog": 822,
+    "jobs_per_10k": 112.14453969256175,
+    "blog_per_10k": 20.126340531805496,
+    "job_blog_ratio": 5.572028333483706
+  },
+  {
+    "label": "Terraform",
+    "jobs": 15657,
+    "blog": 5600,
+    "jobs_per_10k": 760.4361446368295,
+    "blog_per_10k": 137.1137554478233,
+    "job_blog_ratio": 5.54602375343882
+  },
+  {
+    "label": "Spring Boot",
+    "jobs": 3122,
+    "blog": 1129,
+    "jobs_per_10k": 151.6306855436023,
+    "blog_per_10k": 27.643112482248668,
+    "job_blog_ratio": 5.4852971292930075
+  },
+  {
+    "label": "Jenkins",
+    "jobs": 6694,
+    "blog": 2528,
+    "jobs_per_10k": 325.1171713737585,
+    "blog_per_10k": 61.89706674501738,
+    "job_blog_ratio": 5.2525456935312675
+  },
+  {
+    "label": "Power BI",
+    "jobs": 4979,
+    "blog": 1906,
+    "jobs_per_10k": 241.82228805944777,
+    "blog_per_10k": 46.667646050634154,
+    "job_blog_ratio": 5.181797423359898
+  },
+  {
+    "label": "DBT",
+    "jobs": 4707,
+    "blog": 1832,
+    "jobs_per_10k": 228.611670997353,
+    "blog_per_10k": 44.85578571078791,
+    "job_blog_ratio": 5.096592722092735
+  },
+  {
+    "label": "Java",
+    "jobs": 23476,
+    "blog": 9758,
+    "jobs_per_10k": 1140.1928167269725,
+    "blog_per_10k": 238.92071886783214,
+    "job_blog_ratio": 4.772264298090081
+  },
+  {
+    "label": "SQL",
+    "jobs": 37014,
+    "blog": 15488,
+    "jobs_per_10k": 1797.712426236674,
+    "blog_per_10k": 379.2174722099799,
+    "job_blog_ratio": 4.740584382254535
+  },
+  {
+    "label": "Ansible",
+    "jobs": 4592,
+    "blog": 1926,
+    "jobs_per_10k": 223.0262998130115,
+    "blog_per_10k": 47.15733803437637,
+    "job_blog_ratio": 4.72940817080115
+  },
+  {
+    "label": "Ruby on Rails",
+    "jobs": 2305,
+    "blog": 970,
+    "jobs_per_10k": 111.95026591223682,
+    "blog_per_10k": 23.750061211497965,
+    "job_blog_ratio": 4.713683258131522
+  },
+  {
+    "label": "Angular",
+    "jobs": 5358,
+    "blog": 2262,
+    "jobs_per_10k": 260.2297287452342,
+    "blog_per_10k": 55.384163361245776,
+    "job_blog_ratio": 4.698630672596311
+  },
+  {
+    "label": "Kafka",
+    "jobs": 9489,
+    "blog": 4162,
+    "jobs_per_10k": 460.86597537579837,
+    "blog_per_10k": 101.90490181675726,
+    "job_blog_ratio": 4.522510371527717
+  },
+  {
+    "label": "Databricks",
+    "jobs": 6879,
+    "blog": 3110,
+    "jobs_per_10k": 334.10233371378615,
+    "blog_per_10k": 76.14710347191617,
+    "job_blog_ratio": 4.387590840366062
+  },
+  {
+    "label": "PyTorch",
+    "jobs": 7308,
+    "blog": 3499,
+    "jobs_per_10k": 354.9381966536341,
+    "blog_per_10k": 85.67161255570245,
+    "job_blog_ratio": 4.143008238847592
+  },
+  {
+    "label": "Snowflake",
+    "jobs": 8043,
+    "blog": 3923,
+    "jobs_per_10k": 390.6360037883387,
+    "blog_per_10k": 96.05308261103765,
+    "job_blog_ratio": 4.066876285170362
+  },
+  {
+    "label": "Grafana",
+    "jobs": 6455,
+    "blog": 3224,
+    "jobs_per_10k": 313.5093129993443,
+    "blog_per_10k": 78.93834777924685,
+    "job_blog_ratio": 3.971571762257822
+  },
+  {
+    "label": "Python",
+    "jobs": 66636,
+    "blog": 33322,
+    "jobs_per_10k": 3236.4069064328905,
+    "blog_per_10k": 815.875814112923,
+    "job_blog_ratio": 3.9667886343116296
+  },
+  {
+    "label": "TypeScript",
+    "jobs": 21661,
+    "blog": 11072,
+    "jobs_per_10k": 1052.0410889045386,
+    "blog_per_10k": 271.0934821996964,
+    "job_blog_ratio": 3.8807317696025256
+  },
+  {
+    "label": "Go (Golang)",
+    "jobs": 4472,
+    "blog": 2347,
+    "jobs_per_10k": 217.1980864032638,
+    "blog_per_10k": 57.46535429215024,
+    "job_blog_ratio": 3.779635383418023
+  },
+  {
+    "label": "MySQL",
+    "jobs": 6484,
+    "blog": 3414,
+    "jobs_per_10k": 314.9177979067,
+    "blog_per_10k": 83.59042162479801,
+    "job_blog_ratio": 3.7673909496500997
+  },
+  {
+    "label": "Elasticsearch",
+    "jobs": 3180,
+    "blog": 1704,
+    "jobs_per_10k": 154.4476553583137,
+    "blog_per_10k": 41.72175701483767,
+    "job_blog_ratio": 3.7018492606480327
+  },
+  {
+    "label": "BigQuery",
+    "jobs": 4290,
+    "blog": 2506,
+    "jobs_per_10k": 208.35862939847982,
+    "blog_per_10k": 61.35840556290094,
+    "job_blog_ratio": 3.395763424538193
+  },
+  {
+    "label": "SQL Server",
+    "jobs": 3883,
+    "blog": 2291,
+    "jobs_per_10k": 188.5912722504189,
+    "blog_per_10k": 56.094216737672006,
+    "job_blog_ratio": 3.362044845592147
+  },
+  {
+    "label": "MongoDB",
+    "jobs": 4794,
+    "blog": 2849,
+    "jobs_per_10k": 232.8371257194201,
+    "blog_per_10k": 69.75662308408012,
+    "job_blog_ratio": 3.33784973275976
+  },
+  {
+    "label": "MLOps",
+    "jobs": 4119,
+    "blog": 2523,
+    "jobs_per_10k": 200.05342528958934,
+    "blog_per_10k": 61.774643749081825,
+    "job_blog_ratio": 3.238439158017205
+  },
+  {
+    "label": "PostgreSQL",
+    "jobs": 14738,
+    "blog": 9235,
+    "jobs_per_10k": 715.8017436071784,
+    "blog_per_10k": 226.11527349297293,
+    "job_blog_ratio": 3.1656496819062676
+  },
+  {
+    "label": "scikit-learn",
+    "jobs": 2286,
+    "blog": 1457,
+    "jobs_per_10k": 111.02746545569343,
+    "blog_per_10k": 35.67406101562118,
+    "job_blog_ratio": 3.112274361112856
+  },
+  {
+    "label": "Datadog",
+    "jobs": 4554,
+    "blog": 2938,
+    "jobs_per_10k": 221.18069889992472,
+    "blog_per_10k": 71.93575241173302,
+    "job_blog_ratio": 3.0746977891323097
+  },
+  {
+    "label": "TensorFlow",
+    "jobs": 4719,
+    "blog": 3122,
+    "jobs_per_10k": 229.19449233832776,
+    "blog_per_10k": 76.44091866216151,
+    "job_blog_ratio": 2.9983220551191483
+  },
+  {
+    "label": "Spark",
+    "jobs": 10463,
+    "blog": 6959,
+    "jobs_per_10k": 508.17164088491705,
+    "blog_per_10k": 170.3883257431076,
+    "job_blog_ratio": 2.9824322685762006
+  },
+  {
+    "label": "Figma",
+    "jobs": 4846,
+    "blog": 3284,
+    "jobs_per_10k": 235.3626848636441,
+    "blog_per_10k": 80.40742373047354,
+    "job_blog_ratio": 2.9271263018273297
+  },
+  {
+    "label": "AWS",
+    "jobs": 43911,
+    "blog": 29863,
+    "jobs_per_10k": 2132.6889919619225,
+    "blog_per_10k": 731.183585524705,
+    "job_blog_ratio": 2.9167626765465235
+  },
+  {
+    "label": "React Native",
+    "jobs": 2308,
+    "blog": 1588,
+    "jobs_per_10k": 112.0959712474805,
+    "blog_per_10k": 38.881543509132754,
+    "job_blog_ratio": 2.883012378897732
+  },
+  {
+    "label": "Docker",
+    "jobs": 21273,
+    "blog": 15031,
+    "jobs_per_10k": 1033.1965322130213,
+    "blog_per_10k": 368.02801038147004,
+    "job_blog_ratio": 2.8073855876950446
+  },
+  {
+    "label": "pandas",
+    "jobs": 2921,
+    "blog": 2082,
+    "jobs_per_10k": 141.86842808227496,
+    "blog_per_10k": 50.97693550756574,
+    "job_blog_ratio": 2.7829924782594975
+  },
+  {
+    "label": "model evaluation",
+    "jobs": 1512,
+    "blog": 1080,
+    "jobs_per_10k": 73.43548896282086,
+    "blog_per_10k": 26.44336712208021,
+    "job_blog_ratio": 2.7770854076106755
+  },
+  {
+    "label": "FastAPI",
+    "jobs": 2777,
+    "blog": 2011,
+    "jobs_per_10k": 134.87457199057772,
+    "blog_per_10k": 49.238528965280835,
+    "job_blog_ratio": 2.7392079906708977
+  },
+  {
+    "label": "Playwright (testing)",
+    "jobs": 1599,
+    "blog": 1158,
+    "jobs_per_10k": 77.66094368488793,
+    "blog_per_10k": 28.353165858674895,
+    "job_blog_ratio": 2.7390572210519797
+  },
+  {
+    "label": "GitLab",
+    "jobs": 5577,
+    "blog": 4076,
+    "jobs_per_10k": 270.86621821802373,
+    "blog_per_10k": 99.79922628666569,
+    "job_blog_ratio": 2.7141114044309433
+  },
+  {
+    "label": "React",
+    "jobs": 21484,
+    "blog": 15861,
+    "jobs_per_10k": 1043.444474125161,
+    "blog_per_10k": 388.3502277067724,
+    "job_blog_ratio": 2.6868645868621037
+  },
+  {
+    "label": "Redis",
+    "jobs": 5592,
+    "blog": 4349,
+    "jobs_per_10k": 271.59474489424224,
+    "blog_per_10k": 106.48352186474708,
+    "job_blog_ratio": 2.550580034713875
+  },
+  {
+    "label": "Kubernetes",
+    "jobs": 27833,
+    "blog": 21647,
+    "jobs_per_10k": 1351.8055319458947,
+    "blog_per_10k": 530.0181186033984,
+    "job_blog_ratio": 2.550489284230343
+  },
+  {
+    "label": "Prometheus",
+    "jobs": 5086,
+    "blog": 3962,
+    "jobs_per_10k": 247.01911168313947,
+    "blog_per_10k": 97.007981979335,
+    "job_blog_ratio": 2.546379242645831
+  },
+  {
+    "label": "GitHub Actions",
+    "jobs": 6286,
+    "blog": 4984,
+    "jobs_per_10k": 305.30124578061634,
+    "blog_per_10k": 122.03124234856276,
+    "job_blog_ratio": 2.5018285473860216
+  },
+  {
+    "label": "computer vision",
+    "jobs": 5549,
+    "blog": 4797,
+    "jobs_per_10k": 269.5063017557493,
+    "blog_per_10k": 117.45262230057294,
+    "job_blog_ratio": 2.2945958674814078
+  },
+  {
+    "label": "GraphQL",
+    "jobs": 5248,
+    "blog": 4643,
+    "jobs_per_10k": 254.88719978629885,
+    "blog_per_10k": 113.68199402575779,
+    "job_blog_ratio": 2.2421070458048717
+  },
+  {
+    "label": "Ruby",
+    "jobs": 5220,
+    "blog": 4696,
+    "jobs_per_10k": 253.52728332402438,
+    "blog_per_10k": 114.97967778267468,
+    "job_blog_ratio": 2.204974724344081
+  },
+  {
+    "label": "Oracle DB",
+    "jobs": 290,
+    "blog": 285,
+    "jobs_per_10k": 14.08484907355691,
+    "blog_per_10k": 6.978110768326723,
+    "job_blog_ratio": 2.0184330030253026
+  },
+  {
+    "label": "Next.js",
+    "jobs": 4442,
+    "blog": 4416,
+    "jobs_per_10k": 215.7410330508269,
+    "blog_per_10k": 108.12399001028353,
+    "job_blog_ratio": 1.995311429316547
+  },
+  {
+    "label": "prompt engineering",
+    "jobs": 5299,
+    "blog": 5413,
+    "jobs_per_10k": 257.3641904854416,
+    "blog_per_10k": 132.5351353998335,
+    "job_blog_ratio": 1.9418563214126003
+  },
+  {
+    "label": "Node.js",
+    "jobs": 10967,
+    "blog": 11431,
+    "jobs_per_10k": 532.6501372058574,
+    "blog_per_10k": 279.88345330786933,
+    "job_blog_ratio": 1.9031140673398328
+  },
+  {
+    "label": "JavaScript",
+    "jobs": 17910,
+    "blog": 19126,
+    "jobs_per_10k": 869.8608514048423,
+    "blog_per_10k": 468.2924440526909,
+    "job_blog_ratio": 1.857516307282054
+  },
+  {
+    "label": "Swift",
+    "jobs": 3688,
+    "blog": 3942,
+    "jobs_per_10k": 179.12042545957888,
+    "blog_per_10k": 96.51828999559277,
+    "job_blog_ratio": 1.855818471999016
+  },
+  {
+    "label": "Rust",
+    "jobs": 5915,
+    "blog": 6547,
+    "jobs_per_10k": 287.2823526554797,
+    "blog_per_10k": 160.3006708780177,
+    "job_blog_ratio": 1.7921469141828477
+  },
+  {
+    "label": "Django",
+    "jobs": 2695,
+    "blog": 3234,
+    "jobs_per_10k": 130.8919594939168,
+    "blog_per_10k": 79.18319377111797,
+    "job_blog_ratio": 1.6530270283396875
+  },
+  {
+    "label": "LangChain",
+    "jobs": 3182,
+    "blog": 3885,
+    "jobs_per_10k": 154.54479224847617,
+    "blog_per_10k": 95.12266784192742,
+    "job_blog_ratio": 1.624689422139579
+  },
+  {
+    "label": "Azure",
+    "jobs": 2787,
+    "blog": 3404,
+    "jobs_per_10k": 135.36025644139002,
+    "blog_per_10k": 83.3455756329269,
+    "job_blog_ratio": 1.6240844869504263
+  },
+  {
+    "label": "Salesforce",
+    "jobs": 6405,
+    "blog": 8230,
+    "jobs_per_10k": 311.0808907452828,
+    "blog_per_10k": 201.50825130992607,
+    "job_blog_ratio": 1.5437625443279268
+  },
+  {
+    "label": "machine learning",
+    "jobs": 24850,
+    "blog": 33996,
+    "jobs_per_10k": 1206.9258602685836,
+    "blog_per_10k": 832.378433965036,
+    "job_blog_ratio": 1.4499725257409546
+  },
+  {
+    "label": "deep learning",
+    "jobs": 4810,
+    "blog": 7864,
+    "jobs_per_10k": 233.61422084071978,
+    "blog_per_10k": 192.5468880074433,
+    "job_blog_ratio": 1.213284843282894
+  },
+  {
+    "label": "RAG",
+    "jobs": 6619,
+    "blog": 11052,
+    "jobs_per_10k": 321.47453799266617,
+    "blog_per_10k": 270.6037902159542,
+    "job_blog_ratio": 1.1879897829077517
+  },
+  {
+    "label": "PHP",
+    "jobs": 2122,
+    "blog": 3801,
+    "jobs_per_10k": 103.06224046237159,
+    "blog_per_10k": 93.06596151021009,
+    "job_blog_ratio": 1.1074106879674244
+  },
+  {
+    "label": "Generative AI",
+    "jobs": 12087,
+    "blog": 25149,
+    "jobs_per_10k": 587.0467956968357,
+    "blog_per_10k": 615.7631849566623,
+    "job_blog_ratio": 0.9533645564376383
+  },
+  {
+    "label": ".NET",
+    "jobs": 7375,
+    "blog": 15515,
+    "jobs_per_10k": 358.1922824740766,
+    "blog_per_10k": 379.87855638803194,
+    "job_blog_ratio": 0.9429126136517071
+  },
+  {
+    "label": "fine-tuning",
+    "jobs": 4073,
+    "blog": 8696,
+    "jobs_per_10k": 197.81927681585276,
+    "blog_per_10k": 212.9180745311199,
+    "job_blog_ratio": 0.9290863504729828
+  },
+  {
+    "label": "LLM",
+    "jobs": 16389,
+    "blog": 36125,
+    "jobs_per_10k": 795.9882464362904,
+    "blog_per_10k": 884.5061456343959,
+    "job_blog_ratio": 0.8999239297149059
+  },
+  {
+    "label": "AWS Lambda",
+    "jobs": 952,
+    "blog": 2819,
+    "jobs_per_10k": 46.23715971733165,
+    "blog_per_10k": 69.02208510846677,
+    "job_blog_ratio": 0.6698893498315925
+  },
+  {
+    "label": "Claude Code",
+    "jobs": 4336,
+    "blog": 16296,
+    "jobs_per_10k": 210.59277787221643,
+    "blog_per_10k": 399.00102835316585,
+    "job_blog_ratio": 0.5278000879882833
+  }
+]

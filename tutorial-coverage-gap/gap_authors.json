@@ -1,0 +1,3130 @@
+{
+  "per_skill_authors": {
+    "Looker": [
+      {
+        "author": "Tobias Macey",
+        "posts": 98,
+        "avg_authority": 1.561030387878418,
+        "top_domain": "dataengineeringpodcast.com"
+      },
+      {
+        "author": "Alex Merced",
+        "posts": 77,
+        "avg_authority": 2.741283579306169,
+        "top_domain": "datalakehousehub.com"
+      },
+      {
+        "author": "insightsoftware",
+        "posts": 54,
+        "avg_authority": 0.3472122588643321,
+        "top_domain": "zoomdata.com"
+      },
+      {
+        "author": "Mary Rybalchenko",
+        "posts": 32,
+        "avg_authority": 0.6017366051673889,
+        "top_domain": "windsor.ai"
+      },
+      {
+        "author": "Sarah Donahoo",
+        "posts": 17,
+        "avg_authority": 0.4143134653568268,
+        "top_domain": "fugo.ai"
+      },
+      {
+        "author": "Revanth Periyasamy",
+        "posts": 11,
+        "avg_authority": 0.28714737025174225,
+        "top_domain": "peliqan.io"
+      },
+      {
+        "author": "Shefali Aggarwal",
+        "posts": 11,
+        "avg_authority": 0.557594895362854,
+        "top_domain": "qubole.com"
+      },
+      {
+        "author": "Max Musing",
+        "posts": 10,
+        "avg_authority": 0.7698973417282104,
+        "top_domain": "basedash.com"
+      },
+      {
+        "author": "Edwin Lisowski",
+        "posts": 7,
+        "avg_authority": 0.9751078486442566,
+        "top_domain": "addepto.com"
+      },
+      {
+        "author": "Jasper Flour",
+        "posts": 7,
+        "avg_authority": 0.230258509516716,
+        "top_domain": "mammoth.io"
+      },
+      {
+        "author": "Meagan Shelley",
+        "posts": 7,
+        "avg_authority": 0.30910423398017883,
+        "top_domain": "fugo.ai"
+      },
+      {
+        "author": "Andy Vandervell",
+        "posts": 6,
+        "avg_authority": 0.6176961660385132,
+        "top_domain": "posthog.com"
+      },
+      {
+        "author": "JJ Reynolds",
+        "posts": 6,
+        "avg_authority": 0.4998306632041931,
+        "top_domain": "lookerstudio.vip"
+      },
+      {
+        "author": "Matthias Kraaz",
+        "posts": 6,
+        "avg_authority": 0.32369452714920044,
+        "top_domain": "windsor.ai"
+      },
+      {
+        "author": "ChatForest",
+        "posts": 5,
+        "avg_authority": 0.0,
+        "top_domain": "chatforest.com"
+      },
+      {
+        "author": "Yevheniia Khromova",
+        "posts": 5,
+        "avg_authority": 0.0,
+        "top_domain": "visible.seranking.com"
+      },
+      {
+        "author": "Google Cloud Content & Editorial",
+        "posts": 4,
+        "avg_authority": 0.2197224646806717,
+        "top_domain": "googlecloudplatform.blogspot.fr"
+      },
+      {
+        "author": "IdeaPlan",
+        "posts": 4,
+        "avg_authority": 0.0,
+        "top_domain": "ideaplan.io"
+      },
+      {
+        "author": "Saood Zafar",
+        "posts": 4,
+        "avg_authority": 0.29988379776477814,
+        "top_domain": "clickrank.ai"
+      },
+      {
+        "author": "Barr Moses",
+        "posts": 3,
+        "avg_authority": 0.42970770597457886,
+        "top_domain": "www.montecarlodata.com/blog"
+      }
+    ],
+    "Tableau": [
+      {
+        "author": "Alex Merced",
+        "posts": 96,
+        "avg_authority": 2.667815273627639,
+        "top_domain": "datalakehousehub.com"
+      },
+      {
+        "author": "insightsoftware",
+        "posts": 55,
+        "avg_authority": 0.34769507158886304,
+        "top_domain": "zoomdata.com"
+      },
+      {
+        "author": "Tobias Macey",
+        "posts": 33,
+        "avg_authority": 1.561030387878418,
+        "top_domain": "dataengineeringpodcast.com"
+      },
+      {
+        "author": "Nicolas",
+        "posts": 18,
+        "avg_authority": 0.8832426965236664,
+        "top_domain": "anthemcreation.com"
+      },
+      {
+        "author": "Benoit Guilbert",
+        "posts": 17,
+        "avg_authority": 0.31258681767127094,
+        "top_domain": "safebrain.ai"
+      },
+      {
+        "author": "Mary Rybalchenko",
+        "posts": 17,
+        "avg_authority": 0.6017366051673889,
+        "top_domain": "windsor.ai"
+      },
+      {
+        "author": "Shefali Aggarwal",
+        "posts": 15,
+        "avg_authority": 0.557594895362854,
+        "top_domain": "qubole.com"
+      },
+      {
+        "author": "Sarah Donahoo",
+        "posts": 14,
+        "avg_authority": 0.4143134653568268,
+        "top_domain": "fugo.ai"
+      },
+      {
+        "author": "Edwin Lisowski",
+        "posts": 11,
+        "avg_authority": 0.9751078486442566,
+        "top_domain": "addepto.com"
+      },
+      {
+        "author": "Max Musing",
+        "posts": 11,
+        "avg_authority": 0.7698973417282104,
+        "top_domain": "basedash.com"
+      },
+      {
+        "author": "Jasper Flour",
+        "posts": 10,
+        "avg_authority": 0.230258509516716,
+        "top_domain": "mammoth.io"
+      },
+      {
+        "author": "Ryan Dolley",
+        "posts": 10,
+        "avg_authority": 0.0,
+        "top_domain": "superdatablog.substack.com"
+      },
+      {
+        "author": "Anna",
+        "posts": 9,
+        "avg_authority": 0.9729847643110487,
+        "top_domain": "blog.adatechschool.fr"
+      },
+      {
+        "author": "Anna Bergevin",
+        "posts": 9,
+        "avg_authority": 1.894758939743042,
+        "top_domain": "dataprodmgmt.substack.com"
+      },
+      {
+        "author": "Les Benchmarks de l'IT",
+        "posts": 9,
+        "avg_authority": 0.230258509516716,
+        "top_domain": "silicon.fr"
+      },
+      {
+        "author": "Revanth Periyasamy",
+        "posts": 9,
+        "avg_authority": 0.28632332881291706,
+        "top_domain": "peliqan.io"
+      },
+      {
+        "author": "Meagan Shelley",
+        "posts": 7,
+        "avg_authority": 0.30910423398017883,
+        "top_domain": "fugo.ai"
+      },
+      {
+        "author": "Pierre Bonnouvrier",
+        "posts": 7,
+        "avg_authority": 0.0,
+        "top_domain": "silkhom.com"
+      },
+      {
+        "author": "Cl\u00e9ment Bohic",
+        "posts": 6,
+        "avg_authority": 0.3653900921344757,
+        "top_domain": "silicon.fr"
+      },
+      {
+        "author": "Edward Pollitt",
+        "posts": 6,
+        "avg_authority": 0.25649493932724,
+        "top_domain": "displayr.com"
+      }
+    ],
+    "Power BI": [
+      {
+        "author": "Alex Merced",
+        "posts": 92,
+        "avg_authority": 2.683596938200619,
+        "top_domain": "datalakehousehub.com"
+      },
+      {
+        "author": "insightsoftware",
+        "posts": 55,
+        "avg_authority": 0.34769507158886304,
+        "top_domain": "zoomdata.com"
+      },
+      {
+        "author": "Chris Pickles",
+        "posts": 42,
+        "avg_authority": 0.45029103472119286,
+        "top_domain": "f1group.com"
+      },
+      {
+        "author": "Sarah Donahoo",
+        "posts": 31,
+        "avg_authority": 0.4143134653568268,
+        "top_domain": "fugo.ai"
+      },
+      {
+        "author": "Mary Rybalchenko",
+        "posts": 27,
+        "avg_authority": 0.6017366051673889,
+        "top_domain": "windsor.ai"
+      },
+      {
+        "author": "Rahul",
+        "posts": 18,
+        "avg_authority": 0.754887580871582,
+        "top_domain": "aicodereview.cc"
+      },
+      {
+        "author": "Revanth Periyasamy",
+        "posts": 17,
+        "avg_authority": 0.29920048222822304,
+        "top_domain": "peliqan.io"
+      },
+      {
+        "author": "Mikhail Mikushin",
+        "posts": 14,
+        "avg_authority": 0.3761321178504399,
+        "top_domain": "biwave.substack.com"
+      },
+      {
+        "author": "Edwin Lisowski",
+        "posts": 11,
+        "avg_authority": 0.9751078486442566,
+        "top_domain": "addepto.com"
+      },
+      {
+        "author": "Jasper Flour",
+        "posts": 11,
+        "avg_authority": 0.230258509516716,
+        "top_domain": "mammoth.io"
+      },
+      {
+        "author": "Ian Hawkeye",
+        "posts": 10,
+        "avg_authority": 0.16094379127025604,
+        "top_domain": "acterys.com"
+      },
+      {
+        "author": "James Serra",
+        "posts": 10,
+        "avg_authority": 0.6381168127059936,
+        "top_domain": "jamesserra.com"
+      },
+      {
+        "author": "Jocelyn Gallagher",
+        "posts": 10,
+        "avg_authority": 0.0,
+        "top_domain": "advansappz.com"
+      },
+      {
+        "author": "John Velasquez",
+        "posts": 10,
+        "avg_authority": 0.4864775240421295,
+        "top_domain": "gocollectiv.com"
+      },
+      {
+        "author": "Meagan Shelley",
+        "posts": 10,
+        "avg_authority": 0.30910423398017883,
+        "top_domain": "fugo.ai"
+      },
+      {
+        "author": "Ryan Dolley",
+        "posts": 10,
+        "avg_authority": 0.0,
+        "top_domain": "superdatablog.substack.com"
+      },
+      {
+        "author": "Velosio",
+        "posts": 10,
+        "avg_authority": 0.21726210415363312,
+        "top_domain": "velosio.com"
+      },
+      {
+        "author": "zeftseomanager",
+        "posts": 10,
+        "avg_authority": 0.6677590847015381,
+        "top_domain": "karnatakapucresult.in"
+      },
+      {
+        "author": "Anneli Tomingas",
+        "posts": 9,
+        "avg_authority": 0.230258509516716,
+        "top_domain": "sparkle.consulting"
+      },
+      {
+        "author": "MichaelH",
+        "posts": 9,
+        "avg_authority": 0.23978953063488007,
+        "top_domain": "datasimplified.co.za"
+      }
+    ],
+    "Kotlin": [
+      {
+        "author": "Rahul",
+        "posts": 76,
+        "avg_authority": 0.754887580871582,
+        "top_domain": "aicodereview.cc"
+      },
+      {
+        "author": "skydoves",
+        "posts": 45,
+        "avg_authority": 0.38918203115463257,
+        "top_domain": "doveletter.dev"
+      },
+      {
+        "author": "Emmanuel Bernard",
+        "posts": 14,
+        "avg_authority": 0.0,
+        "top_domain": "lescastcodeurs.com"
+      },
+      {
+        "author": "Riya Thambiraj",
+        "posts": 13,
+        "avg_authority": 0.3944825025705191,
+        "top_domain": "staging.raftlabs.com"
+      },
+      {
+        "author": "Alexandru Nedelcu",
+        "posts": 7,
+        "avg_authority": 0.5599161982536316,
+        "top_domain": "alexn.org"
+      },
+      {
+        "author": "Ashit Vora",
+        "posts": 6,
+        "avg_authority": 0.850448469320933,
+        "top_domain": "raftlabs.co"
+      },
+      {
+        "author": "Matt Butcher",
+        "posts": 6,
+        "avg_authority": 1.1112335920333862,
+        "top_domain": "fermyon.com"
+      },
+      {
+        "author": "Chris Jones",
+        "posts": 5,
+        "avg_authority": 0.7362616896629334,
+        "top_domain": "hiredevelopers.com"
+      },
+      {
+        "author": "Eugene Petrenko",
+        "posts": 5,
+        "avg_authority": 0.2708050310611725,
+        "top_domain": "jonnyzzz.com"
+      },
+      {
+        "author": "Neha",
+        "posts": 5,
+        "avg_authority": 0.6915683507919311,
+        "top_domain": "code-brew.com"
+      },
+      {
+        "author": "Tobias Macey",
+        "posts": 5,
+        "avg_authority": 1.561030387878418,
+        "top_domain": "dataengineeringpodcast.com"
+      },
+      {
+        "author": "Debasis Pradhan",
+        "posts": 4,
+        "avg_authority": 0.2649158537387848,
+        "top_domain": "crediblesoft.com"
+      },
+      {
+        "author": "Dhaval Barot",
+        "posts": 4,
+        "avg_authority": 0.3174964226782322,
+        "top_domain": "abbacustechnologies.com"
+      },
+      {
+        "author": "Kishan Nakrani",
+        "posts": 4,
+        "avg_authority": 0.0,
+        "top_domain": "videosdk.live"
+      },
+      {
+        "author": "Niko Heikkil\u00e4",
+        "posts": 4,
+        "avg_authority": 0.5579743981361389,
+        "top_domain": "nikoheikkila.fi"
+      },
+      {
+        "author": "Akshar Sisodia",
+        "posts": 3,
+        "avg_authority": 0.2580076555411021,
+        "top_domain": "americanchase.com"
+      },
+      {
+        "author": "Anastasia Stefanuk",
+        "posts": 3,
+        "avg_authority": 0.0,
+        "top_domain": "mobilunity.com"
+      },
+      {
+        "author": "Andrew",
+        "posts": 3,
+        "avg_authority": 1.3537074327468872,
+        "top_domain": "andrew.ooo"
+      },
+      {
+        "author": "Annyce Davis",
+        "posts": 3,
+        "avg_authority": 0.40253517031669617,
+        "top_domain": "brwngrldev.substack.com"
+      },
+      {
+        "author": "ChatForest",
+        "posts": 3,
+        "avg_authority": 0.0,
+        "top_domain": "chatforest.com"
+      }
+    ],
+    "Scala": [
+      {
+        "author": "Rahul",
+        "posts": 47,
+        "avg_authority": 0.754887580871582,
+        "top_domain": "aicodereview.cc"
+      },
+      {
+        "author": "Tobias Macey",
+        "posts": 43,
+        "avg_authority": 1.561030387878418,
+        "top_domain": "dataengineeringpodcast.com"
+      },
+      {
+        "author": "Shefali Aggarwal",
+        "posts": 36,
+        "avg_authority": 0.557594895362854,
+        "top_domain": "qubole.com"
+      },
+      {
+        "author": "Alexandru Nedelcu",
+        "posts": 31,
+        "avg_authority": 0.5599161982536316,
+        "top_domain": "alexn.org"
+      },
+      {
+        "author": "John Snow Labs",
+        "posts": 29,
+        "avg_authority": 0.6121626496315002,
+        "top_domain": "nlp.johnsnowlabs.com"
+      },
+      {
+        "author": "Adam Pavlacka",
+        "posts": 21,
+        "avg_authority": 0.5081404447555542,
+        "top_domain": "kb.databricks.com"
+      },
+      {
+        "author": "Aimee Gonzalez",
+        "posts": 10,
+        "avg_authority": 0.5017279982566833,
+        "top_domain": "kb.databricks.com"
+      },
+      {
+        "author": "Chris James",
+        "posts": 10,
+        "avg_authority": 0.5815353989601135,
+        "top_domain": "quii.dev"
+      },
+      {
+        "author": "James Hughes",
+        "posts": 10,
+        "avg_authority": 0.6457208395004272,
+        "top_domain": "yobriefca.se"
+      },
+      {
+        "author": "Redazione",
+        "posts": 10,
+        "avg_authority": 0.5721736431121827,
+        "top_domain": "rivista.ai"
+      },
+      {
+        "author": "Edwin Lisowski",
+        "posts": 8,
+        "avg_authority": 0.9751078486442566,
+        "top_domain": "addepto.com"
+      },
+      {
+        "author": "Artur Haponik",
+        "posts": 7,
+        "avg_authority": 0.7682015299797058,
+        "top_domain": "addepto.com"
+      },
+      {
+        "author": "CodeScala",
+        "posts": 7,
+        "avg_authority": 0.20794415473937988,
+        "top_domain": "scalamacros.org"
+      },
+      {
+        "author": "Alex Merced",
+        "posts": 6,
+        "avg_authority": 2.1637776096661887,
+        "top_domain": "iceberglakehouse.com"
+      },
+      {
+        "author": "Emmanuel Bernard",
+        "posts": 6,
+        "avg_authority": 0.0,
+        "top_domain": "lescastcodeurs.com"
+      },
+      {
+        "author": "scala_2wp",
+        "posts": 6,
+        "avg_authority": 0.19459101557731628,
+        "top_domain": "scaladatacenters.com"
+      },
+      {
+        "author": "Antonio Grasso",
+        "posts": 5,
+        "avg_authority": 0.0,
+        "top_domain": "deltalogix.blog"
+      },
+      {
+        "author": "Magnus Sedlacek",
+        "posts": 5,
+        "avg_authority": 0.0,
+        "top_domain": "adabeat.com"
+      },
+      {
+        "author": "Michael Hamrah",
+        "posts": 5,
+        "avg_authority": 0.0,
+        "top_domain": "blog.michaelhamrah.com"
+      },
+      {
+        "author": "Mihaela Popa",
+        "posts": 5,
+        "avg_authority": 0.0,
+        "top_domain": "javascript.works-hub.com"
+      }
+    ],
+    "Spring Boot": [
+      {
+        "author": "Rahul",
+        "posts": 26,
+        "avg_authority": 0.754887580871582,
+        "top_domain": "aicodereview.cc"
+      },
+      {
+        "author": "Thomas Vitale",
+        "posts": 16,
+        "avg_authority": 0.7139312140643597,
+        "top_domain": "thomasvitale.com"
+      },
+      {
+        "author": "Emmanuel Bernard",
+        "posts": 12,
+        "avg_authority": 0.0,
+        "top_domain": "lescastcodeurs.com"
+      },
+      {
+        "author": "Erwan Le Tutour",
+        "posts": 12,
+        "avg_authority": 0.4053064634402593,
+        "top_domain": "sfeir.dev"
+      },
+      {
+        "author": "Fred",
+        "posts": 11,
+        "avg_authority": 1.8407578468322754,
+        "top_domain": "vibecodingwithfred.com"
+      },
+      {
+        "author": "mydeveloperplanet",
+        "posts": 9,
+        "avg_authority": 0.24849066138267517,
+        "top_domain": "mydeveloperplanet.com"
+      },
+      {
+        "author": "Mauricio Salatino",
+        "posts": 8,
+        "avg_authority": 0.6983407586812973,
+        "top_domain": "salaboy.com"
+      },
+      {
+        "author": "Petri Kainulainen",
+        "posts": 8,
+        "avg_authority": 0.4374917037785053,
+        "top_domain": "petrikainulainen.net"
+      },
+      {
+        "author": "vIns",
+        "posts": 7,
+        "avg_authority": 0.0,
+        "top_domain": "vinsguru.com"
+      },
+      {
+        "author": "Spring",
+        "posts": 6,
+        "avg_authority": 0.5578010678291321,
+        "top_domain": "spring.io"
+      },
+      {
+        "author": "joshlong",
+        "posts": 6,
+        "avg_authority": 0.7729387084643046,
+        "top_domain": "spring.io"
+      },
+      {
+        "author": "Anders Swanson",
+        "posts": 5,
+        "avg_authority": 0.4774195611476898,
+        "top_domain": "andersswanson.dev"
+      },
+      {
+        "author": "Chris Jones",
+        "posts": 5,
+        "avg_authority": 0.6980797410011291,
+        "top_domain": "hiredevelopers.com"
+      },
+      {
+        "author": "ilayaperumalg",
+        "posts": 5,
+        "avg_authority": 0.10514990836381913,
+        "top_domain": "spring.io"
+      },
+      {
+        "author": "piotr.minkowski",
+        "posts": 5,
+        "avg_authority": 0.13862943649291992,
+        "top_domain": "piotrminkowski.com"
+      },
+      {
+        "author": "DevGlan",
+        "posts": 4,
+        "avg_authority": 0.1791759431362152,
+        "top_domain": "devglan.com"
+      },
+      {
+        "author": "Keerthi Murali",
+        "posts": 4,
+        "avg_authority": 0.15607103953758875,
+        "top_domain": "legacyleap.ai"
+      },
+      {
+        "author": "Mama Samba Braima Nelson Djalo",
+        "posts": 4,
+        "avg_authority": 0.2708050310611725,
+        "top_domain": "blog.amigoscode.com"
+      },
+      {
+        "author": "Steve Poole",
+        "posts": 4,
+        "avg_authority": 0.42970770597457886,
+        "top_domain": "foojay.io"
+      },
+      {
+        "author": "Toshiaki Maki",
+        "posts": 4,
+        "avg_authority": 0.2649158537387848,
+        "top_domain": "ik.am"
+      }
+    ],
+    "GCP": [
+      {
+        "author": "Julien GOURMELEN",
+        "posts": 100,
+        "avg_authority": 1.412817120552063,
+        "top_domain": "wizops.fr"
+      },
+      {
+        "author": "aimee.gonzalezcameron",
+        "posts": 60,
+        "avg_authority": 0.4779123365879059,
+        "top_domain": "kb.databricks.com"
+      },
+      {
+        "author": "Adam Pavlacka",
+        "posts": 53,
+        "avg_authority": 0.5081404447555542,
+        "top_domain": "kb.databricks.com"
+      },
+      {
+        "author": "Aimee Gonzalez",
+        "posts": 46,
+        "avg_authority": 0.5017279982566833,
+        "top_domain": "kb.databricks.com"
+      },
+      {
+        "author": "Alex Merced",
+        "posts": 41,
+        "avg_authority": 2.3603678185765338,
+        "top_domain": "datalakehousehub.com"
+      },
+      {
+        "author": "Tobias Macey",
+        "posts": 32,
+        "avg_authority": 1.561030387878418,
+        "top_domain": "dataengineeringpodcast.com"
+      },
+      {
+        "author": "Ashit Vora",
+        "posts": 30,
+        "avg_authority": 0.8630496506337766,
+        "top_domain": "raftlabs.co"
+      },
+      {
+        "author": "Riya Thambiraj",
+        "posts": 24,
+        "avg_authority": 0.4321606913033654,
+        "top_domain": "staging.raftlabs.com"
+      },
+      {
+        "author": "nOps",
+        "posts": 22,
+        "avg_authority": 0.3575253906575116,
+        "top_domain": "nops.io"
+      },
+      {
+        "author": "The Mad Botter",
+        "posts": 21,
+        "avg_authority": 1.5031936168670654,
+        "top_domain": "coder.show"
+      },
+      {
+        "author": "Shefali Aggarwal",
+        "posts": 18,
+        "avg_authority": 0.557594895362854,
+        "top_domain": "qubole.com"
+      },
+      {
+        "author": "Lyne Carolyne",
+        "posts": 17,
+        "avg_authority": 0.3519592663416496,
+        "top_domain": "cloudzero.com"
+      },
+      {
+        "author": "Nazar Tymoshyk",
+        "posts": 14,
+        "avg_authority": 0.2654073174510683,
+        "top_domain": "underdefense.com"
+      },
+      {
+        "author": "sanj.dev",
+        "posts": 14,
+        "avg_authority": 0.0,
+        "top_domain": "sanj.dev"
+      },
+      {
+        "author": "Edwin Lisowski",
+        "posts": 13,
+        "avg_authority": 0.9751078486442566,
+        "top_domain": "addepto.com"
+      },
+      {
+        "author": "FirstPassLab",
+        "posts": 13,
+        "avg_authority": 0.4418840706348419,
+        "top_domain": "firstpasslab.com"
+      },
+      {
+        "author": "Eyal Estrin",
+        "posts": 12,
+        "avg_authority": 0.5598421692848206,
+        "top_domain": "security-24-7.com"
+      },
+      {
+        "author": "Jyo",
+        "posts": 12,
+        "avg_authority": 0.23978953063488007,
+        "top_domain": "fullstacktechies.com"
+      },
+      {
+        "author": "Kacper Ba\u0142dyga",
+        "posts": 12,
+        "avg_authority": 0.541610062122345,
+        "top_domain": "codeandpepper.com"
+      },
+      {
+        "author": "Rahul",
+        "posts": 12,
+        "avg_authority": 0.754887580871582,
+        "top_domain": "aicodereview.cc"
+      }
+    ],
+    "Airflow": [
+      {
+        "author": "Tobias Macey",
+        "posts": 180,
+        "avg_authority": 1.5612272202968598,
+        "top_domain": "dataengineeringpodcast.com"
+      },
+      {
+        "author": "Alex Merced",
+        "posts": 65,
+        "avg_authority": 2.793660792020651,
+        "top_domain": "iceberglakehouse.com"
+      },
+      {
+        "author": "Shefali Aggarwal",
+        "posts": 33,
+        "avg_authority": 0.557594895362854,
+        "top_domain": "qubole.com"
+      },
+      {
+        "author": "superuser",
+        "posts": 10,
+        "avg_authority": 0.47029535472393036,
+        "top_domain": "uvik.net"
+      },
+      {
+        "author": "Chris Hillman",
+        "posts": 9,
+        "avg_authority": 0.6111912329991659,
+        "top_domain": "ghostinthedata.info"
+      },
+      {
+        "author": "Data Tinkerer",
+        "posts": 8,
+        "avg_authority": 1.1574640274047852,
+        "top_domain": "datatinkerer.io"
+      },
+      {
+        "author": "Edwin Lisowski",
+        "posts": 8,
+        "avg_authority": 0.9751078486442566,
+        "top_domain": "addepto.com"
+      },
+      {
+        "author": "andrzej.gabryel",
+        "posts": 8,
+        "avg_authority": 0.0,
+        "top_domain": "enhancedmlops.com"
+      },
+      {
+        "author": "Popular AI",
+        "posts": 7,
+        "avg_authority": 0.3047824033669063,
+        "top_domain": "popularai.substack.com"
+      },
+      {
+        "author": "Alireza Sadeghi",
+        "posts": 6,
+        "avg_authority": 0.44773367047309875,
+        "top_domain": "pracdata.io"
+      },
+      {
+        "author": "ChatForest",
+        "posts": 6,
+        "avg_authority": 0.0,
+        "top_domain": "chatforest.com"
+      },
+      {
+        "author": "Chris Bergh",
+        "posts": 6,
+        "avg_authority": 0.6081749796867371,
+        "top_domain": "datakitchen.io"
+      },
+      {
+        "author": "David",
+        "posts": 5,
+        "avg_authority": 1.190307092666626,
+        "top_domain": "datastackhub.com"
+      },
+      {
+        "author": "Dylan Dougherty",
+        "posts": 5,
+        "avg_authority": 0.4633549451828003,
+        "top_domain": "storagereview.com"
+      },
+      {
+        "author": "Erfan Hesami",
+        "posts": 5,
+        "avg_authority": 3.0282816886901855,
+        "top_domain": "pipeline2insights.substack.com"
+      },
+      {
+        "author": "Mark",
+        "posts": 5,
+        "avg_authority": 1.4023158550262451,
+        "top_domain": "markaicode.com"
+      },
+      {
+        "author": "Michael Kennedy (@mkennedy)",
+        "posts": 5,
+        "avg_authority": 0.0,
+        "top_domain": "talkpython.fm"
+      },
+      {
+        "author": "JobsByCulture",
+        "posts": 4,
+        "avg_authority": 0.35263603925704956,
+        "top_domain": "jobsbyculture.com"
+      },
+      {
+        "author": "Lior Gavish",
+        "posts": 4,
+        "avg_authority": 0.5870232582092285,
+        "top_domain": "www.montecarlodata.com"
+      },
+      {
+        "author": "Pipeline to Insights",
+        "posts": 4,
+        "avg_authority": 2.3678815960884094,
+        "top_domain": "pipeline2insights.substack.com"
+      }
+    ],
+    "Terraform": [
+      {
+        "author": "Julien GOURMELEN",
+        "posts": 126,
+        "avg_authority": 1.412817120552063,
+        "top_domain": "wizops.fr"
+      },
+      {
+        "author": "Rahul",
+        "posts": 78,
+        "avg_authority": 0.7470961320094573,
+        "top_domain": "aicodereview.cc"
+      },
+      {
+        "author": "Andreas and Michael Wittig",
+        "posts": 45,
+        "avg_authority": 3.019771099090576,
+        "top_domain": "cloudonaut.io"
+      },
+      {
+        "author": "Brendan Thompson",
+        "posts": 40,
+        "avg_authority": 0.0,
+        "top_domain": "brendanthompson.com"
+      },
+      {
+        "author": "Maxine Meurer",
+        "posts": 30,
+        "avg_authority": 0.4261632611354192,
+        "top_domain": "ilovedevops.substack.com"
+      },
+      {
+        "author": "FirstPassLab",
+        "posts": 25,
+        "avg_authority": 0.4418840706348419,
+        "top_domain": "firstpasslab.com"
+      },
+      {
+        "author": "Kirill Shirinkin",
+        "posts": 23,
+        "avg_authority": 0.0,
+        "top_domain": "mkdev.me"
+      },
+      {
+        "author": "AWS Bites",
+        "posts": 22,
+        "avg_authority": 0.4770684540271759,
+        "top_domain": "awsbites.com"
+      },
+      {
+        "author": "Tobias Macey",
+        "posts": 16,
+        "avg_authority": 1.561030387878418,
+        "top_domain": "dataengineeringpodcast.com"
+      },
+      {
+        "author": "Andreas Wittig and Michael Wittig focusing on AWS Cloud",
+        "posts": 15,
+        "avg_authority": 0.43438053131103516,
+        "top_domain": "podcast.cloudonaut.io"
+      },
+      {
+        "author": "Fabian Lee",
+        "posts": 15,
+        "avg_authority": 0.0,
+        "top_domain": "fabianlee.org"
+      },
+      {
+        "author": "Jyo",
+        "posts": 15,
+        "avg_authority": 0.23978953063488007,
+        "top_domain": "fullstacktechies.com"
+      },
+      {
+        "author": "Kacper Ba\u0142dyga",
+        "posts": 14,
+        "avg_authority": 0.5420255462328593,
+        "top_domain": "codeandpepper.com"
+      },
+      {
+        "author": "Hector Flores",
+        "posts": 13,
+        "avg_authority": 0.1732867956161499,
+        "top_domain": "htek.dev"
+      },
+      {
+        "author": "Andrei Dumitrescu",
+        "posts": 12,
+        "avg_authority": 0.0,
+        "top_domain": "zerotomastery.io"
+      },
+      {
+        "author": "Clint Gibler",
+        "posts": 11,
+        "avg_authority": 0.6278973655267195,
+        "top_domain": "tldrsec.com"
+      },
+      {
+        "author": "David Williams",
+        "posts": 11,
+        "avg_authority": 1.6153866486115889,
+        "top_domain": "quali.com"
+      },
+      {
+        "author": "Pablo Inigo Sanchez",
+        "posts": 11,
+        "avg_authority": 0.0,
+        "top_domain": "mkdev.me"
+      },
+      {
+        "author": "Gernot Glawe",
+        "posts": 10,
+        "avg_authority": 0.0,
+        "top_domain": "aws-blog.de"
+      },
+      {
+        "author": "Julien Corioland",
+        "posts": 10,
+        "avg_authority": 0.0,
+        "top_domain": "blog.jcorioland.io"
+      }
+    ],
+    "Jenkins": [
+      {
+        "author": "Julien GOURMELEN",
+        "posts": 54,
+        "avg_authority": 1.412817120552063,
+        "top_domain": "wizops.fr"
+      },
+      {
+        "author": "Rahul",
+        "posts": 47,
+        "avg_authority": 0.754887580871582,
+        "top_domain": "aicodereview.cc"
+      },
+      {
+        "author": "Dominik Szahidewicz",
+        "posts": 29,
+        "avg_authority": 0.0,
+        "top_domain": "bugbug.io"
+      },
+      {
+        "author": "Andreas and Michael Wittig",
+        "posts": 19,
+        "avg_authority": 3.019771099090576,
+        "top_domain": "cloudonaut.io"
+      },
+      {
+        "author": "Emmanuel Bernard",
+        "posts": 11,
+        "avg_authority": 0.0,
+        "top_domain": "lescastcodeurs.com"
+      },
+      {
+        "author": "Jyo",
+        "posts": 11,
+        "avg_authority": 0.23978953063488007,
+        "top_domain": "fullstacktechies.com"
+      },
+      {
+        "author": "Alex Merced",
+        "posts": 10,
+        "avg_authority": 2.739214354753494,
+        "top_domain": "alexmerced.blog"
+      },
+      {
+        "author": "Pierre Bonnouvrier",
+        "posts": 9,
+        "avg_authority": 0.0,
+        "top_domain": "silkhom.com"
+      },
+      {
+        "author": "Chris Smith",
+        "posts": 8,
+        "avg_authority": 0.7215077877044678,
+        "top_domain": "cyberark.com"
+      },
+      {
+        "author": "Frank Moyer",
+        "posts": 7,
+        "avg_authority": 0.8788583874702454,
+        "top_domain": "kobiton.com"
+      },
+      {
+        "author": "Hannah Son",
+        "posts": 7,
+        "avg_authority": 0.43213216339548427,
+        "top_domain": "blog.gurock.com"
+      },
+      {
+        "author": "Michelle Pruitt",
+        "posts": 7,
+        "avg_authority": 0.419983514717647,
+        "top_domain": "kiuwan.com"
+      },
+      {
+        "author": "Ben Nettleton",
+        "posts": 6,
+        "avg_authority": 0.43589021265506744,
+        "top_domain": "ranorex.com"
+      },
+      {
+        "author": "Firas_SEO_Auto_Author Firas_SEO_Auto_Author",
+        "posts": 6,
+        "avg_authority": 0.22659801443417868,
+        "top_domain": "radview.com"
+      },
+      {
+        "author": "F\u00e1tima Said",
+        "posts": 6,
+        "avg_authority": 0.0,
+        "top_domain": "xygeniweb.b-cdn.net"
+      },
+      {
+        "author": "Kacper Ba\u0142dyga",
+        "posts": 6,
+        "avg_authority": 0.5422332882881165,
+        "top_domain": "codeandpepper.com"
+      },
+      {
+        "author": "zeftseomanager",
+        "posts": 6,
+        "avg_authority": 0.6960002581278483,
+        "top_domain": "atstartups.com"
+      },
+      {
+        "author": "DashDevs | FinTech Software Development Company",
+        "posts": 5,
+        "avg_authority": 0.0,
+        "top_domain": "dashdevs.com"
+      },
+      {
+        "author": "Jose Amoros",
+        "posts": 5,
+        "avg_authority": 0.23978953063488007,
+        "top_domain": "testquality.com"
+      },
+      {
+        "author": "Zunnoor Zafar",
+        "posts": 5,
+        "avg_authority": 1.149582028388977,
+        "top_domain": "kualitee.com"
+      }
+    ],
+    "DBT": [
+      {
+        "author": "Tobias Macey",
+        "posts": 208,
+        "avg_authority": 1.561030387878418,
+        "top_domain": "dataengineeringpodcast.com"
+      },
+      {
+        "author": "Alex Merced",
+        "posts": 140,
+        "avg_authority": 2.5881703410829817,
+        "top_domain": "datalakehousehub.com"
+      },
+      {
+        "author": "Chris Bergh",
+        "posts": 19,
+        "avg_authority": 0.6051651835441589,
+        "top_domain": "datakitchen.io"
+      },
+      {
+        "author": "Chris Hillman",
+        "posts": 15,
+        "avg_authority": 0.6124675869941711,
+        "top_domain": "ghostinthedata.info"
+      },
+      {
+        "author": "Dan Poppy",
+        "posts": 14,
+        "avg_authority": 1.1372389793395996,
+        "top_domain": "roundup.getdbt.com"
+      },
+      {
+        "author": "Mikkel Dengs\u00f8e",
+        "posts": 14,
+        "avg_authority": 1.4828025102615356,
+        "top_domain": "mikkeldengsoe.substack.com"
+      },
+      {
+        "author": "Pedram Navid",
+        "posts": 11,
+        "avg_authority": 0.4644390940666199,
+        "top_domain": "databased.pedramnavid.com"
+      },
+      {
+        "author": "Madison Mae",
+        "posts": 10,
+        "avg_authority": 2.543771266937256,
+        "top_domain": "learnanalyticsengineering.substack.com"
+      },
+      {
+        "author": "Mary Rybalchenko",
+        "posts": 10,
+        "avg_authority": 0.6017366051673889,
+        "top_domain": "windsor.ai"
+      },
+      {
+        "author": "Petr Janda",
+        "posts": 10,
+        "avg_authority": 0.5304528474807739,
+        "top_domain": "petrjanda.substack.com"
+      },
+      {
+        "author": "Ananth Packkildurai",
+        "posts": 9,
+        "avg_authority": 2.2385438548194037,
+        "top_domain": "dataengineeringweekly.substack.com"
+      },
+      {
+        "author": "Claire Gouze",
+        "posts": 9,
+        "avg_authority": 0.36046701669692993,
+        "top_domain": "thenewaiorder.substack.com"
+      },
+      {
+        "author": "Jason Ganz",
+        "posts": 9,
+        "avg_authority": 1.9995286729600694,
+        "top_domain": "roundup.getdbt.com"
+      },
+      {
+        "author": "Max Musing",
+        "posts": 9,
+        "avg_authority": 0.7698973417282104,
+        "top_domain": "basedash.com"
+      },
+      {
+        "author": "Pipeline to Insights",
+        "posts": 9,
+        "avg_authority": 2.3624227046966553,
+        "top_domain": "pipeline2insights.substack.com"
+      },
+      {
+        "author": "Joey Gault",
+        "posts": 8,
+        "avg_authority": 0.2985630929470062,
+        "top_domain": "blog.getdbt.com"
+      },
+      {
+        "author": "Robert Sahlin",
+        "posts": 8,
+        "avg_authority": 1.8908693939447403,
+        "top_domain": "robertsahlin.substack.com"
+      },
+      {
+        "author": "Ryan Hirsch",
+        "posts": 8,
+        "avg_authority": 0.4751390293240547,
+        "top_domain": "erstudio.com"
+      },
+      {
+        "author": "Shagility",
+        "posts": 8,
+        "avg_authority": 1.394984483718872,
+        "top_domain": "agiledata.substack.com"
+      },
+      {
+        "author": "superuser",
+        "posts": 8,
+        "avg_authority": 0.47029535472393036,
+        "top_domain": "uvik.net"
+      }
+    ],
+    "Ansible": [
+      {
+        "author": "Julien GOURMELEN",
+        "posts": 69,
+        "avg_authority": 1.412817120552063,
+        "top_domain": "wizops.fr"
+      },
+      {
+        "author": "FirstPassLab",
+        "posts": 23,
+        "avg_authority": 0.4418840706348419,
+        "top_domain": "firstpasslab.com"
+      },
+      {
+        "author": "Erik",
+        "posts": 15,
+        "avg_authority": 0.0,
+        "top_domain": "blog.badsectorlabs.com"
+      },
+      {
+        "author": "Rahul",
+        "posts": 11,
+        "avg_authority": 0.754887580871582,
+        "top_domain": "aicodereview.cc"
+      },
+      {
+        "author": "Chris Smith",
+        "posts": 10,
+        "avg_authority": 0.7215077877044678,
+        "top_domain": "cyberark.com"
+      },
+      {
+        "author": "Tobias Macey",
+        "posts": 10,
+        "avg_authority": 1.561030387878418,
+        "top_domain": "dataengineeringpodcast.com"
+      },
+      {
+        "author": "Trainer Sagar Dhawan",
+        "posts": 10,
+        "avg_authority": 0.3437615931034088,
+        "top_domain": "networkjourney.com"
+      },
+      {
+        "author": "labitlearnit",
+        "posts": 10,
+        "avg_authority": 0.0,
+        "top_domain": "labitlearnit.com"
+      },
+      {
+        "author": "Jyo",
+        "posts": 8,
+        "avg_authority": 0.23978953063488007,
+        "top_domain": "fullstacktechies.com"
+      },
+      {
+        "author": "Larvitz",
+        "posts": 8,
+        "avg_authority": 0.3679257482290268,
+        "top_domain": "blog.hofstede.it"
+      },
+      {
+        "author": "Andrea Veri",
+        "posts": 7,
+        "avg_authority": 0.38729339838027954,
+        "top_domain": "dragonsreach.it"
+      },
+      {
+        "author": "Eric Van Johnson",
+        "posts": 7,
+        "avg_authority": 0.7673081159591675,
+        "top_domain": "phparch.com"
+      },
+      {
+        "author": "Kacper Ba\u0142dyga",
+        "posts": 7,
+        "avg_authority": 0.5433569550514221,
+        "top_domain": "codeandpepper.com"
+      },
+      {
+        "author": "Kyle Walker",
+        "posts": 7,
+        "avg_authority": 0.45643481612205505,
+        "top_domain": "blog.kywa.io"
+      },
+      {
+        "author": "Michael Friedrich",
+        "posts": 7,
+        "avg_authority": 0.0,
+        "top_domain": "dnsmichi.at"
+      },
+      {
+        "author": "Pierre Bonnouvrier",
+        "posts": 7,
+        "avg_authority": 0.0,
+        "top_domain": "silkhom.com"
+      },
+      {
+        "author": "Kirill Shirinkin",
+        "posts": 6,
+        "avg_authority": 0.0,
+        "top_domain": "mkdev.me"
+      },
+      {
+        "author": "DashDevs | FinTech Software Development Company",
+        "posts": 5,
+        "avg_authority": 0.0,
+        "top_domain": "dashdevs.com"
+      },
+      {
+        "author": "Gluware Intelligent Network Automation",
+        "posts": 5,
+        "avg_authority": 0.2383678138256073,
+        "top_domain": "gluware.com"
+      },
+      {
+        "author": "Sofia Lindstr\u00f6m",
+        "posts": 5,
+        "avg_authority": 0.2649158537387848,
+        "top_domain": "tech-insider.org"
+      }
+    ]
+  },
+  "multi_skill_gap_fillers": [
+    {
+      "author": "Tobias Macey",
+      "n_skills": 11,
+      "total_posts": 634,
+      "max_authority": 1.5612272202968598,
+      "top_domain": "dataengineeringpodcast.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 98,
+          "avg_authority": 1.561030387878418
+        },
+        {
+          "skill": "Tableau",
+          "posts": 33,
+          "avg_authority": 1.561030387878418
+        },
+        {
+          "skill": "Power BI",
+          "posts": 6,
+          "avg_authority": 1.561030387878418
+        },
+        {
+          "skill": "Kotlin",
+          "posts": 5,
+          "avg_authority": 1.561030387878418
+        },
+        {
+          "skill": "Scala",
+          "posts": 43,
+          "avg_authority": 1.561030387878418
+        },
+        {
+          "skill": "GCP",
+          "posts": 32,
+          "avg_authority": 1.561030387878418
+        },
+        {
+          "skill": "Airflow",
+          "posts": 180,
+          "avg_authority": 1.5612272202968598
+        },
+        {
+          "skill": "Terraform",
+          "posts": 16,
+          "avg_authority": 1.561030387878418
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 3,
+          "avg_authority": 1.561030387878418
+        },
+        {
+          "skill": "DBT",
+          "posts": 208,
+          "avg_authority": 1.561030387878418
+        },
+        {
+          "skill": "Ansible",
+          "posts": 10,
+          "avg_authority": 1.561030387878418
+        }
+      ]
+    },
+    {
+      "author": "Pierre Bonnouvrier",
+      "n_skills": 10,
+      "total_posts": 46,
+      "max_authority": 0.0,
+      "top_domain": "silkhom.com",
+      "skills": [
+        {
+          "skill": "Tableau",
+          "posts": 7,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Power BI",
+          "posts": 3,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Kotlin",
+          "posts": 3,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Scala",
+          "posts": 4,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Spring Boot",
+          "posts": 2,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "GCP",
+          "posts": 5,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Airflow",
+          "posts": 2,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Terraform",
+          "posts": 4,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 9,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Ansible",
+          "posts": 7,
+          "avg_authority": 0.0
+        }
+      ]
+    },
+    {
+      "author": "Alex Merced",
+      "n_skills": 8,
+      "total_posts": 527,
+      "max_authority": 2.793660792020651,
+      "top_domain": "datalakehousehub.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 77,
+          "avg_authority": 2.741283579306169
+        },
+        {
+          "skill": "Tableau",
+          "posts": 96,
+          "avg_authority": 2.667815273627639
+        },
+        {
+          "skill": "Power BI",
+          "posts": 92,
+          "avg_authority": 2.683596938200619
+        },
+        {
+          "skill": "Scala",
+          "posts": 6,
+          "avg_authority": 2.1637776096661887
+        },
+        {
+          "skill": "GCP",
+          "posts": 41,
+          "avg_authority": 2.3603678185765338
+        },
+        {
+          "skill": "Airflow",
+          "posts": 65,
+          "avg_authority": 2.793660792020651
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 10,
+          "avg_authority": 2.739214354753494
+        },
+        {
+          "skill": "DBT",
+          "posts": 140,
+          "avg_authority": 2.5881703410829817
+        }
+      ]
+    },
+    {
+      "author": "Rahul",
+      "n_skills": 8,
+      "total_posts": 315,
+      "max_authority": 0.754887580871582,
+      "top_domain": "aicodereview.cc",
+      "skills": [
+        {
+          "skill": "Power BI",
+          "posts": 18,
+          "avg_authority": 0.754887580871582
+        },
+        {
+          "skill": "Kotlin",
+          "posts": 76,
+          "avg_authority": 0.754887580871582
+        },
+        {
+          "skill": "Scala",
+          "posts": 47,
+          "avg_authority": 0.754887580871582
+        },
+        {
+          "skill": "Spring Boot",
+          "posts": 26,
+          "avg_authority": 0.754887580871582
+        },
+        {
+          "skill": "GCP",
+          "posts": 12,
+          "avg_authority": 0.754887580871582
+        },
+        {
+          "skill": "Terraform",
+          "posts": 78,
+          "avg_authority": 0.7470961320094573
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 47,
+          "avg_authority": 0.754887580871582
+        },
+        {
+          "skill": "Ansible",
+          "posts": 11,
+          "avg_authority": 0.754887580871582
+        }
+      ]
+    },
+    {
+      "author": "ChatForest",
+      "n_skills": 8,
+      "total_posts": 35,
+      "max_authority": 0.0,
+      "top_domain": "chatforest.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 5,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Kotlin",
+          "posts": 3,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Spring Boot",
+          "posts": 2,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "GCP",
+          "posts": 8,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Airflow",
+          "posts": 6,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Terraform",
+          "posts": 6,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 2,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "DBT",
+          "posts": 3,
+          "avg_authority": 0.0
+        }
+      ]
+    },
+    {
+      "author": "Les Benchmarks de l'IT",
+      "n_skills": 8,
+      "total_posts": 33,
+      "max_authority": 0.230258509516716,
+      "top_domain": "silicon.fr",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 2,
+          "avg_authority": 0.230258509516716
+        },
+        {
+          "skill": "Tableau",
+          "posts": 9,
+          "avg_authority": 0.230258509516716
+        },
+        {
+          "skill": "Power BI",
+          "posts": 4,
+          "avg_authority": 0.230258509516716
+        },
+        {
+          "skill": "GCP",
+          "posts": 6,
+          "avg_authority": 0.230258509516716
+        },
+        {
+          "skill": "Terraform",
+          "posts": 4,
+          "avg_authority": 0.230258509516716
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 3,
+          "avg_authority": 0.230258509516716
+        },
+        {
+          "skill": "DBT",
+          "posts": 3,
+          "avg_authority": 0.230258509516716
+        },
+        {
+          "skill": "Ansible",
+          "posts": 2,
+          "avg_authority": 0.230258509516716
+        }
+      ]
+    },
+    {
+      "author": "Edwin Lisowski",
+      "n_skills": 7,
+      "total_posts": 62,
+      "max_authority": 0.9751078486442566,
+      "top_domain": "addepto.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 7,
+          "avg_authority": 0.9751078486442566
+        },
+        {
+          "skill": "Tableau",
+          "posts": 11,
+          "avg_authority": 0.9751078486442566
+        },
+        {
+          "skill": "Power BI",
+          "posts": 11,
+          "avg_authority": 0.9751078486442566
+        },
+        {
+          "skill": "Scala",
+          "posts": 8,
+          "avg_authority": 0.9751078486442566
+        },
+        {
+          "skill": "GCP",
+          "posts": 13,
+          "avg_authority": 0.9751078486442566
+        },
+        {
+          "skill": "Airflow",
+          "posts": 8,
+          "avg_authority": 0.9751078486442566
+        },
+        {
+          "skill": "DBT",
+          "posts": 4,
+          "avg_authority": 0.9751078486442566
+        }
+      ]
+    },
+    {
+      "author": "R. Santos Paulo",
+      "n_skills": 7,
+      "total_posts": 33,
+      "max_authority": 0.3121420741081238,
+      "top_domain": "ai-infra-link.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 2,
+          "avg_authority": 0.3034212738275528
+        },
+        {
+          "skill": "Tableau",
+          "posts": 5,
+          "avg_authority": 0.3121420741081238
+        },
+        {
+          "skill": "Power BI",
+          "posts": 3,
+          "avg_authority": 0.27725887298583984
+        },
+        {
+          "skill": "Spring Boot",
+          "posts": 2,
+          "avg_authority": 0.27725887298583984
+        },
+        {
+          "skill": "GCP",
+          "posts": 8,
+          "avg_authority": 0.3034212738275528
+        },
+        {
+          "skill": "Terraform",
+          "posts": 9,
+          "avg_authority": 0.2981887936592102
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 4,
+          "avg_authority": 0.3034212738275528
+        }
+      ]
+    },
+    {
+      "author": "David",
+      "n_skills": 7,
+      "total_posts": 27,
+      "max_authority": 1.1955955028533936,
+      "top_domain": "datastackhub.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 2,
+          "avg_authority": 1.168790340423584
+        },
+        {
+          "skill": "Tableau",
+          "posts": 4,
+          "avg_authority": 1.1386923789978027
+        },
+        {
+          "skill": "Power BI",
+          "posts": 5,
+          "avg_authority": 1.1634755849838256
+        },
+        {
+          "skill": "GCP",
+          "posts": 7,
+          "avg_authority": 1.1955955028533936
+        },
+        {
+          "skill": "Airflow",
+          "posts": 5,
+          "avg_authority": 1.190307092666626
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 2,
+          "avg_authority": 1.168790340423584
+        },
+        {
+          "skill": "DBT",
+          "posts": 2,
+          "avg_authority": 1.168790340423584
+        }
+      ]
+    },
+    {
+      "author": "Mark",
+      "n_skills": 6,
+      "total_posts": 34,
+      "max_authority": 1.4023158550262451,
+      "top_domain": "markaicode.com",
+      "skills": [
+        {
+          "skill": "Kotlin",
+          "posts": 2,
+          "avg_authority": 1.355715036392212
+        },
+        {
+          "skill": "GCP",
+          "posts": 11,
+          "avg_authority": 1.4023158550262451
+        },
+        {
+          "skill": "Airflow",
+          "posts": 5,
+          "avg_authority": 1.4023158550262451
+        },
+        {
+          "skill": "Terraform",
+          "posts": 7,
+          "avg_authority": 1.4023158550262451
+        },
+        {
+          "skill": "DBT",
+          "posts": 7,
+          "avg_authority": 1.4023158550262451
+        },
+        {
+          "skill": "Ansible",
+          "posts": 2,
+          "avg_authority": 1.4023158550262451
+        }
+      ]
+    },
+    {
+      "author": "Julien GOURMELEN",
+      "n_skills": 5,
+      "total_posts": 355,
+      "max_authority": 1.412817120552063,
+      "top_domain": "wizops.fr",
+      "skills": [
+        {
+          "skill": "Tableau",
+          "posts": 6,
+          "avg_authority": 1.412817120552063
+        },
+        {
+          "skill": "GCP",
+          "posts": 100,
+          "avg_authority": 1.412817120552063
+        },
+        {
+          "skill": "Terraform",
+          "posts": 126,
+          "avg_authority": 1.412817120552063
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 54,
+          "avg_authority": 1.412817120552063
+        },
+        {
+          "skill": "Ansible",
+          "posts": 69,
+          "avg_authority": 1.412817120552063
+        }
+      ]
+    },
+    {
+      "author": "Shefali Aggarwal",
+      "n_skills": 5,
+      "total_posts": 113,
+      "max_authority": 0.557594895362854,
+      "top_domain": "qubole.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 11,
+          "avg_authority": 0.557594895362854
+        },
+        {
+          "skill": "Tableau",
+          "posts": 15,
+          "avg_authority": 0.557594895362854
+        },
+        {
+          "skill": "Scala",
+          "posts": 36,
+          "avg_authority": 0.557594895362854
+        },
+        {
+          "skill": "GCP",
+          "posts": 18,
+          "avg_authority": 0.557594895362854
+        },
+        {
+          "skill": "Airflow",
+          "posts": 33,
+          "avg_authority": 0.557594895362854
+        }
+      ]
+    },
+    {
+      "author": "Mary Rybalchenko",
+      "n_skills": 5,
+      "total_posts": 88,
+      "max_authority": 0.6017366051673889,
+      "top_domain": "windsor.ai",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 32,
+          "avg_authority": 0.6017366051673889
+        },
+        {
+          "skill": "Tableau",
+          "posts": 17,
+          "avg_authority": 0.6017366051673889
+        },
+        {
+          "skill": "Power BI",
+          "posts": 27,
+          "avg_authority": 0.6017366051673889
+        },
+        {
+          "skill": "Airflow",
+          "posts": 2,
+          "avg_authority": 0.6017366051673889
+        },
+        {
+          "skill": "DBT",
+          "posts": 10,
+          "avg_authority": 0.6017366051673889
+        }
+      ]
+    },
+    {
+      "author": "Revanth Periyasamy",
+      "n_skills": 5,
+      "total_posts": 47,
+      "max_authority": 0.29920048222822304,
+      "top_domain": "peliqan.io",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 11,
+          "avg_authority": 0.28714737025174225
+        },
+        {
+          "skill": "Tableau",
+          "posts": 9,
+          "avg_authority": 0.28632332881291706
+        },
+        {
+          "skill": "Power BI",
+          "posts": 17,
+          "avg_authority": 0.29920048222822304
+        },
+        {
+          "skill": "Airflow",
+          "posts": 3,
+          "avg_authority": 0.27725887298583984
+        },
+        {
+          "skill": "DBT",
+          "posts": 7,
+          "avg_authority": 0.28114363976887297
+        }
+      ]
+    },
+    {
+      "author": "Emmanuel Bernard",
+      "n_skills": 5,
+      "total_posts": 45,
+      "max_authority": 0.0,
+      "top_domain": "lescastcodeurs.com",
+      "skills": [
+        {
+          "skill": "Kotlin",
+          "posts": 14,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Scala",
+          "posts": 6,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Spring Boot",
+          "posts": 12,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 11,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Ansible",
+          "posts": 2,
+          "avg_authority": 0.0
+        }
+      ]
+    },
+    {
+      "author": "Riya Thambiraj",
+      "n_skills": 5,
+      "total_posts": 44,
+      "max_authority": 0.48283135890960693,
+      "top_domain": "staging.raftlabs.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 2,
+          "avg_authority": 0.48283135890960693
+        },
+        {
+          "skill": "Kotlin",
+          "posts": 13,
+          "avg_authority": 0.3944825025705191
+        },
+        {
+          "skill": "Spring Boot",
+          "posts": 2,
+          "avg_authority": 0.3871200978755951
+        },
+        {
+          "skill": "GCP",
+          "posts": 24,
+          "avg_authority": 0.4321606913033654
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 3,
+          "avg_authority": 0.3871200978755951
+        }
+      ]
+    },
+    {
+      "author": "Kacper Ba\u0142dyga",
+      "n_skills": 5,
+      "total_posts": 42,
+      "max_authority": 0.5433569550514221,
+      "top_domain": "codeandpepper.com",
+      "skills": [
+        {
+          "skill": "Kotlin",
+          "posts": 3,
+          "avg_authority": 0.541610062122345
+        },
+        {
+          "skill": "GCP",
+          "posts": 12,
+          "avg_authority": 0.541610062122345
+        },
+        {
+          "skill": "Terraform",
+          "posts": 14,
+          "avg_authority": 0.5420255462328593
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 6,
+          "avg_authority": 0.5422332882881165
+        },
+        {
+          "skill": "Ansible",
+          "posts": 7,
+          "avg_authority": 0.5433569550514221
+        }
+      ]
+    },
+    {
+      "author": "Max Musing",
+      "n_skills": 5,
+      "total_posts": 40,
+      "max_authority": 0.7698973417282104,
+      "top_domain": "basedash.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 10,
+          "avg_authority": 0.7698973417282104
+        },
+        {
+          "skill": "Tableau",
+          "posts": 11,
+          "avg_authority": 0.7698973417282104
+        },
+        {
+          "skill": "Power BI",
+          "posts": 8,
+          "avg_authority": 0.7698973417282104
+        },
+        {
+          "skill": "Airflow",
+          "posts": 2,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "DBT",
+          "posts": 9,
+          "avg_authority": 0.7698973417282104
+        }
+      ]
+    },
+    {
+      "author": "Jasper Flour",
+      "n_skills": 5,
+      "total_posts": 36,
+      "max_authority": 0.230258509516716,
+      "top_domain": "mammoth.io",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 7,
+          "avg_authority": 0.230258509516716
+        },
+        {
+          "skill": "Tableau",
+          "posts": 10,
+          "avg_authority": 0.230258509516716
+        },
+        {
+          "skill": "Power BI",
+          "posts": 11,
+          "avg_authority": 0.230258509516716
+        },
+        {
+          "skill": "Airflow",
+          "posts": 2,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "DBT",
+          "posts": 6,
+          "avg_authority": 0.0
+        }
+      ]
+    },
+    {
+      "author": "seouser",
+      "n_skills": 5,
+      "total_posts": 20,
+      "max_authority": 0.3455256564276559,
+      "top_domain": "cygnet-infotech.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 2,
+          "avg_authority": 0.32059091329574585
+        },
+        {
+          "skill": "Tableau",
+          "posts": 3,
+          "avg_authority": 0.33986692627271015
+        },
+        {
+          "skill": "GCP",
+          "posts": 7,
+          "avg_authority": 0.3455256564276559
+        },
+        {
+          "skill": "Airflow",
+          "posts": 3,
+          "avg_authority": 0.32597047090530396
+        },
+        {
+          "skill": "DBT",
+          "posts": 5,
+          "avg_authority": 0.32238946557044984
+        }
+      ]
+    },
+    {
+      "author": "Nick",
+      "n_skills": 5,
+      "total_posts": 19,
+      "max_authority": 1.1712768077850342,
+      "top_domain": "letdataspeak.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 2,
+          "avg_authority": 1.1712768077850342
+        },
+        {
+          "skill": "Tableau",
+          "posts": 5,
+          "avg_authority": 1.1712768077850342
+        },
+        {
+          "skill": "Power BI",
+          "posts": 5,
+          "avg_authority": 1.1712768077850342
+        },
+        {
+          "skill": "Airflow",
+          "posts": 2,
+          "avg_authority": 1.1712768077850342
+        },
+        {
+          "skill": "DBT",
+          "posts": 5,
+          "avg_authority": 1.1712768077850342
+        }
+      ]
+    },
+    {
+      "author": "Andreas and Michael Wittig",
+      "n_skills": 4,
+      "total_posts": 72,
+      "max_authority": 3.019771099090576,
+      "top_domain": "cloudonaut.io",
+      "skills": [
+        {
+          "skill": "Scala",
+          "posts": 3,
+          "avg_authority": 3.019771099090576
+        },
+        {
+          "skill": "GCP",
+          "posts": 5,
+          "avg_authority": 3.019771099090576
+        },
+        {
+          "skill": "Terraform",
+          "posts": 45,
+          "avg_authority": 3.019771099090576
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 19,
+          "avg_authority": 3.019771099090576
+        }
+      ]
+    },
+    {
+      "author": "FirstPassLab",
+      "n_skills": 4,
+      "total_posts": 64,
+      "max_authority": 0.4418840706348419,
+      "top_domain": "firstpasslab.com",
+      "skills": [
+        {
+          "skill": "GCP",
+          "posts": 13,
+          "avg_authority": 0.4418840706348419
+        },
+        {
+          "skill": "Terraform",
+          "posts": 25,
+          "avg_authority": 0.4418840706348419
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 3,
+          "avg_authority": 0.4418840706348419
+        },
+        {
+          "skill": "Ansible",
+          "posts": 23,
+          "avg_authority": 0.4418840706348419
+        }
+      ]
+    },
+    {
+      "author": "Jyo",
+      "n_skills": 4,
+      "total_posts": 46,
+      "max_authority": 0.23978953063488007,
+      "top_domain": "fullstacktechies.com",
+      "skills": [
+        {
+          "skill": "GCP",
+          "posts": 12,
+          "avg_authority": 0.23978953063488007
+        },
+        {
+          "skill": "Terraform",
+          "posts": 15,
+          "avg_authority": 0.23978953063488007
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 11,
+          "avg_authority": 0.23978953063488007
+        },
+        {
+          "skill": "Ansible",
+          "posts": 8,
+          "avg_authority": 0.23978953063488007
+        }
+      ]
+    },
+    {
+      "author": "Kirill Shirinkin",
+      "n_skills": 4,
+      "total_posts": 41,
+      "max_authority": 0.0,
+      "top_domain": "mkdev.me",
+      "skills": [
+        {
+          "skill": "GCP",
+          "posts": 9,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Terraform",
+          "posts": 23,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 3,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Ansible",
+          "posts": 6,
+          "avg_authority": 0.0
+        }
+      ]
+    },
+    {
+      "author": "Chris Hillman",
+      "n_skills": 4,
+      "total_posts": 32,
+      "max_authority": 0.6124675869941711,
+      "top_domain": "ghostinthedata.info",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 3,
+          "avg_authority": 0.606360137462616
+        },
+        {
+          "skill": "Tableau",
+          "posts": 5,
+          "avg_authority": 0.606360137462616
+        },
+        {
+          "skill": "Airflow",
+          "posts": 9,
+          "avg_authority": 0.6111912329991659
+        },
+        {
+          "skill": "DBT",
+          "posts": 15,
+          "avg_authority": 0.6124675869941711
+        }
+      ]
+    },
+    {
+      "author": "Erik",
+      "n_skills": 4,
+      "total_posts": 31,
+      "max_authority": 0.0,
+      "top_domain": "blog.badsectorlabs.com",
+      "skills": [
+        {
+          "skill": "GCP",
+          "posts": 7,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Terraform",
+          "posts": 7,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 2,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Ansible",
+          "posts": 15,
+          "avg_authority": 0.0
+        }
+      ]
+    },
+    {
+      "author": "Chris Bergh",
+      "n_skills": 4,
+      "total_posts": 30,
+      "max_authority": 0.6081749796867371,
+      "top_domain": "datakitchen.io",
+      "skills": [
+        {
+          "skill": "Tableau",
+          "posts": 3,
+          "avg_authority": 0.6081749796867371
+        },
+        {
+          "skill": "Airflow",
+          "posts": 6,
+          "avg_authority": 0.6081749796867371
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 2,
+          "avg_authority": 0.6081749796867371
+        },
+        {
+          "skill": "DBT",
+          "posts": 19,
+          "avg_authority": 0.6051651835441589
+        }
+      ]
+    },
+    {
+      "author": "zeftseomanager",
+      "n_skills": 4,
+      "total_posts": 24,
+      "max_authority": 0.7221890836954117,
+      "top_domain": "atstartups.com",
+      "skills": [
+        {
+          "skill": "Tableau",
+          "posts": 4,
+          "avg_authority": 0.7221890836954117
+        },
+        {
+          "skill": "Power BI",
+          "posts": 10,
+          "avg_authority": 0.6677590847015381
+        },
+        {
+          "skill": "Spring Boot",
+          "posts": 4,
+          "avg_authority": 0.6590787321329117
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 6,
+          "avg_authority": 0.6960002581278483
+        }
+      ]
+    },
+    {
+      "author": "Artur Haponik",
+      "n_skills": 4,
+      "total_posts": 23,
+      "max_authority": 0.7682015299797058,
+      "top_domain": "addepto.com",
+      "skills": [
+        {
+          "skill": "Tableau",
+          "posts": 2,
+          "avg_authority": 0.7682015299797058
+        },
+        {
+          "skill": "Power BI",
+          "posts": 4,
+          "avg_authority": 0.7682015299797058
+        },
+        {
+          "skill": "Scala",
+          "posts": 7,
+          "avg_authority": 0.7682015299797058
+        },
+        {
+          "skill": "GCP",
+          "posts": 10,
+          "avg_authority": 0.7682015299797058
+        }
+      ]
+    },
+    {
+      "author": "Adam Hale",
+      "n_skills": 4,
+      "total_posts": 22,
+      "max_authority": 0.31780537962913513,
+      "top_domain": "thinkcloudly.com",
+      "skills": [
+        {
+          "skill": "GCP",
+          "posts": 10,
+          "avg_authority": 0.29325746893882754
+        },
+        {
+          "skill": "Terraform",
+          "posts": 8,
+          "avg_authority": 0.29416872262954713
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 2,
+          "avg_authority": 0.31780537962913513
+        },
+        {
+          "skill": "Ansible",
+          "posts": 2,
+          "avg_authority": 0.2882595583796501
+        }
+      ]
+    },
+    {
+      "author": "Mikkel Dengs\u00f8e",
+      "n_skills": 4,
+      "total_posts": 21,
+      "max_authority": 1.4828025102615356,
+      "top_domain": "mikkeldengsoe.substack.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 2,
+          "avg_authority": 1.4828025102615356
+        },
+        {
+          "skill": "Tableau",
+          "posts": 3,
+          "avg_authority": 1.4828025102615356
+        },
+        {
+          "skill": "Airflow",
+          "posts": 2,
+          "avg_authority": 1.4828025102615356
+        },
+        {
+          "skill": "DBT",
+          "posts": 14,
+          "avg_authority": 1.4828025102615356
+        }
+      ]
+    },
+    {
+      "author": "andrzej.gabryel",
+      "n_skills": 4,
+      "total_posts": 21,
+      "max_authority": 0.0,
+      "top_domain": "enhancedmlops.com",
+      "skills": [
+        {
+          "skill": "Airflow",
+          "posts": 8,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Terraform",
+          "posts": 6,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 3,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "DBT",
+          "posts": 4,
+          "avg_authority": 0.0
+        }
+      ]
+    },
+    {
+      "author": "Shagility",
+      "n_skills": 4,
+      "total_posts": 20,
+      "max_authority": 1.394984483718872,
+      "top_domain": "agiledata.substack.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 3,
+          "avg_authority": 1.394984483718872
+        },
+        {
+          "skill": "Tableau",
+          "posts": 5,
+          "avg_authority": 1.394984483718872
+        },
+        {
+          "skill": "Power BI",
+          "posts": 4,
+          "avg_authority": 1.394984483718872
+        },
+        {
+          "skill": "DBT",
+          "posts": 8,
+          "avg_authority": 1.394984483718872
+        }
+      ]
+    },
+    {
+      "author": "Hector Flores",
+      "n_skills": 4,
+      "total_posts": 19,
+      "max_authority": 0.1732867956161499,
+      "top_domain": "htek.dev",
+      "skills": [
+        {
+          "skill": "Kotlin",
+          "posts": 2,
+          "avg_authority": 0.1732867956161499
+        },
+        {
+          "skill": "Terraform",
+          "posts": 13,
+          "avg_authority": 0.1732867956161499
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 2,
+          "avg_authority": 0.1732867956161499
+        },
+        {
+          "skill": "Ansible",
+          "posts": 2,
+          "avg_authority": 0.1732867956161499
+        }
+      ]
+    },
+    {
+      "author": "Anna",
+      "n_skills": 4,
+      "total_posts": 17,
+      "max_authority": 0.988645076751709,
+      "top_domain": "sqldbm.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 2,
+          "avg_authority": 0.988645076751709
+        },
+        {
+          "skill": "Tableau",
+          "posts": 9,
+          "avg_authority": 0.9729847643110487
+        },
+        {
+          "skill": "Power BI",
+          "posts": 4,
+          "avg_authority": 0.970592811703682
+        },
+        {
+          "skill": "DBT",
+          "posts": 2,
+          "avg_authority": 0.9460147023200989
+        }
+      ]
+    },
+    {
+      "author": "Holly Batelle",
+      "n_skills": 4,
+      "total_posts": 16,
+      "max_authority": 0.18661406884590784,
+      "top_domain": "atscale.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 3,
+          "avg_authority": 0.18661406884590784
+        },
+        {
+          "skill": "Tableau",
+          "posts": 5,
+          "avg_authority": 0.16166657209396362
+        },
+        {
+          "skill": "Power BI",
+          "posts": 6,
+          "avg_authority": 0.15979010239243507
+        },
+        {
+          "skill": "DBT",
+          "posts": 2,
+          "avg_authority": 0.1791759431362152
+        }
+      ]
+    },
+    {
+      "author": "Anichet Singh",
+      "n_skills": 4,
+      "total_posts": 16,
+      "max_authority": 0.19459101557731628,
+      "top_domain": "neosalpha.com",
+      "skills": [
+        {
+          "skill": "Tableau",
+          "posts": 2,
+          "avg_authority": 0.19459101557731628
+        },
+        {
+          "skill": "Power BI",
+          "posts": 6,
+          "avg_authority": 0.19459101557731628
+        },
+        {
+          "skill": "GCP",
+          "posts": 5,
+          "avg_authority": 0.19459101557731628
+        },
+        {
+          "skill": "DBT",
+          "posts": 3,
+          "avg_authority": 0.19459101557731628
+        }
+      ]
+    },
+    {
+      "author": "Anurag Verma",
+      "n_skills": 4,
+      "total_posts": 15,
+      "max_authority": 1.261820912361145,
+      "top_domain": "codercops.com",
+      "skills": [
+        {
+          "skill": "Tableau",
+          "posts": 2,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Kotlin",
+          "posts": 2,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "GCP",
+          "posts": 6,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Terraform",
+          "posts": 5,
+          "avg_authority": 1.261820912361145
+        }
+      ]
+    },
+    {
+      "author": "Chris Jones",
+      "n_skills": 4,
+      "total_posts": 15,
+      "max_authority": 0.8073234856128693,
+      "top_domain": "hiredevelopers.com",
+      "skills": [
+        {
+          "skill": "Kotlin",
+          "posts": 5,
+          "avg_authority": 0.7362616896629334
+        },
+        {
+          "skill": "Spring Boot",
+          "posts": 5,
+          "avg_authority": 0.6980797410011291
+        },
+        {
+          "skill": "Airflow",
+          "posts": 3,
+          "avg_authority": 0.7154093583424886
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 2,
+          "avg_authority": 0.8073234856128693
+        }
+      ]
+    },
+    {
+      "author": "Qubole",
+      "n_skills": 4,
+      "total_posts": 14,
+      "max_authority": 0.4440918266773224,
+      "top_domain": "qubole.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 3,
+          "avg_authority": 0.4440918266773224
+        },
+        {
+          "skill": "Tableau",
+          "posts": 4,
+          "avg_authority": 0.4440918266773224
+        },
+        {
+          "skill": "Scala",
+          "posts": 4,
+          "avg_authority": 0.4440918266773224
+        },
+        {
+          "skill": "Airflow",
+          "posts": 3,
+          "avg_authority": 0.4440918266773224
+        }
+      ]
+    },
+    {
+      "author": "insightsoftware",
+      "n_skills": 3,
+      "total_posts": 164,
+      "max_authority": 0.34769507158886304,
+      "top_domain": "zoomdata.com",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 54,
+          "avg_authority": 0.3472122588643321
+        },
+        {
+          "skill": "Tableau",
+          "posts": 55,
+          "avg_authority": 0.34769507158886304
+        },
+        {
+          "skill": "Power BI",
+          "posts": 55,
+          "avg_authority": 0.34769507158886304
+        }
+      ]
+    },
+    {
+      "author": "Adam Pavlacka",
+      "n_skills": 3,
+      "total_posts": 83,
+      "max_authority": 0.5081404447555542,
+      "top_domain": "kb.databricks.com",
+      "skills": [
+        {
+          "skill": "Scala",
+          "posts": 21,
+          "avg_authority": 0.5081404447555542
+        },
+        {
+          "skill": "GCP",
+          "posts": 53,
+          "avg_authority": 0.5081404447555542
+        },
+        {
+          "skill": "Terraform",
+          "posts": 9,
+          "avg_authority": 0.5081404447555542
+        }
+      ]
+    },
+    {
+      "author": "aimee.gonzalezcameron",
+      "n_skills": 3,
+      "total_posts": 66,
+      "max_authority": 0.4779123365879059,
+      "top_domain": "kb.databricks.com",
+      "skills": [
+        {
+          "skill": "Scala",
+          "posts": 3,
+          "avg_authority": 0.4779123365879059
+        },
+        {
+          "skill": "GCP",
+          "posts": 60,
+          "avg_authority": 0.4779123365879059
+        },
+        {
+          "skill": "DBT",
+          "posts": 3,
+          "avg_authority": 0.4779123365879059
+        }
+      ]
+    },
+    {
+      "author": "Aimee Gonzalez",
+      "n_skills": 3,
+      "total_posts": 64,
+      "max_authority": 0.5017279982566833,
+      "top_domain": "kb.databricks.com",
+      "skills": [
+        {
+          "skill": "Scala",
+          "posts": 10,
+          "avg_authority": 0.5017279982566833
+        },
+        {
+          "skill": "GCP",
+          "posts": 46,
+          "avg_authority": 0.5017279982566833
+        },
+        {
+          "skill": "Terraform",
+          "posts": 8,
+          "avg_authority": 0.5017279982566833
+        }
+      ]
+    },
+    {
+      "author": "Sarah Donahoo",
+      "n_skills": 3,
+      "total_posts": 62,
+      "max_authority": 0.4143134653568268,
+      "top_domain": "fugo.ai",
+      "skills": [
+        {
+          "skill": "Looker",
+          "posts": 17,
+          "avg_authority": 0.4143134653568268
+        },
+        {
+          "skill": "Tableau",
+          "posts": 14,
+          "avg_authority": 0.4143134653568268
+        },
+        {
+          "skill": "Power BI",
+          "posts": 31,
+          "avg_authority": 0.4143134653568268
+        }
+      ]
+    },
+    {
+      "author": "Brendan Thompson",
+      "n_skills": 3,
+      "total_posts": 51,
+      "max_authority": 0.0,
+      "top_domain": "brendanthompson.com",
+      "skills": [
+        {
+          "skill": "GCP",
+          "posts": 8,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Terraform",
+          "posts": 40,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 3,
+          "avg_authority": 0.0
+        }
+      ]
+    },
+    {
+      "author": "Dominik Szahidewicz",
+      "n_skills": 3,
+      "total_posts": 34,
+      "max_authority": 0.0,
+      "top_domain": "bugbug.io",
+      "skills": [
+        {
+          "skill": "Scala",
+          "posts": 3,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Jenkins",
+          "posts": 29,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Ansible",
+          "posts": 2,
+          "avg_authority": 0.0
+        }
+      ]
+    },
+    {
+      "author": "sanj.dev",
+      "n_skills": 3,
+      "total_posts": 27,
+      "max_authority": 0.0,
+      "top_domain": "sanj.dev",
+      "skills": [
+        {
+          "skill": "GCP",
+          "posts": 14,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Airflow",
+          "posts": 4,
+          "avg_authority": 0.0
+        },
+        {
+          "skill": "Terraform",
+          "posts": 9,
+          "avg_authority": 0.0
+        }
+      ]
+    },
+    {
+      "author": "superuser",
+      "n_skills": 3,
+      "total_posts": 25,
+      "max_authority": 0.47029535472393036,
+      "top_domain": "uvik.net",
+      "skills": [
+        {
+          "skill": "GCP",
+          "posts": 7,
+          "avg_authority": 0.4638768136501312
+        },
+        {
+          "skill": "Airflow",
+          "posts": 10,
+          "avg_authority": 0.47029535472393036
+        },
+        {
+          "skill": "DBT",
+          "posts": 8,
+          "avg_authority": 0.47029535472393036
+        }
+      ]
+    }
+  ]
+}
