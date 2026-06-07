@@ -10,7 +10,7 @@
 
 ## TL;DR
 
-Tech bloggers are writing about LLMs at 5× the rate jobs need them. Employers are hiring for **Looker** at 10× the rate anyone's writing about it. The most under-served tutorial niches on the internet right now are **BI tools**, **DataOps plumbing**, and the **JVM ecosystem**. The most over-served are everything in the LLM stack: Claude Code, RAG, fine-tuning, Generative AI.
+Tech bloggers are writing about Claude Code at almost 2× the rate jobs ask for it. Employers are hiring for **Looker** at 10× the rate anyone is writing about it. Across the whole AI/LLM cluster — LLM, RAG, fine-tuning, Generative AI — blog supply meets or exceeds job demand, while the BI / DataOps / JVM stack runs 5–10× short. The most under-served tutorial niches on the internet right now are **BI tools**, **DataOps plumbing**, and the **JVM ecosystem**. The most over-served are everything in the LLM stack: Claude Code, RAG, fine-tuning, Generative AI.
 
 The median skill in this set has a job-to-blog ratio of **~2.9**. Anything above ~5 is meaningfully under-blogged. Anything below ~1.5 is meaningfully over-blogged.
 

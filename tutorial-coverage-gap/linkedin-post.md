@@ -1,4 +1,4 @@
-Tech bloggers are writing about LLMs at 5x the rate jobs need them. Employers are hiring for Looker at 10x the rate anyone is writing about it.
+Tech bloggers are writing about Claude Code at almost 2x the rate jobs ask for it. Employers are hiring for Looker at 10x the rate anyone is writing about it.
 
 We ranked 74 popular tech skills by how often they appear in job postings vs how often they appear in blog posts. 205,895 jobs, 408,420 blog posts on the Skillenai indices. The picture is unambiguous.
 
@@ -18,12 +18,12 @@ Which under-served skill would you teach if you were starting fresh? Full analys
 <!--
 Trained on /Users/jrand/git-repos/skillenai-ds/scripts/linkedin_scoring/ (48 historical posts).
 
-v1 (bulleted lists, no question hook): impressions=1047  engagements=15.1  followers_3d=18.7
-v2 (current, prose blocks, ends with question): impressions=1630  engagements=16.2  followers_3d=16.6
-v3 (no question, no first-comment hint): impressions=1649  engagements=15.6  followers_3d=15.3
+v1 (bulleted lists, "LLMs at 5x" hook): impressions=1047  engagements=15.1  followers_3d=18.7
+v2 (consolidated prose, "LLMs at 5x" hook): impressions=1630  engagements=16.2  followers_3d=16.6
+v3 (no trailing question): impressions=1649  engagements=15.6  followers_3d=15.3
+final (corrects 5x → 2x and swaps LLM → Claude Code per user math check): impressions=1691  engagements=17.8  followers_3d=16.0
 
-Accepted v2: best engagements + reasonable impressions, ends with a question that invites replies.
-Negative drivers in final draft: has_link (none), exclamation_count (none), emoji_count (0).
-Positive drivers: upper_word_ratio (Looker / Kotlin / GCP / DBT / BI / LLM / RAG / DataOps / JVM acronyms), word_count.
+Accepted final: math now matches table (Claude Code 0.53 → blogs ≈ 1.9x jobs; Looker 9.82 stands).
+The user caught that LLM ratio 0.90 doesn't support a "5x" claim — would have implied 0.20.
 "Add an exclamation" suggestion ignored — known unreliable in this scorer (verified 2026-05-03).
 -->
