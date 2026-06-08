@@ -21,7 +21,7 @@ this README adds the underlying figures and the raw data.
 | 2 | [Animated dplyr verbs: mutate / summarize / group_by / ungroup](https://www.andrewheiss.com/blog/2024/04/04/group_by-summarize-ungroup-animations) | Andrew Heiss | andrewheiss.com |
 | 3 | [Visualizing the Internet (2025)](https://kmcd.dev/posts/internet-map-2025) | kmcd.dev | kmcd.dev |
 | 4 | [Text embeddings explorer (MotherDuck × marimo)](https://motherduck.com/blog/MotherDuck-Visualize-Embeddings-Marimo) | MotherDuck team | motherduck.com |
-| 5 | [Generative AI is eating culture — AI vs. human dance](https://themarkup.org/artificial-intelligence/2026/01/21/our-video-tests-prove-generative-ai-still-sucks-at-dancing-see-for-yourself) | Khari Johnson & Levi Sumagaysay | themarkup.org |
+| 5 | [Using data visualization to understand how LLMs "think"](https://filwd.substack.com/p/using-data-visualization-to-understand) | Enrico Bertini | filwd.substack.com |
 
 ![Top 5 viz pieces ranked by combined authority score](03_top_viz_pieces.png)
 

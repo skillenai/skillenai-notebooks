@@ -152,21 +152,15 @@
       "embeddingRelevance": 0.4186
     },
     {
-      "title": "Generative AI is eating culture. See how close it\u2019s getting to disrupting dance",
-      "domain": "themarkup.org",
-      "author": "Khari Johnson, Levi Sumagaysay, and Mohamed Al Elew",
-      "url": "https://themarkup.org/artificial-intelligence/2026/01/21/our-video-tests-prove-generative-ai-still-sucks-at-dancing-see-for-yourself",
-      "publishedAt": "2026-01-21T13:30:00+00:00",
-      "topics": [
-        "generative-ai",
-        "ethics-governance",
-        "computer-vision",
-        "agents",
-        "software-engineering"
-      ],
-      "domainAuthority": 4.091172506825441e-06,
-      "authorAuthority": 0.06931471805599453,
-      "embeddingRelevance": 0.3972
+      "title": "Using Data Visualization To Understand How LLMs \"Think\"",
+      "domain": "filwd.substack.com",
+      "author": "Enrico Bertini",
+      "url": "https://filwd.substack.com/p/using-data-visualization-to-understand",
+      "publishedAt": "2025-12-12T15:01:42+00:00",
+      "topics": null,
+      "domainAuthority": 3.4e-06,
+      "authorAuthority": 0.4724,
+      "embeddingRelevance": 0.4531
     }
   ]
 }
