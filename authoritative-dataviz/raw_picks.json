@@ -1,0 +1,172 @@
+{
+  "articles": [
+    {
+      "title": "Teaching data visualization in the time of generative AI",
+      "domain": "blog.genesmindsmachines.com",
+      "author": "Claus Wilke",
+      "url": "https://blog.genesmindsmachines.com/p/teaching-data-visualization-in-the",
+      "publishedAt": "2025-09-12T13:00:28+00:00",
+      "topics": [
+        "data-science",
+        "ethics-governance",
+        "generative-ai",
+        "llm",
+        "machine-learning"
+      ],
+      "domainAuthority": 3.542533364148847e-06,
+      "authorAuthority": 1.6907466048922328,
+      "embeddingRelevance": null
+    },
+    {
+      "title": "Modern Data Visualization with Robert Kosara",
+      "domain": "softwareengineeringdaily.com",
+      "author": "Software Engineering Daily",
+      "url": "https://softwareengineeringdaily.com/2025/09/02/modern-data-visualization-with-robert-kosara",
+      "publishedAt": "2025-09-02T09:00:08+00:00",
+      "topics": [
+        "software-engineering",
+        "data-science",
+        "llm",
+        "generative-ai",
+        "agents"
+      ],
+      "domainAuthority": 5.735880773087597e-06,
+      "authorAuthority": 0.2831480240067973,
+      "embeddingRelevance": 0.4783
+    },
+    {
+      "title": "The Collaborative Blueprint: The Open Visualization Academy as a Community of Learning and Friendship",
+      "domain": "nightingaledvs.com",
+      "author": "Alberto Cairo",
+      "url": "https://nightingaledvs.com/the-collaborative-blueprint",
+      "publishedAt": "2026-03-03T18:04:41+00:00",
+      "topics": [
+        "data-science",
+        "generative-ai",
+        "open-source",
+        "software-engineering",
+        "product-management"
+      ],
+      "domainAuthority": 3.39786504882622e-06,
+      "authorAuthority": 0.6343373630867829,
+      "embeddingRelevance": 0.3908
+    },
+    {
+      "title": "140 - Why Data Visualization Alone Doesn\u2019t Fix UI/UX Design Problems in Analytical Data Products with T from Data Rocks NZ",
+      "domain": "designingforanalytics.com",
+      "author": "Brian T. O\u2019Neill from Designing for Analytics",
+      "url": "https://brian2r.podbean.com/e/why-data-visualization-alone-doesn-t-fix-uiux-design-problems-in-analytical-data-products-with-t-from-data-rocks-nz",
+      "publishedAt": "2024-04-02T04:30:00+00:00",
+      "topics": [
+        "software-engineering",
+        "product-design",
+        "data-science",
+        "generative-ai",
+        "ethics-governance"
+      ],
+      "domainAuthority": 3.61527245465535e-06,
+      "authorAuthority": 0.43944491546724396,
+      "embeddingRelevance": 0.4463
+    },
+    {
+      "title": "The history of data journalism",
+      "domain": "datajournalism.com",
+      "author": "Brant Houston",
+      "url": "https://datajournalism.com/read/longreads/the-history-of-data-journalism",
+      "publishedAt": "2021-12-13T05:30:00+00:00",
+      "topics": [
+        "data-science",
+        "software-engineering",
+        "mlops",
+        "open-source",
+        "data-engineering"
+      ],
+      "domainAuthority": 3.4578257868220877e-06,
+      "authorAuthority": 0.2772588722239781,
+      "embeddingRelevance": 0.408
+    }
+  ],
+  "viz": [
+    {
+      "title": "Visualizing global health data on data.who.int",
+      "domain": "9elements.com",
+      "author": "Mathias Sch\u00e4fer",
+      "url": "https://9elements.com/blog/visualizing-global-health-data-on-data-who-int",
+      "publishedAt": "2025-01-10T00:00:00+00:00",
+      "topics": [
+        "data-science",
+        "software-engineering",
+        "mlops",
+        "cloud-computing",
+        "product-design"
+      ],
+      "domainAuthority": 3.4533303184135195e-06,
+      "authorAuthority": 0.3593828582057478,
+      "embeddingRelevance": 0.4314
+    },
+    {
+      "title": "Visualizing {dplyr}\u2019s mutate(), summarize(), group_by(), and ungroup() with animations",
+      "domain": "andrewheiss.com",
+      "author": "Andrew Heiss",
+      "url": "https://www.andrewheiss.com/blog/2024/04/04/group_by-summarize-ungroup-animations",
+      "publishedAt": "2024-04-04T04:00:00+00:00",
+      "topics": [
+        "data-science"
+      ],
+      "domainAuthority": 4.356425231786164e-06,
+      "authorAuthority": 1.6972818523859603,
+      "embeddingRelevance": null
+    },
+    {
+      "title": "Visualizing the Internet (2025)",
+      "domain": "kmcd.dev",
+      "author": null,
+      "url": "https://kmcd.dev/posts/internet-map-2025",
+      "publishedAt": "2025-06-16T00:00:00+00:00",
+      "topics": [
+        "data-science",
+        "cloud-computing",
+        "security",
+        "ethics-governance",
+        "software-engineering"
+      ],
+      "domainAuthority": 3.3772002430617794e-06,
+      "authorAuthority": null,
+      "embeddingRelevance": 0.3792
+    },
+    {
+      "title": "Visualizing text embeddings using MotherDuck and marimo",
+      "domain": "motherduck.com",
+      "author": null,
+      "url": "https://motherduck.com/blog/MotherDuck-Visualize-Embeddings-Marimo",
+      "publishedAt": "2024-12-11T00:00:00+00:00",
+      "topics": [
+        "llm",
+        "generative-ai",
+        "data-science",
+        "mlops",
+        "software-engineering"
+      ],
+      "domainAuthority": 5.425312698057019e-06,
+      "authorAuthority": null,
+      "embeddingRelevance": 0.4186
+    },
+    {
+      "title": "Generative AI is eating culture. See how close it\u2019s getting to disrupting dance",
+      "domain": "themarkup.org",
+      "author": "Khari Johnson, Levi Sumagaysay, and Mohamed Al Elew",
+      "url": "https://themarkup.org/artificial-intelligence/2026/01/21/our-video-tests-prove-generative-ai-still-sucks-at-dancing-see-for-yourself",
+      "publishedAt": "2026-01-21T13:30:00+00:00",
+      "topics": [
+        "generative-ai",
+        "ethics-governance",
+        "computer-vision",
+        "agents",
+        "software-engineering"
+      ],
+      "domainAuthority": 4.091172506825441e-06,
+      "authorAuthority": 0.06931471805599453,
+      "embeddingRelevance": 0.3972
+    }
+  ]
+}

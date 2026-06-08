@@ -1,0 +1,37 @@
+[
+  {
+    "author": "Andrew Heiss",
+    "domain": "andrewheiss.com",
+    "total_posts_on_domain": 60,
+    "avg_authorAuthority": 1.697281837463379,
+    "avg_domainAuthority": 4.35642505181022e-06
+  },
+  {
+    "author": "Claus Wilke",
+    "domain": "blog.genesmindsmachines.com",
+    "total_posts_on_domain": 20,
+    "avg_authorAuthority": 1.690746545791626,
+    "avg_domainAuthority": 3.542533477229881e-06
+  },
+  {
+    "author": "Tobias Macey",
+    "domain": "dataengineeringpodcast.com",
+    "total_posts_on_domain": 509,
+    "avg_authorAuthority": 1.5610999946275723,
+    "avg_domainAuthority": 3.709983210038232e-06
+  },
+  {
+    "author": "Brian T. O'Neill",
+    "domain": "designingforanalytics.com",
+    "total_posts_on_domain": 85,
+    "avg_authorAuthority": 0.45102210255230174,
+    "avg_domainAuthority": 3.61527236236725e-06
+  },
+  {
+    "author": "Mathias Sch\u00e4fer",
+    "domain": "9elements.com",
+    "total_posts_on_domain": 37,
+    "avg_authorAuthority": 0.19361085918816653,
+    "avg_domainAuthority": 3.4533302368799923e-06
+  }
+]
