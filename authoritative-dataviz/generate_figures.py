@@ -154,28 +154,9 @@ def fig_corpus_overview():
     plt.close(fig)
 
 
-def fig_pbn_reminder():
-    """Small banner showing the PBN denylist removed N posts and N personae."""
-    fig, ax = plt.subplots(figsize=(11, 2.4))
-    ax.axis("off")
-    txt = (
-        "Methodology guardrails applied (every ranking respects these)\n\n"
-        "■ 333-domain Private Blog Network denylist (SKI-376 synthetic-persona content farm)\n"
-        "■ Junk-author filter: removes admin/Editor/Team/HTML/email/multi-comma multi-author strings\n"
-        "■ Leaky source_type=blog domains removed (ATS listings, medical news, preprint servers)\n"
-        "■ Authority signal: blogpost domainAuthority + authorAuthority (PageRank-style)"
-    )
-    ax.text(0.02, 0.5, txt, fontsize=11, va="center",
-            bbox=dict(boxstyle="round,pad=0.6", facecolor="#fef3c7", edgecolor="#f59e0b", linewidth=1.4))
-    fig.tight_layout()
-    fig.savefig(HERE / "05_methodology_guardrails.png", bbox_inches="tight")
-    plt.close(fig)
-
-
 if __name__ == "__main__":
     fig_authors()
     fig_articles()
     fig_viz_pieces()
     fig_corpus_overview()
-    fig_pbn_reminder()
-    print("wrote 5 figures to", HERE)
+    print("wrote 4 figures to", HERE)
