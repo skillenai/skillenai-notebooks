@@ -67,12 +67,6 @@ this README adds the underlying figures and the raw data.
   PageRank-style citation scores from the cross-document link graph.
 - **Filters:** standard junk-author and known-noisy-domain exclusions
   (see [Reproducibility](#reproducibility) below).
-- **Caveat:** Our blog crawl undersamples dedicated graphics-desk
-  subdomains (graphics.reuters.com, pudding.cool, flowingdata.com),
-  so this list is the canon as seen through Skillenai's lens — not as
-  it sits in the public imagination.
-
-![Corpus overview: 3,883 of 428,774 posts mention dataviz, and canonical outlets are undercovered](04_corpus_overview.png)
 
 ---
 

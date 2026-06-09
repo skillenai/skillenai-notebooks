@@ -109,46 +109,18 @@ def fig_viz_pieces():
 
 
 def fig_corpus_overview():
-    """How thin is the dataviz slice of the corpus, and where are the big outlets missing?"""
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
-
-    # Left: dataviz slice of corpus
+    """How thin is the dataviz slice of the corpus?"""
+    fig, ax = plt.subplots(figsize=(7, 5))
     total = 428774
     dataviz = 3883
     other = total - dataviz
     sizes = [dataviz, other]
     labels = [f"data-viz blog posts\n({dataviz:,}, 0.9%)", f"other blog posts\n({other:,})"]
     colors = [SKN_PURPLE, "#e5e7eb"]
-    wedges, texts = ax1.pie(sizes, labels=labels, colors=colors, startangle=90,
-                             wedgeprops={"linewidth": 1.5, "edgecolor": "white"},
-                             textprops={"fontsize": 10})
-    ax1.set_title("Data-viz slice of prod-enriched-blog\n(428,774 posts total)")
-
-    # Right: coverage gap of canonical dataviz outlets
-    canonical = [
-        ("nightingaledvs.com", 14),
-        ("nytimes.com", 4),
-        ("themarkup.org", 11),
-        ("visualisingdata.com", 12),
-        ("datajournalism.com", 19),
-        ("flowingdata.com", 0),
-        ("pudding.cool", 0),
-        ("blog.datawrapper.de", 0),
-        ("graphics.reuters.com", 0),
-        ("policyviz.com", 0),
-    ]
-    canonical = sorted(canonical, key=lambda r: r[1], reverse=True)
-    domains = [c[0] for c in canonical]
-    counts = [c[1] for c in canonical]
-    colors2 = [SKN_BLUE if c > 0 else "#ef4444" for c in counts]
-    ax2.barh(domains, counts, color=colors2)
-    ax2.invert_yaxis()
-    ax2.set_xlabel("docs in prod-enriched-blog")
-    ax2.set_title("Canonical dataviz outlets:\ncoverage gap in the Skillenai corpus")
-    for i, c in enumerate(counts):
-        ax2.text(c + 0.3, i, str(c), va="center", fontsize=10,
-                  color="#7f1d1d" if c == 0 else "#374151")
-
+    ax.pie(sizes, labels=labels, colors=colors, startangle=90,
+            wedgeprops={"linewidth": 1.5, "edgecolor": "white"},
+            textprops={"fontsize": 10})
+    ax.set_title("Data-viz slice of prod-enriched-blog\n(428,774 posts total)")
     fig.tight_layout()
     fig.savefig(HERE / "04_corpus_overview.png", bbox_inches="tight")
     plt.close(fig)
