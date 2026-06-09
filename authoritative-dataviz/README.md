@@ -15,13 +15,49 @@ this README adds the underlying figures and the raw data.
 
 ## 1. The 5 most interesting data visualizations on display
 
-| # | Visualization | Author | Domain |
-|---|---|---|---|
-| 1 | [data.who.int — global health dashboard](https://9elements.com/blog/visualizing-global-health-data-on-data-who-int) | Mathias Schäfer | 9elements.com |
-| 2 | [Animated dplyr verbs: mutate / summarize / group_by / ungroup](https://www.andrewheiss.com/blog/2024/04/04/group_by-summarize-ungroup-animations) | Andrew Heiss | andrewheiss.com |
-| 3 | [Visualizing the Internet (2025)](https://kmcd.dev/posts/internet-map-2025) | kmcd.dev | kmcd.dev |
-| 4 | [Text embeddings explorer (MotherDuck × marimo)](https://motherduck.com/blog/MotherDuck-Visualize-Embeddings-Marimo) | MotherDuck team | motherduck.com |
-| 5 | [Using data visualization to understand how LLMs "think"](https://filwd.substack.com/p/using-data-visualization-to-understand) | Enrico Bertini | filwd.substack.com |
+### 1. data.who.int — global health dashboard
+
+[![A choropleth world map of Healthy Life Expectancy from the WHO Global Health Estimates](viz1_who_dashboard.png)](https://9elements.com/blog/visualizing-global-health-data-on-data-who-int)
+
+The official WHO front door to mortality, life-expectancy, and immunization
+data. Built by [9elements](https://9elements.com) (Mathias Schäfer's
+agency) on Observable Plot. Writeup: [Visualizing global health data on
+data.who.int](https://9elements.com/blog/visualizing-global-health-data-on-data-who-int).
+
+### 2. Animated dplyr verbs — Andrew Heiss
+
+[![Animated GIF showing the dplyr mutate() verb adding a new column to a tibble](viz2_heiss_dplyr.gif)](https://www.andrewheiss.com/blog/2024/04/04/group_by-summarize-ungroup-animations)
+
+Four tiny GIFs that explain `mutate()`, `summarize()`, `group_by()`, and
+`ungroup()` better than the R documentation does. Post:
+[Visualizing {dplyr}'s mutate(), summarize(), group_by(), and ungroup()](https://www.andrewheiss.com/blog/2024/04/04/group_by-summarize-ungroup-animations).
+
+### 3. Visualizing the Internet (2025) — kmcd.dev
+
+[![Annual treemap of the global Internet showing platform concentration by traffic share](viz3_kmcd_internet.png)](https://kmcd.dev/posts/internet-map-2025)
+
+A treemap of where Internet traffic actually goes. Google and Meta in the
+giant cells, the open web shrinking into the corners. Post: [Visualizing
+the Internet (2025)](https://kmcd.dev/posts/internet-map-2025).
+
+### 4. Text-embeddings explorer — MotherDuck × marimo
+
+[![Screenshot of a marimo notebook showing a UMAP projection of text embeddings rendered with MotherDuck](viz4_motherduck_marimo.png)](https://motherduck.com/blog/MotherDuck-Visualize-Embeddings-Marimo)
+
+A marimo notebook that takes a column of text, embeds, projects with UMAP,
+and lets you scrub through the scatter. Post: [Visualizing text embeddings
+using MotherDuck and marimo](https://motherduck.com/blog/MotherDuck-Visualize-Embeddings-Marimo).
+
+### 5. Using data viz to understand how LLMs "think" — Enrico Bertini
+
+[![Mechanistic-interpretability visualization of an LLM's internal activations from Bertini's FILWD piece](viz5_bertini_llm.png)](https://filwd.substack.com/p/using-data-visualization-to-understand)
+
+NYU prof and *FILWD* host Enrico Bertini walks through mechanistic-
+interpretability visualizations from David Bau's group and others. Post:
+[Using Data Visualization To Understand How LLMs "Think"](https://filwd.substack.com/p/using-data-visualization-to-understand).
+
+> Image attribution: screenshots above are excerpted from their source
+> posts for editorial reference and link back to the original work.
 
 ![Top 5 viz pieces ranked by combined authority score](03_top_viz_pieces.png)
 
