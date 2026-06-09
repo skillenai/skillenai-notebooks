@@ -1,29 +1,30 @@
-PageRank-style authority is the most boring possible way to rank the data-viz field — and the most accurate one we found.
+The five most-cited data visualizations on the open web aren't from the NYT, FlowingData, or The Pudding. They're from a Georgia State R professor, a German design agency, an NYU prof writing on Substack, a developer in Stockholm, and the MotherDuck team. PageRank-style citation scores on 428K blog posts surfaced all five.
 
-We mined 428,774 blog posts in the Skillenai index for the most authoritative data-viz writing on the web. Three top-5 lists fell out — articles, authors, and the most interesting visualizations on display.
+The WHO global-health dashboard at data.who.int. 9elements rebuilt the WHO's front door to mortality, life-expectancy, and immunization data on Observable Plot, with an accessibility pass the WHO required before sign-off. Billions of users indirectly, public-health policy directly.
 
-The top 5 dataviz authors by AA (authorAuthority) ended up being: Andrew Heiss (the working R / ggplot / Quarto / Observable Plot tutorial author of record, AA 1.70, 60 posts), Claus Wilke (Fundamentals of Data Visualization, AA 1.69), Tobias Macey (Data Engineering Podcast, 509 episodes, AA 1.56), Brian T. O'Neill (Designing for Analytics, 85 episodes on data-product UX, AA 0.45), and Mathias Schäfer at 9elements (the practitioner who shipped the WHO data.who.int dashboard, AA 0.19).
+Andrew Heiss's animated dplyr verbs. Four tiny GIFs — mutate, summarize, group_by, ungroup — that explain dplyr better than the R documentation does. The most-sent tutorial in R Twitter for two years running.
 
-The top 5 visualizations on display: the WHO global-health dashboard at data.who.int, Heiss's animated dplyr verb explainer, kmcd.dev's annual Visualizing the Internet treemap, the MotherDuck × marimo text-embeddings explorer, and The Markup's scrollytelling test of AI vs. human dance.
+kmcd.dev's annual Visualizing the Internet. A treemap of where Internet traffic actually goes — Google and Meta in the giant cells, the open web shrinking into the corners. The 2025 edition reads as a quiet eulogy for the long tail.
 
-What's not on the list says as much as what is. FlowingData, The Pudding, Reuters Graphics, NYT graphics — the canonical graphics-desk outlets — barely register in any RSS-driven blog index. The voices that surface are the ones with crawlable, citation-earning RSS feeds: academics, podcast hosts, and practitioners who keep an indexable blog.
+The MotherDuck × marimo text-embeddings explorer. Drop in text, UMAP it, scrub the scatter. The cleanest example of the "AI artifact you poke at in a notebook" genre quietly replacing the static dashboard as the unit of dataviz.
 
-PageRank-style authority is also the field's longest-running defense against content farms — exactly the AI-native synthetic-persona PBNs we've been writing about. Heiss and Wilke earned their AA the slow way: cited, year after year, in coursework, GitHub READMEs, and other people's blog posts.
+Enrico Bertini on using dataviz to understand how LLMs "think." The NYU prof and FILWD host walks through mechanistic-interpretability viz from David Bau's group, arguing dataviz is becoming the working microscope for the AI black box. Probably the entry on this list most likely to age into a foundational reference.
 
-That's the signal worth listening to. Everything else is taste.
+Honorable mention to the five authors behind all this — Heiss, Wilke, Macey, O'Neill, Schäfer — and the five articles worth catching up on (link in first comment).
 
-Full lists and reproducible queries in the post — link in the first comment.
+Which dataviz piece have you bookmarked recently?
 
-Which dataviz authors would you add — that don't post to RSS?
+<!-- model score (after reader-focus rewrite)
+v6 final: impressions=873, engagements=15.0, followers_3d=13.4
 
-<!-- model score
-baseline v1: impressions=942, engagements=16.4, followers_3d=16.3
-v2 (compressed bullets, removed unicode ▪): impressions=1514, engagements=19.9, followers_3d=14.9
-v3 (added punchy hook line, kept question, lightly tighter): impressions=1613, engagements=21.7, followers_3d=14.3
-net gain: impressions +71%, engagements +32%, followers_3d -12%
+Notable: this scores ~50% under the prior analytical version (v3: 1613/21.7).
+The model is trained on the author's own analytical/methodology-driven posts;
+a reader-focused listicle is out-of-distribution and predicts lower.
+The editorial choice is deliberate — reader framing > model-chasing here.
 
-drivers (v3 baseline):
-+ ends_with_question (+0.19), word_count (+0.17), data ngram (+0.03), several acronyms (PageRank, RSS, AA, WHO, NYT, AI, R)
-- line_count (only when bullets dominate — flattened in v2/v3), has_link (none in body, kept link in comments)
-skipped suggestion: "Add an exclamation" — per skill memory this is unreliable (-5% impressions in past runs)
+drivers (v6):
++ ends_with_question (+0.19), word_count (+0.18), url_in_text_count (+0.18),
+  followers_at_post (+0.22)
+- has_link (-0.13 — kept link in comments, not body), hour, exclamation_count
+skipped suggestion: "Add an exclamation" (per skill memory: unreliable)
 -->
