@@ -28,9 +28,9 @@ What other tech PR campaigns have you spotted running a multi-launch playbook?
 
 ## First comment
 
-Full writeup: https://skillenai.com/blog/anatomy-of-two-ai-model-launches-how-anthropic-ran-a-63-day-narrative-campaign
+Full writeup: https://skillenai.com/2026/06/10/anatomy-of-two-ai-model-launches-how-anthropic-ran-a-63-day-narrative-campaign
 
-(Permalink will use the YYYY/MM/DD prefix once published from the dashboard; until then: https://skillenai.com/dashboard/posts/anatomy-of-two-ai-model-launches-how-anthropic-ran-a-63-day-narrative-campaign/edit)
+Notebook (charts, methodology, timeline CSV): https://github.com/skillenai/skillenai-notebooks/tree/master/fable5-launch-diffusion
 
 <!-- model score (LinkedIn performance model trained on user's own 48-post history) -->
 <!--
