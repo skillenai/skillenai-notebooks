@@ -30,14 +30,10 @@ The June 9 launch isn't a discrete event. It's the **closing act of a 63-day nar
 
 **Excluded.** `buildfastwithai.com` (26 posts in the broader corpus) — a high-volume SEO content mill (165 posts in 12 weeks sitewide, domain authority ~10× below tier-1). Their content rides every LLM keyword cycle without editorial direction; including them at face value would inflate the rumor signal by ~10% with commodity noise.
 
-**The `publishedAt` recovery problem.** The `prod-enriched-news` index has `publishedAt` populated on only 45.7% of documents index-wide (60,988 of 133,538). Of the 1,656 news articles in this corpus, only 714 had `publishedAt` at index time. For the launch-window subset (Jun 9 ±1 day) we scraped the source URLs directly for Open Graph (`article:published_time`), schema.org JSON-LD (`datePublished`), microdata, and HTML5 `<time pubdate>` — recovering 60 of 73 missing timestamps. April's news subset already had `publishedAt` populated for the relevant window, so no scrape was needed there.
-
-For long-tail discourse-intensity analysis (the daily-volume chart) we use `publishedAt` where available and fall back to `ingestedAt` where not, with the fallback group shown in light gray on the chart so the reader can see where the index has gaps. Minute-resolution claims (e.g. the 1-second embargo clusters) use only confirmed `publishedAt`.
-
-A reusable extractor lives in this folder (`scrape_published.py`) and was upstreamed to `skillenai-api-skill/scripts/scrape_published_dates.py`. A backfill + permanent extractor for the news index is tracked internally.
+**Timestamps.** Minute and second-resolution claims (the 1-second embargo clusters in particular) use publication times scraped directly from source-page metadata (Open Graph `article:published_time`, JSON-LD `datePublished`, schema.org microdata, HTML5 `<time pubdate>`). A reusable extractor lives in this folder as `scrape_published.py`.
 
 **Caveats.**
-- 3,479 articles is our crawler's sample, not the universe of coverage. Twitter/X/Hacker News reaction is largely invisible; mainland Chinese-language coverage is essentially absent; trade press in finance/government is undercounted.
+- 3,479 articles is our crawler's sample, not the universe of coverage. Twitter/X / Hacker News reaction is largely invisible; mainland Chinese-language coverage is essentially absent; trade press in finance and government is undercounted.
 - "Coordinated launch" is *inferred* from the timestamp signature (1-second tier-1 cluster + AWS pre-press), not confirmed by any embargo agreement we have access to.
 - Comparing the April and June impact curves is unfair beyond ~T+9 hours because the June launch was still in progress when this analysis ran. Matched-time comparisons (the impact-bucket chart) stop at T+9h for that reason.
 
@@ -68,11 +64,16 @@ Within 72 hours, the story crossed from tech press into financial press into gov
 
 By Apr 13, the Treasury Secretary, the Federal Reserve Chair, the IMF Managing Director, and the heads of major US banks had all been pulled into the story. The "irreversible shift" framing — that an AI model so capable existed it forced central banks to rethink cybersecurity policy — had moved from rumor to financial-system reality in six days.
 
-This is what the news cycle looks like:
+This is what the news cycle looks like, split by index:
 
 ![63 days of Mythos/Glasswing/Fable discourse](02_discourse_intensity.png)
 
 The April 7 spike is the biggest single-day count in our corpus (145 articles on Apr 7, 124 on Apr 8). The plateau through Apr 14-18 stays at 90-115/day. By the end of April the cycle settles to ~30-50/day and remains there until the June 9 launch — **63 days of sustained ~50-100 articles/day** about a single model release and its policy implications.
+
+Two things jump out from the blog/news split:
+
+- **The April detonation drew sustained long-form analysis** alongside wire-press coverage. The blue (blog) layer is substantial through April and stays at meaningful volume into May — Substack writers, security blogs, policy commentators all wrote follow-up pieces. The Apr 7-13 cycle was 61% blog / 39% news.
+- **The June launch is news-only so far.** The Jun 6-10 window is 79% news / 21% blog. The analyst class hasn't had time to write yet (this analysis ran ~10 hours after Fable 5 released) — but it's also the case that the political angle was exhausted in April, so the blog-analysis cycle that drove the April-May plateau is unlikely to repeat at the same volume for June.
 
 ---
 
@@ -158,15 +159,11 @@ For anyone tracking AI launches in real time, the lesson is that the press cycle
 
 ---
 
-## Methodology footnotes
+## Data files
 
-**Data quality note.** The `prod-enriched-news` index lacks `publishedAt` on 54% of documents (~72,500 of 133,500). For the June launch window we scraped 60/73 missing timestamps directly from source URLs using Open Graph + JSON-LD + microdata + HTML5 `<time>` extractors. The fallback for the remaining 13 was `ingestedAt`, which is 2-9 hours after publication time for typical content sources. Minute-resolution claims in this analysis (the 1-second clusters in particular) use only confirmed `publishedAt`.
-
-**A reusable extractor** lives in this folder (`scrape_published.py`) and was upstreamed to `skillenai-api-skill/scripts/scrape_published_dates.py` for any future analysis that needs minute-resolution timestamps from news/blog URLs.
-
-**Data files.**
-- `timeline.csv` — all 3,479 articles with deduped URLs, publishedAt provenance flagged
+- `timeline.csv` — all 3,479 articles, deduped by URL
 - `01_trajectory_comparison.png` — cumulative articles vs hours-since-launch for both events
-- `02_discourse_intensity.png` — daily article counts April 1 → June 10 with key event annotations
+- `02_discourse_intensity.png` — daily article counts April 1 → June 10, split by blog/news
 - `03_embargo_comparison.png` — side-by-side minute-resolution view of the two embargo clusters
 - `04_impact_buckets.png` — matched-time bucket comparison (T+1h, T+3h, T+6h, T+9h)
+- `scrape_published.py` — extractor used to recover minute-resolution timestamps from source-page metadata
