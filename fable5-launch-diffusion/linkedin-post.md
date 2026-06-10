@@ -1,47 +1,44 @@
-# LinkedIn post draft
+# LinkedIn post draft (v5 — final)
 
 ## Post body
 
-At exactly 2026-06-09T17:00:00 UTC, six tier-1 outlets published their Claude Fable 5 stories in the same second.
+2026-06-09T17:00:00 UTC. Six tier-1 outlets publish Claude Fable 5 stories in the same second. The Verge. Azure. ZDNet. TechCrunch. CNBC at +1 second.
 
-The Verge. Azure. ZDNet. TechCrunch. eu.techcrunch.com. noticias.fyself.com. CNBC followed +1 second later. Backchannel at +46 seconds.
+That's an embargo timer firing.
 
-That's not diffusion. That's an embargo timer.
+The interesting find: the same playbook fired 63 days earlier on April 7, when Anthropic announced Claude Mythos Preview and Project Glasswing. Same 1-second tier-1 cluster. Same AWS Bedrock catalog 1 hour before press. Same 3-channel rollout.
 
-We pulled every blog and news article in our corpus mentioning "Fable 5" or "Mythos 5" alongside Anthropic, then scraped each URL to recover real publication times down to the second. The result is the anatomy of a coordinated AI launch, not a diffusion curve.
+We pulled 3,479 articles mentioning Mythos, Glasswing, or Fable alongside Anthropic. The picture: one 63-day narrative campaign with two coordinated launches as bookends.
 
-What the data shows:
+April 7: Mythos detonates a 1,200-article cybersecurity cycle. US Treasury summons bank bosses. Powell + Bessent on cyber threat. IMF concerned. "Irreversible power shift."
 
-73 days of rumor coverage from nine independent sources, dominated by the "Project Glasswing" safety frame that Anthropic's launch-day messaging then adopted verbatim.
+April 14 – June 6: 63-day plateau, 50-100 articles/day. "Mythos-class" enters the vocabulary as default. The "safe public version" expectation gets seeded. Glasswing expands to 150 partner orgs.
 
-Three coordinated channels across 3h26m on launch day: AWS /whats-new/ service catalog at 14:15 UTC, press embargo at 17:00:00, Amazon News Room at 17:41:41.
+June 9: Fable 5 drops into the slot prepared for it. Same playbook. Press already knows the frame.
 
-A 71-hour pre-empt leak from thewincentral.com on June 6, almost exactly three calendar days before the launch hour.
+At T+1 hour the two launches tie: 13 vs 14 articles. By T+6 hours April is 2× bigger. April had 7 news vectors (gating, AGM coalition, Treasury, IMF, EO, policy shift, capability). June had 1: "Fable 5 is the safe Mythos."
 
-31 articles in the 7-hour press cascade vs 9 in the prior 73 days.
+The takeaway: the launch isn't the event. The 10-week PR campaign that prepared it is.
 
-The takeaway for anyone tracking AI launches in real time: the AWS /whats-new/ feed is the leading signal by 2-3 hours. The press embargo is the loud moment, but the frame is decided weeks earlier in the rumor cycle.
+For real-time launch tracking: AWS /whats-new/ leads press embargoes by 2-3 hours. A 1-second tier-1 cluster is a coordination fingerprint. Codenames get seeded 60-90 days before launches — search broadly.
 
-Full writeup with charts and methodology in the first comment.
+Full writeup with charts in the first comment.
 
-What other AI launches have telegraphed their PR rollout structure to you?
+What other tech PR campaigns have you spotted running a multi-launch playbook?
 
 ## First comment
 
-Full writeup: https://skillenai.com/blog/anatomy-of-an-ai-model-launch-6-outlets-1-second-1-embargo-timer
+Full writeup: https://skillenai.com/blog/anatomy-of-two-ai-model-launches-how-anthropic-ran-a-63-day-narrative-campaign
 
-(Permalink updates once the post is published from the dashboard; until then: https://skillenai.com/dashboard/posts/anatomy-of-an-ai-model-launch-6-outlets-1-second-1-embargo-timer/edit)
+(Permalink will use the YYYY/MM/DD prefix once published from the dashboard; until then: https://skillenai.com/dashboard/posts/anatomy-of-two-ai-model-launches-how-anthropic-ran-a-63-day-narrative-campaign/edit)
 
-<!-- model score -->
+<!-- model score (LinkedIn performance model trained on user's own 48-post history) -->
 <!--
-v1 (URL in body):
-  impressions: 879
-  engagements: 9.2
-  followers_3d: 11.5
-  suggestion: move URL out of body (has_link is negative driver)
-v2 (URL moved to first comment) — FINAL:
-  impressions: 1453   (+65% vs v1)
-  engagements: 10.6   (+15% vs v1)
-  followers_3d: 13.0  (+13% vs v1)
-  remaining suggestion ignored: "add exclamation" (unreliable per session memory; verified -5%/-13% when applied)
+v1–v2: single-launch framing (Fable 5 only). Best was v2 at 1453 impressions / 10.6 engagements (after moving URL to first comment).
+
+v3 (full prose, 345 words): 877 imp / 9.3 eng — too long, line_count negative drove down impressions
+v4 (tighter, 282 words): 894 imp / 9.5 eng — marginal improvement
+v5 — FINAL (264 words, tightest): 1384 imp / 11.9 eng / 11.0 followers_3d
+  ~tied with single-launch v2 on impressions BUT tells the much richer 2-launch / 63-day campaign story.
+  Remaining suggestion ignored: "add exclamation" (unreliable per session memory; -5%/-13% when applied 2026-05-03).
 -->

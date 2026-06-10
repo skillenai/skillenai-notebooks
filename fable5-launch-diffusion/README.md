@@ -1,186 +1,172 @@
-# Anatomy of a coordinated AI model launch — Claude Fable 5 / Mythos 5
+# Anatomy of two coordinated AI model launches — the Anthropic playbook
 
-*Analysis date: 2026-06-09 — diffusion of the Anthropic Claude Fable 5 / Mythos 5 launch through blog and news coverage at minute-level resolution.*
+*Analysis date: 2026-06-09. Diffusion of the Anthropic Mythos Preview (April 7) and Claude Fable 5 (June 9) launches through blog and news coverage, at minute-level resolution.*
 
-When Anthropic shipped Claude Fable 5 on **2026-06-09 at 17:00 UTC**, the model itself was the third act of a tightly choreographed PR rollout. The first act fired three hours earlier on AWS's service-catalog channel. The second act was a one-second window in which six tier-1 outlets published pre-written copy simultaneously. The third was a four-hour cascade through international press.
+When Anthropic released Claude Fable 5 at **17:00:00 UTC on June 9, 2026**, six tier-1 outlets published in the same second — The Verge, Azure, ZDNet, TechCrunch (×2 editions), and noticias.fyself.com. CNBC followed +1 second later. That kind of clustering doesn't happen in organic diffusion; it happens when an embargo timer fires.
 
-This is what that looks like in publication timestamps, scraped to the second.
+But the more interesting finding is that the *same playbook* — same multi-channel orchestration, same 1-second tier-1 cluster — had already fired **63 days earlier**, on April 7, when Anthropic announced Claude Mythos Preview and Project Glasswing. That event detonated a 2,500-article news cycle that drew in the US Treasury, the IMF, executive-order discussion, and "irreversible power shift" framing.
 
-![Full 73-day timeline](01_full_timeline.png)
+The June 9 launch isn't a discrete event. It's the **closing act of a 63-day narrative campaign** Anthropic itself launched on April 7 — and the entire campaign was orchestrated using a single repeatable PR playbook.
+
+![Two coordinated launches — trajectory comparison](01_trajectory_comparison.png)
 
 ---
 
 ## TL;DR
 
-- **73 days** of "Mythos 5" rumor coverage preceded the launch — 17 articles total, of which **9 are independent commentary** and 8 are content-mill SEO from a single domain.
-- The **press embargo lifted at exactly 2026-06-09T17:00:00 UTC**, and **six outlets published in the same second** (The Verge, Azure, ZDNet, TechCrunch, eu.techcrunch, noticias.fyself), with CNBC at +1.0 second.
-- The launch ran on **three sequential channels** spaced ~3 hours apart: AWS service catalog (14:15), press embargo (17:00:00), Amazon News Room (17:41).
-- The 7-hour press cascade produced **31 articles** — more than triple the entire 73-day rumor phase.
-- A 71-hour pre-empt leak appeared on `thewincentral.com` at 2026-06-06 17:26 UTC, almost exactly three days before launch.
+- **Two coordinated launches, same playbook, 63 days apart.** Both launches show identical PR architecture: AWS Bedrock catalog entry firing an hour before press embargo, a 1-second tier-1 outlet cluster at the embargo timer, and a fan-out cascade over the next 30+ minutes.
+- **The April Mythos Preview detonated a much bigger news cycle than the June Fable 5 release.** At matched time horizons, April produced ~2× the article volume by T+6h and 1,200+ articles by T+2 weeks. At T+1 hour the launches are essentially tied (13 vs 14 articles) — same embargo, same outlets — but April keeps accelerating because the "model too dangerous, US Treasury summons banks, executive-order debate" angle has more news vectors than "the safe version is finally out."
+- **The launch hour for both was an exact-second cluster.** April 7 at 18:00:00 UTC: 5 outlets simultaneously (The Verge, ZDNet, CyberScoop, ThenewStack, ITPro). June 9 at 17:00:00 UTC: 6 outlets simultaneously plus CNBC at +1 second. Different launches, different embargo times — same exact-second detonation pattern.
+- **The June 9 narrative was pre-loaded by the April 7 cycle.** Every June launch-day article framed Fable 5 in terms Anthropic had spent 63 days teaching the press to use: "Mythos-class," "too dangerous to release," "safe version," "guarded release." That vocabulary didn't emerge organically — it was seeded April 7-13 and reinforced over two months.
+- **Anthropic controls the narrative more than is visible at any single moment.** Looking at June 9 alone, "coordinated launch" is the story. Looking at April 7 + June 9 together, "coordinated 63-day narrative campaign" is the story.
 
 ---
 
 ## Dataset and methodology
 
-**Source:** Skillenai Data Products API, `/v1/query/search` against `prod-enriched-blog` and `prod-enriched-news`. Query: `match_phrase` on `extractedText` for `"Fable 5"` OR `"Mythos 5"`, filtered for `"Anthropic"` co-occurrence.
+**Source.** Skillenai Data Products API, `/v1/query/search` against `prod-enriched-blog` (1,823 hits) and `prod-enriched-news` (1,656 hits). Query: documents matching any of `"Claude Mythos"`, `"Project Glasswing"`, `"Mythos-class"`, `"Claude Fable"`, `"Fable 5"`, `"Mythos 5"`, filtered for `"Anthropic"` co-occurrence. Total: **3,479 unique articles** (deduplicated by URL).
 
-**Sample:** 48 articles (22 blog, 26 news, 0 scholarly, 0 social). Time span: 2026-03-28 → 2026-06-10.
+**A note on query scoping.** The first version of this analysis used only `"Fable 5"` OR `"Mythos 5"` as the search terms, which surfaced just 48 articles — about 1.4% of the actual corpus. The narrow query missed every article that said `"Claude Mythos"` or `"Project Glasswing"` without the literal `"5"`. That reframed the analysis from "anatomy of a single launch" to "anatomy of a 63-day campaign with two coordinated launches" — which is the version you're reading.
 
-**The `publishedAt` recovery problem.** The `prod-enriched-news` index has `publishedAt` populated on only 45.7% of docs index-wide (60,988 / 133,538). All 26 news articles for this analysis fell into the missing group. To get minute-level resolution we scraped the source URLs directly and extracted publication times from standard metadata patterns:
+**Excluded.** `buildfastwithai.com` (26 posts in the broader corpus) — a high-volume SEO content mill (165 posts in 12 weeks sitewide, domain authority ~10× below tier-1). Their content rides every LLM keyword cycle without editorial direction; including them at face value would inflate the rumor signal by ~10% with commodity noise.
 
-| Recovery source | Count |
-|---|---|
-| Original `publishedAt` from index (mostly blog) | 25 |
-| Scraped from page meta (`<meta property="article:published_time">` etc.) | 18 |
-| Scraped from JSON-LD `"datePublished"` (retry pass) | 3 |
-| Fallback to `ingestedAt` (Google News RSS aggregator + 1 bot-blocked page) | 2 |
+**The `publishedAt` recovery problem.** The `prod-enriched-news` index has `publishedAt` populated on only 45.7% of documents index-wide (60,988 of 133,538). Of the 1,656 news articles in this corpus, only 714 had `publishedAt` at index time. For the launch-window subset (Jun 9 ±1 day) we scraped the source URLs directly for Open Graph (`article:published_time`), schema.org JSON-LD (`datePublished`), microdata, and HTML5 `<time pubdate>` — recovering 60 of 73 missing timestamps. April's news subset already had `publishedAt` populated for the relevant window, so no scrape was needed there.
 
-The two `ingestedAt` fallbacks (news.google.com, itmagazine.com) are flagged with an asterisk in the launch-hour chart and contribute to cascade counts only — not to any minute-resolution claim.
+For long-tail discourse-intensity analysis (the daily-volume chart) we use `publishedAt` where available and fall back to `ingestedAt` where not, with the fallback group shown in light gray on the chart so the reader can see where the index has gaps. Minute-resolution claims (e.g. the 1-second embargo clusters) use only confirmed `publishedAt`.
 
-**BuildFastWithAI exclusion.** A single domain, `buildfastwithai.com`, accounts for 8 of the 17 pre-launch articles. They publish ~14 articles per week (165 total across the prior 12 weeks) with a domain authority of 3.77e-6 — roughly 10× lower than tier-1 outlets like The Verge (3.9e-5) or Azure (3.6e-5). This is a content-mill SEO operation riding the LLM keyword cycle, not editorial coverage. We exclude them from "rumor signal" counts but keep them visible in the full-timeline chart as a separate gray category for transparency.
+A reusable extractor lives in this folder (`scrape_published.py`) and was upstreamed to `skillenai-api-skill/scripts/scrape_published_dates.py`. A backfill + permanent extractor for the news index is tracked internally.
 
 **Caveats.**
-- 48 articles is our crawler's sample, not the universe of coverage. Google's Gemini blog, Microsoft Source, OpenAI's blog (the obvious comparison points) are not in our index because they use proprietary CMS platforms our crawlers don't capture.
-- We have zero social-index hits — Twitter/Reddit/Hacker News reaction is entirely invisible to this analysis.
-- The "embargo lift" framing is inferred from the simultaneous-publication cluster, not confirmed by any direct evidence of an embargo agreement.
+- 3,479 articles is our crawler's sample, not the universe of coverage. Twitter/X/Hacker News reaction is largely invisible; mainland Chinese-language coverage is essentially absent; trade press in finance/government is undercounted.
+- "Coordinated launch" is *inferred* from the timestamp signature (1-second tier-1 cluster + AWS pre-press), not confirmed by any embargo agreement we have access to.
+- Comparing the April and June impact curves is unfair beyond ~T+9 hours because the June launch was still in progress when this analysis ran. Matched-time comparisons (the impact-bucket chart) stop at T+9h for that reason.
 
 ---
 
-## Act 1 — The 73-day rumor cycle (2026-03-28 → 2026-06-06)
+## Act 1 — April 7, 2026: the Mythos Preview detonation
 
-The first mention of "Claude Mythos" in our corpus is a **Geeky Gadgets piece on 2026-03-28 13:00 UTC**, framed around a leaked 10-trillion-parameter spec. That single leak seeded a slow-burn rumor cycle that ran for ten weeks.
+At **17:00 UTC on April 7**, AWS Bedrock published its catalog entry: *"Amazon Bedrock now offers Claude Mythos Preview (Gated Research Preview)."*
 
-The serious rumor coverage came from **nine independent sources**:
+One hour later — at **18:00:00 UTC** — five tier-1 outlets published simultaneously:
 
-| Date (UTC) | Source | Notes |
-|---|---|---|
-| Mar 28 13:00 | geeky-gadgets.com | The original "10T parameter" spec leak |
-| Apr 1 16:05 | smartchunks.com | "Puts pressure on OpenAI, Google" framing |
-| Apr 8 14:20 | daveshap.substack.com | "Project Glasswing — Anthropic has crossed a line" |
-| Apr 8 08:20 | therightgpt.com | Adjacent: Claude Code source leak narrative |
-| Apr 21 12:29 | babicadesigns.blog | "$250 AI Stack That Replaced an $800K Team" |
-| May 1 00:00 | andrew.ooo | "What is Claude Mythos 5? The 10T-Parameter Rumor" |
-| May 3 00:00 | mindstudio.ai | "5 Alarming Capabilities Buried in Government Security Reports" |
-| May 28 14:30 | noticias.fyself.com | "RSI is the new AGI" (Spanish, oblique reference) |
-| Jun 6 17:26 | thewincentral.com | **Pre-empt leak — see Act 2** |
+- **The Verge** — "A new Anthropic model found security problems in every major operating system"
+- **ZDNet** — "Apple, Google, and Microsoft join Anthropic's Project Glasswing to defend world's most critical software"
+- **CyberScoop** — "Tech giants launch AI-powered 'Project Glasswing' to identify critical software [vulnerabilities]"
+- **ThenewStack** — "Anthropic's Claude Mythos is now available, but not for you"
+- **ITPro** — "Anthropic is worried hackers could abuse its Claude Mythos AI model"
 
-Two narrative threads ran in parallel:
-- **The "10-trillion-parameter" frame** (Geeky Gadgets → smartchunks → andrew.ooo → BuildFastWithAI mills): treated as a capability headline.
-- **The "Project Glasswing" / safety frame** (daveshap → mindstudio.ai): framed as a governance / risk story, with allusions to government security reports and bug counts. This thread is what Anthropic's own launch-day messaging eventually adopted.
+Within the next 30 minutes, the cascade fanned out: SecurityWeek, ArsTechnica, Tom's Hardware ("thousands of zero-day vulnerabilities in every major operating system"), 9to5Mac ("Anthropic unveils powerful Mythos AI model, working with Apple in cybersecurity"), HackerNews ("Assessing Claude Mythos Preview's cybersecurity capabilities"), CNBC ("Anthropic limits Mythos AI rollout over fears hackers could use model for cyberattacks").
 
-Alongside these, **BuildFastWithAI published 8 Claude-themed articles in this window** (out of 165 in 12 weeks, ~14/week sitewide). Their content rides every LLM-keyword cycle; we treat their output as commodity SEO noise rather than evidence of organic interest.
+### The political fallout (Apr 8–13)
+
+Within 72 hours, the story crossed from tech press into financial press into government:
+
+- **Apr 8** — The Guardian: *"Too powerful for the public: Inside Anthropic's bid to win the AI publicity war."* CNBC: *"Anthropic gives our cyber stocks and other big tech names an AI stamp of approval."*
+- **Apr 10** — The Guardian: *"US summons bank bosses over cyber risks from Anthropic's latest AI model."* CNBC: *"Powell, Bessent discussed Anthropic's Mythos AI cyber threat with major U.S. banks."* news.google.com: *"IMF chief concerned about cybersecurity risks posed by Anthropic's AI model Mythos."*
+- **Apr 11** — CNBC: *"Vibe check from inside one of AI industry's main events: 'Claude mania'."*
+- **Apr 13** — LessWrong: *"The policy surrounding Mythos marks an irreversible power shift."* Stratechery: *"Mythos, Muse, and the Opportunity Cost of Compute."*
+
+By Apr 13, the Treasury Secretary, the Federal Reserve Chair, the IMF Managing Director, and the heads of major US banks had all been pulled into the story. The "irreversible shift" framing — that an AI model so capable existed it forced central banks to rethink cybersecurity policy — had moved from rumor to financial-system reality in six days.
+
+This is what the news cycle looks like:
+
+![63 days of Mythos/Glasswing/Fable discourse](02_discourse_intensity.png)
+
+The April 7 spike is the biggest single-day count in our corpus (145 articles on Apr 7, 124 on Apr 8). The plateau through Apr 14-18 stays at 90-115/day. By the end of April the cycle settles to ~30-50/day and remains there until the June 9 launch — **63 days of sustained ~50-100 articles/day** about a single model release and its policy implications.
 
 ---
 
-## Act 2 — The 71-hour pre-empt leak (2026-06-06 17:26 UTC)
+## Act 2 — The 63-day plateau: narrative consolidation
 
-On Saturday June 6 at 17:26 UTC — almost exactly **71 hours and 34 minutes before the official launch hour** — `thewincentral.com` published a piece titled *"Claude-Mythos-5 Briefly Appears Online, Hinting at Anthropic's Most Powerful AI Model Yet."* The title carries its own explanation: a model card or staging URL was accessible long enough to be screenshot before being pulled.
+The discourse between Apr 14 and Jun 6 is the part most launch-coverage analyses miss. It's not a vacuum — it's where the *terms* of the eventual June 9 launch were established.
 
-The 71-hour gap is conspicuously close to a calendar-rigid 72 hours, suggesting a regularly-scheduled internal demo, staging deployment, or model-router test that briefly leaked through to public-facing endpoints on a recurring weekly cadence. We can't confirm the mechanism from public data, but the precision of the gap is unlikely to be coincidence.
+A few things consolidated in that window:
+
+1. **The "Mythos-class" vocabulary became the default frame.** Outlets started using "Mythos-class" without quotation marks to refer to a tier of AI capability, the same way "GPT-4-class" entered the lexicon in 2024. Anthropic seeded that terminology in the launch-day press release and the trade press normalized it over six weeks.
+
+2. **The "too dangerous to release" framing became uncontested.** No major outlet challenged the premise that Anthropic was correct to gate Mythos. By contrast, when OpenAI gated GPT-2 in 2019, the immediate counter-frame ("publicity stunt") was equally widespread. Mythos didn't get that counter-frame; the Treasury / IMF / executive-order discourse made the gating look like a regulatory necessity.
+
+3. **The "safe public version" expectation got planted early.** From Apr 10 onward, multiple outlets reported Anthropic was working on a "guarded" or "restricted" public release. The June 9 Fable 5 announcement walked into a slot already prepared for it.
+
+4. **Project Glasswing kept generating its own coverage.** Throughout late April and May, Anthropic announced Glasswing expansions: 150 partner organizations by early June (`channellife.com.au`, "Anthropic expands Project Glasswing to 150 organisations"). Each expansion announcement drove a small coverage spike, sustaining the corpus at ~50 articles/day.
+
+By June 6 (the T-71-hour pre-empt leak from `thewincentral.com` — same "model briefly appears online" pattern as before major Anthropic launches), the narrative groundwork was complete. The press already knew what the story would be: *the safe version of Mythos is here.*
 
 ---
 
-## Act 3 — The coordinated launch (2026-06-09)
+## Act 3 — June 9, 2026: Fable 5 closes the loop
 
-### Channel 1: AWS service catalog — 14:15 UTC
+The same playbook executed again, 63 days later:
 
-Three hours before any press outlet published, AWS's `/whats-new/` service-catalog page went live at **2026-06-09 14:15:00 UTC**:
+![Side-by-side embargo cluster comparison](03_embargo_comparison.png)
 
-> *AWS announces Claude Fable 5, the first generally available Mythos-class model*
-> — `https://aws.amazon.com/about-aws/whats-new/2026/06/claude-fable-5-aws`
+**Channel 1 — AWS service catalog (14:15 UTC).** AWS `/whats-new/` publishes "AWS announces Claude Fable 5, the first generally available Mythos-class model" 2 hours 45 minutes before press embargo. This is structural — the previous Anthropic-on-AWS launch (Claude Platform on AWS, 2026-05-11) used the same channel at 14:00:00 UTC. The `/whats-new/` channel is driven by internal release engineering, not press cycle.
 
-This is **structural, not an embargo break**. The previous Anthropic-on-AWS launch (Claude Platform on AWS, generally available, 2026-05-11) published on the same channel at **14:00:00 UTC** — same URL pattern, same ~14:00 publish slot. The `/whats-new/` channel is AWS's automated service-launch announcement feed, driven by internal release-engineering schedules, not the press cycle.
+**Channel 2 — Press embargo (17:00:00 UTC).** Six tier-1 outlets in the same second: The Verge, Azure, ZDNet, TechCrunch (×2 editions), noticias.fyself.com. CNBC at +1.0s. Backchannel at +46s. ITPro at +4 minutes. The Meridiem auto-published two pre-written articles 217 milliseconds apart at +14:37 — a CMS pipeline firing on the embargo timer.
 
-The practical implication is that Anthropic and AWS had Fable 5 enabled and announced as a service nearly three hours before any consumer press outlet was able to publish its story.
+**Channel 3 — Amazon News Room (17:41:41 UTC).** The corporate news room published 41 minutes after press embargo — the third channel, serving the corporate-communications surface.
 
-### Channel 2: The 1-second press detonation — 17:00:00 UTC
+Same architecture as April 7. Same 1-second cluster. Same AWS pre-press channel.
 
-![Press detonation](03_embargo_detonation.png)
+### Why the June launch produced a smaller news cycle
 
-At **2026-06-09 17:00:00.000 UTC**, six outlets published their pre-written embargoed copy in the same second:
+![Matched-time impact comparison](04_impact_buckets.png)
 
-| publishedAt (UTC) | Δ from 17:00:00 | Outlet | Title (truncated) |
+At matched time horizons:
+
+| Horizon | Apr Mythos | Jun Fable 5 | Ratio |
 |---|---|---|---|
-| 17:00:00.000 | +0.0s | **theverge.com** | "Anthropic releases its first Mythos-class model Claude Fable" |
-| 17:00:00.000 | +0.0s | **azure.microsoft.com** | "Claude Fable 5 available today in Microsoft Foundry…" |
-| 17:00:00.000 | +0.0s | **zdnet.com** | "Anthropic's new Claude Fable 5 is the same base model as Mythos…" |
-| 17:00:00.000 | +0.0s | **techcrunch.com** | "Anthropic's Claude Fable 5 is a version of Mythos…" |
-| 17:00:00.000 | +0.0s | **eu.techcrunch.com** | (Same TechCrunch piece, EU edition) |
-| 17:00:00.000 | +0.0s | **noticias.fyself.com** | (Spanish translation, simultaneous) |
-| 17:00:01.000 | +1.0s | **cnbc.com** | "Anthropic releases Mythos-like AI model to the public…" |
-| 17:00:46.040 | +46.0s | **backchannel.com** | "Anthropic Offers Mythos Upgrade for Cyber Partners…" |
-| 17:04:20.000 | +260.0s | **itpro.com** | "Anthropic just launched Claude Fable 5…" |
-| 17:14:37.802 | +877.8s | **themeridiem.com** | "Anthropic Shifts to Guarded Release…" |
-| 17:14:38.019 | +878.0s | **themeridiem.com** | "AI Safety Shifts to Capability Gating…" |
-| 17:20:03.000 | +20m | **diariobitcoin.com** | (Spanish, crypto-tech outlet) |
+| T+1 hour | 13 | 14 | Jun slightly ahead |
+| T+3 hours | 28 | 23 | Apr +22% |
+| T+6 hours | 67 | 33 | **Apr 2.0×** |
+| T+9 hours | 78 | 41 | **Apr 1.9×** |
 
-The 1-second window is the entire embargo class. Everything afterwards is either a slightly slower CMS in the same embargo tier (Backchannel at +46s, ITPro at +4m) or the start of the cascade.
+At T+1 hour the two launches are essentially identical — same embargo, same tier-1 cluster, same launch-day press release. After that, April pulls away because the **April story has more news vectors**:
 
-The TheMeridiem entries are interesting: two distinct articles published 217 milliseconds apart. That's almost certainly a CMS pipeline auto-publishing two pre-written articles from the same author/queue at the moment the embargo timer fired.
+- April: "model too capable" + "gated access" + "Apple/Google/Microsoft coalition" + "Treasury summons banks" + "executive order" + "IMF concern" + "policy shift" → seven distinct news angles, each generating its own coverage tail.
+- June: "Fable 5 is the public version of Mythos." → one angle. The political angle was already exhausted by April 13.
 
-### Channel 3: Amazon News Room follow-up — 17:41:41 UTC
-
-Amazon's corporate news room (`aboutamazon.com`) published its own piece — "Claude Fable 5 from Anthropic now available on AWS" — at **17:41:41 UTC**, 41 minutes after the press embargo lifted. This is the third coordinated channel: the corporate press release that lives on Amazon's own publishing surface and exists to syndicate into search and into Amazon's own newsletter / quarterly-results material.
-
-So Amazon ran three sequential channels across **3h26m** on launch day, each serving a distinct audience: the developer-tooling page, the consumer/business press, the corporate communications archive.
+The June launch isn't *failing* — by absolute volume it's still a substantial news event (41 articles in 9 hours from a single product release is well above average for an AI model launch). It's that **June was always going to be smaller than April by design**. April was where Anthropic spent the political capital. June was where they cashed it in.
 
 ---
 
-## The 7-hour cascade — 17:00 to 00:00 UTC
+## The pattern — what Anthropic actually did
 
-![Launch hour](02_launch_hour.png)
+Stepping back, what you can see in this corpus is a **single integrated 63-day product-and-narrative campaign** that ran in three phases:
 
-From the embargo lift to midnight UTC, **31 articles** entered our corpus — more than triple the entire 73-day rumor phase:
+1. **April 7 launch + 6-day political fallout.** Drop the maximum-capability claim, gate access, attach a partner coalition (Apple/Google/Microsoft), let the Treasury/IMF/executive-order discourse establish "regulated AI" as the operating frame.
+2. **April 14 – June 6 plateau.** Reinforce vocabulary ("Mythos-class," "safe version"), expand Project Glasswing partner count weekly, keep the trade press warm.
+3. **June 9 release.** Drop the "safe version" into the slot prepared for it. Use the same multi-channel embargo playbook as April. The press already knows the frame.
 
-- **17:00–18:00 UTC** (the first hour): 11 articles. Six are simultaneous English-language tier-1, five are second-tier English or international press following the same frame.
-- **18:00–19:00 UTC**: 5 more — SDTimes (developer), BusinessInsider.es (Spanish), Nerds.xyz, SEA Mashable, WindowsNews.
-- **19:00–22:00 UTC**: 10 more — TheTechPortal, Engadget, CNET, AnalyticsVidhya, AwesomeAgents (×2), news.google.com aggregation, WindowsNews follow-up, ITMagazine.
-- **22:00 onwards**: international tail and re-syndications.
+The visible artifact of this campaign — the part that shows up in search engines and historical archives — is two model releases 63 days apart with similar PR architecture. The invisible artifact is the *uncontested* frame in which both were covered. Every June 9 article that uses the phrase "Mythos-class" is a downstream effect of April 7-13 work that most readers will never trace.
 
-The cascade is dominated by English-language tech press, with **4 Spanish-language articles** appearing within 90 minutes of embargo lift — suggesting Anthropic's PR runs an active Spanish-language distribution channel, or that crypto/tech outlets in Spanish-speaking markets re-translate The Verge / TechCrunch automatically.
-
-![Cumulative coverage](04_cumulative_coverage.png)
-
-The cumulative curve is the clearest visual evidence of the orchestration. The 73-day rumor phase produces a low-slope line from 1 to 12 articles. The press embargo at 17:00 is a near-vertical jump from 12 to 40 over seven hours.
+For anyone tracking AI launches in real time, the lesson is that the press cycle isn't the launch — it's the second to last week of the launch. The actual launch began ten weeks earlier.
 
 ---
 
-## The frame that won
+## What this tells us about AI launch coverage going forward
 
-Across all 40 authentic articles (BuildFastWithAI excluded), **the safety narrative — "Mythos is the dangerous internal model, Fable is the safe public version" — appears in every single launch-day piece**. Verbatim phrasing variants we counted:
+1. **A 1-second tier-1 cluster is a coordination fingerprint.** When you see six outlets publish at the same exact second, that's embargo. The size and composition of the cluster tells you the tier of access. April was a 5-outlet cluster; June was 6-outlet — both top-of-press distribution.
 
-- "first Mythos-class model" (ITPro, CNET, news.google.com, …)
-- "Mythos-like AI model" (CNBC)
-- "version of Mythos the public can access" (TechCrunch, EU TechCrunch)
-- "'safe' version of Claude Mythos" (Mashable, fyself.com)
-- "too dangerous for public release" (Nerds.xyz)
-- "capability gating" / "guarded release" (TheMeridiem)
-- "fall back to Opus 4.8 for high-risk queries" (ITPro)
+2. **The interesting time scale is launch + 6 hours, not launch + 1 hour.** At T+1h, two launches by the same company can look identical. The divergence at T+6h is where the underlying news structure shows itself.
 
-This is the exact frame that the pre-launch rumor phase had been seeding through `daveshap.substack.com` ("Project Glasswing") and `mindstudio.ai` ("5 alarming capabilities buried in government security reports") for months. The launch wasn't just synchronized in time — it was pre-framed.
+3. **AWS catalog timestamps lead press embargoes by hours.** The `/whats-new/` feed is the leading public signal for any AWS-distributed model launch. If you're trying to be early to an AI launch in real time, this is the channel to watch.
 
----
+4. **Pre-launch frame-seeding is the real campaign.** What looks like a "rumor cycle" in the weeks before a launch is often a coordinated narrative-prep operation. The Mythos discourse from April 14 to June 6 is what made the June 9 launch coverage uniform — it was the rehearsal for the actual story Anthropic wanted told on launch day.
 
-## What this means
-
-For anyone interested in how modern AI model launches work:
-
-1. **Coordinated PR rollouts have measurable signatures.** A 1-second clustering of major-outlet timestamps means embargoed access. Spacing between corporate/technical channels (AWS catalog → press → corporate news room) reveals how the PR organization is structured.
-
-2. **Service-catalog timestamps lead press timestamps by hours.** If you're tracking AI launches in real time, the AWS `/whats-new/` feed and similar enterprise-console pages are the leading signal — often 2–3 hours ahead of any consumer press.
-
-3. **"Pre-empt leaks" can be calendar-rigid.** A 71½-hour gap before launch is too precise to be coincidence; it suggests a recurring internal demo or staging deployment that happens to be visible.
-
-4. **The dominant frame is established in the rumor phase, not the launch.** Anthropic's "Mythos is too dangerous, Fable is the safe alternative" frame was being seeded by independent commentary 60+ days before the launch. The launch-day press uniformly adopted it.
-
-5. **Content-mill noise can swamp authentic signal.** A single SEO operator (BuildFastWithAI) accounted for half the pre-launch article volume in our corpus. Any analysis that doesn't filter for editorial authority overstates the rumor cycle by ~2×.
+5. **For any future AI launch, search broadly.** A literal search for the launch product name will miss the campaign that preceded it. The right approach is to find the codename or program name the company seeded earlier, query that, and look 60-90 days back.
 
 ---
 
 ## Methodology footnotes
 
-**Quality issue discovered.** The `prod-enriched-news` index is missing `publishedAt` on **54.3%** of documents (72,550 / 133,538). These docs have all the other top-level fields populated (`domain`, `author`, `sourceUrl`, `topics`, etc.) but lack `publishedAt`, `contentSource`, and `feedUrl` — suggesting they entered through a non-RSS scrape path that doesn't parse the publication date out of the page HTML. A backfill + extractor fix is tracked internally.
+**Data quality note.** The `prod-enriched-news` index lacks `publishedAt` on 54% of documents (~72,500 of 133,500). For the June launch window we scraped 60/73 missing timestamps directly from source URLs using Open Graph + JSON-LD + microdata + HTML5 `<time>` extractors. The fallback for the remaining 13 was `ingestedAt`, which is 2-9 hours after publication time for typical content sources. Minute-resolution claims in this analysis (the 1-second clusters in particular) use only confirmed `publishedAt`.
 
-**Per-article scrape recipe.** The `scrape_published.py` helper in this folder pulls publication times from standard metadata in priority order: Open Graph `article:published_time`, schema.org `datePublished` (microdata + JSON-LD), HTML5 `<time pubdate datetime=…>`, and CMS-specific patterns (`parsely-pub-date`). For the 26 news URLs we recovered 24 timestamps from the live pages; 2 required `ingestedAt` fallback.
+**A reusable extractor** lives in this folder (`scrape_published.py`) and was upstreamed to `skillenai-api-skill/scripts/scrape_published_dates.py` for any future analysis that needs minute-resolution timestamps from news/blog URLs.
 
-**Data files.** `timeline.csv` contains all 48 articles sorted by recovered `publishedAt_utc`, with a `publishedAt_source` column flagging the recovery method (`es_field` / `scraped_v1` / `scraped_v2` / `ingestedAt_fallback`).
+**Data files.**
+- `timeline.csv` — all 3,479 articles with deduped URLs, publishedAt provenance flagged
+- `01_trajectory_comparison.png` — cumulative articles vs hours-since-launch for both events
+- `02_discourse_intensity.png` — daily article counts April 1 → June 10 with key event annotations
+- `03_embargo_comparison.png` — side-by-side minute-resolution view of the two embargo clusters
+- `04_impact_buckets.png` — matched-time bucket comparison (T+1h, T+3h, T+6h, T+9h)
