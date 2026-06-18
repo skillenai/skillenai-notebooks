@@ -18,7 +18,7 @@ A note on what this data is and isn't: we measure the **role structure** of the 
 
 ## Finding 1 — The remote-work valley
 
-Remote/hybrid availability is not monotonic in seniority. On the **individual-contributor (IC) ladder** it rises to a peak at Staff, then the **management ladder sits lower**, and **executives are the least-remote cohort in the entire market** — below even entry-level workers.
+Remote/hybrid availability is not monotonic in seniority. On the **individual-contributor (IC) ladder** it rises to a peak at Staff, then the **management ladder sits lower**, and **executives land at the bottom of the experienced ranks** — on par with entry-level workers (C-level 43% vs Entry 41%) and below every senior IC and management tier.
 
 ![Any-remote share by seniority level](01_remote_by_seniority.png)
 
@@ -37,7 +37,7 @@ Remote/hybrid availability is not monotonic in seniority. On the **individual-co
 
 \* "Lead" is a contaminated bucket — see Finding 2.
 
-**Takeaway:** the people issuing return-to-office mandates (VPs, C-level) are themselves the most office-bound group. They aren't coming back *to* anything; they never left.
+**Takeaway:** the people issuing return-to-office mandates (VPs, C-level) have barely more remote flexibility than the most junior workers — they aren't coming back *to* anything; they never left.
 
 ---
 
@@ -105,7 +105,7 @@ The explanation that fits the timing is a **boom-and-correction cycle in managem
 ## Takeaways
 
 1. **The middle-management purge is real, but the two tidiest explanations both fail in the hiring data.** Remote-first companies are not flatter (three tests, including a between-company ρ of +0.12 in the wrong direction). AI fails on timing.
-2. **The remote-work valley:** senior ICs (Staff, 62%) are the most-remote workers in the market; executives (C-level, 43%) are the least — below entry-level. RTO mandates flow from the group that is already the most office-bound.
+2. **The remote-work valley:** senior ICs (Staff, 62%) are the most-remote workers in the market; executives (C-level, 43%) sit at the bottom of the experienced ranks — on par with entry-level (41%) and below every senior IC and management tier. RTO mandates flow from a group that already has among the least remote flexibility.
 3. **"Lead" has become a meaningless management signal** — a grab-bag of senior-IC and non-management titles — consistent with widely-reported tech title inflation in 2019–2021.
 4. **The driver that fits 2020:** an over-hiring/title-inflation bubble built on cheap money and a tight labor market, now correcting through layoffs because inflated titles can't be walked back.
 
