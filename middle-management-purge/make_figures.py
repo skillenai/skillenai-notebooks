@@ -51,7 +51,7 @@ ax.set_xticklabels(labels, fontsize=10.5)
 ax.set_ylabel("Jobs offering remote or hybrid work (%)", fontsize=11)
 ax.set_ylim(0, 70)
 ax.axhline(52.8, color=GREY, ls="--", lw=1, alpha=0.6)
-ax.set_title("The remote-work valley: senior ICs work remotely the most;\nexecutives the least — below entry-level",
+ax.set_title("The remote-work valley: mid-senior ICs work remotely the most;\nexecutives among the least — on par with entry-level",
              fontsize=14, fontweight="bold", loc="left")
 # Legend
 from matplotlib.patches import Patch

@@ -16,7 +16,7 @@ What actually started in 2020 was the unwinding of a title bubble. The ZIRP era 
 
 Title inflation never reverses. You can't re-title someone "junior" without losing them. So it corrected the only way it could: through layoffs of the layer that grew the fastest.
 
-The kicker? In our data, the least-remote workers in the entire market are executives, at 43% — below entry level. The people issuing RTO mandates never left the office themselves.
+The kicker? In our data, executives sit at the bottom of the experienced ranks for remote work — 43%, on par with entry-level and below every senior and management tier. The people issuing RTO mandates never really left the office themselves.
 
 Your title is the weakest signal it has ever been. What's the most inflated title you've seen in the wild?
 
