@@ -1,0 +1,77 @@
+date,index,domain,sense,title
+2026-01-04,blog,mwolson.org,collision,Managing AI Like You Manage People
+2026-03-11,blog,powerapp.pro,collision,Embedding WCET Monitoring Widgets into Low-Code DevOps Pipelines for Automotive Apps
+2026-04-11,blog,kickstarts.info,collision,From Demo to Deployment: A Practical Checklist for Using an AI Agent to Accelerate Campaig
+2026-04-14,blog,preprod.cloud,collision,Hardware-in-the-Loop CI/CD for Physical AI: Building Validation Pipelines for Autonomous S
+2026-04-18,blog,cyclotron.com,collision,How I Built a Closed-Loop Engineering System That Saved 840 Hours in 30 Days
+2026-04-24,blog,softwareseni.com,collision,"When AI SRE Fails: Production Reality, Failure Modes, and What They Cost"
+2026-05-07,blog,podrocket.logrocket.com,genuine,AI still sucks at frontend with Adam Argyle
+2026-05-09,blog,qbitshared.com,collision,Monitoring and Observability for Quantum Applications
+2026-05-11,blog,anup.io,genuine,Welcome to Middle Loop Engineering
+2026-05-15,blog,techbytes.app,collision,SLM Fine-Tuning [Deep Dive]: Domain Models in 2026
+2026-05-21,blog,embarkingonvoyage.com,collision,The Essential 2026 Guide: When Enterprises Should Adopt AI-Native Product Engineering Usin
+2026-05-23,scholarly,cs.ai,collision,CODE-SHARP: Continuous Open-ended Discovery and Evolution of Skills as Hierarchical Reward
+2026-05-27,blog,martech360.com,collision,"How Canva Built a $40B Brand with a Martech-Led, Product-First Growth Model"
+2026-06-03,blog,progressivedelivery.com,collision,You already know Progressive Delivery. You just didn’t call it that.
+2026-06-03,blog,unifiedinfotech.net,collision,How to Drive AI Value in Software Engineering?
+2026-06-08,news,alphasignalai.substack.com,genuine,Most Developers Do Not Need Agent Loops Yet
+2026-06-09,blog,explainx.substack.com,genuine,Loop Engineering Is the Future
+2026-06-09,blog,blog.dailydoseofds.com,genuine,Loop Engineering: Design the System That Prompts Agents
+2026-06-09,blog,blakecrosley.com,genuine,Loop Engineering: Loops Win Where Verification Is Cheap
+2026-06-09,blog,sumantthakur.substack.com,genuine,A bad prompt fails once. A bad loop fails forever.
+2026-06-09,blog,thealgorithmicbridge.substack.com,genuine,Nine Things About Claude Mythos 5 That Matter If You’re Not an Enterprise Customer
+2026-06-09,blog,theneuron.ai,genuine,Claude Code Creators Boris Cherny and Cat Wu & Addy Osmani Explain How to Use Agent Loops
+2026-06-09,news,mer.vin,genuine,Loop Engineering: Design Coding-Agent Systems Instead of Prompting Every Turn
+2026-06-09,news,antoinebuteau.com,genuine,Daily Digest - 2026-06-08
+2026-06-09,news,bensbites.substack.com,genuine,"Hey Siri, meet AI"
+2026-06-10,blog,louisbouchard.ai,genuine,Loop Engineering Explained
+2026-06-10,blog,explainx.substack.com,genuine,Loop Engineering with Claude Fable 5
+2026-06-10,blog,blog.scrapinghub.com,genuine,Now what exactly is loop engineering? And where do Anthropic's Fable 5 model and web scrap
+2026-06-10,blog,theneuron.ai,genuine,😸 Claude Fable Five is Anthropic's Most Controversial Model Yet
+2026-06-10,blog,theneurondaily.com,genuine,😸 Claude Fable Five is Anthropic's Most Controversial Model Yet
+2026-06-10,news,linas.substack.com,genuine,"Loop Engineering: How to Design AI Loops That Build, Ship, and Improve While You Sleep 🔁"
+2026-06-10,news,thenewstack.io,genuine,The Anthropic leader who built Claude Code says he ditched prompting — now he just writes 
+2026-06-11,blog,blog.ripstech.com,genuine,Loop engineering without verification is just automation
+2026-06-11,blog,cnblogs.com,genuine,AI Agent 的 4 个工程关键词：Prompt、Context、Loop、Harness 到底是什么？ - 小七-七牛开发者
+2026-06-11,blog,generativeprogrammer.com,genuine,From Test-Driven to Loop-Driven Development
+2026-06-11,blog,explainx.substack.com,genuine,From Prompt to Playable Games with Claude Fable 5
+2026-06-11,blog,blog.ripstech.com,genuine,Why Fable 5 Still Needs a Second Loop
+2026-06-11,blog,theneurondaily.com,genuine,😸 WATCH: Skills vs Projects vs Custom GPT vs Agents vs Plugins vs...
+2026-06-11,blog,theneuron.ai,genuine,😸 WATCH: Skills vs Projects vs Custom GPT vs Agents vs Plugins vs...
+2026-06-11,blog,volodymyrpavlyshyn.substack.com,genuine,Everyone’s Building Loops. Almost Nobody’s Building the One That Remembers.
+2026-06-11,blog,parasoft.com,collision,ISO/PAS 8800 Compliance: How Automotive Teams Can Validate AI Safety With Continuous Testi
+2026-06-12,blog,craftbettersoftware.com,genuine,Loop Engineering 101
+2026-06-12,blog,braingrid.ai,genuine,"What Is Loop Engineering? Stop Prompting, Start Designing Loops"
+2026-06-12,blog,theaicorner1.substack.com,genuine,The head of Claude Code stopped prompting Claude. Most builders missed why
+2026-06-12,blog,thataithing.beehiiv.com,genuine,weekend ai reads for 2026-06-12
+2026-06-12,news,mer.vin,genuine,Claude Fable 5 Self-Improving Agents: 14-Step Loop Engineering Guide
+2026-06-12,news,linas.substack.com,genuine,You're Prompting Claude Fable 5 & Mythos 5 Wrong. You Have 10 Days to Fix That 🤖
+2026-06-12,news,sub.thursdai.news,genuine,"📅 ThursdAI - Jun 11, 2026 - Fable & Mythos 5 are here, Anthropic gets caught sandbagging ("
+2026-06-12,scholarly,cs.cl,collision,EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discov
+2026-06-13,blog,theaicorner1.substack.com,genuine,The US government switched off Anthropic’s most powerful model 3 days after launch
+2026-06-13,news,newsletter.owainlewis.com,genuine,How I'm building autonomous agent loops
+2026-06-13,news,thenewstack.io,genuine,Claude Fable cost $9 in one coding test. GPT-5.5 cost $1.50. Model triage is the new AI sk
+2026-06-13,news,ainativefoundation.org,collision,AI Native Daily Paper Digest – 20260612
+2026-06-14,blog,explainx.substack.com,genuine,"100+ Ready-to-Use AI Loops, Built for You"
+2026-06-14,blog,theaicorner1.substack.com,genuine,Your AI bill is mostly wasted tokens
+2026-06-14,news,prosperinai.substack.com,genuine,How I Built 5 Loops Into My Newsletter Workflow
+2026-06-14,news,programmingdigest.net,genuine,Cleaning up after AI rockstar developers
+2026-06-14,news,linas.substack.com,genuine,Revolut’s $115B secondary share sale mints Europe’s first centicorn 🇪🇺🦄; Vinyl raised $20M
+2026-06-15,blog,cioinsights.substack.com,genuine,The Loop Is Not The Product
+2026-06-15,blog,aisecret.us,genuine,🛎️ Claude Fable “Died” in Four Days
+2026-06-15,blog,blog.ripstech.com,genuine,Claude Fable 5's pricing makes Sonar Context Augmentation a potent cost lever
+2026-06-15,blog,theaicorner1.substack.com,genuine,Jensen Huang handed you the AI roadmap. Here are the 10 moves that matter.
+2026-06-15,blog,addyosmani.com,genuine,Agentic Code Review
+2026-06-15,news,mer.vin,collision,Agentic Loops for Developers: 8 Rules to Design Systems That Prompt AI Agents
+2026-06-16,blog,theaicorner1.substack.com,genuine,Inference engineering is the 80% cost cut most teams miss
+2026-06-16,news,alphasignalai.substack.com,genuine,10 Layers of Self-Improving Harness Stack
+2026-06-16,news,ilo.im,genuine,Agentic code review
+2026-06-17,blog,the-ai-corner.com,genuine,Sundar Pichai's 10-move restructuring playbook: what every founder and investor should ste
+2026-06-17,news,news.google.com,genuine,Loop Engineering Is Fully Making The Rounds For Boosting Generative AI And Agentic AI - Fo
+2026-06-17,news,antoinebuteau.com,genuine,Daily Digest - 2026-06-16
+2026-06-18,blog,hackernoon.com,genuine,Agent Behavior Specification: A New Development for the AI Era
+2026-06-18,news,techsauce.co,genuine,รู้จัก ‘Loop Engineering’ เลิกพิมพ์สั่ง AI ทีละคำ เปลี่ยนมาออกแบบลูปให้ AI ทำงานเองจนจบ
+2026-06-18,news,pandaily.com,genuine,Loop Engineering: The New Division of Labor in the Agent Era
+2026-06-19,blog,bubbles.town,genuine,New trend of AI coding: loops
+2026-06-19,blog,zyte.com,genuine,Why I'm adding GLM-5.2 to my agentic coding arsenal
+2026-06-19,news,theregister.co.uk,genuine,"Devs in the trenches are stressed from the mandate to automate everything, but Render thin"

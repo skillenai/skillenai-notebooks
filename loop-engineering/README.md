@@ -1,6 +1,8 @@
 # Loop Engineering: Anatomy of a Buzzword Caught at Birth
 
-**Analysis date:** 2026-06-11 · **Source:** Skillenai enriched corpus (blog 435K · news 136K · jobs 214K · scholarly 50K · social 34K) · **Author:** Skillenai AI Analyst
+**Analysis date:** 2026-06-11 · **Updated:** 2026-06-19 · **Source:** Skillenai enriched corpus (blog 435K · news 136K · jobs 214K · scholarly 50K · social 34K) · **Author:** Skillenai AI Analyst
+
+> **Update (2026-06-19):** Eight days on, the buzzword didn't fizzle — it diffused. Genuine mentions climbed from 9 to **59**, sustained at ~4–5 articles/day for nine straight days, reaching major tech press (The New Stack, The Register, HackerNoon) and going international (Thai, Chinese). It also *captured its own string*: by mid-June, 90% of new "loop engineering" matches are the new sense (vs 13% before launch). [Jump to the update ↓](#update--two-weeks-later-the-diffusion-2026-06-19)
 
 On 2026-06-07, the developer **Peter Steinberger** posted a one-liner on X: *stop prompting coding agents, start designing loops that prompt them.* Within two days **Addy Osmani** had given the practice a name — **"loop engineering"** — and the term went viral. This is a snapshot of that buzzword taken on 2026-06-11, **three days into its life**, across ~870,000 documents of blogs, news, job postings and scholarly papers.
 
@@ -78,11 +80,68 @@ The shape is the point: each term is roughly an order of magnitude smaller than 
 
 ---
 
+## Update — Two Weeks Later: the Diffusion (2026-06-19)
+
+We re-ran the exact same query eight days after the original snapshot. The buzzword did not fade — it **diffused**, and it did so in a way that confirms most of what the day-three snapshot could only guess at.
+
+### It kept going — for nine straight days
+
+![Daily genuine loop engineering articles, June 1-19, showing sustained diffusion not a one-day spike](04_diffusion_timeline.png)
+
+Genuine mentions went from **9 → 59**. Two things drove that, and it matters to separate them honestly:
+
+1. **Ingestion lag, not just growth.** The original "7 articles, Jun 8–10" was a *real-time undercount* — our crawler hadn't yet ingested the full launch wave. The same date window now shows **17** genuine articles for Jun 8–10. Lesson for any "caught at birth" snapshot: the first reading of a just-broke story is always low; give it a week.
+2. **Genuine sustained diffusion.** Beyond the back-filled launch wave, **40 new genuine articles are dated Jun 11–19** — roughly 4–5 per day, *every day*, across **32 unique domains**. This is the part that distinguishes a real shift from a one-day dunk: the flow didn't decay.
+
+### The buzzword captured its own string
+
+![Stacked bars: genuine vs other meanings of the string by window — 13% genuine pre-launch, 100% in launch wave, 90% in diffusion](05_string_capture.png)
+
+The original report's headline caution was that **two-thirds of "loop engineering" matches mean something else** (hardware-in-the-loop, human-in-the-loop, inner-loop, …). That was true *of the corpus as it stood* — because the buzzword (9 docs) was swimming in months of accumulated collision docs. On a **flow** basis it flipped fast: of string matches *dated Jun 11–19*, **40 of 44 (90%) are the new sense**, and only 4 are the old meanings. A brand-new coinage has effectively annexed an ambiguous English phrase in under two weeks. (The disambiguation caveat still matters for anyone querying the *whole* history — the old senses don't disappear — but new content now means the buzzword.)
+
+### Where it spread
+
+| Outlet | Date | Reach signal |
+|---|---|---|
+| **The New Stack** | Jun 13 | Mainstream developer press; calls it "the best piece I've read on this shift" |
+| **The Register** | Jun 19 | Skeptical trade press — *"A week or two ago, it was harness engineering. Now it's loop engineering."* |
+| **HackerNoon** | Jun 18 | Developer community platform |
+| **Pandaily** (CN) | Jun 18 | "A new concept is sweeping the AI development community" |
+| **techsauce.co** (TH) | Jun 18 | Thai-language explainer — international crossover |
+| **Google News** | Jun 17 | Aggregation cluster ("Loop Engineering Is Fully Making The Rounds") |
+| **addyosmani.com** | Jun 15 | The namer himself, extending the concept to code review |
+| **braingrid.ai** | Jun 12 | Vendor explainer framing the spec-writing / verification burden |
+
+### The lineage is now stated out loud — and it grew a fourth term
+
+The original report *inferred* a prompt → context → loop lineage from the data. Two weeks later, the field is stating it explicitly, and several sources insert a fourth term, **harness engineering**, between context and loop:
+
+- *The Register:* "A week or two ago, it was **harness engineering**. Now it's **loop engineering**." (the buzzword treadmill, narrated in real time)
+- A Chinese explainer (cnblogs): *"AI Agent 的 4 个工程关键词：Prompt、Context、Loop、Harness"* — the four engineering keywords.
+- *generativeprogrammer.com:* "Prompt Engineering, Context Engineering, **Harness Engineering**, and Loop Engineering."
+- *explainx:* "Prompt Engineering → Agent Engineering → Loop Engineering."
+
+The treadmill is real, and it is now accelerating fast enough that two successive terms (harness, loop) arrived inside the same two-week window.
+
+### A skeptic wave arrived — and it converges on the verification thesis
+
+The clearest sign a buzzword has matured past pure hype is when the *critical* takes show up. They did, and they coalesce on a single point: **a loop is only as good as the spec that verifies it.**
+
+- *RIPS Tech:* "**Loop engineering without verification is just automation**."
+- *Volodymyr Pavlyshyn:* "Everyone's Building Loops. Almost Nobody's Building [the verification]."
+- *CIO Insights:* "The Loop Is Not The Product."
+- *HackerNoon:* "Agent Behavior **Specification**: A New Development…"
+
+This is exactly the thesis that braingrid.ai's June 12 explainer (itself one of the 59 articles above) put at the center of its argument — that loop engineering *doesn't eliminate work, it relocates the burden to writing precise specifications that verify loop outputs.* Our corpus shows the broader field independently converging on that same claim within the week. The diffusion data is the **longitudinal evidence** that such commentary — braingrid's included — could assert but not yet measure.
+
+---
+
 ## What the data can and can't say
 
-- **We do not ingest X/Twitter.** The original venue for this buzzword is exactly the place our corpus doesn't cover — the Skillenai "social" index is Bluesky + Mastodon + Fediverse, with **zero** hits for any of these terms. The claim that loop engineering is "all over X" is sourced to the June newsletter digests that cite Steinberger and Osmani, and to direct observation — **not** to anything we can chart. We're measuring the *spillover* into blogs and newsletters, which is the leading edge of the durable record, not the origin.
-- **This is forensic, not statistical.** Nine documents support no significance test. The quantitative backbone here is the *lineage* chart; the loop-engineering finding itself is a dated, attributed, read-every-document timeline.
-- **The term may not survive.** Most buzzwords caught this early don't make it to context-engineering-scale adoption. We're documenting an origin, not forecasting a winner. The interesting prediction is testable: if loop engineering follows context engineering's curve, it should cross ~30–90 per 10k on the blog index sometime in late 2026. We'll know by then whether this snapshot caught a movement or a moment.
+- **We do not ingest X/Twitter.** The original venue for this buzzword is exactly the place our corpus doesn't cover — the Skillenai "social" index is Bluesky + Mastodon + Fediverse, with **zero** hits for any of these terms. The claim that loop engineering is "all over X" is sourced to the June digests that cite Steinberger and Osmani, and to direct observation — **not** to anything we can chart. We measure the *spillover* into blogs, news and newsletters, which is the leading edge of the durable record, not the origin.
+- **We measure discourse, not adoption.** Our 59 articles prove the *term* is diffusing fast and that commentators are converging on the verification-burden framing. They do **not** prove teams are getting more done, or measure failure rates — the empirical productivity question stays open. We chart how fast an idea spreads, not whether it works.
+- **From forensic to longitudinal.** The original day-three reading was a counting exercise on nine documents — too sparse for any statistical claim. The two-week update is a genuine diffusion curve (59 dated, attributed, hand-classified articles) plus the lineage backbone. Still descriptive, but no longer a single-point snapshot.
+- **It cleared the first survival bar, not the last.** Many buzzwords die in week two; this one accelerated instead. That rules out "one-day dunk" but not "six-month fad." The testable prediction stands: if loop engineering follows context engineering's curve, it should cross ~30–90 per 10k on the blog index by late 2026.
 
 ---
 
