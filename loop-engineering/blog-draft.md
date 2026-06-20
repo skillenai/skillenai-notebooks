@@ -58,6 +58,20 @@ Loop engineering didn't appear from nowhere. Its own advocates place it third in
 
 Each term is about an order of magnitude smaller than its predecessor at any given moment, because we keep catching them earlier. Context engineering is roughly where prompt engineering was a year ago. Loop engineering is roughly where context engineering was a year before that.
 
+## Update, two weeks later: it diffused
+
+*Added June 19, 2026.* We re-ran the exact same query eight days after first publishing this. The buzzword didn't fizzle — it spread, and fast.
+
+![Daily genuine loop engineering articles, June 1-19, showing nine straight days of coverage]({{04_diffusion_timeline_url}})
+
+Genuine mentions went from **9 to 59**. Part of that is honest mechanics: our crawler hadn't finished ingesting the launch wave when we first looked, so "7 articles, June 8–10" was a real-time undercount — that same window now holds 17. But the bigger story is the **40 new genuine articles dated June 11–19**, roughly four to five every day for nine straight days across **32 different domains**. A one-day dunk decays the next morning; this didn't.
+
+It also **captured its own string**. The original report's loudest caveat was that two-thirds of "loop engineering" matches meant something else. Look only at articles published since June 11 and that flips: **90% are the new sense**. A two-week-old coinage annexed an ambiguous English phrase.
+
+And it went mainstream and global: **The New Stack** ("the best piece I've read on this shift"), a skeptical **The Register** ("a week or two ago it was harness engineering; now it's loop engineering"), **HackerNoon**, plus Chinese (Pandaily) and Thai (techsauce) explainers — and Addy Osmani's own follow-up.
+
+The most telling sign a buzzword has grown up is when the critics arrive — and they all land on one point: a loop is only as good as the spec that verifies it. *"Loop engineering without verification is just automation,"* as one widely-shared piece put it. The team at [BrainGrid framed this precisely](https://www.braingrid.ai/blog/loop-engineering): loop engineering doesn't eliminate the work, it **relocates** it to writing the specifications that verify what the loop produces. Our diffusion data is the longitudinal evidence for exactly that take — the whole field converged on the verification burden inside a single week.
+
 ## What this means for your career
 
 - **If you build with AI agents:** the skill being renamed is real even if the name is three days old. The leverage is moving from *what you type* to *the system that decides what gets typed* — scheduling, verification, memory, when to stop, when to ask a human. That's worth learning regardless of whether "loop engineering" is the label that sticks.
@@ -66,6 +80,6 @@ Each term is about an order of magnitude smaller than its predecessor at any giv
 
 ## Methodology
 
-Mentions were detected with phrase search on post text and titles across the Skillenai enriched blog, news, jobs, scholarly, and social indices, then **every match was read and hand-classified** by the meaning of its surrounding sentence. The lineage series is a monthly histogram of blog publication dates, normalized to mentions per 10,000 posts, with a 333-domain AI content-farm denylist removed from the denominator so the shares reflect human-authored writing. One important limitation: **X/Twitter is not in our corpus** — our "social" coverage is the open Fediverse (Bluesky, Mastodon), which had zero mentions of any of these terms. The claim that loop engineering went viral on X is sourced to the newsletter digests that cite it, not measured directly. With nine genuine documents, this is a forensic timeline, not a statistical trend.
+Mentions were detected with phrase search on post text and titles across the Skillenai enriched blog, news, jobs, scholarly, and social indices, then **every match was read and hand-classified** by the meaning of its surrounding sentence. The lineage series is a monthly histogram of blog publication dates, normalized to mentions per 10,000 posts, with a 333-domain AI content-farm denylist removed from the denominator so the shares reflect human-authored writing. One important limitation: **X/Twitter is not in our corpus** — our "social" coverage is the open Fediverse (Bluesky, Mastodon), which had zero mentions of any of these terms. The claim that loop engineering went viral on X is sourced to the newsletter digests that cite it, not measured directly. The original snapshot rested on nine genuine documents (a forensic count, not a statistical trend); the two-week update extends it to a 59-article diffusion curve. We measure how fast the *term* spreads — not whether teams using loops actually ship more, which stays an open question.
 
 [Full methodology, data, and figures](https://github.com/skillenai/skillenai-notebooks/tree/master/loop-engineering)
