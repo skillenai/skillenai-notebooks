@@ -1,15 +1,63 @@
 {
-  "_notes": "Private posted salaries: Skillenai prod-enriched-jobs, US, USD, Speechify excluded, 2026-07. BLS via api.bls.gov (JOLTS quits May 2026) and Employee Tenure news release (Jan 2024).",
-  "private_posted_salary_us_usd": {
-    "Data Scientist":            {"min_p25":119303,"min_p50":149305,"min_p75":181172,"max_p25":171588,"max_p50":206997,"max_p75":238137,"n":644},
-    "Software Engineer":         {"min_p25":130079,"min_p50":160693,"min_p75":189938,"max_p25":185000,"max_p50":220393,"max_p75":257996,"n":6262},
-    "Machine Learning Engineer": {"min_p25":147451,"min_p50":171298,"min_p75":204000,"max_p25":209758,"max_p50":249884,"max_p75":298832,"n":514},
-    "Data Engineer":             {"min_p50":150000,"max_p50":190000,"n":547},
-    "Data Analyst":              {"min_p50":100138,"max_p50":129835,"n":232}
+ "_notes": "Private posted salaries: Skillenai prod-enriched-jobs, US, USD, Speechify excluded, 2026-07. BLS via api.bls.gov (JOLTS quits May 2026) and Employee Tenure news release (Jan 2024).",
+ "private_posted_salary_us_usd": {
+  "Data Scientist": {
+   "min_p25": 119303,
+   "min_p50": 149305,
+   "min_p75": 181172,
+   "max_p25": 171588,
+   "max_p50": 206997,
+   "max_p75": 238137,
+   "n": 644
   },
-  "private_dc_metro_midpoint": {"Data Scientist":173615,"Software Engineer":187825},
-  "bls_jolts_quits_rate_monthly_pct_may2026": {"total_private":2.1,"information":1.1,"government":0.8,"total_nonfarm":1.9},
-  "bls_jolts_layoffs_discharges_rate_monthly_pct_may2026": {"total_private":1.2,"information":1.8,"government":0.4,"_note":"involuntary loss; includes for-cause discharges, a slightly broader measure than federal RIF-only"},
-  "bls_employee_tenure_years_jan2024": {"private":3.5,"public":6.2,"federal":6.5,"state":5.7,"local":6.4},
-  "bls_june2026_context": "Total nonfarm +57k; unemployment 4.2%; government employment little/no change (federal contraction stabilized)."
+  "Software Engineer": {
+   "min_p25": 130079,
+   "min_p50": 160693,
+   "min_p75": 189938,
+   "max_p25": 185000,
+   "max_p50": 220393,
+   "max_p75": 257996,
+   "n": 6262
+  },
+  "Machine Learning Engineer": {
+   "min_p25": 147451,
+   "min_p50": 171298,
+   "min_p75": 204000,
+   "max_p25": 209758,
+   "max_p50": 249884,
+   "max_p75": 298832,
+   "n": 514
+  },
+  "Data Engineer": {
+   "min_p50": 150000,
+   "max_p50": 190000,
+   "n": 547
+  },
+  "Data Analyst": {
+   "min_p50": 100138,
+   "max_p50": 129835,
+   "n": 232
+  }
+ },
+ "bls_jolts_quits_rate_monthly_pct_may2026": {
+  "total_private": 2.1,
+  "information": 1.1,
+  "government": 0.8,
+  "total_nonfarm": 1.9
+ },
+ "bls_jolts_layoffs_discharges_rate_monthly_pct_may2026": {
+  "total_private": 1.2,
+  "information": 1.8,
+  "government": 0.4,
+  "_note": "involuntary loss; includes for-cause discharges, a slightly broader measure than federal RIF-only"
+ },
+ "bls_employee_tenure_years_jan2024": {
+  "private": 3.5,
+  "public": 6.2,
+  "federal": 6.5,
+  "state": 5.7,
+  "local": 6.4
+ },
+ "bls_june2026_context": "Total nonfarm +57k; unemployment 4.2%; government employment little/no change (federal contraction stabilized).",
+ "_pay_basis": "Federal pay = 2026-05 incumbent median (current, robust; incumbents ~80% senior, matching senior-skewed private postings). 2024 new-hire figures dropped as stale (GS scales rose ~9-15% since)."
 }

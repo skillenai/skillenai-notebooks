@@ -7,7 +7,7 @@ For decades the public sector offered technical workers a simple trade: **give u
 The trade turns out to be real, larger than most people assume, and held together by a single design choice: the pension.
 
 **TL;DR**
-- **The price:** A federal data scientist is hired at a **$118K** median base; comparable private postings sit at a **$149K–$207K** base band — *before* equity or bonus, which federal jobs don't offer. Even in Washington, DC — federal's highest-paying locality — the gap holds at 12–16%.
+- **The price:** A federal data scientist earns a **$144K** median base; comparable private postings sit at a **$149K–$207K** base band (midpoint ~$178K) — a **~20% gap**, *before* equity or bonus, which federal jobs don't offer, and against a hard ~$197K GS ceiling private roles blow past.
 - **Mobility:** Federal tech workers quit at **~2%/year** — roughly a *tenth* of the private-tech rate (~13%) and a *fourteenth* of total private (~25%). They almost never leave.
 - **Security:** They almost never get pushed out either. Federal involuntary job loss runs **~0%/year** (RIF), versus **~22%/year** layoffs-and-discharges in private tech. That's the payoff for the pay cut — and it's enormous.
 - **The 2025 twist:** Even when the government cut ~12% of its workforce, it did so through *voluntary buyouts*, not layoffs — RIF never exceeded ~1%/year. The "no involuntary layoffs" promise held in letter.
@@ -21,24 +21,24 @@ The trade turns out to be real, larger than most people assume, and held togethe
 - **Private:** Skillenai `prod-enriched-jobs`, US postings, salary in USD, spam employer (Speechify) excluded. Posted salary is the base range; it also excludes equity/bonus, so the pay comparison is base-to-base.
 - **Benchmarks:** BLS via the public `api.bls.gov` — JOLTS quits and layoffs-&-discharges rates (May 2026); Employee Tenure release (January 2024).
 - **Role mapping** (conservative — federal occupational *series* are not job *titles*): **Data Scientist** ↔ series **1560**; **Software Engineer / IT** ↔ series **2210** + **1550**. The "tech" aggregate for stability adds Computer/Operations-Research/Statistics series (0854, 1515, 1530).
-- **Rigor note:** the pay comparison uses federal **new-hire** pay (2024 accessions, the last normal hiring year) vs private **posted** salary — both "what you're offered walking in."
+- **Pay basis:** federal = current (2026-05) **incumbent** median base; private = **posted** base. Incumbent (not new-hire) pay is used because it's robust and level-matched — both the federal incumbent pool and private postings are senior-skewed. Post-freeze federal new-hire samples are too thin to be reliable, and 2024 new-hire figures are stale (GS scales rose ~9–15% since).
 
 ---
 
 ## Part 1 — The price: a real, quantifiable pay penalty
 
-![Federal new-hire base pay vs private posted base, before equity](01_pay_gap.png)
+![Federal incumbent base pay vs private posted base, before equity](01_pay_gap.png)
 
-| Role | Federal new-hire base (p25 / **p50** / p75) | Private posted base (p50 min → max, **midpoint**) | Gap at midpoint |
+| Role | Federal incumbent base (p25 / **p50** / p75) | Private posted base (p50 min → max, **midpoint**) | Gap at midpoint |
 |---|---|---|---|
-| Data Scientist | $91.9K / **$118.0K** / $148.7K | $149.3K → $207.0K (**$178.2K**) | **−34%** |
-| Software Engineer / IT | $99.2K / **$129.0K** / $158.0K | $160.7K → $220.4K (**$190.5K**) | **−32%** |
+| Data Scientist | $121.8K / **$143.6K** / $167.7K | $149.3K → $207.0K (**$178.2K**) | **−19%** |
+| Software Engineer / IT | $121.7K / **$148.7K** / $172.9K | $160.7K → $220.4K (**$190.5K**) | **−22%** |
 
-That public-sector tech pays less is not news — but the API lets us size it precisely, and two features make it worse than the medians suggest. First, **no equity or bonus**: both numbers are base pay, and private tech layers 20–50%+ on top that federal simply doesn't have. Second, **a hard ceiling**: federal base caps around **$197K** at the top of the GS scale, while private postings run uncapped (the private Data Scientist band's high end is $238K; Machine Learning Engineer reaches ~$299K).
+That public-sector tech pays less is not news — but the API lets us size it precisely: about **20%** on base, and two features make it worse than the median suggests. First, **no equity or bonus**: both numbers are base pay, and private tech layers 20–50%+ on top that federal simply doesn't have. Second, **a hard ceiling**: federal base caps around **$197K** at the top of the GS scale (visible as the wall the federal bands run into), while private postings run uncapped — the private Data Scientist band's high end is $238K; Machine Learning Engineer reaches ~$299K. So the ~20% median gap widens sharply toward the top of the market.
 
-**It's not a cost-of-living illusion.** Restricting both sides to the Washington, DC metro — where federal locality pay is highest — the gap narrows but never closes: federal DS $153.5K vs private $173.6K (−12%), federal SWE/IT $158.3K vs private $187.8K (−16%). Still before equity.
+We use current (2026) federal *incumbent* pay rather than new-hire pay: it's robust and — because the federal tech workforce is ~80% senior-grade — it is level-matched to the senior-skewed private *postings* it's compared against. (Earlier 2024 new-hire figures overstated the gap; GS scales have since risen ~9–15%.)
 
-The interesting question isn't *whether* federal tech is underpaid. It's why a gap this large **persists** — because in a market with few barriers between public and private tech work, underpaid workers should simply leave until the gap closes. They don't. The next two sections are why.
+The interesting question isn't *whether* federal tech is underpaid. It's why a ~20% gap **persists** — because in a market with few barriers between public and private tech work, underpaid workers should leave until it closes. They don't. The next two sections are why.
 
 ---
 
@@ -56,7 +56,7 @@ A low quit rate is easy to misread as "stability." It isn't — it's **mobility*
 
 Federal tech workers quit at **one-tenth to one-fourteenth** the private rate — they rarely leave. And they're almost never pushed out: a private tech worker faces roughly a **1-in-5 annual chance of involuntary job loss**; a federal one, essentially none. BLS tenure tells the same story — 6.5 years federal vs 3.5 private.
 
-**That security is the payoff for the pay cut** — and it is genuinely large. Whether it *fully* justifies a ~30% base gap is a question we return to below.
+**That security is the payoff for the pay cut** — and it is genuinely large. Whether it *fully* justifies a ~20% base gap is a question we return to below.
 
 ### The 2025 twist: the promise held in letter
 
@@ -92,7 +92,7 @@ The age evidence tilts toward lock-in being a **real component**: the retirement
 
 ## What it means
 
-**If you're weighing a federal tech job:** you're trading ~30% of base (and all equity upside) for a level of job security that essentially doesn't exist in private tech — a ~1-in-5 annual layoff risk, gone. That trade is rational if you're risk-averse or value the mission. Just know the handcuffs are real: the pension rewards staying and penalizes leaving, and federal experience travels back to the private market imperfectly. It's easier to walk in than to walk back out.
+**If you're weighing a federal tech job:** you're trading ~20% of base (and all equity upside) for a level of job security that essentially doesn't exist in private tech — a ~1-in-5 annual layoff risk, gone. That trade is rational if you're risk-averse or value the mission. Just know the handcuffs are real: the pension rewards staying and penalizes leaving, and federal experience travels back to the private market imperfectly. It's easier to walk in than to walk back out.
 
 **For the government:** the same pension that retains people is a below-market-salary machine — it works beautifully until you need to hire technical talent *fast* against private compensation, at which point the base-pay ceiling and the thin early-career pipeline bite. And 2025 spent down something that doesn't refill on the same schedule: a quit rate resets in a year; a reputation for security, once shown to be revocable-by-buyout, does not.
 

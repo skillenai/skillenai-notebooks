@@ -1,6 +1,6 @@
 A private-sector data scientist has roughly a 1-in-5 chance of losing their job involuntarily this year. A federal data scientist? Basically zero.
 
-That gap is the key to a puzzle. Federal tech roles — data scientists (DS), ML engineers, IT specialists — pay about 30% less than private ones. Yet almost nobody leaves. In a market with few barriers between public and private tech work, a gap that big should close as underpaid workers walk. They don't, so something must be holding them in place.
+That gap is the key to a puzzle. Federal tech roles — data scientists (DS), ML engineers, IT specialists — pay about 20% less than private ones. Yet almost nobody leaves. In a market with few barriers between public and private tech work, a gap that big should close as underpaid workers walk. They don't, so something must be holding them in place.
 
 Using the brand-new OPM federal workforce API, the Skillenai job index, and BLS data, we priced both sides of the public-sector bargain:
 
@@ -16,7 +16,7 @@ So is it security, or is it lock-in? The data says both — and the pension is w
 
 Full analysis in the comments.
 
-Would you take a 30% pay cut for a job you could never be laid off from?
+Would you take a 20% pay cut for a job you could never be laid off from?
 
 <!-- model score (scripts/linkedin_scoring/score.py) — final v3
 predictions: impressions≈1272, engagements≈12.1, followers_3d≈15.3

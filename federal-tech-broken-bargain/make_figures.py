@@ -27,15 +27,15 @@ for i, r in enumerate(roles):
     ax.barh(y[i] + h/2, pv["max_p50"] - pv["min_p50"], left=pv["min_p50"], height=h, color=TEAL, alpha=.85,
             label="Private posted band (p50 min→max)" if i == 0 else "")
     ax.plot((pv["min_p50"]+pv["max_p50"])/2, y[i]+h/2, "o", color=NAVY, ms=7, label="Private midpoint" if i == 0 else "")
-    ax.barh(y[i] - h/2, fp.newhire_p75 - fp.newhire_p25, left=fp.newhire_p25, height=h, color=CORAL, alpha=.85,
-            label="Federal new-hire band (p25→p75)" if i == 0 else "")
-    ax.plot(fp.newhire_p50, y[i]-h/2, "s", color=NAVY, ms=7, label="Federal new-hire median" if i == 0 else "")
+    ax.barh(y[i] - h/2, fp.incumbent_p75 - fp.incumbent_p25, left=fp.incumbent_p25, height=h, color=CORAL, alpha=.85,
+            label="Federal incumbent band (p25→p75)" if i == 0 else "")
+    ax.plot(fp.incumbent_p50, y[i]-h/2, "s", color=NAVY, ms=7, label="Federal incumbent median" if i == 0 else "")
 ax.axvline(197200, color=GREY, ls="--", lw=1.5)
 ax.text(199500, 0.5, "GS-15 ceiling\n(~$197K, locality-adj.)\nfederal base caps here;\nprivate has no ceiling",
         va="center", ha="left", fontsize=8.5, color="#4a4a4a")
 ax.set_yticks(y); ax.set_yticklabels(roles); ax.xaxis.set_major_formatter(usd)
 ax.set_xlabel("Annual base pay (USD)")
-ax.set_title("The price of the bargain: a federal tech pay penalty\nFederal new-hire base vs private posted base — before equity or bonus",
+ax.set_title("The price of the bargain: a federal tech pay penalty\nFederal incumbent base (2026) vs private posted base — before equity or bonus",
              fontweight="bold", loc="left")
 ax.legend(loc="lower right", fontsize=9, framealpha=.95); ax.set_xlim(80000, 260000)
 plt.tight_layout(); plt.savefig("01_pay_gap.png", bbox_inches="tight"); plt.close()
