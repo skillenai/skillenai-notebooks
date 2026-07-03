@@ -51,46 +51,13 @@ pay = pd.DataFrame(rows); pay.to_csv("federal_pay.csv", index=False)
 print("=== FEDERAL PAY (new-hire 2024 accessions vs incumbent 2026-05) ===")
 print(pay.to_string(index=False))
 
-# ---- SENIORITY: GS grade -> buckets (entry <=GS9, mid GS11-12, senior GS13+)
-def bucket(g):
-    try: n = int(g)
-    except: return None
-    if n <= 9: return "entry (<=GS-9)"
-    if n <= 12: return "mid (GS-11/12)"
-    return "senior+ (GS-13+)"
-srows = []
-for role, codes in ROLES.items():
-    e = emp[(emp.occupational_series_code.isin(codes)) & (emp.pay_plan_code == "GS")].copy()
-    e["bkt"] = e["grade"].map(bucket)
-    g = e.dropna(subset=["bkt"]).groupby("bkt")["count"].sum(); tot = g.sum()
-    srows.append({"role": role, "gs_n": int(tot),
-                  "entry_pct": 100*g.get("entry (<=GS-9)",0)/tot,
-                  "mid_pct": 100*g.get("mid (GS-11/12)",0)/tot,
-                  "senior_pct": 100*g.get("senior+ (GS-13+)",0)/tot})
-sen = pd.DataFrame(srows); sen.to_csv("federal_seniority.csv", index=False)
-print("\n=== FEDERAL SENIORITY (GS grade buckets) ===")
-print(sen.to_string(index=False))
-
-# ---- STABILITY: tech quit rate time series + tenure
-months = [(y, m) for y in (2023,2024,2025,2026) for m in range(1,13) if not (y==2026 and m>5)]
-hc_ref = int(fwd.load("employment",2024,12)[lambda d: d.occupational_series_code.isin(TECH)]["count"].sum())
-st = []
-for y, m in months:
-    d = fwd.load("separations", y, m); t = d[d.occupational_series_code.isin(TECH)]
-    sc = int(t[t.separation_category_code=="SC"]["count"].sum())
-    tot_sep = int(t["count"].sum())
-    st.append({"month": f"{y}-{m:02d}", "quits_SC": sc, "all_sep": tot_sep,
-               "quit_rate_ann_pct": 100*sc*12/hc_ref})
-stab = pd.DataFrame(st); stab.to_csv("federal_stability.csv", index=False)
-print(f"\n=== FEDERAL TECH STABILITY (quit rate annualized pct; headcount base 2024-12 tech = {hc_ref:,}) ===")
-print(stab.to_string(index=False))
-
-# tenure medians (pre-disruption 2024-12 vs now)
+# ---- TENURE medians (pre-disruption 2024-12 vs now); stability series live in analyze_stability.py
 def wmed(df,col):
     df=df.dropna(subset=[col]); df=df[df["count"]>0]
     a=df.sort_values(col); c=a["count"].cumsum(); return float(a.loc[c>=0.5*a["count"].sum(),col].iloc[0])
+print("\n=== FEDERAL TECH TENURE (median length of service) ===")
 for y,m in [(2024,12),(2026,5)]:
     e=fwd.load("employment",y,m); e["los"]=pd.to_numeric(e["length_of_service_years"],errors="coerce")
     tech=e[e.occupational_series_code.isin(TECH)]
-    print(f"tenure {y}-{m:02d}: tech median = {wmed(tech,'los'):.1f}y")
-print("\nsaved: federal_pay.csv, federal_seniority.csv, federal_stability.csv")
+    print(f"  {y}-{m:02d}: tech median = {wmed(tech,'los'):.1f}y")
+print("\nsaved: federal_pay.csv")
