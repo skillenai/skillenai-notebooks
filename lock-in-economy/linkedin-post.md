@@ -16,6 +16,8 @@ The junior job market didn't break because AI learned to code. It broke because 
 
 Is the entry-level crisis really about AI, or are we blaming the robot for what interest rates did?
 
+Sources (for first comment): Indeed Hiring Lab; BLS JOLTS; Federal Reserve Bank of New York / Census ACS; National Association of Realtors; Skillenai jobs index.
+
 <!-- first comment (post URL goes here, not in body): https://skillenai.com/<dated-permalink-after-publish> -->
 
 <!-- model score (v2, accepted): impressions 1476, engagements 12.4, followers_3d 15.1
