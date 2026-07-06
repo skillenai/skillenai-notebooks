@@ -1,18 +1,16 @@
-In six months, the entire U.S. federal government posted 1 Machine Learning (ML) Engineer job.
+A federal Data Scientist and a private Data Scientist have the same title and do different jobs.
 
-The private market posted thousands.
+We recently priced the federal tech "bargain" — roughly 20% lower pay and near-zero mobility for near-total job security, held together by the pension. That's one wall. Here's the other.
 
-We recently priced the federal tech "bargain" — roughly 20% lower pay and near-zero mobility in exchange for near-total job security, held together by the pension. That's one wall. Here's the other one.
+Read the postings and the tech stacks barely overlap.
 
-Under identical titles, federal and private tech are different jobs.
+A federal Data Scientist role is statistics and reporting: statistics 96%, dashboards 44%. A private one is Python (63%), experimentation (34%), and MLOps (40%). Both say "machine learning" at the same rate, ~40% — only one sector actually tools for it. One describes ML; the other ships it.
 
-A federal Data Scientist posting is statistics and reporting: statistics 90%, dashboards 53%. A private one is Python (63%), experimentation (34%), and MLOps (40%). Both say "machine learning" at the same rate, ~44% — only one sector actually tools for it. One describes ML; the other ships it.
+Cybersecurity is starker. Federal security means a clearance (92%) and RMF governance. Private security means Python (41%), threat modeling, and cloud. Same title, opposite work.
 
-It repeats everywhere. Federal software still runs COBOL (9% of postings vs ~0% private). Federal cybersecurity is clearance (77%) and RMF governance, where private security is Python (41%) and threat modeling (24%).
+And several modern roles barely exist in federal hiring at all: across our federal tech index, 3 Machine Learning (ML) Engineer postings, 5 AI Engineer, and zero MLOps. The federal data workforce is Operations Research (OR) Analysts and Statisticians.
 
-And the modern data org barely exists in federal hiring at all: across 84,016 postings, all of federal produced 1 ML Engineer, 6 Data Engineers, and 2 AI Engineers. Its data workforce is Operations Research (OR) Analysts and Statisticians.
-
-So when people ask why so few move between public and private tech, the pension is only half the answer. The other half: even if you wanted to leave, your skills map to a different market. A COBOL-and-clearance engineer doesn't slot into a Python-and-cloud one.
+So when people ask why so few move between public and private tech, the pension is only half the answer. The other half: even if you wanted to leave, your skills map to a different market.
 
 Low mobility isn't only a handcuff. It's a translation problem.
 
@@ -20,9 +18,5 @@ Would retraining fix that, or is the federal job architecture itself the thing t
 
 <!-- first comment: Full analysis + methodology: https://github.com/skillenai/skillenai-notebooks/tree/master/federal-tech-skills-wall -->
 
-<!-- model score (scripts/linkedin_scoring) — final v2:
-  impressions 1104 | engagements 11.7 | followers_3d 19.6
-  v1 baseline: 1080 / 10.9 / 19.1  (v2 added ML + OR acronyms: +2.3% imp, +7.3% eng)
-  exclamation-in-hook tested (v3): +1.7% eng only, below 2% threshold — dropped per skill guidance.
-  Put blog link in first comment (inline-URL penalty). Acronym-dense hook (ML) = strongest positive feature.
--->
+<!-- model score (scripts/linkedin_scoring): impressions 1090 | engagements 11.5 | followers_3d 18.7
+  Reframed onto Skillenai-index numbers (dropped the Loyola 84K "1 ML Engineer" hook; leads with the DS same-title finding). On par with prior version within noise. Acronym-dense (ML/AI/DS/OR/RMF/MLOps); blog link belongs in first comment. -->
