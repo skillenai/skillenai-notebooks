@@ -68,11 +68,11 @@ Hands-on software development is **~7× rarer** in federal tech; security is **~
 
 ## Two more walls: clearance and the closed remote door
 
-![Clearance wall and remote door](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/07/06/e955cb79-d6bf-4b65-9c50-5facd727e73f/eC8S_x0rmQo-05-other-walls.png)
+![Clearance wall and remote door](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/07/06/e955cb79-d6bf-4b65-9c50-5facd727e73f/CcJSpZCKRgc-05-other-walls.png)
 
 **Clearance.** **70% of federal tech postings require a real security clearance** (Secret / Top Secret / SCI) — 85% in security roles — versus low single digits private. A private engineer without one can't take most federal tech jobs regardless of skill.
 
-**Remote.** **Fully-remote federal tech is 0.3%** of postings — effectively closed — versus ~31% private. (63% are "telework-eligible," but that's situational telework tied to a duty station, not location freedom.)
+**Remote — the door just slammed shut.** USAJOBS carries an official "Remote job" designation (work-from-anywhere), distinct from situational telework. Federal tech remote hiring held at **~6–10% from 2022 through January 2025** — then **collapsed to ~0.3%**, dropping precisely in Q1–Q2 2025: 7.5% in January → 1.3% in March → ~0% after. That timing is the federal **return-to-office executive order** (January 2025); telework-*eligibility* only dipped (77% → 63%), so the mandate hit fully-remote hardest. Private tech still designates ~31% of postings fully-remote. The location-independent federal tech job existed as recently as early 2025 — it effectively doesn't now. (This is also the cleanest proof the field is real, not a scraping glitch: it read a healthy 6–10% for three years, then collapsed exactly when policy changed.)
 
 ## What it means
 

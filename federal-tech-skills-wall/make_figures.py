@@ -135,7 +135,7 @@ for ax, probes, ftx, ptx, title, tag in [
 plt.tight_layout(); plt.savefig(f"{OUT}/04_swe_security_stacks.png", bbox_inches="tight"); plt.close()
 
 # ---------- FIG 5: the other walls — clearance + remote ----------
-fig, axes = plt.subplots(1, 2, figsize=(12.5, 4.8))
+fig, axes = plt.subplots(1, 2, figsize=(14, 5))
 ax = axes[0]
 fams2 = ["Security/Cyber", "IT/Ops/Infra", "Program/Mgmt", "Data/ML/AI", "Software/Dev", "ALL federal tech"]
 clr = [85, 69, 66, 60, 37, 70]
@@ -147,20 +147,23 @@ ax.xaxis.set_major_formatter(PercentFormatter())
 ax.set_title("The clearance wall\n% of federal postings requiring a real clearance", fontweight="bold")
 for i, v in zip(np.arange(len(fams2))[::-1], clr):
     ax.text(v+1, i, f"{v:.0f}%", va="center", fontsize=9, fontweight="bold")
+ax.set_title("The clearance wall\n% of federal tech postings requiring a clearance", fontweight="bold", fontsize=11)
 ax = axes[1]
-grp = ["Fully\nremote", "Any remote\n(remote+hybrid/telework)"]
-fedr = [0.3, 63]; privr = [31, 44]  # fed: remote 0.3, telework-eligible 63; priv avg across roles
-xx = np.arange(2); w = .38
-ax.bar(xx-w/2, fedr, w, color=FED_C, label="Federal tech")
-ax.bar(xx+w/2, privr, w, color=PRIV_C, label="Private tech")
-ax.set_xticks(xx); ax.set_xticklabels(grp)
-ax.yaxis.set_major_formatter(PercentFormatter()); ax.set_ylabel("% of postings")
-ax.set_title("The remote door\nFully-remote is effectively closed in federal", fontweight="bold")
-for xi, f, p in zip(xx, fedr, privr):
-    ax.text(xi-w/2, f+1, f"{f}%", ha="center", fontsize=9, color=FED_C, fontweight="bold")
-    ax.text(xi+w/2, p+1, f"{p}%", ha="center", fontsize=9, color=PRIV_C, fontweight="bold")
-ax.legend()
-plt.tight_layout(); plt.savefig(f"{OUT}/05_other_walls.png", bbox_inches="tight"); plt.close()
+trend = json.load(open("remote_trend.json"))  # [(month, remote_yes_pct), ...]
+labels_t = [m for m, _ in trend]; vals_t = [v for _, v in trend]
+xt = np.arange(len(trend))
+ax.plot(xt, vals_t, "-o", color=FED_C, lw=2, ms=5)
+rto = labels_t.index("2025-01")
+ax.axvline(rto, color="k", ls="--", lw=1, alpha=.6)
+ax.text(rto+.15, 9.7, "Jan 2025\nfederal RTO order", fontsize=8, va="top")
+ax.text(0.2, 10.3, "(private tech ~31% fully-remote — off scale)", color=PRIV_C, fontsize=8.5, va="top")
+ax.set_xticks(xt); ax.set_xticklabels(labels_t, rotation=60, ha="right", fontsize=7.5)
+ax.yaxis.set_major_formatter(PercentFormatter()); ax.set_ylim(-0.5, 11)
+ax.set_ylabel("% of federal tech postings\ndesignated remote")
+ax.set_title("The remote door slammed shut\nFederal remote hiring: ~8% → 0.3% after RTO mandate", fontweight="bold", fontsize=11)
+ax.annotate("0.3%", (len(trend)-1, vals_t[-1]), textcoords="offset points", xytext=(-4, 11),
+            fontsize=9, color=FED_C, fontweight="bold")
+plt.subplots_adjust(wspace=0.28); plt.tight_layout(); plt.savefig(f"{OUT}/05_other_walls.png", bbox_inches="tight"); plt.close()
 print("figures written to", OUT)
 import glob
 for f in sorted(glob.glob(f"{OUT}/*.png")):
