@@ -43,7 +43,7 @@ The tell is the middle: **both sectors say "machine learning" at nearly the same
 
 ## The pattern repeats: Software and Security
 
-![Software Engineer and Cybersecurity skill divergence](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/07/06/e955cb79-d6bf-4b65-9c50-5facd727e73f/oKPEpXvCkWg-04-swe-security-stacks.png)
+![Software Engineer and Cybersecurity skill divergence](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/07/06/e955cb79-d6bf-4b65-9c50-5facd727e73f/ILghkVsxeww-04-swe-security-stacks.png)
 
 **Software Engineer** (federal N=98) — the milder split. Federal software engineers use Python about as often as private ones (29% vs 31%), but they're markedly **less cloud-native** (AWS 13% vs 24%, Kubernetes/Docker 10% vs 21%, TypeScript 5% vs 19%) and carry a **compliance overlay** private software lacks (RMF/NIST/FISMA 7% vs 1%). Federal software modernizes defensively more than architecturally.
 

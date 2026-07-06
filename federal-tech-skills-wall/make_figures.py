@@ -101,8 +101,7 @@ plt.tight_layout(); plt.savefig(f"{OUT}/03_role_composition.png", bbox_inches="t
 
 # ---------- FIG 4: SWE + Security ----------
 fig, axes = plt.subplots(1, 2, figsize=(13, 5.6))
-SWE_P = [("Security clearance", r"security clearance|clearance"),
-         ("RMF / NIST / FISMA", r"\brmf\b|\bnist\b|fisma|fedramp|risk management framework"),
+SWE_P = [("RMF / NIST / FISMA", r"\brmf\b|\bnist\b|fisma|fedramp|risk management framework"),
          ("PHP", r"\bphp\b"), ("Python", r"\bpython\b"),
          ("AWS", r"\baws\b|amazon web services"),
          ("Kubernetes / Docker", r"kubernetes|k8s|\bdocker\b"), ("TypeScript", r"typescript"),
@@ -124,7 +123,6 @@ for ax, probes, ftx, ptx, title in [
     ax.set_yticks(yy); ax.set_yticklabels(labs, fontsize=9)
     ax.xaxis.set_major_formatter(PercentFormatter())
     ax.set_title(title, fontweight="bold"); ax.legend(loc="lower right", fontsize=8)
-    ax.axhline(4.5, color="k", lw=.8, ls="--", alpha=.4)
 plt.tight_layout(); plt.savefig(f"{OUT}/04_swe_security_stacks.png", bbox_inches="tight"); plt.close()
 
 # ---------- FIG 5: clearance (Skillenai) + remote (Loyola trend) ----------
