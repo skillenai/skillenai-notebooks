@@ -2,7 +2,7 @@
 
 **Skillenai × Live Data · advertised software-engineer pay vs. company workforce trajectory · analysis date 2026-07-06**
 
-A few weeks ago the team at **[Levels.fyi](https://www.levels.fyi/)** published a chart that deservedly went semi-viral: *"Where should I work as a SWE in 2026?"* — plotting senior-SWE total compensation against how much each company had grown or cut over the trailing 24 months, using Levels.fyi for pay and Layoffs.fyi + SEC filings for headcount. Their point was sharp and, we think, correct: **in a volatile market, the offer number on its own stopped being enough to answer "where should I go?"**
+The team at **[Levels.fyi](https://www.levels.fyi/)** recently shared a chart — *"Where should I work as a SWE in 2026?"* — plotting senior-SWE total compensation against how much each company had grown or cut over the trailing 24 months, using Levels.fyi for pay and Layoffs.fyi + SEC filings for headcount. Their point was sharp and, we think, correct: **in a volatile market, the offer number on its own stopped being enough to answer "where should I go?"**
 
 We wanted to see whether that conclusion holds up when you rebuild the picture from *completely different data* — and whether a couple of extra signals we happen to have can extend it. This is a companion to their work, not a correction of it. Where they used self-reported total compensation, we use **live job-posting salary bands**; where they used discrete layoff events, we use **continuous month-by-month workforce flow**. Two independent lenses on the same question.
 
