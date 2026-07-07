@@ -1,4 +1,4 @@
-# Where should a SWE work in 2026? An independent read on the Levels.fyi question
+# Software engineer pay vs. company trajectory: an independent map of 40 employers (2026)
 
 **Skillenai × Live Data · advertised software-engineer pay vs. company workforce trajectory · analysis date 2026-07-06**
 
@@ -16,7 +16,7 @@ This is **not** a reproduction of Levels' numbers, and it shouldn't be read as o
 
 - **Pay = advertised, not total comp.** Our x-axis is the **median midpoint of advertised US "Software Engineer" salary bands** from job postings (base salary bands; **excludes equity, bonus, and self-reported figures**). Levels measures self-reported *total* compensation including equity. So our Anthropic (~$402K) and Levels' Anthropic (~$800K TC) are measuring different things. What's striking is that the **rank order is preserved** — Anthropic tops both charts — which is a nice cross-validation of two very different collection methods. But do not compare the dollar *levels* between the charts; compare the *positions*.
 - **Trajectory = continuous net flow, not a layoff flag.** Our y-axis is **net workforce flow (arrivals − departures) over 24 months, as a share of average headcount**, from Live Data's supply-side panel of professional profiles — measured on a **corporate-family basis** (e.g. Cruise counts within GM, Meraki within Cisco). Levels used a binary "did they run a layoff at all" rule.
-- **Different company set.** Big Tech — Google, Meta, Amazon, Microsoft, Nvidia, Netflix, Intel, Oracle, IBM — is **absent from our pay axis** because those firms hire through proprietary applicant systems we don't index (fewer than 15 salaried US SWE postings each). So we cannot reproduce Levels' newsworthy Intel/Oracle/IBM "Under Pressure" corner. Our set skews toward **scale-ups and defense-tech** — the companies whose postings we see cleanly.
+- **Different company set.** Big Tech — Google, Meta, Amazon, Microsoft, Nvidia, Netflix, Intel, Oracle, IBM — is **absent from our pay axis** because those firms hire through proprietary applicant systems we don't index (fewer than 15 salaried US SWE postings each). So we cannot reproduce the newsworthy Intel/Oracle/IBM bottom-left corner (established names taking deep cuts). Our set skews toward **scale-ups and defense-tech** — the companies whose postings we see cleanly.
 
 Everything below should be read as *directional positioning*, not precise pay estimation. Per-company posting counts range from 15 to ~500.
 
@@ -26,7 +26,7 @@ Everything below should be read as *directional positioning*, not precise pay es
 
 ![Advertised SWE pay vs. 24-month workforce trajectory, 40 companies, coloured by turnover](01_comp_vs_flow_hero.png)
 
-We keep Levels' four-quadrant framing as an homage (their names, our data): **Money & Momentum** (pays well, growing), **Steady / Momentum** (pays nearer the median, growing), **Big Checks, Big Cuts** (pays well, shrinking), **Under Pressure** (pays nearer the median, shrinking). The vertical line is the median advertised SWE pay across the set (~$205K); the horizontal line is zero net change.
+We split the map into four quadrants with plain labels: **high pay · hiring** (top-right), **lower pay · hiring** (top-left), **high pay · cutting** (bottom-right), **lower pay · cutting** (bottom-left). The vertical line is the median advertised SWE pay across the set (~$205K); the horizontal line is zero net change.
 
 ### Finding 1 — Pay barely predicts trajectory
 
@@ -36,9 +36,11 @@ Across 40 companies, the correlation between advertised SWE pay and 24-month wor
 
 **Anthropic sits alone in the top-right corner:** the highest advertised SWE pay in the set (~$402K midpoint, versus ~$301K for the next company) *and* +140% headcount growth over 24 months, at a low 16% turnover. The richest offer in our data is also attached to the fastest-growing, best-retaining company. Whatever the pay-vs-stability tension is, it does not bind at the very top right now — the AI leaders are paying the most and hiring the hardest at the same time.
 
-### Finding 3 — "Big Checks, Big Cuts" is real, and Scale AI is the clearest case
+### Finding 3 — High pay, shrinking headcount: the Scale AI case
 
-The quadrant Levels flagged — high pay, negative trajectory — is where a job-seeker most needs the second number. In our data the standout is **Scale AI**: top-three advertised pay (~$243K) but **net −7% headcount** and the **highest turnover in the entire set (77%)**, consistent with the well-reported talent movement following its 2025 partnership with Meta. On pay alone Scale AI looks like a top destination; on trajectory-and-churn it looks like the opposite. This single company is the strongest illustration of Levels' thesis in our data.
+The high-pay / shrinking corner is where a job-seeker most needs the second number. In our data the standout is **Scale AI**: top-three advertised pay (~$243K) but **net −7% headcount** and the **highest turnover in the entire set (77%)**.
+
+We checked whether that churn was just a labeling artifact of the mid-2025 Meta stake — i.e. staff flipping their profile from Scale AI to Meta — and it isn't. Tracing where Scale AI's leavers actually went (447 with a recorded next employer), **Meta is only the single largest destination at ~9%**; the other ~91% scattered across frontier labs that had been Scale's customers (xAI, Anthropic, OpenAI, Google, Amazon) and a swarm of rival data-labeling startups (Mercor, micro1, Snorkel AI, Turing, Appen, Welo). No single destination cracks 10%. So the turnover is a **genuine post-deal unwinding**: the Meta stake spooked Scale's customers, its business contracted, and talent dispersed to the competitors who picked up the displaced work. On pay alone Scale AI looks like a top destination; on trajectory and churn it's the clearest case in the set of an offer number and a company's direction pointing opposite ways.
 
 ### Finding 4 — The turnover axis Levels couldn't see
 
@@ -50,7 +52,7 @@ Growth and turnover are essentially uncorrelated (ρ = −0.13), which means **c
 
 ### Finding 5 — Legacy names drift down, new defense-tech climbs
 
-Our "Under Pressure" corner echoes Levels' old-guard corner with the companies we *can* see: **General Motors (−9%), Cisco (−6%), Rivian (−4%), Lyft (−2%), Lockheed Martin (~0%)** — established firms at flat-to-shrinking trajectories (though these are shallow drifts, not the deep cuts Levels showed for Intel/Oracle). Meanwhile a **new-defense / hard-tech cluster hires hard at mid-market pay**: **Anduril (+89%, $213K), Applied Intuition (+73%, $183K), Axon (+28%), Skydio (+21%), SpaceX (+15%, $150K)**. The contrast between old defense (Lockheed, flat) and new defense (Anduril, +89%) is one of the sharper stories on the map.
+Our lower-pay / shrinking corner holds the established names we *can* see: **General Motors (−9%), Cisco (−6%), Rivian (−4%), Lyft (−2%), Lockheed Martin (~0%)** — flat-to-shrinking trajectories (though these are shallow drifts, not the deep cuts the original chart showed for Intel/Oracle). Meanwhile a **new-defense / hard-tech cluster hires hard at mid-market pay**: **Anduril (+89%, $213K), Applied Intuition (+73%, $183K), Axon (+28%), Skydio (+21%), SpaceX (+15%, $150K)**. The contrast between old defense (Lockheed, flat) and new defense (Anduril, +89%) is one of the sharper stories on the map.
 
 ---
 
@@ -60,46 +62,46 @@ Our "Under Pressure" corner echoes Levels' old-guard corner with the companies w
 
 | Company | Adv. SWE pay | SWE N | Net Δ 24mo | Turnover | Quadrant |
 |---|--:|--:|--:|--:|---|
-| Anthropic | $402K | 174 | +140% | 16% | Money & Momentum |
-| Roku | $301K | 21 | +11% | 23% | Money & Momentum |
-| Pinterest | $271K | 18 | +17% | 30% | Money & Momentum |
-| Harvey | $245K | 35 | +192% | 0% | Money & Momentum |
-| Vercel | $245K | 24 | +49% | 50% | Money & Momentum |
-| Notion | $244K | 15 | +61% | 32% | Money & Momentum |
-| Scale AI | $243K | 39 | -7% | 77% | Big Checks, Big Cuts |
-| Nuro | $243K | 29 | +4% | 33% | Money & Momentum |
-| Sentry | $235K | 17 | +14% | 24% | Money & Momentum |
-| Reddit | $229K | 23 | +27% | 25% | Money & Momentum |
-| Sony Interactive | $227K | 15 | +12% | 19% | Money & Momentum |
-| Roblox | $220K | 22 | +22% | 23% | Money & Momentum |
-| Crusoe | $218K | 24 | +152% | 29% | Money & Momentum |
-| Stripe | $216K | 19 | +34% | 27% | Money & Momentum |
-| Asana | $216K | 22 | -7% | 44% | Big Checks, Big Cuts |
-| Brex | $216K | 17 | +22% | 43% | Money & Momentum |
-| Anduril | $213K | 495 | +89% | 19% | Money & Momentum |
-| Discord | $208K | 64 | +11% | 25% | Money & Momentum |
-| Sigma Computing | $205K | 88 | +45% | 48% | Money & Momentum |
-| Verkada | $205K | 37 | +11% | 55% | Money & Momentum |
-| Skydio | $205K | 15 | +21% | 36% | Money & Momentum |
-| Instacart | $204K | 24 | -1% | 17% | Under Pressure |
-| CoreWeave | $204K | 38 | +122% | 12% | Steady/Momentum |
-| Checkr | $202K | 15 | +5% | 39% | Steady/Momentum |
-| Robinhood | $201K | 22 | +18% | 33% | Steady/Momentum |
-| Gusto | $200K | 26 | +30% | 29% | Steady/Momentum |
-| Adobe | $198K | 42 | +11% | 19% | Steady/Momentum |
-| Databricks | $196K | 129 | +45% | 20% | Steady/Momentum |
-| Chime | $196K | 29 | +12% | 31% | Steady/Momentum |
-| General Motors | $190K | 33 | -9% | 20% | Under Pressure |
-| Cisco | $186K | 78 | -6% | 21% | Under Pressure |
-| Axon | $183K | 31 | +28% | 23% | Steady/Momentum |
-| Applied Intuition | $183K | 55 | +73% | 34% | Steady/Momentum |
-| Rivian | $183K | 15 | -4% | 33% | Under Pressure |
-| StubHub | $182K | 27 | +7% | 40% | Steady/Momentum |
-| ClickHouse | $169K | 15 | +134% | 0% | Steady/Momentum |
-| Lyft | $166K | 19 | -2% | 16% | Under Pressure |
-| eBay | $162K | 23 | +3% | 16% | Steady/Momentum |
-| SpaceX | $150K | 172 | +15% | 26% | Steady/Momentum |
-| Lockheed Martin | $132K | 25 | -0% | 11% | Under Pressure |
+| Anthropic | $402K | 174 | +140% | 16% | High pay · hiring |
+| Roku | $301K | 21 | +11% | 23% | High pay · hiring |
+| Pinterest | $271K | 18 | +17% | 30% | High pay · hiring |
+| Harvey | $245K | 35 | +192% | 0% | High pay · hiring |
+| Vercel | $245K | 24 | +49% | 50% | High pay · hiring |
+| Notion | $244K | 15 | +61% | 32% | High pay · hiring |
+| Scale AI | $243K | 39 | -7% | 77% | High pay · cutting |
+| Nuro | $243K | 29 | +4% | 33% | High pay · hiring |
+| Sentry | $235K | 17 | +14% | 24% | High pay · hiring |
+| Reddit | $229K | 23 | +27% | 25% | High pay · hiring |
+| Sony Interactive | $227K | 15 | +12% | 19% | High pay · hiring |
+| Roblox | $220K | 22 | +22% | 23% | High pay · hiring |
+| Crusoe | $218K | 24 | +152% | 29% | High pay · hiring |
+| Stripe | $216K | 19 | +34% | 27% | High pay · hiring |
+| Asana | $216K | 22 | -7% | 44% | High pay · cutting |
+| Brex | $216K | 17 | +22% | 43% | High pay · hiring |
+| Anduril | $213K | 495 | +89% | 19% | High pay · hiring |
+| Discord | $208K | 64 | +11% | 25% | High pay · hiring |
+| Sigma Computing | $205K | 88 | +45% | 48% | High pay · hiring |
+| Verkada | $205K | 37 | +11% | 55% | High pay · hiring |
+| Skydio | $205K | 15 | +21% | 36% | High pay · hiring |
+| Instacart | $204K | 24 | -1% | 17% | Lower pay · cutting |
+| CoreWeave | $204K | 38 | +122% | 12% | Lower pay · hiring |
+| Checkr | $202K | 15 | +5% | 39% | Lower pay · hiring |
+| Robinhood | $201K | 22 | +18% | 33% | Lower pay · hiring |
+| Gusto | $200K | 26 | +30% | 29% | Lower pay · hiring |
+| Adobe | $198K | 42 | +11% | 19% | Lower pay · hiring |
+| Databricks | $196K | 129 | +45% | 20% | Lower pay · hiring |
+| Chime | $196K | 29 | +12% | 31% | Lower pay · hiring |
+| General Motors | $190K | 33 | -9% | 20% | Lower pay · cutting |
+| Cisco | $186K | 78 | -6% | 21% | Lower pay · cutting |
+| Axon | $183K | 31 | +28% | 23% | Lower pay · hiring |
+| Applied Intuition | $183K | 55 | +73% | 34% | Lower pay · hiring |
+| Rivian | $183K | 15 | -4% | 33% | Lower pay · cutting |
+| StubHub | $182K | 27 | +7% | 40% | Lower pay · hiring |
+| ClickHouse | $169K | 15 | +134% | 0% | Lower pay · hiring |
+| Lyft | $166K | 19 | -2% | 16% | Lower pay · cutting |
+| eBay | $162K | 23 | +3% | 16% | Lower pay · hiring |
+| SpaceX | $150K | 172 | +15% | 26% | Lower pay · hiring |
+| Lockheed Martin | $132K | 25 | -0% | 11% | Lower pay · cutting |
 
 *Turnover shown as 0% for Harvey and ClickHouse reflects **no departures recorded in the panel** for these very young, recently-scaled companies — read it as "too new to have measurable attrition," not literally zero.*
 
