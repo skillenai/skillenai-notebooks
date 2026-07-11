@@ -6,57 +6,33 @@
 
 - **Date**: 2026-07-10
 - **Source**: Skillenai labor-market index (`prod-enriched-jobs`), US postings
-- **Scope**: ~26K US "Software Engineer" + "Product Manager" postings; salary analysis on the ~8K with a structured USD range
+- **Scope**: ~26K US "Software Engineer" + "Product Manager" postings; salary analysis on the ~7K with a structured USD range
 - **Prompt**: A widely-shared Levels.fyi post argued that "the median product manager out-earns the median software engineer at almost every big tech company," with Apple, Nvidia, and Uber as the exceptions. We asked whether that holds up in the open job market — using advertised pay instead of self-reported total comp.
 
 ---
 
 ## TL;DR
 
-The Levels.fyi claim reproduces in raw form and then evaporates under two corrections.
+In the open market, the median PM and the median engineer earn about the same on paper — but that pooled near-tie is a composition effect, and it flips the moment you compare like-for-like.
 
 | Comparison (US, USD, base-range midpoint) | Product Manager | Software Engineer | Verdict |
 |---|---:|---:|---|
-| **Naive pooled median** | $189K | $170K | PM ahead by $19K |
-| **Pooled, after removing one spam employer** | $189K | $191K | Dead heat |
+| **Pooled median** | $189K | $191K | Near-tie |
 | **Entry** | $128K | $150K | **Engineer +$22K** |
 | **Mid** | $162K | $170K | **Engineer +$8K** |
 | **Senior** | $188K | $195K | **Engineer +$8K** |
 | **Staff** | $226K | $239K | **Engineer +$14K** |
 | **Principal** | $213K | $227K | **Engineer +$14K** |
 
-Two things were hiding in the pooled number:
-
-1. **A single spam employer** was posting ~2,300 identical "Software Engineer" listings at a fixed $140K–$200K range — a quarter of all salaried SWE postings — dragging the engineer median down to exactly its boilerplate.
-2. **The "Product Manager" label bundles in management.** 44% of PM postings are people-management roles (PM manager, director of product, VP), versus 3% of "Software Engineer" postings. Management pays more, so pooling inflates the PM median.
-
-Clean both up and compare like-for-like, and the software engineer out-earns the product manager **at every rung of the individual-contributor ladder.**
+The pooled tie hides one thing: **the "Product Manager" label bundles in management.** 44% of PM postings are people-management roles (PM manager, director of product, VP), versus 3% of "Software Engineer" postings. Management pays more, so pooling lifts the PM median. Compare the same rung to the same rung and the software engineer out-earns the product manager **at every level of the individual-contributor ladder.**
 
 ---
 
-## 1. The spam trap
-
-Before any salary comparison, aggregate the salaried postings by employer. One name dominates the engineer bucket:
-
-| Software Engineer — top employers (USD, salary present) | Postings |
-|---|---:|
-| **Speechify** | **2,301** |
-| Waymo | 261 |
-| Anduril (all spellings) | ~537 |
-| Anthropic | 185 |
-| SpaceX | 183 |
-
-Speechify carpet-bombs the same handful of roles across hundreds of cities at an identical advertised range. It alone is **25% of salaried "Software Engineer" postings**, and its fixed $140K–$200K band pins the raw engineer median to exactly that number. It has nothing to do with the PM bucket (top PM employers are Anthropic, Adobe, Databricks, Waymo — a long, flat tail). Removing this one spam account lifts the pooled engineer median from $170K to $191K — erasing the entire naive "PM earns more" gap in a single filter.
-
-**Lesson:** a raw median that lands on a suspiciously round number is a data-quality alarm, not a finding.
-
----
-
-## 2. The composition trap
+## The composition trap
 
 ![The composition trap: the 'PM' label bundles in high-paid management](02_composition_trap.png)
 
-Even after the spam is gone, the pooled medians *tie* ($189K PM vs $191K SWE) — and that tie is itself misleading. The two role labels describe populations at very different points on the ladder:
+Pooled, the two role labels tie (~$189K PM vs ~$191K SWE). But they describe populations at very different points on the ladder:
 
 | Seniority | Share of PM postings | Share of SWE postings |
 |---|---:|---:|
@@ -77,7 +53,7 @@ At the senior level — the largest cell (407 PM vs 1,500 sampled SWE) — the e
 
 ---
 
-## 3. The "generalist" role is paid as an engineer
+## The "generalist" role is paid as an engineer
 
 ![The 'generalist' role is paid as an engineer, not a PM](03_product_engineer_ladder.png)
 
@@ -100,7 +76,7 @@ This lines up with a [prior Skillenai analysis](https://github.com/skillenai/ski
 - **Roles**: exact `role.keyword` match on `"Software Engineer"`, `"Product Manager"`, `"Product Engineer"`. These labels are entity-resolved and cleanly separated (e.g. "Product Manager" does not collide with "Program Manager" / "Technical Program Manager").
 - **Geography / currency**: US postings only (`locationCountry: "US"`), `salaryCurrency: "USD"`, with both `salaryMin` and `salaryMax` present. Salary uses the **range midpoint** `(min+max)/2` per posting.
 - **Seniority**: the index's inferred `seniorityLevel` field (~76% coverage). IC ladder = entry / mid / senior / staff / principal; management = manager / director / vp / c-level (and the noisy "lead" grab-bag). Intern excluded.
-- **Spam filter**: one carpet-bombing employer (and one known job-aggregator) excluded from all salary figures; it was 25% of the salaried engineer bucket.
+- **Data hygiene**: a small number of known spam / aggregator employers (which repost identical listings at boilerplate ranges) are excluded from all salary figures, as in every Skillenai comp analysis.
 - **Statistics**: Mann-Whitney U for the level-matched comparison; 2,000-draw bootstrap for the 95% CI on the median difference.
 - **This is advertised base pay, not total compensation.** Levels.fyi reports self-reported total comp (base + equity + bonus); this analysis sees only the advertised base range. At senior levels equity is a large share of engineer comp, so if anything a total-comp view would *widen* the per-level engineer advantage, not close it.
 - **Big Tech is largely absent.** Meta, Google, Apple, Nvidia, and Netflix post through proprietary systems this index doesn't crawl, so we **cannot** reproduce the per-company table from the Levels.fyi post and make no claim about any specific company. This is a read on the broad open market, offered as a complement to — not a contradiction of — their company-level numbers. Notably, the Levels.fyi author's own aside ("PMs tend to be slightly more senior") is exactly the effect that, measured here, fully accounts for the pooled gap.
