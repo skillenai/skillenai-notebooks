@@ -6,7 +6,7 @@
 
 ---
 
-![Two Headwinds of AI Development, and then there's me — a scatter of one solo developer's weekly points sitting far above the Jellyfish diminishing-returns curve](01_hero_meme.png)
+![Two Headwinds of AI Development: a muted grey curve of one million developers plateauing near 4 PRs/week, and one solo developer's purple points scattered far above it, captioned 'how?'](01_hero_meme.png)
 
 Jellyfish published a chart I can't stop thinking about. They plotted ~1 million developer-weeks of Cursor and Claude Code usage — tokens spent per week against merged PRs shipped per week — and found two "headwinds":
 

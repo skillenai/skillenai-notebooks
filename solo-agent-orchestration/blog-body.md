@@ -1,4 +1,4 @@
-![Two Headwinds of AI Development, and then there's me — one solo developer's weekly points sitting far above the Jellyfish diminishing-returns curve](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/07/24/e955cb79-d6bf-4b65-9c50-5facd727e73f/ZEif1j4J-io-01-hero-meme.png)
+![Two Headwinds of AI Development: a muted grey curve of one million developers plateauing near 4 PRs/week, and one solo developer's purple points scattered far above it, captioned 'how?'](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/07/24/e955cb79-d6bf-4b65-9c50-5facd727e73f/8nT1sZHR8HI-01-hero-meme.png)
 
 Jellyfish published a chart I can't stop thinking about. They took **one million developer-weeks** of Cursor and Claude Code usage and plotted tokens spent per week against merged PRs shipped per week. Two "headwinds" fall out of it:
 
