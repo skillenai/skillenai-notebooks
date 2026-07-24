@@ -6,7 +6,7 @@
 
 ---
 
-![Two Headwinds of AI Development: a muted grey curve of one million developers plateauing near 4 PRs/week, and one solo developer's purple points scattered far above it, captioned 'how?'](01_hero_meme.png)
+![The Real AI Development Barrier: The Coordination Tax — a broken-axis chart. Below the break, one million developers plateau near 4 merged PRs per week on the Jellyfish curve; above the break, one solo developer's weeks sit at 20 to 36 PRs on a different scale entirely](01_hero_meme.png)
 
 Jellyfish published a chart I can't stop thinking about. They plotted ~1 million developer-weeks of Cursor and Claude Code usage — tokens spent per week against merged PRs shipped per week — and found two "headwinds":
 
