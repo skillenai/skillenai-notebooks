@@ -59,6 +59,12 @@ Two numbers make the "virtual team" framing concrete:
 
 And this is not cheap-model output: **98.9% of my tokens and 99.6% of the cost are Opus** (almost entirely Opus 4.8). It's premium-model work, not haiku/sonnet filler run up to pad a token count. (For the curious: **96.9% of tokens are cache reads**, billed at ~1/10 the input rate — that discount is already baked into the $3,032. Priced without caching, the list number would be roughly $50K.)
 
+### The subscription is the actual enabler
+
+Over this window, $100/month buys roughly **$1,700/month of API-list-equivalent usage** — a subsidy the orchestration workflow depends on. Metered per-token, an 8-week orchestration run at these volumes would cost thousands, and I'd throttle myself into the "interactive coding" band on instinct. The flat subscription removes the meter, and removing the meter is what lets you leave a fleet of Opus agents running against large contexts without flinching.
+
+This is, honestly, why I switched from Cursor to Claude Code. Cursor's pricing is usage-based — and it more or less *has* to be, because it pays third-party model vendors per token, so every token you spend is a token it owes upstream. (Even its move toward in-house models is, in part, an attempt to escape that pass-through.) A subscription that eats the token cost can only exist when the vendor also owns the model. That pricing structure — not any single feature — is what makes "just let the agents run" a rational default instead of a budget decision. The plateau on the Jellyfish chart is partly coordination; the reason *anyone* can reach the right side of that x-axis at all is partly which pricing model they're on.
+
 ## Honest caveats
 
 I'd rather state these than have you find them:
@@ -81,7 +87,8 @@ I'd rather state these than have you find them:
 1. **The plateau is org structure, not model capability.** A curve built from team-embedded developers measures coordination drag as much as it measures the tool.
 2. **A solo builder with agents can operate several teams' worth of surface area** — because the coordination that would normally cap that output isn't there to cap it.
 3. **The unit economics are absurd in the good direction:** ~6 developers of throughput, on premium Opus, for the price of a gym membership.
-4. **Know what you're giving up.** Zero coordination is a feature for a side project and a liability for anything that needs a second pair of human eyes. The trick is knowing which one you're building.
+4. **Pricing model is a capability.** A flat subscription that eats the token cost — which really only works when the vendor owns the model — is what makes "let the agents run" the default. Metered per-token, you self-throttle back down the curve.
+5. **Know what you're giving up.** Zero coordination is a feature for a side project and a liability for anything that needs a second pair of human eyes. The trick is knowing which one you're building.
 
 ---
 
