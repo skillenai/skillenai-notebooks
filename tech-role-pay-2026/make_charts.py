@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import statsmodels.formula.api as smf
 from brand import *
 
-df=pd.read_parquet("clean3.parquet"); keep=json.load(open("keep.json"))["keep"]
+df=pd.read_parquet("clean4.parquet"); keep=json.load(open("keep4.json"))["keep"]
 d=df[df.family.isin(keep)]
 NICE={"ml engineer":"ML Engineer","ai engineer":"AI Engineer","software engineer":"Software Engineer",
  "research scientist":"Research Scientist","product engineer":"Product Engineer","backend engineer":"Backend Engineer",
@@ -15,12 +15,12 @@ NICE={"ml engineer":"ML Engineer","ai engineer":"AI Engineer","software engineer
  "devsecops engineer":"DevSecOps Engineer","devops engineer":"DevOps Engineer","program manager":"Program Manager",
  "cloud engineer":"Cloud Engineer","data engineer":"Data Engineer","analytics engineer":"Analytics Engineer",
  "systems engineer":"Systems Engineer","test engineer":"Test Engineer","data analyst":"Data Analyst",
- "business analyst":"Business Analyst","it specialist":"IT Specialist","software engineer in test":"SW Engineer in Test"}
+ "business analyst":"Business Analyst","it specialist":"IT Specialist","software engineer in test":"SW Engineer in Test","qa / sdet engineer":"QA / SDET Engineer"}
 LEVELS=["Entry","Mid","Senior","Staff+"]
 med=lambda f,lv: d[(d.family==f)&(d.level==lv)]["mid"].median()
 cnt=lambda f,lv: int(((d.family==f)&(d.level==lv)).sum())
 order=sorted(keep,key=lambda f:-med(f,"Senior"))
-SRC=("Source: Skillenai labor-market index (prod-enriched-jobs) · 31,738 US postings with a structured USD salary range, 2026.\n"
+SRC=("Source: Skillenai labor-market index (prod-enriched-jobs) · 31,407 US postings with a structured USD salary range, 2026.\n"
      "Advertised base-range midpoint; excludes equity and bonus. Role families exclude any title where one employer holds more\n"
      "than 25% of the senior rung, or where fewer than 10 employers post it. Management-titled rows are reported separately.")
 
@@ -82,7 +82,7 @@ top,bot=layout(fig,header_in=1.05,footer_in=0.80)
 header(fig,"Promote, or switch roles? It depends where you start",
   f"Roles ordered by senior-rung median (shown beside each name). {NICE[ref]} is the benchmark and omitted.\n"
   "Near the top of the board one promotion is worth more than moving to the highest-paying role.\n"
-  "In the analyst tier the reverse holds, by a wide margin.",
+  "In the QA and analyst tiers the reverse holds, by a wide margin.",
   y=0.995,dy=0.024)
 footer(fig,SRC,y=bot-0.012); stamp(fig,x=0.905,y=bot-0.052,h=0.026)
 save_exact(fig,"02_promote_or_switch.png")
