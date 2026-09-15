@@ -1,0 +1,235 @@
+{
+ "phd_field": {
+  "BASELINE": {
+   "Engineering (other)": 179,
+   "Econ & Business": 54,
+   "CS & Software": 188,
+   "Physical Sciences": 239,
+   "Social Sci & Humanities": 130,
+   "Other": 221,
+   "Life Sciences": 127,
+   "Math & Stats": 61
+  },
+  "Data Scientist": {
+   "Math & Stats": 36,
+   "Engineering (other)": 25,
+   "CS & Software": 22,
+   "Social Sci & Humanities": 13,
+   "Life Sciences": 17,
+   "Physical Sciences": 26,
+   "Other": 23,
+   "Econ & Business": 18
+  },
+  "AI POOLED": {
+   "Math & Stats": 39,
+   "Engineering (other)": 37,
+   "CS & Software": 39,
+   "Social Sci & Humanities": 17,
+   "Life Sciences": 21,
+   "Physical Sciences": 32,
+   "Other": 33,
+   "Econ & Business": 19
+  },
+  "AI Engineer": {
+   "Social Sci & Humanities": 2,
+   "Physical Sciences": 1,
+   "CS & Software": 3,
+   "Life Sciences": 1
+  },
+  "AI Researcher": {
+   "Engineering (other)": 7,
+   "CS & Software": 9,
+   "Other": 4,
+   "Social Sci & Humanities": 2,
+   "Physical Sciences": 4
+  },
+  "ML Engineer": {
+   "Other": 6,
+   "Engineering (other)": 5,
+   "Math & Stats": 3,
+   "Life Sciences": 3,
+   "CS & Software": 5,
+   "Physical Sciences": 1,
+   "Econ & Business": 1
+  }
+ },
+ "phd_n": {
+  "BASELINE": 1199,
+  "Data Scientist": 180,
+  "AI POOLED": 237,
+  "AI Engineer": 7,
+  "AI Researcher": 26,
+  "ML Engineer": 24
+ },
+ "all_field": {
+  "BASELINE": {
+   "Social Sci & Humanities": 3878,
+   "Other": 6891,
+   "CS & Software": 13582,
+   "Econ & Business": 7457,
+   "Engineering (other)": 4795,
+   "Life Sciences": 1345,
+   "Math & Stats": 898,
+   "Physical Sciences": 1161
+  },
+  "AI Engineer": {
+   "CS & Software": 115,
+   "Social Sci & Humanities": 13,
+   "Other": 21,
+   "Engineering (other)": 14,
+   "Physical Sciences": 5,
+   "Math & Stats": 3,
+   "Econ & Business": 8,
+   "Life Sciences": 2
+  },
+  "AI POOLED": {
+   "CS & Software": 507,
+   "Math & Stats": 194,
+   "Other": 344,
+   "Econ & Business": 165,
+   "Engineering (other)": 123,
+   "Social Sci & Humanities": 68,
+   "Physical Sciences": 55,
+   "Life Sciences": 40
+  },
+  "Data Scientist": {
+   "Math & Stats": 180,
+   "Other": 275,
+   "CS & Software": 249,
+   "Econ & Business": 143,
+   "Engineering (other)": 82,
+   "Social Sci & Humanities": 46,
+   "Physical Sciences": 40,
+   "Life Sciences": 34
+  },
+  "ML Engineer": {
+   "CS & Software": 107,
+   "Econ & Business": 6,
+   "Other": 36,
+   "Math & Stats": 8,
+   "Physical Sciences": 6,
+   "Engineering (other)": 17,
+   "Life Sciences": 4,
+   "Social Sci & Humanities": 1
+  },
+  "AI Researcher": {
+   "Econ & Business": 8,
+   "Social Sci & Humanities": 8,
+   "CS & Software": 36,
+   "Engineering (other)": 10,
+   "Math & Stats": 3,
+   "Other": 12,
+   "Physical Sciences": 4
+  }
+ },
+ "all_n": {
+  "BASELINE": 40007,
+  "AI Engineer": 181,
+  "AI POOLED": 1496,
+  "Data Scientist": 1049,
+  "ML Engineer": 185,
+  "AI Researcher": 81
+ },
+ "top_phd_disciplines": [
+  [
+   "Computer Science",
+   20
+  ],
+  [
+   "Statistics",
+   14
+  ],
+  [
+   "Physics",
+   10
+  ],
+  [
+   "Economics",
+   9
+  ],
+  [
+   "Mathematics",
+   7
+  ],
+  [
+   "Industrial Engineering",
+   6
+  ],
+  [
+   "Neuroscience",
+   5
+  ],
+  [
+   "Electrical Engineering",
+   3
+  ],
+  [
+   "Chemical Engineering",
+   3
+  ],
+  [
+   "Biophysics",
+   3
+  ],
+  [
+   "Applied Mathematics",
+   3
+  ],
+  [
+   "Econometrics and Quantitative Economics",
+   3
+  ],
+  [
+   "Linguistics",
+   3
+  ],
+  [
+   "Biostatistics",
+   3
+  ],
+  [
+   "Mathematical Statistics",
+   2
+  ],
+  [
+   "Engineering",
+   2
+  ],
+  [
+   "Astronomy",
+   2
+  ],
+  [
+   "Electrical and Computer Engineering",
+   2
+  ],
+  [
+   "Political Science",
+   2
+  ],
+  [
+   "Mechanical Engineering",
+   2
+  ],
+  [
+   "Ocean Sciences",
+   2
+  ],
+  [
+   "ENGINEERING",
+   2
+  ],
+  [
+   "Operations",
+   2
+  ],
+  [
+   "Computer Engineering",
+   2
+  ],
+  [
+   "Bioengineering and Biomedical Engineerin",
+   2
+  ]
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "acad": {
+  "Data Scientist": [
+   1627,
+   9145
+  ],
+  "ML Engineer": [
+   245,
+   1456
+  ],
+  "AI Engineer": [
+   129,
+   1266
+  ],
+  "AI Researcher": [
+   116,
+   555
+  ]
+ },
+ "disc": {
+  "BASELINE": {
+   "Social Sci & Humanities": 3991,
+   "CS & Software": 13999,
+   "Econ & Business": 7565,
+   "Engineering (other)": 4814,
+   "Other": 6546,
+   "Life Sciences": 1342,
+   "Math & Stats": 900,
+   "Physical Sciences": 850
+  },
+  "AI Engineer": {
+   "CS & Software": 116,
+   "Social Sci & Humanities": 14,
+   "Other": 20,
+   "Engineering (other)": 15,
+   "Physical Sciences": 3,
+   "Math & Stats": 3,
+   "Econ & Business": 8,
+   "Life Sciences": 2
+  },
+  "AI POOLED": {
+   "CS & Software": 518,
+   "Math & Stats": 194,
+   "Other": 329,
+   "Econ & Business": 166,
+   "Engineering (other)": 133,
+   "Social Sci & Humanities": 74,
+   "Life Sciences": 40,
+   "Physical Sciences": 42
+  },
+  "Data Scientist": {
+   "Math & Stats": 180,
+   "Other": 266,
+   "CS & Software": 256,
+   "Econ & Business": 143,
+   "Engineering (other)": 88,
+   "Social Sci & Humanities": 50,
+   "Life Sciences": 34,
+   "Physical Sciences": 32
+  },
+  "ML Engineer": {
+   "CS & Software": 110,
+   "Econ & Business": 7,
+   "Other": 32,
+   "Math & Stats": 8,
+   "Physical Sciences": 4,
+   "Engineering (other)": 19,
+   "Life Sciences": 4,
+   "Social Sci & Humanities": 1
+  },
+  "AI Researcher": {
+   "Econ & Business": 8,
+   "Social Sci & Humanities": 9,
+   "CS & Software": 36,
+   "Engineering (other)": 11,
+   "Math & Stats": 3,
+   "Other": 11,
+   "Physical Sciences": 3
+  }
+ },
+ "phd": {
+  "BASELINE": 1360,
+  "Data Scientist": 205,
+  "AI POOLED": 273,
+  "AI Engineer": 10,
+  "ML Engineer": 26,
+  "AI Researcher": 32
+ },
+ "adeg": {
+  "BASELINE": 50624,
+  "Data Scientist": 1229,
+  "AI POOLED": 1742,
+  "AI Engineer": 206,
+  "ML Engineer": 209,
+  "AI Researcher": 98
+ },
+ "N": {
+  "BASELINE": 547936,
+  "ML Engineer": 2034,
+  "AI POOLED": 20727,
+  "AI Engineer": 1728,
+  "Data Scientist": 15985,
+  "AI Researcher": 980
+ }
+}
