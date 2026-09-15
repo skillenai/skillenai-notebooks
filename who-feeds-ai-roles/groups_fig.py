@@ -64,11 +64,13 @@ ax2.grid(axis="y",color=GRID,lw=.8); ax2.set_axisbelow(True)
 for a in (ax,ax2):
     a.tick_params(labelsize=9.5)
     for s in ("top","right"): a.spines[s].set_visible(False)
-fig.suptitle("Thirty years of tech hiring, by role group",fontsize=17,fontweight="bold",x=.045,ha="left",y=.99)
-fig.text(.045,.915,"Share of all classified tech role arrivals per calendar year, Skillenai talent graph. Infrastructure & Security held a 9-12% band throughout \u2014 "
-        "sysadmins and network engineers were replaced by DevOps, cloud and security. Excludes Program Manager and Business Analyst (see methodology).",
-        color=INK2,fontsize=9.8)
-fig.tight_layout(rect=[0,.055,1,.885])
+fig.suptitle("Thirty years of tech hiring, by role group",fontsize=17,fontweight="bold",x=.045,ha="left",y=.985)
+# Keep the subtitle SHORT and wrapped: bbox_inches="tight" expands the canvas to
+# fit the widest text object, so one long line silently squeezes both panels.
+fig.text(.045,.905,"Share of tech role arrivals per calendar year, Skillenai talent graph.\n"
+        "Excludes Program Manager and Business Analyst \u2014 see methodology.",
+        color=INK2,fontsize=9.8,linespacing=1.5,va="top")
+fig.tight_layout(rect=[0,.055,1,.855])
 stamp(fig,x=.885,y=.004,h=.038)
 save(fig,"08_group_shares.png")
 print("group shares 1998 vs 2025:")
