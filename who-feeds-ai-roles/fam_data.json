@@ -1,0 +1,24 @@
+{
+ "Data Analyst": {
+  "Data Analyst": "b6e2b1303bb695a4",
+  "Senior Data Analyst": "6c95b78183349854",
+  "Junior Data Analyst": "9b0af692b3c4cf23",
+  "Business Data Analyst": "4a9957455cc90439",
+  "Lead Data Analyst": "018de61b4ad35fb4",
+  "Marketing Data Analyst": "d33170ad35235efd",
+  "Data Analyst Intern": "f1c97fad986333e2",
+  "Product Data Analyst": "f3b0ccfe7d61e462"
+ },
+ "Data Engineer": {
+  "Data Engineer": "b8659ee738c70155",
+  "Senior Data Engineer": "d406363be7f8e3ca",
+  "Lead Data Engineer": "9aa4851c14e689d4",
+  "Staff Data Engineer": "38e4593fe6e245bc",
+  "Principal Data Engineer": "dfc82cd3cac14b5b",
+  "Big Data Engineer": "bce8cfb21dbe0d93",
+  "Analytics Engineer": "c7224aa5279b1c0b",
+  "Data Platform Engineer": "4d55436cb5f9bdf4",
+  "ETL Developer": "722d4775fa59cb99",
+  "Data Infrastructure Engineer": "17efbf4778b071c2"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "phd": {
+  "Data Scientist": 205,
+  "AI Researcher": 32,
+  "Data Analyst": 44,
+  "AI Engineer": 10,
+  "ML Engineer": 26,
+  "Data Engineer": 7
+ },
+ "adeg": {
+  "Data Analyst": 1958,
+  "Data Engineer": 1157,
+  "Data Scientist": 1229,
+  "AI Engineer": 206,
+  "ML Engineer": 209,
+  "AI Researcher": 98
+ },
+ "N": {
+  "Data Analyst": 23300,
+  "ML Engineer": 2034,
+  "AI Engineer": 1728,
+  "Data Engineer": 8744,
+  "Data Scientist": 15985,
+  "AI Researcher": 980
+ }
+}
