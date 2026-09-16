@@ -1,4 +1,4 @@
-# Your job title doesn't describe your job. Your skills don't expire — your tools do.
+# Your job title doesn't describe your job — and the skills underneath it turn over
 
 **Date:** 2026-09-07
 **Sources:** Skillenai job-postings index (`prod-enriched-jobs`) — 44,417 US tech postings; Skillenai talent graph — 569,143 career profiles yielding 1,029,639 dated position descriptions, 1995–2025.
@@ -10,8 +10,8 @@
 
 1. **Job titles are weak descriptions of work.** A title explains **under 10%** of the variance in the skills a posting asks for. For **52.5%** of postings, most of their closest skill-matches carry a *different* title.
 2. **How blurred a role is varies enormously.** Product Engineer postings look like someone else's job **81%** of the time. Product Designer: **9%**. That's a 9× spread.
-3. **Named technologies collapse; generic capabilities endure.** Struts, WebSphere, Sybase and Perl sit at **4–8%** of their peak. **26%** of named technologies are below a quarter of their peak, versus **4%** of all other skill terms.
-4. **At least a third of 2005's leading skills** have been pushed out of the top 100 by 2025.
+3. **Specific technologies do collapse** — Struts, WebSphere, Sybase and Perl sit at **4–8%** of their peak, and the on-prem stack was displaced by the cloud/data stack. ⚠️ **The claim that they decay *faster than generic capabilities* is retracted** — see [section 2](#2-named-technologies-rise-and-fall-retracted-comparison).
+4. **At least a third of 2005's leading skills** have been pushed out of the top 100 by 2025 — a floor, and the true figure is higher.
 5. **Experience is paid for a decade, then it isn't.** +5.3%/yr up to 10 years; −1.8%/yr beyond. Only **4.5%** of postings ask for more than 10 years; **0.03%** ask for more than 20.
 
 ---
@@ -63,9 +63,19 @@ Listing every neighbour role holding ≥8% of the ten nearest postings (a variab
 
 And some roles blur into *nothing in particular*. Technology Architect (+60%), Solutions Architect (+57%) and Software Engineer (+49%) have most of their overlap spread thinly across many roles with no single partner. These aren't hybrids of two jobs; they're titles that don't map onto a coherent skill set at all.
 
-## 2. Named technologies collapse. Generic capabilities don't.
+## 2. Named technologies rise and fall (retracted comparison)
 
-Tracking 85 named technologies — chosen and written down *before* their movement was examined — through 1,029,639 dated career positions:
+> **⚠️ Retraction, 2026-09-16.** This section originally claimed that named technologies decay faster than generic capability terms: named tools at a median 0.81 of peak with 25.9% below a quarter, versus 0.89 and 4.1% for 2,650 other skill terms (Mann-Whitney p=0.0016).
+>
+> **That comparison was invalid, and its direction reverses when measured properly.** On open-vocabulary, position-scoped extraction the result flips at every frequency threshold — named tools hold **0.77** of peak against **0.54** for other terms at ≥0.5% of a year; 0.67 vs 0.33 at ≥0.1%; 0.67 vs 0.00 at ≥0.02%. Tools are *more* durable than generic skill terms, not less.
+>
+> **The cause was the comparison set, not the tools.** Both sides were drawn from a vocabulary built on 2026 job postings, so every term in it survives to 2026 by construction. The "generic skills" set could not contain a word that had fallen out of use, while named tools could still register declining share. Checked directly against that vocabulary: **11 of 14 technologies known to have died are absent from it entirely** — Novell, Windows NT, Delphi, ASP, PowerBuilder, ColdFusion, Silverlight, ActionScript, VB6, Lotus Notes, Crystal Reports. A term that is not in the dictionary cannot register any decline.
+>
+> The superseding measurement is [**thirty-years-of-tech-tools**](https://github.com/skillenai/skillenai-notebooks/tree/master/thirty-years-of-tech-tools), which extracts skills per position from the position's own text instead of matching a present-day list against old résumé text. Its sections 2 and 6 carry the detail.
+>
+> **The general lesson:** an instrument anchored in the present cannot measure disappearance, and applying one to the past will reliably understate how much changed. This was flagged here as a limitation and treated as a conservative bias. It was load-bearing, and it produced a sign error.
+
+What survives is the movement of individual named technologies, which does not depend on the invalid comparison:
 
 ![Two-panel bar chart on a shared scale showing named technologies that fell the most in rank, led by Struts and WebSphere, beside those that rose the most, led by Figma, Databricks and PyTorch](02_named_tech.png)
 
@@ -78,24 +88,13 @@ Tracking 85 named technologies — chosen and written down *before* their moveme
 | cobol | #402 → #2,335 | 0.11× | | snowflake | #2,098 → #196 | 89× |
 | subversion | #757 → #2,712 | 0.08× | | terraform | #1,982 → #197 | 68× |
 
-Twenty-four named technologies now sit below half their peak: AngularJS, ASP.NET, Citrix, COBOL, Cognos, DB2, Hadoop, IIS, Informatica, jQuery, JSP, MapReduce, Oracle, Perl, PHP, Ruby, Servlets, SQL Server, Struts, Subversion, SVN, Sybase, Tomcat.
-
-**This is the distinction that matters for a career.** Generic capability words — *testing*, *architecture*, *requirements* — are durable. The specific products you list as expertise are not.
-
-![Histogram comparing named technologies against all other skill terms by current usage as a fraction of their own peak, showing named technologies concentrated in the low range](02b_tech_vs_generic.png)
-
-| | median now/peak | below half peak | below a quarter |
-|---|---|---|---|
-| **Named technologies** (85) | 0.81 | **36.5%** | **25.9%** |
-| All other skill terms (2,650) | 0.89 | 18.2% | 4.1% |
-
-Named technologies are **six times** more likely to fall below a quarter of their peak (Mann-Whitney p=0.0016).
+Even this understates the churn, for the same reason: the technologies that vanished outright are missing from the table because they were never in the vocabulary.
 
 ## 3. A third of 2005's top skills have been displaced
 
 ![Line chart showing the share of the 100 most-mentioned skills of 2005-2008 that remain in the top 100, declining from 100% to 67% by 2023-2025](03_displacement.png)
 
-**At least 33%** of the skills that were top-100 in 2005 had been pushed out of the top 100 by 2025. A floor rather than a point estimate: skills that died outright are absent from a vocabulary built on 2026 postings, so the true figure is higher. Re-running on past positions only (removing people describing their *current* job in more detail) gives 32%.
+**At least 33%** of the skills that were top-100 in 2005 had been pushed out of the top 100 by 2025. A floor rather than a point estimate: skills that died outright are absent from a vocabulary built on 2026 postings, so the true figure is higher — the open-vocabulary instrument in [thirty-years-of-tech-tools](https://github.com/skillenai/skillenai-notebooks/tree/master/thirty-years-of-tech-tools) would place it higher still. Unlike section 2, this figure does not rest on a comparison between two vocabularies, so it is directionally sound. Re-running on past positions only (removing people describing their *current* job in more detail) gives 32%.
 
 Rank is the right unit here. It is computed within each period, so the shorter descriptions in recent years deflate every skill's share together and leave the ordering intact.
 
@@ -124,7 +123,7 @@ Stated plainly, because these were tested and failed rather than skipped:
 
 - **Whether role blurring has increased.** The postings index begins 2026-03, so there is no demand-side history. Every supply-side proxy we built — NMF theme spread, role-axis concentration, two-role depth, raw skill density — came back **flat**, but each is measured on self-written career descriptions rather than employer requirements. *Roles are blurred* is supported; *roles are blurring more* is not.
 - **A skill "half-life."** Exponential decay is the wrong model: fitting seven competing forms per skill, rise-and-fall shapes (bi-logistic 31%, logistic 21%) beat exponential (12%), and exponential wins mainly where the observation window hides the adoption phase. Roughly half of skills are still rising.
-- **The true magnitude of skill death.** The skill vocabulary is built from 2026 postings and therefore contains only survivors. Every churn figure here is a lower bound.
+- **The true magnitude of skill death.** The skill vocabulary is built from 2026 postings and therefore contains only survivors. Every churn figure here is a lower bound. **This limitation proved worse than stated** — it did not merely understate churn, it inverted the section 2 comparison entirely. Measuring disappearance requires open-vocabulary extraction.
 - **Whether jobs ask for more skills than they used to.** Measured against a 2026 vocabulary, skills per position rises 1.36×. Measured on skills present in both eras, it is **0.99×** — flat. The apparent growth is the dictionary, not the jobs.
 
 ## Method

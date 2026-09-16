@@ -36,33 +36,22 @@ the single change was naming AI and ML engineering, +58% / +77%)
 
 ---
 
-## 2. Skill churn — `https://skillenai.com/blog/your-skills-don-t-expire-your-tools-do`
+## 2. Skill churn — ⚠️ WITHDRAWN 2026-09-16
 
-```
-Struts is at 5% of its peak. WebSphere, 6%. Sybase, 4%. COBOL, 11%.
+The draft that sat here led on "your skills don't expire, your tools do," built on
+the comparison retracted in section 2 of the README. That comparison reverses on
+open-vocabulary extraction: named tools hold 0.77 of peak against 0.54 for other
+skill terms, not the other way round. **Do not post it.**
 
-Nobody who built a career on those made a bad call. They were the right choices at the time.
+The corresponding blog draft has been deleted and never went live.
 
-I tracked 2,700 skills through 1,029,639 dated career positions going back to 1995, expecting to find that long careers go stale. The opposite: the median skill is still at 89% of its peak usage, and about half of all skills are still rising.
+The replacement angle is published separately as
+`30-years-of-tech-tools-novell-is-at-zero-sql-is-at-an-all-time-high`, which has
+its own LinkedIn draft in `thirty-years-of-tech-tools/`.
 
-Then I split the vocabulary in two.
-
-Named technologies, the specific products you list as expertise, versus everything else. 26% of named technologies now sit below a quarter of their peak. For all other skill terms it is 4%. Six times the collapse rate.
-
-The risers over the same window: AWS up 23x, PyTorch 210x, Databricks 181x, GCP and Terraform close behind.
-
-Testing, architecture, requirements gathering, incident response: durable. Oracle, SQL Server, jQuery, PHP, Hadoop, AngularJS, SVN: all below half their peak.
-
-Which also means the number everyone repeats, that skills have a five year half life and technical skills two and a half, does not survive contact with career data. It traces to consultancy marketing, not measurement. Fit seven competing curve shapes per skill and exponential decay wins for only 12% of them. Peer reviewed estimates of human capital depreciation land at 1 to 6% a year.
-
-Your skills are not expiring. Your tools are.
-
-Audit the named products on your resume, not your years. Which one of yours is quietly on the way down?
-```
-
-Score: **979.9 / 10.7**  (baseline 886.3 / 9.7; the change was naming the
-risers AWS/PyTorch/Databricks/GCP, +11% / +10%. A restructured version leading
-with the five-year-half-life myth scored 871.4 and was rejected.)
+What survives from this dataset for social use is the *named-technology movement*
+itself — Struts at 5% of peak, Figma up 199x — with no claim about how tools
+compare to generic capabilities.
 
 ---
 
@@ -97,5 +86,6 @@ acronym-dense (AI, ML, UX, DevOps), the strongest single positive feature.
 
 ---
 
-Suggested order: titles (strongest hook) → pay cap → skill churn.
+Suggested order: titles (published 2026-09-08) → pay cap. The third slot is
+withdrawn; thirty-years-of-tech-tools covers that angle correctly.
 The model rates the exclamation-in-hook suggestion as ~neutral on all three; rejected on tone.
