@@ -458,5 +458,99 @@
    "p_vs_0": 0.0,
    "p_vs_1": 0.0479
   }
+ },
+ "decomposition": {
+  "n": 11842,
+  "n_companies": 495,
+  "n_states": 12,
+  "base_r2": 0.4202,
+  "base_adj": 0.4161,
+  "state_r2": 0.5038,
+  "state_adj": 0.4998,
+  "company_r2": 0.7686,
+  "company_adj": 0.7567,
+  "placebo_r2": 0.4446,
+  "placebo_adj": 0.4161,
+  "both_r2": 0.7734,
+  "both_adj": 0.7615,
+  "unique_state_adj": 0.0048,
+  "unique_company_adj": 0.2617,
+  "ratio": 54.3
+ },
+ "predicted_by_state": [
+  {
+   "state": "California",
+   "predicted": 216534.0,
+   "n": 7268
+  },
+  {
+   "state": "Washington",
+   "predicted": 207776.0,
+   "n": 1328
+  },
+  {
+   "state": "New York",
+   "predicted": 204442.0,
+   "n": 2516
+  },
+  {
+   "state": "District of Columbia",
+   "predicted": 194122.0,
+   "n": 283
+  },
+  {
+   "state": "Virginia",
+   "predicted": 172905.0,
+   "n": 378
+  },
+  {
+   "state": "Illinois",
+   "predicted": 172743.0,
+   "n": 333
+  },
+  {
+   "state": "Georgia",
+   "predicted": 170299.0,
+   "n": 181
+  },
+  {
+   "state": "Massachusetts",
+   "predicted": 168111.0,
+   "n": 961
+  },
+  {
+   "state": "Texas",
+   "predicted": 166734.0,
+   "n": 472
+  },
+  {
+   "state": "Colorado",
+   "predicted": 166144.0,
+   "n": 400
+  },
+  {
+   "state": "North Carolina",
+   "predicted": 161434.0,
+   "n": 150
+  },
+  {
+   "state": "Maryland",
+   "predicted": 159452.0,
+   "n": 366
+  }
+ ],
+ "offer_spread": {
+  "top": "California",
+  "top_usd": 216534.0,
+  "bottom": "Maryland",
+  "bottom_usd": 159452.0,
+  "spread_usd": 57082.0,
+  "spread_pct": 35.8
+ },
+ "within_employer": {
+  "n_employers": 36,
+  "median_pct": 7.9,
+  "p25": 4.7,
+  "p75": 19.5
  }
 }

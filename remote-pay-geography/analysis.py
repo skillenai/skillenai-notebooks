@@ -321,3 +321,95 @@ for wm in ("hybrid","remote"):
 R["passthrough_noMD"] = sens
 json.dump(R, open(f"{OUT}/results.json","w"), indent=1, default=str)
 print("results.json updated")
+
+# ---- 12. EMPLOYER vs LOCATION: which actually sets remote pay? -------------
+# The SD-of-coefficients measure in section 9 answers "how much do state effects
+# move once company is controlled". It does NOT answer "which factor explains more",
+# and reading it as a 62/38 split overstates location. Variance decomposition does.
+print("\n=== 12. Employer vs location as predictors of remote pay ===")
+rem_all = df[(df["workModel"] == "remote") & (df["state"] != "UNSPECIFIED")].copy()
+ks = rem_all["state"].value_counts()
+rem_all = rem_all[rem_all["state"].isin(ks[ks >= 150].index)]
+dd = rem_all[rem_all["co"].isin(rem_all["co"].value_counts()[lambda s: s >= 5].index)].copy()
+BASE_F = "logpay ~ C(fam_c) + C(level) + C(platform)"
+f_base = smf.ols(BASE_F, data=dd).fit()
+f_st   = smf.ols(BASE_F + " + C(state)", data=dd).fit()
+f_co   = smf.ols(BASE_F + " + C(co)", data=dd).fit()
+f_both = smf.ols(BASE_F + " + C(state) + C(co)", data=dd).fit()
+
+# A 495-level company factor beats a 12-level state factor on df alone, so the
+# comparison is meaningless without a placebo: shuffle company labels across
+# postings, preserving the company-size distribution exactly.
+sizes = dd["co"].value_counts()
+pool = np.array(np.repeat(sizes.index.to_numpy(dtype=object), sizes.values), dtype=object)
+pl_r2, pl_adj = [], []
+for seed in range(5):
+    rng = np.random.default_rng(seed); f = pool.copy(); rng.shuffle(f)
+    dd["co_fake"] = f
+    m = smf.ols(BASE_F + " + C(co_fake)", data=dd).fit()
+    pl_r2.append(m.rsquared); pl_adj.append(m.rsquared_adj)
+pl_r2, pl_adj = float(np.mean(pl_r2)), float(np.mean(pl_adj))
+
+print(f"  n={len(dd):,}  companies={dd['co'].nunique()}  states={dd['state'].nunique()}")
+print(f"  base (role+level+platform)     R2={f_base.rsquared:.4f}  adj={f_base.rsquared_adj:.4f}")
+print(f"  + state                        R2={f_st.rsquared:.4f}  adj={f_st.rsquared_adj:.4f}")
+print(f"  + company (SHUFFLED placebo)   R2={pl_r2:.4f}  adj={pl_adj:.4f}")
+print(f"  + company (real)               R2={f_co.rsquared:.4f}  adj={f_co.rsquared_adj:.4f}")
+print(f"  + both                         R2={f_both.rsquared:.4f}  adj={f_both.rsquared_adj:.4f}")
+u_state = f_both.rsquared_adj - f_co.rsquared_adj
+u_co    = f_both.rsquared_adj - f_st.rsquared_adj
+print(f"\n  unique state   (adj) = {u_state:+.4f}")
+print(f"  unique company (adj) = {u_co:+.4f}   ratio {u_co/u_state:.0f}:1")
+print(f"  real company over its own placebo = {f_co.rsquared_adj - pl_adj:+.4f} adj "
+      f"(placebo adds {pl_adj - f_base.rsquared_adj:+.4f}, i.e. df alone explains nothing)")
+R["decomposition"] = {
+    "n": int(len(dd)), "n_companies": int(dd["co"].nunique()), "n_states": int(dd["state"].nunique()),
+    "base_r2": round(f_base.rsquared,4), "base_adj": round(f_base.rsquared_adj,4),
+    "state_r2": round(f_st.rsquared,4), "state_adj": round(f_st.rsquared_adj,4),
+    "company_r2": round(f_co.rsquared,4), "company_adj": round(f_co.rsquared_adj,4),
+    "placebo_r2": round(pl_r2,4), "placebo_adj": round(pl_adj,4),
+    "both_r2": round(f_both.rsquared,4), "both_adj": round(f_both.rsquared_adj,4),
+    "unique_state_adj": round(float(u_state),4), "unique_company_adj": round(float(u_co),4),
+    "ratio": round(float(u_co/u_state),1)}
+
+# ---- 13. Person-scale: what two remote offers for the SAME job pay ---------
+print("\n=== 13. Predicted pay, REMOTE senior software engineer, by employer anchor state ===")
+mp = smf.ols("logpay ~ C(state) + C(fam_c) + C(level) + C(platform)", data=rem_all).fit(cov_type="HC1")
+base_row = {"fam_c": "software engineer", "level": "Senior", "platform": rem_all["platform"].mode()[0]}
+rows = []
+for st in sorted(rem_all["state"].unique()):
+    rows.append({"state": st, "predicted": float(np.exp(mp.predict(pd.DataFrame([{**base_row, "state": st}]))[0])),
+                 "n": int((rem_all["state"] == st).sum())})
+pt_tbl = pd.DataFrame(rows).sort_values("predicted", ascending=False)
+pt_tbl["predicted"] = pt_tbl["predicted"].round(0)
+print(pt_tbl.to_string(index=False))
+hi, lo = pt_tbl.iloc[0], pt_tbl.iloc[-1]
+print(f"\n  {hi.state} ${hi.predicted:,.0f} vs {lo.state} ${lo.predicted:,.0f} "
+      f"= ${hi.predicted-lo.predicted:,.0f} ({100*(hi.predicted/lo.predicted-1):.1f}%)")
+pt_tbl.to_csv(f"{OUT}/predicted_pay_by_anchor_state.csv", index=False)
+R["predicted_by_state"] = pt_tbl.to_dict("records")
+R["offer_spread"] = {"top": hi.state, "top_usd": float(hi.predicted), "bottom": lo.state,
+                     "bottom_usd": float(lo.predicted), "spread_usd": float(hi.predicted-lo.predicted),
+                     "spread_pct": round(float(100*(hi.predicted/lo.predicted-1)),1)}
+
+# ---- 14. Within ONE employer, across states ------------------------------
+print("\n=== 14. Same employer, remote roles, different states ===")
+mres = smf.ols("logpay ~ C(fam_c) + C(level) + C(platform)", data=rem_all).fit()
+rem_all["resid2"] = mres.resid
+multi = []
+for co, g in rem_all.groupby("co"):
+    sc = g.groupby("state")["resid2"].agg(["count","mean"])
+    sc = sc[sc["count"] >= 5]
+    if len(sc) >= 3:
+        multi.append({"co": co, "n_states": int(len(sc)), "n": int(len(g)),
+                      "spread_pct": float(100*(np.exp(sc["mean"].max()-sc["mean"].min())-1))})
+mdf = pd.DataFrame(multi)
+print(f"  {len(mdf)} employers post remote roles against >=3 states (>=5 postings each)")
+print(f"  median within-employer spread = {mdf['spread_pct'].median():.1f}%  "
+      f"(p25 {mdf['spread_pct'].quantile(.25):.1f}%, p75 {mdf['spread_pct'].quantile(.75):.1f}%)")
+R["within_employer"] = {"n_employers": int(len(mdf)),
+                        "median_pct": round(float(mdf["spread_pct"].median()),1),
+                        "p25": round(float(mdf["spread_pct"].quantile(.25)),1),
+                        "p75": round(float(mdf["spread_pct"].quantile(.75)),1)}
+json.dump(R, open(f"{OUT}/results.json","w"), indent=1, default=str)
+print("\nresults.json updated with decomposition + person-scale numbers")

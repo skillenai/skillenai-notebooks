@@ -1,10 +1,10 @@
-# Remote work did not create a national pay scale
+# Your remote salary is set by who hires you, not where you sit
 
-**Going remote barely changes what a job pays. It changes whose location sets it — your employer's, not yours.**
+**Going remote barely changes what a job pays. And the geography that still shows up in remote pay is the employer's, not the worker's — two remote offers for the same senior engineering role run $57,082 apart depending on where the company is anchored.**
 
-![Remote and onsite pay premiums by state](02_geographic_passthrough.png)
+![Predicted pay for the same remote role by employer anchor state, and how much employer vs location explains](05_employer_vs_location.png)
 
-- **Date**: 2026-09-14
+- **Date**: 2026-09-14 (revised 2026-09-17 — see *Revisions*)
 - **Source**: Skillenai labor-market index (`prod-enriched-jobs`), US postings
 - **Scope**: 54,231 US postings carrying a structured USD pay range and a work-model label; 46,873 of them also carry a usable seniority rung and enter the models
 - **Measure**: midpoint of the advertised base range. **Excludes equity and bonus.**
@@ -16,9 +16,10 @@
 1. **The headline remote premium is a composition artifact.** Remote postings advertise a median of $190,000 against $178,500 onsite — **+6.4%**. Control for role family and rung and it collapses to **+0.5%**. Among individual contributors in the full model it is **+0.9%** (95% CI +0.3% to +1.5%).
 2. **We will not print a single number for the residual gap, because our three sources disagree.** Same model, same controls: greenhouse says **−2.3%**, ashby says **+0.1%**, schema_org says **+5.0%**, and the intervals do not overlap. What survives is the *bound*: whatever the remote gap is, it is small, and it is not 6%.
 3. **Remote pay is exactly as geographically dispersed as onsite pay.** Weighted SD of the state effect: onsite 6.5%, remote 9.2%. Regressing each state's remote premium on its onsite premium gives a pass-through of **1.44** (95% CI 1.01 to 1.88, r = 0.88). We can reject zero pass-through decisively (p < 0.0001). We cannot reject *full* pass-through.
-4. **The location that matters is the employer's.** 64.0% of remote postings carry the same state as their employer's dominant onsite location, against a 33.2% chance baseline. Add company fixed effects and **62% of the remote geographic gradient disappears** — it was never "where the worker is," it was "which company is hiring."
-5. **Remote bands are wider; hybrid bands are narrower.** Controlled, remote ranges run **+1.3pp** wider relative to their midpoint and hybrid **−2.2pp** narrower. The uncertainty about remote pay shows up in the spread, not the level.
-6. **This is a cross-section, not a trend.** Only 32,533 US postings carry a trustworthy source posting date and 55% of those land in a single month. No claim here is about change over time.
+4. **The location that matters is the employer's, and it barely matters on its own.** 64.0% of remote postings carry the same state as their employer's dominant onsite location, against a 33.2% chance baseline. Once you know which company is hiring, the state adds almost nothing: unique adjusted R² of **+0.005 for state against +0.262 for employer**, a ratio of about **54 to 1**. A placebo with the same number of fake employers explains nothing at all, so this is not a degrees-of-freedom artifact.
+5. **The spread is a career-sized number.** Holding role, rung and platform fixed, the same remote senior software engineer posting predicts **$216,534** at a California-anchored employer and **$159,452** at a Maryland-anchored one — **$57,082**, or 35.8%. Inside a single employer, the median spread across states is only **7.9%**.
+6. **Remote bands are wider; hybrid bands are narrower.** Controlled, remote ranges run **+1.3pp** wider relative to their midpoint and hybrid **−2.2pp** narrower. The uncertainty about remote pay shows up in the spread, not the level.
+7. **This is a cross-section, not a trend.** Only 32,533 US postings carry a trustworthy source posting date and 55% of those land in a single month. No claim here is about change over time.
 
 ---
 
@@ -93,15 +94,48 @@ A low pass-through would have been the more publishable result, and it is also t
 
 ## 4. Whose geography?
 
+![Predicted pay by employer anchor state, and unique variance explained](05_employer_vs_location.png)
+
 Two facts locate the gradient in the employer rather than the worker.
 
 **The anchor state is usually the employer's own.** Taking the 1,008 companies with at least three onsite postings and a clear modal state, **64.0%** of their remote postings carry that same state, against a **33.2%** chance baseline from the state distribution. Hybrid behaves similarly (57.3% vs 30.1%).
 
-**Company identity absorbs most of the gradient.** Within remote postings only, the SD of state coefficients is 0.099 log points. Add company fixed effects and it falls to 0.038 — **62% of the remote geographic pay gradient is explained by which company is hiring**, not by location banding (n=11,843; 526 companies; 11 states).
+**Once you know the employer, the state tells you almost nothing.** On remote postings with role family, rung and platform already controlled:
 
-The residual 38% is real: the same company posting the same remote role against different states still pays differently. But the dominant channel is composition — expensive-state employers pay more, and they pay more on their remote postings too.
+| Model | R² | adjusted R² |
+|---|---:|---:|
+| Role family + rung + platform | 0.420 | 0.416 |
+| + which **state** (12 levels) | 0.504 | 0.500 |
+| + which **employer**, *shuffled placebo* | 0.445 | **0.416** |
+| + which **employer** (495 levels) | 0.769 | **0.757** |
+| + both | 0.773 | 0.762 |
 
-So remote work did not detach pay from a map. It substituted one address for another.
+Unique contribution, each measured over the other: **state +0.005**, **employer +0.262** — a ratio of about **54 to 1**.
+
+A 495-level factor beats a 12-level factor on degrees of freedom alone, so that comparison is meaningless without a control. Shuffling company labels across postings while preserving the company-size distribution exactly gives a placebo with the identical parameter count: it lands at adjusted R² **0.416**, indistinguishable from the base model. Degrees of freedom explain **none** of the employer effect. Averaged over five seeds the placebo moves adjusted R² by +0.0001.
+
+**What that costs a person.** Holding role family, rung and platform fixed and varying only the employer's anchor state:
+
+| Employer anchored in | Predicted pay, remote senior SWE | n |
+|---|---:|---:|
+| California | **$216,534** | 7,268 |
+| Washington | $207,776 | 1,328 |
+| New York | $204,442 | 2,516 |
+| District of Columbia | $194,122 | 283 |
+| Virginia | $172,905 | 378 |
+| Illinois | $172,743 | 333 |
+| Georgia | $170,299 | 181 |
+| Massachusetts | $168,111 | 961 |
+| Texas | $166,734 | 472 |
+| Colorado | $166,144 | 400 |
+| North Carolina | $161,434 | 150 |
+| Maryland | **$159,452** | 366 |
+
+Top to bottom is **$57,082**, or 35.8%. For scale, the companion analysis in this repo puts a full seniority rung at $40K–$65K.
+
+But that spread is overwhelmingly *which companies sit where*, not location pricing. Of the 36 employers that post remote roles against three or more states, the **median within-employer spread is 7.9%** (p25 4.7%, p75 19.5%). Location banding inside firms is real and small; which firm you join is the large term.
+
+So remote work did not detach pay from a map. It made the employer's address the one that counts — and the employer, not the address, is what you are actually choosing.
 
 ## 5. Bands, not levels
 
@@ -139,12 +173,19 @@ We flag this as a single-instrument result — it has not been cross-checked aga
 | `make_charts.py` | Figures (uses the shared `brand.py`) |
 | `results.json` | Every statistic quoted above |
 | `state_premiums.csv` | Per-state onsite and remote residual premiums |
+| `predicted_pay_by_anchor_state.csv` | Predicted pay for the same remote role by employer anchor state |
 | `stepwise_controls.csv` | The control build-up in section 1 |
 | `platform_robustness.csv` | Per-source remote coefficients |
 | `pay_by_level_workmode.csv` | Median pay by rung and work model |
 | `level_mix_by_workmode.csv` | Rung composition by work model |
 
 The per-posting extract (54,819 rows) is not committed. It is reproducible from the index with the partitioned download described in `analysis.py`'s header; available on request.
+
+## Revisions
+
+**2026-09-17.** The first version of section 4 reported that company fixed effects absorb 62% of the remote geographic gradient and described "the residual 38%" as location banding inside firms. That came from comparing the standard deviation of state coefficients with and without company fixed effects, which answers "how much do state effects shrink" — not "which factor explains more pay". A variance decomposition answers the second question, and it is far more lopsided: unique adjusted R² of +0.005 for state against +0.262 for employer, about 54 to 1. The within-employer spread across states is real but small (median 7.9%).
+
+The conclusions in sections 1, 2, 3 and 5 are unchanged, including the pass-through of 1.44 and the hybrid placebo. What changed is the mechanism behind section 3's result: remote pay tracks geography because expensive-state employers pay more in every work mode, not because remote roles are being location-adjusted. The revision also adds the employer-anchor pay table, the shuffled-employer placebo, and figure 5.
 
 ## Method note
 

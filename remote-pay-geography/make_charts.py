@@ -156,3 +156,47 @@ head(fig, "Where the raw premium actually comes from",
 B.footer(fig, SRC, y=0.075); B.stamp(fig, x=0.905, y=0.028, h=0.026)
 B.save_exact(fig, f"{OUT}/04_level_mix_and_pay.png")
 print("charts done")
+
+# ---------- FIG 5: employer vs location, person-scale (new cover) ----------
+dec = R["decomposition"]; sp = R["offer_spread"]
+pt = pd.DataFrame(R["predicted_by_state"])
+fig, axes = plt.subplots(1, 2, figsize=(12.4, 6.2), gridspec_kw={"width_ratios": [1.25, 1]})
+top, bot = B.layout(fig, header_in=1.24, footer_in=1.05)
+fig.subplots_adjust(left=0.115, right=0.985, wspace=0.34)
+
+ax = axes[0]
+pt2 = pt.sort_values("predicted")
+cols = [B.CYAN if v >= pt2.predicted.median() else "#9AD9E8" for v in pt2.predicted]
+ax.barh(pt2.state, pt2.predicted, color=cols, height=.66)
+for i, r in enumerate(pt2.itertuples()):
+    ax.text(r.predicted - 2600, i, f"${r.predicted/1000:.0f}K", va="center", ha="right",
+            fontsize=8.8, color="white", weight="bold")
+ax.set_xlim(0, pt2.predicted.max() * 1.06)
+ax.xaxis.set_major_formatter(B.K)
+ax.set_title(f"Same job, \${sp['spread_usd']/1000:.0f}K apart", fontsize=10.5,
+             weight="bold", color=B.INK, loc="left")
+ax.set_xlabel("Predicted pay, remote senior software engineer", fontsize=9)
+B.tidy(ax)
+
+ax = axes[1]
+labels = ["Which state\nthe posting names", "Which employer\nis hiring"]
+vals = [dec["unique_state_adj"], dec["unique_company_adj"]]
+bars = ax.bar([0, 1], vals, color=[B.MUTE, B.VIOLET], width=.5)
+for i, v in enumerate(vals):
+    ax.text(i, v + 0.008, f"{v:+.3f}", ha="center", fontsize=11, weight="bold", color=B.INK)
+ax.set_xticks([0, 1]); ax.set_xticklabels(labels, fontsize=9.2)
+ax.set_ylabel("Unique variance explained (adjusted R²)", fontsize=9)
+ax.set_ylim(0, max(vals) * 1.22)
+ax.set_title(f"Employer explains {dec['ratio']:.0f}x more", fontsize=10.5,
+             weight="bold", color=B.INK, loc="left")
+ax.annotate("a placebo with the same\nnumber of fake employers\nexplains nothing (+0.000)",
+            xy=(1, dec["unique_company_adj"]), xytext=(-0.44, max(vals)*0.72),
+            fontsize=8.2, color=B.MUTE, style="italic", linespacing=1.4)
+B.tidy(ax, xgrid=False); ax.grid(axis="y", color=B.GRID, alpha=.75, lw=.7)
+
+head(fig, "Your remote salary is set by who hires you, not where you sit",
+     "Left: what the same remote senior software engineer role pays, by the state the employer is\n"
+     "anchored in. Right: how much each factor explains once the other is already known.")
+B.footer(fig, SRC, y=0.055); B.stamp(fig, x=0.905, y=0.012, h=0.026)
+B.save_exact(fig, f"{OUT}/05_employer_vs_location.png")
+print("fig 5 done")
