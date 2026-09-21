@@ -1,0 +1,556 @@
+{
+ "unit_mix_by_workmodel": {
+  "ambiguous": {
+   "distributed": 0.0,
+   "hybrid": 0.132,
+   "hybrid-friendly": 0.0,
+   "hybrid-remote": 0.0,
+   "in-office": 0.0,
+   "in-person": 0.0,
+   "onsite": 0.15,
+   "remote": 0.125,
+   "remote-first": 0.0,
+   "virtual": 0.0
+  },
+  "annual": {
+   "distributed": 100.0,
+   "hybrid": 98.611,
+   "hybrid-friendly": 100.0,
+   "hybrid-remote": 100.0,
+   "in-office": 100.0,
+   "in-person": 100.0,
+   "onsite": 98.63,
+   "remote": 98.865,
+   "remote-first": 100.0,
+   "virtual": 100.0
+  },
+  "hourly": {
+   "distributed": 0.0,
+   "hybrid": 0.623,
+   "hybrid-friendly": 0.0,
+   "hybrid-remote": 0.0,
+   "in-office": 0.0,
+   "in-person": 0.0,
+   "onsite": 0.713,
+   "remote": 0.513,
+   "remote-first": 0.0,
+   "virtual": 0.0
+  },
+  "na": {
+   "distributed": 0.0,
+   "hybrid": 0.635,
+   "hybrid-friendly": 0.0,
+   "hybrid-remote": 0.0,
+   "in-office": 0.0,
+   "in-person": 0.0,
+   "onsite": 0.507,
+   "remote": 0.496,
+   "remote-first": 0.0,
+   "virtual": 0.0
+  }
+ },
+ "drops": {
+  "ambiguous_or_missing_unit": 361,
+  "implausible_annual_midpoint": 210
+ },
+ "n_clean": 54231,
+ "n_model": 46873,
+ "naive": {
+  "hybrid": {
+   "n": 6978.0,
+   "median": 185000.0,
+   "mean": 199756.2,
+   "p25": 150000.0,
+   "p75": 229500.0,
+   "vs_onsite_pct": 3.64
+  },
+  "onsite": {
+   "n": 19528.0,
+   "median": 178500.0,
+   "mean": 180452.7,
+   "p25": 145000.0,
+   "p75": 211262.5
+  },
+  "remote": {
+   "n": 20367.0,
+   "median": 190000.0,
+   "mean": 194510.1,
+   "p25": 152500.0,
+   "p75": 225000.0,
+   "vs_onsite_pct": 6.44
+  }
+ },
+ "stepwise": [
+  {
+   "spec": "raw (no controls)",
+   "pct": 6.97,
+   "lo": 6.24,
+   "hi": 7.69
+  },
+  {
+   "spec": "+ seniority",
+   "pct": 3.34,
+   "lo": 2.72,
+   "hi": 3.96
+  },
+  {
+   "spec": "+ role family",
+   "pct": 0.54,
+   "lo": -0.04,
+   "hi": 1.12
+  },
+  {
+   "spec": "+ platform",
+   "pct": 0.83,
+   "lo": 0.25,
+   "hi": 1.41
+  },
+  {
+   "spec": "+ state (full)",
+   "pct": 1.96,
+   "lo": 1.39,
+   "hi": 2.53
+  }
+ ],
+ "full_r2": 0.4334,
+ "full_n": 46873,
+ "full": {
+  "hybrid": {
+   "pct": 3.3,
+   "lo": 2.47,
+   "hi": 4.13,
+   "p": 2.62455828196795e-15
+  },
+  "remote": {
+   "pct": 1.96,
+   "lo": 1.39,
+   "hi": 2.53,
+   "p": 1.2915440723621301e-11
+  }
+ },
+ "platform_robustness": [
+  {
+   "platform": "ashby",
+   "n": 5395,
+   "pct": 0.08,
+   "lo": -1.44,
+   "hi": 1.62
+  },
+  {
+   "platform": "greenhouse",
+   "n": 16265,
+   "pct": -2.29,
+   "lo": -3.26,
+   "hi": -1.31
+  },
+  {
+   "platform": "schema_org",
+   "n": 25213,
+   "pct": 5.04,
+   "lo": 4.26,
+   "hi": 5.83
+  }
+ ],
+ "ic_only": {
+  "hybrid": {
+   "pct": 1.61,
+   "lo": 0.73,
+   "hi": 2.49
+  },
+  "remote": {
+   "pct": 0.86,
+   "lo": 0.26,
+   "hi": 1.46
+  }
+ },
+ "dispersion": [
+  {
+   "wm": "onsite",
+   "n_states": 14,
+   "n": 17371,
+   "sd_pct": 6.54
+  },
+  {
+   "wm": "hybrid",
+   "n_states": 9,
+   "n": 5836,
+   "sd_pct": 9.5
+  },
+  {
+   "wm": "remote",
+   "n_states": 12,
+   "n": 14636,
+   "sd_pct": 9.23
+  }
+ ],
+ "passthrough": {
+  "hybrid": {
+   "slope": 1.78,
+   "lo": 1.196,
+   "hi": 2.365,
+   "r": 0.919,
+   "sd_ratio": 1.933,
+   "n_states": 9,
+   "p_vs_0": 0.0002,
+   "p_vs_1": 0.016
+  },
+  "remote": {
+   "slope": 1.371,
+   "lo": 0.746,
+   "hi": 1.996,
+   "r": 0.687,
+   "sd_ratio": 1.09,
+   "n_states": 12,
+   "p_vs_0": 0.0006,
+   "p_vs_1": 0.2153
+  }
+ },
+ "state_table": [
+  {
+   "state": "Maryland",
+   "n_onsite": 668,
+   "onsite_prem_pct": 5.21,
+   "n_remote": 366,
+   "remote_prem_pct": -13.57,
+   "gap_pp": 18.78
+  },
+  {
+   "state": "California",
+   "n_onsite": 8551,
+   "onsite_prem_pct": 4.53,
+   "n_remote": 7268,
+   "remote_prem_pct": 10.91,
+   "gap_pp": -6.38
+  },
+  {
+   "state": "New York",
+   "n_onsite": 2686,
+   "onsite_prem_pct": 3.32,
+   "n_remote": 2516,
+   "remote_prem_pct": 4.36,
+   "gap_pp": -1.04
+  },
+  {
+   "state": "Washington",
+   "n_onsite": 1038,
+   "onsite_prem_pct": 2.74,
+   "n_remote": 1328,
+   "remote_prem_pct": 6.62,
+   "gap_pp": -3.88
+  },
+  {
+   "state": "District of Columbia",
+   "n_onsite": 493,
+   "onsite_prem_pct": 0.28,
+   "n_remote": 283,
+   "remote_prem_pct": 0.54,
+   "gap_pp": -0.26
+  },
+  {
+   "state": "Massachusetts",
+   "n_onsite": 1247,
+   "onsite_prem_pct": -5.16,
+   "n_remote": 961,
+   "remote_prem_pct": -12.19,
+   "gap_pp": 7.03
+  },
+  {
+   "state": "Virginia",
+   "n_onsite": 643,
+   "onsite_prem_pct": -5.2,
+   "n_remote": 378,
+   "remote_prem_pct": -10.01,
+   "gap_pp": 4.81
+  },
+  {
+   "state": "Illinois",
+   "n_onsite": 388,
+   "onsite_prem_pct": -9.58,
+   "n_remote": 333,
+   "remote_prem_pct": -9.74,
+   "gap_pp": 0.16
+  },
+  {
+   "state": "Texas",
+   "n_onsite": 386,
+   "onsite_prem_pct": -11.0,
+   "n_remote": 472,
+   "remote_prem_pct": -12.89,
+   "gap_pp": 1.89
+  },
+  {
+   "state": "Colorado",
+   "n_onsite": 483,
+   "onsite_prem_pct": -11.23,
+   "n_remote": 400,
+   "remote_prem_pct": -13.66,
+   "gap_pp": 2.43
+  },
+  {
+   "state": "Georgia",
+   "n_onsite": 247,
+   "onsite_prem_pct": -16.98,
+   "n_remote": 181,
+   "remote_prem_pct": -10.25,
+   "gap_pp": -6.73
+  },
+  {
+   "state": "North Carolina",
+   "n_onsite": 153,
+   "onsite_prem_pct": -17.12,
+   "n_remote": 150,
+   "remote_prem_pct": -15.27,
+   "gap_pp": -1.85
+  }
+ ],
+ "anchor": {
+  "n_companies": 1008,
+  "remote": {
+   "n": 9285,
+   "match_pct": 64.01,
+   "chance_pct": 33.18
+  },
+  "hybrid": {
+   "n": 3077,
+   "match_pct": 57.33,
+   "chance_pct": 30.09
+  }
+ },
+ "company_fe": {
+  "sd_no_fe": 0.0992,
+  "sd_with_fe": 0.0377,
+  "pct_absorbed": 62.03,
+  "n": 11843,
+  "n_companies": 526,
+  "n_states": 11
+ },
+ "band": {
+  "naive": {
+   "hybrid": {
+    "n": 6978,
+    "median_pct": 26.42,
+    "mean_pct": 29.68
+   },
+   "onsite": {
+    "n": 19528,
+    "median_pct": 28.76,
+    "mean_pct": 33.22
+   },
+   "remote": {
+    "n": 20367,
+    "median_pct": 29.07,
+    "mean_pct": 34.59
+   }
+  },
+  "controlled_pp": {
+   "hybrid": {
+    "pp": -2.21,
+    "p": 3.8645823738492485e-18
+   },
+   "remote": {
+    "pp": 1.26,
+    "p": 1.2401955859123444e-08
+   }
+  }
+ },
+ "by_level": {
+  "hybrid": {
+   "Entry": 116500.0,
+   "Exec": 189796.0,
+   "Management": 195000.0,
+   "Mid": 150000.0,
+   "Senior": 183000.0,
+   "Staff+": 227175.0
+  },
+  "onsite": {
+   "Entry": 127500.0,
+   "Exec": 185000.0,
+   "Management": 180000.0,
+   "Mid": 151500.0,
+   "Senior": 185000.0,
+   "Staff+": 221300.0
+  },
+  "remote": {
+   "Entry": 137250.0,
+   "Exec": 200000.0,
+   "Management": 204250.0,
+   "Mid": 150000.0,
+   "Senior": 189182.0,
+   "Staff+": 230000.0
+  }
+ },
+ "by_level_n": {
+  "hybrid": {
+   "Entry": 443,
+   "Exec": 72,
+   "Management": 1391,
+   "Mid": 874,
+   "Senior": 2990,
+   "Staff+": 1208
+  },
+  "onsite": {
+   "Entry": 1985,
+   "Exec": 212,
+   "Management": 3111,
+   "Mid": 3256,
+   "Senior": 8504,
+   "Staff+": 2460
+  },
+  "remote": {
+   "Entry": 1336,
+   "Exec": 162,
+   "Management": 3032,
+   "Mid": 2879,
+   "Senior": 8999,
+   "Staff+": 3959
+  }
+ },
+ "level_mix": {
+  "Entry": {
+   "hybrid": 6.35,
+   "onsite": 10.16,
+   "remote": 6.56
+  },
+  "Exec": {
+   "hybrid": 1.03,
+   "onsite": 1.09,
+   "remote": 0.8
+  },
+  "Management": {
+   "hybrid": 19.93,
+   "onsite": 15.93,
+   "remote": 14.89
+  },
+  "Mid": {
+   "hybrid": 12.53,
+   "onsite": 16.67,
+   "remote": 14.14
+  },
+  "Senior": {
+   "hybrid": 42.85,
+   "onsite": 43.55,
+   "remote": 44.18
+  },
+  "Staff+": {
+   "hybrid": 17.31,
+   "onsite": 12.6,
+   "remote": 19.44
+  }
+ },
+ "passthrough_noMD": {
+  "hybrid": {
+   "slope": 1.78,
+   "lo": 1.196,
+   "hi": 2.365,
+   "r": 0.919,
+   "sd_ratio": 1.933,
+   "n_states": 9,
+   "p_vs_0": 0.0002,
+   "p_vs_1": 0.016
+  },
+  "remote": {
+   "slope": 1.443,
+   "lo": 1.005,
+   "hi": 1.881,
+   "r": 0.878,
+   "sd_ratio": 1.14,
+   "n_states": 11,
+   "p_vs_0": 0.0,
+   "p_vs_1": 0.0479
+  }
+ },
+ "decomposition": {
+  "n": 11842,
+  "n_companies": 495,
+  "n_states": 12,
+  "base_r2": 0.4202,
+  "base_adj": 0.4161,
+  "state_r2": 0.5038,
+  "state_adj": 0.4998,
+  "company_r2": 0.7686,
+  "company_adj": 0.7567,
+  "placebo_r2": 0.4446,
+  "placebo_adj": 0.4161,
+  "both_r2": 0.7734,
+  "both_adj": 0.7615,
+  "unique_state_adj": 0.0048,
+  "unique_company_adj": 0.2617,
+  "ratio": 54.3
+ },
+ "predicted_by_state": [
+  {
+   "state": "California",
+   "predicted": 216534.0,
+   "n": 7268
+  },
+  {
+   "state": "Washington",
+   "predicted": 207776.0,
+   "n": 1328
+  },
+  {
+   "state": "New York",
+   "predicted": 204442.0,
+   "n": 2516
+  },
+  {
+   "state": "District of Columbia",
+   "predicted": 194122.0,
+   "n": 283
+  },
+  {
+   "state": "Virginia",
+   "predicted": 172905.0,
+   "n": 378
+  },
+  {
+   "state": "Illinois",
+   "predicted": 172743.0,
+   "n": 333
+  },
+  {
+   "state": "Georgia",
+   "predicted": 170299.0,
+   "n": 181
+  },
+  {
+   "state": "Massachusetts",
+   "predicted": 168111.0,
+   "n": 961
+  },
+  {
+   "state": "Texas",
+   "predicted": 166734.0,
+   "n": 472
+  },
+  {
+   "state": "Colorado",
+   "predicted": 166144.0,
+   "n": 400
+  },
+  {
+   "state": "North Carolina",
+   "predicted": 161434.0,
+   "n": 150
+  },
+  {
+   "state": "Maryland",
+   "predicted": 159452.0,
+   "n": 366
+  }
+ ],
+ "offer_spread": {
+  "top": "California",
+  "top_usd": 216534.0,
+  "bottom": "Maryland",
+  "bottom_usd": 159452.0,
+  "spread_usd": 57082.0,
+  "spread_pct": 35.8
+ },
+ "within_employer": {
+  "n_employers": 36,
+  "median_pct": 7.9,
+  "p25": 4.7,
+  "p75": 19.5
+ }
+}
