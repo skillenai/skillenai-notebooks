@@ -1,0 +1,58 @@
+{
+ "postings": 62659,
+ "employers": 8728,
+ "median_chars": 5298,
+ "distinct_texts": 53724,
+ "salaried_n": 24445,
+ "salaried_employers": 3788,
+ "salaried_median_pay": 190333,
+ "fe_n": 21474,
+ "fe_employers": 1458,
+ "fe_adj_r2": 0.787,
+ "cs_adj_r2": 0.509,
+ "anti_strict_n": 439,
+ "anti_strict_employers": 179,
+ "anti_top_employer": "nisc",
+ "anti_top_share": 13.0,
+ "anti_llm_share": 70.4,
+ "evals_n": 5022,
+ "evals_employers": 1659,
+ "evals_top_employer": "anthropic",
+ "evals_top_share": 3.1,
+ "evals_llm_share": 81.4,
+ "anti_all_tech_pct": 0.7,
+ "rpos_all_tech_pct": 16.9,
+ "employer_level_anti": 2.05,
+ "employer_level_rpos": 30.01,
+ "llm_matched_pooled": {
+  "anti_n": 309,
+  "anti_evals": 53.1,
+  "other_n": 18692,
+  "other_evals": 21.0,
+  "z": 13.61,
+  "p": 3.4126634004837146e-42
+ },
+ "predicted_senior_aie_ca": {
+  "neither": 220688,
+  "production only": 233207,
+  "research only": 233339,
+  "both": 236511
+ },
+ "contrast_f_evals_minus_f_ship_register": {
+  "pct": 2.13,
+  "p": 0.0317
+ },
+ "contrast_f_evals_minus_f_strict": {
+  "pct": 5.4,
+  "p": 0.1523
+ },
+ "length_standardised_anti": {
+  "AI Engineer": 2.66,
+  "ML Engineer": 1.97,
+  "Data Scientist": 0.97,
+  "Research/Applied Scientist": 0.83,
+  "Data Engineer": 0.24,
+  "Data Analyst": 0.0,
+  "Software Engineer": 0.51
+ }
+}

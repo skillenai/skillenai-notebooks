@@ -1,0 +1,5 @@
+role_group,n_anti_llm,n_other_llm,evals_in_anti,ci_lo,ci_hi,evals_in_other,z,p,rpos_in_anti,rpos_in_other
+Software Engineer,136,9592,64.0,55.6,71.6,12.8,17.32,0.0,66.9,18.2
+ML Engineer,58,2438,56.9,44.1,68.8,30.6,4.27,0.0,62.1,51.5
+AI Engineer,70,2168,41.4,30.6,53.1,40.5,0.16,0.876,42.9,47.0
+Data Scientist,24,1318,20.8,9.2,40.5,24.7,-0.43,0.6663,41.7,45.6
