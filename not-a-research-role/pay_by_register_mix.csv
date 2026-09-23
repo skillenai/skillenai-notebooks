@@ -1,0 +1,9 @@
+scope,cell,n,median_pay,pct_vs_neither,ci_lo,ci_hi,p
+all tech,neither,13554,178100,,,,
+all tech,production only,6909,197500,5.33,3.79,6.88,0.0
+all tech,research only,2036,205000,6.93,3.6,10.37,0.0
+all tech,both,1946,215000,9.65,7.32,12.03,0.0
+AI/ML/DS,neither,1533,171750,,,,
+AI/ML/DS,production only,1117,200000,5.67,2.47,8.98,0.0004
+AI/ML/DS,research only,1345,212500,5.73,1.36,10.3,0.0097
+AI/ML/DS,both,1196,219562,7.17,4.07,10.36,0.0
