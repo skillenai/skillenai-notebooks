@@ -1,18 +1,18 @@
-**Short answer: the line "this is not a research role" shows up in fewer than 3% of AI Engineer job ads, it carries no pay premium once you compare jobs at the same company, and the ads that use it ask for evaluation work at least as often as the ads that don't. The phrase that does carry a premium is the evaluation work itself.**
-
-If you work in data science or ML, you have seen some version of this in a job ad:
+Somewhere in the last year, a new sentence started showing up in AI job ads.
 
 > "This is not a research role. This is not a 'play with models in a lab' role. This is a builder role."
 
-> "Production AI shipping experience, not just research, POCs, demos, or internal experiments."
+It comes in variations. "Production AI shipping experience, not just research, POCs, demos, or internal experiments." "You've owned models beyond the notebook." One company listed it under *You Might Not Be a Fit If*: "Your experience is limited to experimentation without production systems."
 
-One posting put it under the heading *You Might Not Be a Fit If*: "Your experience is limited to experimentation without production systems."
+The message to anyone with a research background is hard to miss. The market wants builders, research is a liability, and the smart move is to scrub the experiments and the evaluation work from your résumé and lead with what you shipped.
 
-Read enough of these and it is easy to conclude that the market has turned on research, and that the safe move is to scrub it from your résumé and lead with "shipped to production." We checked that against **62,659 US tech job postings** from **8,728 employers**. It doesn't hold up.
+That message is wrong, and job postings themselves are the evidence. Across **62,659 US tech job postings** from **8,728 employers**, the anti-research line turns out to be rare, it carries no pay premium, and the ads that use it are often asking for exactly the research skills they claim not to want.
 
-## How common is it?
+## A loud line, rarely written
 
 ![Share of US tech postings that disclaim research versus those that name research, evals or experimentation as part of the job](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/09/22/e955cb79-d6bf-4b65-9c50-5facd727e73f/Eu4XfJq4zUE-01-who-disclaims-research.png)
+
+The line is memorable, which makes it feel common. It isn't.
 
 | Role family | Ads that disclaim research | Ads that name research, evals or experimentation as the job |
 |---|---:|---:|
@@ -24,28 +24,23 @@ Read enough of these and it is easy to conclude that the market has turned on re
 | Data Analyst | 0.0% | 8.5% |
 | Software Engineer | 0.5% | 8.1% |
 
-The impression that this is an AI-hiring habit is correct. An AI Engineer ad is about five times as likely as a software engineering ad to carry the line. But it is still a small habit. Across all US tech postings it appears in 0.7% of ads, and only **2.1% of employers** have written it even once.
+It is concentrated where you would expect. An AI Engineer ad is about five times as likely as a software engineering ad to carry it. But even there it appears in fewer than 3 ads in 100. Across all US tech postings it's 0.7%, and only 2.1% of employers have ever written it.
 
-For every AI Engineer ad that says the job isn't research, about 16 describe research, evaluation or experimentation as part of the job.
+The opposite message is everywhere. For every AI Engineer ad that says the job isn't research, about 16 describe research, evaluation or experimentation as part of the work.
 
-A few checks, since prevalence numbers are easy to inflate:
+This isn't an artifact of a few companies spamming the same posting. The 439 ads carrying the line come from 179 different employers, and none accounts for more than 13% of them.
 
-- **Longer ads mention more of everything.** Adjusting every role to the same mix of ad lengths moves AI Engineer from 2.74% to 2.66%.
-- **Some companies post the same text dozens of times.** The 439 ads with the line come from 179 employers, and no single employer accounts for more than 13% of them.
-
-## Does it pay?
+## The line doesn't pay
 
 ![Advertised pay effect of each phrase, raw versus compared within the same employer](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/09/22/e955cb79-d6bf-4b65-9c50-5facd727e73f/E5nL-Uj1eN8-02-what-the-words-are-worth.png)
 
-At first glance, yes. Ads with the line advertise a median of **$205,000**, against $190,000 for everything else.
+On the surface, the builder-not-researcher ads look like the better-paid ones. They advertise a median of **$205,000**, against $190,000 for everything else.
 
-That gap is about which companies write the line, not about the jobs. You can see this with a simple test: add a phrase to the model that can't possibly affect pay, and see what it's "worth." We used "equal opportunity employer."
+That gap says more about the companies than the jobs. The clearest way to see it is to test a phrase that can't possibly change what a job pays, like "equal opportunity employer." Compared naively, ads containing it pay 9.4% less. Nobody believes that sentence costs anyone money. It simply turns up more often at lower-paying companies, and every other phrase in a job ad carries the same kind of baggage.
 
-Compared raw, "equal opportunity employer" looks like a **9.4% pay cut**. Even after controlling for seniority, role, state, work model and ad length, it still looks like a 6% cut. It obviously isn't one. The phrase just shows up more often at lower-paying companies, and every other phrase in the data has the same problem.
+Compare each ad only with other ads **at the same company**, and "equal opportunity employer" falls to −0.4%, effectively zero. That's the fair comparison. Here's what the rest of the language is worth under it:
 
-Compare each ad only against other ads **at the same company**, and "equal opportunity employer" drops to −0.4%, which is zero. That's the comparison worth trusting, and here is what it shows:
-
-| Phrase in the ad | Raw gap | Same company, same level, same role |
+| Phrase in the ad | Naive gap | Same company, level and role |
 |---|---:|---:|
 | Evaluation work (evals, eval harness, offline or model evaluation) | +15.8% | **+2.5%** |
 | PhD mentioned | +8.1% | **+2.8%** |
@@ -54,19 +49,19 @@ Compare each ad only against other ads **at the same company**, and "equal oppor
 | "This is not a research role" | +7.9% | −2.8% |
 | *Control: "equal opportunity employer"* | *−9.4%* | *−0.4%* |
 
-Bold values in the last column are statistically significant (p < 0.05).
+*Bold values in the last column are statistically significant (p < 0.05).*
 
-The "ship fast" language is worth nothing. The companies that use it pay well, but the phrase doesn't mark a better-paid job at those companies.
+"Ship fast" and "bias for action" are worth nothing. Companies that talk that way do pay well, but the phrase doesn't identify a better-paid job inside them.
 
-The anti-research line is worth nothing or slightly less. Only 167 salaried ads carry it, so we can't pin it to exactly zero, but we can rule out a premium larger than about 4%.
+The anti-research line is worth nothing or slightly less. Only 167 of these ads list a salary, so the estimate is loose, but it rules out any premium bigger than about 4%.
 
-The phrase with the clearest premium is the one the line disparages. **Ads that ask for evaluation work pay 2.5% more** than other ads at the same company, and that premium is significantly larger than the one for shipping language. It isn't just a marker of LLM jobs: controlling for whether the ad mentions LLMs or generative AI leaves it unchanged. Asking for a PhD comes with a 2.8% premium, not a penalty.
+The language with the clearest premium is the language the line looks down on. Ads that ask for **evaluation work pay 2.5% more** than other ads at the same company, a significantly bigger premium than shipping language earns. That holds after accounting for whether the job involves LLMs at all. And ads that mention a PhD pay 2.8% more, not less.
 
-## What do those ads actually ask for?
+## Disclaiming research, then asking for it
 
 ![Share of LLM and generative-AI postings that ask for evaluation work, with and without the disclaimer](https://skillenai-blog-assets-prod.s3.us-east-1.amazonaws.com/uploads/2026/09/22/e955cb79-d6bf-4b65-9c50-5facd727e73f/H6HEgM4vzkY-03-asking-for-it-anyway.png)
 
-We looked only at postings that mention LLMs or generative AI, so this compares AI jobs with AI jobs:
+Read past the disclaimer and a different job often appears. Among postings for LLM and generative-AI work:
 
 | Role family | Ads with the line that ask for eval work | Other ads that ask for eval work |
 |---|---:|---:|
@@ -76,13 +71,13 @@ We looked only at postings that mention LLMs or generative AI, so this compares 
 | Data Scientist | 20.8% | 24.7% |
 | **All four** | **53.1%** | **21.0%** |
 
-A software engineering ad that says "this is not a research role" is five times as likely as its peers to go on and ask for an eval harness, offline evaluation or LLM-as-a-judge.
+A software engineering ad that opens with "this is not a research role" is five times as likely as its peers to go on to ask for an eval harness, offline evaluation or LLM-as-a-judge.
 
-Inside AI Engineer the two numbers are the same: about 40% of ads ask for evaluation work whether or not they disclaim research. So the line doesn't tell you anything about the scope of the job. It tells you how the company wants to sound.
+For AI Engineer roles, the line makes no difference at all. About 40% of those ads ask for evaluation work whether they disclaim research or not. The disclaimer tells you how a company wants to sound. It tells you nothing about the work.
 
-## Shipping and evaluating aren't a trade-off
+## Shipping and research aren't rivals
 
-Group ads by which kind of language they use:
+The ads imply a choice between building and investigating. Pay data shows no such choice.
 
 | The ad talks about | Median advertised pay |
 |---|---:|
@@ -91,34 +86,34 @@ Group ads by which kind of language they use:
 | Research and evaluation only | $205,000 |
 | **Both** | **$215,000** |
 
-Hold the job fixed at a senior AI Engineer in California, working hybrid, and the model predicts **$233,207** for an ad that only talks about shipping and **$233,339** for one that only talks about research and evaluation. That's a $132 difference. The best-paying ads ask for both.
+For a fixed job, a senior AI Engineer working hybrid in California, an ad that talks only about shipping predicts **$233,207**. One that talks only about research and evaluation predicts **$233,339**. The difference is $132. The best-paid ads want both.
 
-## To the people writing this line
+## Why the line is a mistake
 
-The data can't show what happens to teams that go without evaluation. It can show that the employers writing this line are hiring for evaluation anyway, and that the market pays for it. What follows is our argument, built on that.
+The worry behind the sentence is reasonable. Every hiring manager has met the candidate whose work never left a notebook, and nobody wants to hire that person into a role that has to ship.
 
-The worry behind the line is fair. Nobody wants a hire whose work never leaves a notebook. But the line doesn't screen for that. It screens for vocabulary. It tells the person who would have built your eval set that they aren't wanted, three paragraphs before the posting asks for an eval set.
+But the line doesn't screen for that person. It screens for vocabulary. The candidate it turns away is the one who talks about experiments and evaluation, which, as these ads themselves show, is often the person the team needs.
 
-For LLM products, evaluation is not a research phase you finish before shipping. It's how you find out whether the thing you shipped works. It's how you learn that last week's prompt change made the support bot worse before a customer tells you, and whether a model upgrade quietly broke a path nobody tested by hand. Experimentation is how you decide whether a change is an improvement. Prototyping is how you find out cheaply which ideas are worth building. A team without people who do this can still ship. It just can't tell whether what it shipped is any good.
+For LLM products especially, evaluation isn't a research phase you finish before production. It's how a team knows whether what it shipped works. It's how you learn that last week's prompt change made the support bot worse before a customer tells you, or that a model upgrade quietly broke a path nobody tests by hand. Experimentation is how you know whether a change is an improvement. Prototyping is how you find out cheaply which ideas deserve to be built properly. A team without people doing this work can still ship. It just can't tell whether what it shipped is any good.
 
-If the job needs someone who owns a system in production, say that: "you'll own this end to end, including on-call." It describes the work without telling researchers to stay away.
+If the job really needs someone who owns a system in production, the ad can say exactly that: "you'll own this end to end, including on-call." That describes the work without warning off the people who would make it reliable.
 
-## What to do with this
+## What this means for your career
 
-- **If you're job hunting:** don't write the evaluation and experimentation work out of your résumé to sound more production-minded. In this data the production language is worth nothing and the evaluation work is worth a premium. Lead with both.
-- **If you see the line in an ad:** read it as tone, not scope. Ask what their eval process is. More than a third of AI Engineer ads ask for evaluation work, so there is a good chance they have one.
-- **If you hire:** drop the line. It costs you candidates and, going by these numbers, buys you nothing.
+- **If you have a research or evaluation background,** don't edit it out to sound more production-minded. In this data, production language is worth nothing extra and evaluation work carries a premium. Show both.
+- **If you see the line in a posting,** treat it as tone rather than scope, and ask about the team's evaluation process in the interview. More than a third of AI Engineer ads ask for evaluation work, so there's a good chance the role involves it.
+- **If you write job ads,** drop the line. It narrows your pipeline and, going by these numbers, buys you nothing.
 
 ## Methodology
 
-We used 62,659 US postings from the Skillenai job index for AI, ML, data and software engineering roles, keeping only postings with real description text. Some applicant-tracking platforms deliver empty descriptions, and including them would understate every figure.
+The analysis covers 62,659 US postings from the Skillenai job index for AI, ML, data and software engineering roles, limited to postings with real description text. Some applicant-tracking platforms deliver empty descriptions, and including them would understate every figure.
 
-Each kind of language is a set of patterns matched against the cleaned posting text. We built the patterns from the postings themselves, by collecting sentences that pair research, papers, academia, prototypes or notebooks with a negation and writing up the phrasings that recur. We then read samples of matches to check they meant what we thought. One candidate, "without a PhD," turned out to be mostly welcoming ("researchers without a PhD are encouraged to apply") and was dropped.
+Each type of language is a set of text patterns matched against the posting. The patterns were built from the postings themselves, by collecting sentences that pair research, papers, academia, prototypes or notebooks with a negation and writing up the phrasings that recur, then reading samples of matches to confirm what they meant. One candidate, "without a PhD," turned out to be mostly welcoming ("researchers without a PhD are encouraged to apply") and was dropped. Prevalence figures were checked against differences in ad length and against companies posting the same text repeatedly.
 
-Pay comes from 24,445 postings that list a salary range, across 3,788 employers. Hourly and annual ranges are put on the same basis, and job titles are grouped into role families with seniority words removed. The same-company comparison controls for employer, seniority, role family and ad length, with 95% confidence intervals and standard errors clustered by employer.
+Pay comes from 24,445 postings that list a salary range, across 3,788 employers. Hourly and annual ranges are converted to the same basis, and job titles are grouped into role families with seniority words removed. The same-company comparison controls for employer, seniority, role family and ad length, with 95% confidence intervals and standard errors clustered by employer.
 
-What this doesn't cover: whether the line is becoming more common (we only have two quarters of reliably dated postings, not enough for a trend); equity, since these are advertised base salaries; and hiring outcomes, since these are ads.
+Three limits are worth knowing. With only two quarters of reliably dated postings, there isn't enough history to say whether the line is spreading. These are advertised base salaries, so equity isn't captured. And these are ads, not hiring outcomes.
 
-This fits with an [earlier analysis of the LLM evaluation landscape](https://github.com/skillenai/skillenai-notebooks/tree/master/llm-eval-landscape), which found that no named eval framework appears in even 1% of job postings. Employers ask for evaluation work all the time. They rarely name the tools.
+The findings sit alongside an [earlier analysis of the LLM evaluation landscape](https://github.com/skillenai/skillenai-notebooks/tree/master/llm-eval-landscape), which found that no named eval framework appears in even 1% of job postings. Employers ask for evaluation work constantly. They rarely name the tools.
 
 [Full methodology, data and code](https://github.com/skillenai/skillenai-notebooks/tree/master/not-a-research-role)
