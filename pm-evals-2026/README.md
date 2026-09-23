@@ -111,6 +111,8 @@ This is a comparison of direction, not an exact ratio. Profiles are a stock (eve
 
 **Role families.** Matched on the pipeline's normalized `role` title, in the same families as our [who-builds-with-llms](https://github.com/skillenai/skillenai-notebooks/tree/master/who-builds-with-llms) analysis. Product Manager includes Technical, Principal, Group, Staff and AI Product Manager, and excludes Product Marketing. See `fam.py`. A carpet-bombing spam employer is excluded throughout.
 
+**Relation to our companion post.** [*Stop saying "this is not a research role." Start hiring for evals.*](https://skillenai.com/2026/09/23/stop-saying-this-is-not-a-research-role-start-hiring-for-evals) measures "evaluation work" with a broader definition that includes offline and classic model evaluation, so its levels run higher (e.g. about 40% of GenAI AI Engineer postings there, 25% here). This analysis deliberately counts only *AI/LLM* evals, because the question is whether PMs are asked for them, and classic model evaluation would tilt any comparison toward data scientists by construction. The two agree on the ordering of the technical roles.
+
 **Selection bias check.** Our job crawler admits postings either by R&D title or by AI-heavy description content. "Product manager", "software engineer", "data scientist" and "machine learning" are all *title* keywords, so every family here was admitted regardless of AI content. That keeps rates within a family unbiased with respect to how the crawler selects postings. The career-profile corpus uses the same kind of title list.
 
 **Full text only.** Several job-board platforms deliver postings without descriptions. We keep postings with at least 500 characters of text (63,316 of 74,857).
