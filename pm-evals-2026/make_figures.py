@@ -25,7 +25,7 @@ ax.set_yticks(y, r.index); bold_pm(ax); tidy(ax)
 ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0f}%"); ax.set_xlim(0, 29)
 ax.legend(loc="lower right", fontsize=9)
 top, bot = layout(fig, header_in=0.85, footer_in=0.7)
-header(fig, "PMs are asked for AI evals as often as data scientists",
+header(fig, "AI evals appear in 1 in 7 GenAI-related PM postings",
        "Share of US job postings asking for AI/LLM evals, by role. Among GenAI postings, 1 in 7 PM roles asks.", y=0.985, dy=0.36 / fig.get_size_inches()[1])
 footer(fig, SRC + "\nAI evals = eval skill extracted from the posting or eval language in its text, LLM-verified.", y=bot - 0.03)
 stamp(fig, y=bot - 0.075); save_exact(fig, "01_rates_by_role.png")
@@ -44,8 +44,8 @@ ax.set_yticks(y, t.index); bold_pm(ax); tidy(ax)
 ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0f}%"); ax.set_xlim(0, 33)
 ax.legend(loc="lower right", fontsize=9)
 top, bot = layout(fig, header_in=0.85, footer_in=0.7)
-header(fig, "The PM ask for AI evals doubled in four months",
-       "Share of postings asking for AI evals, same employers in both periods. Data scientists were flat.", y=0.985, dy=0.36 / fig.get_size_inches()[1])
+header(fig, "Later-collected PM postings mention evals more often",
+       "Same employers in both periods. Dates refer to first collection, not verified publication.", y=0.985, dy=0.36 / fig.get_size_inches()[1])
 footer(fig, SRC + "\nEmployers posting in both Apr-May and Aug-Sep. Month = first seen. Trend adjusted for job board: PM p<0.0001.", y=bot - 0.03)
 stamp(fig, y=bot - 0.075); save_exact(fig, "02_pm_doubled.png")
 
@@ -63,14 +63,15 @@ ax.set_yticks(y, p.index); bold_pm(ax); tidy(ax)
 ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0f}%"); ax.set_xlim(0, 42)
 ax.legend(loc="lower right", fontsize=9)
 top, bot = layout(fig, header_in=0.85, footer_in=0.7)
-header(fig, "Employers ask for evals. Almost no PM lists them.",
+header(fig, "Older profile mentions are not current skill supply",
        "AI-eval skill on career profiles (through ~Oct 2025) vs share of postings asking for AI evals (Sep 2026).", y=0.985, dy=0.36 / fig.get_size_inches()[1])
 footer(fig, "Source: Skillenai career-profile graph (641K positions with extracted skills) and US job postings.\n"
-       "Profiles are a stock of everyone in the role, postings are a flow of open roles: read the gap as direction, not an exact ratio.", y=bot - 0.03)
+       "Different dates, populations and reporting contexts. This comparison cannot establish a current skills shortage.", y=bot - 0.03)
 stamp(fig, y=bot - 0.075); save_exact(fig, "03_profiles_vs_postings.png")
 
 # 4. responsibilities heatmap
 s = pd.read_csv("04_responsibilities_sonnet.csv").set_index("fam").loc[ORDER]
+h = pd.read_csv("04_responsibilities_haiku.csv").set_index("fam").loc[ORDER]
 ROWS = [("decide_ship", "Make ship / model decisions from results"),
         ("define_quality", "Define the quality bar and metrics*"),
         ("write_evals", "Write evals (cases, rubrics, LLM judges)"),
@@ -86,9 +87,9 @@ ax.imshow(M, cmap=cmap, vmin=0, vmax=80, aspect="auto")
 for i in range(M.shape[0]):
     for j in range(M.shape[1]):
         v = M[i, j]
-        ax.text(j, i, f"{v:.0f}%", ha="center", va="center", fontsize=10,
+        ax.text(j, i, f"{v:.0f}% / {h.loc[ORDER[j], ROWS[i][0]]:.0f}%", ha="center", va="center", fontsize=9,
                 color="white" if v >= 45 else INK, weight="bold" if ORDER[j] == "Product Manager" else "normal")
-ax.set_xticks(range(len(ORDER)), [f"{f}\n(n={int(s.loc[f, 'n']):,})" for f in ORDER], fontsize=9)
+ax.set_xticks(range(len(ORDER)), [f"{f}\n(n={int(s.loc[f, 'n']):,}/{int(h.loc[f, 'n']):,})" for f in ORDER], fontsize=9)
 ax.set_yticks(range(len(ROWS)), [l for _, l in ROWS], fontsize=9.5)
 for t_ in ax.get_xticklabels():
     if t_.get_text().startswith("Product Manager"):
@@ -98,8 +99,8 @@ for sp in ax.spines.values(): sp.set_visible(False)
 ax.set_xticks(np.arange(-.5, len(ORDER)), minor=True); ax.set_yticks(np.arange(-.5, len(ROWS)), minor=True)
 ax.grid(which="minor", color=BG, lw=2); ax.tick_params(which="minor", length=0)
 top, bot = layout(fig, header_in=0.85, footer_in=0.8)
-header(fig, "Error analysis goes to data scientists, not PMs",
-       "Share of each role's eval-asking postings that assign each responsibility (a posting can assign several).", y=0.985, dy=0.36 / fig.get_size_inches()[1])
-footer(fig, SRC + "\nResponsibilities labeled by Claude Sonnet 5; a second labeler (Haiku 4.5) agrees on the direction of every PM-vs-technical-roles difference.\n"
-       "*The two labelers disagree on the level of 'define the quality bar' (kappa 0.37); treat that row as indicative.", y=bot - 0.02)
+header(fig, "Evaluation work spans PM and technical roles",
+       "Percent of retained eval postings. Cells: primary / second labeler; shading uses the primary estimate.", y=0.985, dy=0.36 / fig.get_size_inches()[1])
+footer(fig, SRC + "\nModels retain different denominators after rejecting irrelevant matches. Labeler differences are not confidence intervals.\n"
+       "*Quality-bar agreement is weak (kappa 0.37); even the relative ranking changes between labelers.", y=bot - 0.02)
 stamp(fig, y=bot - 0.085); save_exact(fig, "04_responsibilities.png")
