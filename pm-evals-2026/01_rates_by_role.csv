@@ -1,0 +1,6 @@
+fam,n,asked_pct,n_asked,genai_n,asked_within_genai_pct,share_of_all_asking
+Product Manager,10105,4.37,442,2687,13.7,15.13
+AI Engineer,4410,21.36,942,3521,25.16,32.25
+ML Engineer,3469,8.97,311,1764,15.08,10.65
+Data Scientist,3973,4.4,175,1010,14.46,5.99
+Software Engineer,41359,2.54,1051,8257,10.21,35.98
