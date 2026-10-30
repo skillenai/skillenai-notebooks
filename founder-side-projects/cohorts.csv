@@ -1,0 +1,17 @@
+cohort,year,founder_starters,any_prior_role_overlap,operating_prior_overlap,any_possible_overlap,operating_possible_overlap,unknown_dates
+all_founder_starters,2018,532,232,184,306,249,2
+all_founder_starters,2019,483,229,188,302,245,2
+all_founder_starters,2020,823,371,310,479,406,4
+all_founder_starters,2021,631,334,282,410,350,2
+all_founder_starters,2022,561,308,257,384,321,2
+all_founder_starters,2023,711,396,325,491,413,8
+all_founder_starters,2024,696,405,332,486,406,3
+all_founder_starters,2025,818,483,407,593,501,14
+first_founder_starters,2018,447,199,157,260,210,2
+first_founder_starters,2019,428,204,167,275,221,2
+first_founder_starters,2020,721,332,277,428,362,4
+first_founder_starters,2021,536,281,239,350,300,2
+first_founder_starters,2022,444,248,208,308,257,0
+first_founder_starters,2023,571,315,257,398,334,8
+first_founder_starters,2024,561,325,272,394,334,3
+first_founder_starters,2025,647,398,338,486,410,12
